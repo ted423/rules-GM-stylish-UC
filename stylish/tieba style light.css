@@ -1,0 +1,7 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("tieba.baidu.com") {
+.d_badge_lv, .like_badge_lv{letter-spacing:1px;}/*chrome请删掉此行*/
+div.ui_card_wrap[style*="z-index: 1001;"]{display:none !important}
+.left-cont-fixed {position: static !important;}
+}
