@@ -4,7 +4,7 @@
 // @author		 NLF && ywzhaiqi
 // @contributor	ted423
 // @description	方便的在各个引擎之间跳转。可自定义搜索列表的 NLF 修改版。
-// @version		7.1412.31.0
+// @version		7.1501.07.0
 // @namespace	  https://greasyfork.org/users/85
 // @run-at		 document-end
 // @downloadURL		https://github.com/ted423/javascript-CSS/raw/master/GM/searchEngineJump/searchEngineJumpCE.user.js
@@ -22,7 +22,7 @@ var prefs = {
 		iconType: '', // 获取 icon 的在线服务的地址类型
 		//position: '', // 全局搜索条插入的位置：default, left, top
 		//siteInfo: {}, // 每个站点的额外信息
-		debug: true,
+		debug: false,
 	};
 
 	var engineListData = {
@@ -1231,7 +1231,7 @@ var prefs = {
 		},
 		{
 			name: "京东",
-			url: /^https?:\/\/search\.jd\.com\/Search\?/,
+			url: /^https?:\/\/search\.jd\.com\/search\?/,
 			enabled: true,
 			engineList: "shopping",
 			style: "\
