@@ -1,0 +1,34 @@
+/*标签最小宽度*/ 
+.tabbrowser-tab{min-width:50px !important;}
+
+/*书签下拉菜单的最大宽度*/   
+menu.bookmark-item, menuitem.bookmark-item { max-width: 20em !important; }
+
+/*书签栏下拉列表中去除"打开所有书签"以及横线，ubuntu去除书签栏文件夹图标旁的小箭头*/
+.bookmark-item[container] > .toolbarbutton-menu-dropmarker,.openintabs-menuitem,.bookmarks-actions-menuseparator{display: none !important;}
+
+/*右键菜单去除设置桌面背景*/  
+#context-sendimage,#context-setDesktopBackground{display: none !important;}
+/*右键菜单keeFox*/
+[id*="keefox-command-context"],#keefox-command-context-sub+menuseparator{display:none;}
+
+/*处理小箭头*/
+#PersonalToolbar .toolbarbutton-1:not(#greasemonkey-tbb):not(#ipbuttons-toolbar) dropmarker{display: none !important;}
+#greasemonkey-tbb dropmarker{height:22px !important;width:22px !important;margin-left:-22px!important;display:inline!important;opacity:0;}
+#ipbuttons-toolbar dropmarker{height:22px !important;width:22px !important;margin-left:-22px!important;display:inline!important;opacity:0;}
+
+/*userChromeMix图标大小调整*/
+#userChromebtnMenu > image {padding: 3px 0px!important;}
+
+/*新标签页*/
+@-moz-document url("about:newtab") {     
+    .newtab-title{text-align:center !important;}
+    .newtab-cell {opacity: 0.4 !important;}
+    .newtab-cell:hover {opacity: 1 !important;}
+    #newtab-vertical-margin{
+        background-size:cover !important;
+        background-image: url("file:///E:/OneDrive/Pictures/二次元/无双系列/他/吕玲绮/smusou7-tw-bg-ryoreiki.jpg") !important;
+    }
+    #newtab-margin-bottom{opacity:0;}
+    #newtab-search-container,#newtab-margin-undo-container{display: none !important;}
+}

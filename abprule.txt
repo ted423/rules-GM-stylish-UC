@@ -1,6 +1,11 @@
 [Adblock Plus 2.1]
-! Version: 20150826
+! Version: 20151224
 ! Title: XX
+123yq.com##.contads
+
+151xs.com##.lcad
+151xs.com##.rcad
+||151xs.com/js/*
 
 259se.com##IMG[src="http://3pp.otzo.com:19881/303.gif"]
 259se.com###msg_content
@@ -14,39 +19,37 @@ yunpan.cn###get-36T
 
 8yyls.com##[id*="ad_bar"]
 
-avmask.com##.modal-backdrop.fade.in
-avmask.com###blockModal
+xyzchenrongzhan.7958.com##.zzjs_net1
 
 ads.nicovideo.jp##EMBED[flashvars="clickTAG=https%3A%2F%2Fads.nicovideo.jp%2Fclick%3Fbannerid%3D40050%26zoneid%3D124"]
-
-
-csdn.net###im_popupWindow_miniMsg
 
 bing.com##[class*="sb_ad"]
 
 bay181.mail.live.com##.adBar
 
-kuai.xunlei.com###gray_layer
-
-mail.google.com##.ae6
-
-manhua.dmzj.com##.interactive-opinion
-manhua.dmzj.com###hd
-user.dmzj.com###commentBody
-manhua.dmzj.com###floatCode
-
-qidian.com###DoublePop_left
-
-
+!baidu
 cb.baidu.com###room
 
 hi.baidu.com##.q-menu-item-game
 
 jingyan.baidu.com###exp-msgbox-wrapper
 
+pan.baidu.com##.upload-bar
 pan.baidu.com##.b-dialog.alert-dialog1.newhand-tips-dialog
 pan.baidu.com##.tips-bg.newhandTips3-bg
+pan.baidu.com###uploadExceptionMsgContainer
+baidu.com###share-ad-bottom
 
+||imgsrc.baidu.com/forum/w%3D580/sign=a29a509269600c33f079dec02a4e5134/2f6caacc7cd98d10c8109fb7233fb80e79ec90a5.jpg
+||imgsrc.baidu.com/forum/w%3D580/sign=3939d8d74b540923aa696376a259d1dc/cd11728b4710b9127c74d00ac1fdfc0393452288.jpg
+||imgsrc.baidu.com/forum/w%3D580/sign=9994d945f3d3572c66e29cd4ba126352/1b4c510fd9f9d72af31c9eb1d52a2834349bbb26.jpg
+||imgsrc.baidu.com/forum/pic/item/afc379310a55b319184ab09241a98226cefc17a1.jpg
+||imgsrc.baidu.com/tieba/pic/item/*
+||hiphotos.baidu.com/%CD%F2%B5%C0%D2%BB/pic/item/5adc6de5f01f3a295590b0669925bc315d607c56.jpg?v=tbs
+||zhanzhang.baidu.com/static/img/act/report2014/banner.jpg
+||bdimg.share.baidu.com/static/js/*
+
+||tieba.baidu.com/tb/static-common/swf/worldcup_banner.swf
 tieba.baidu.com##[id*="pop_"]
 tieba.baidu.com##[id*="spreadad_"]
 tieba.baidu.com##[id*="vie_sofa"]
@@ -100,6 +103,7 @@ tieba.baidu.com##.ui_bubble_wrap.j_wrap[style="width: 85px; top: 77px; left: 195
 tieba.baidu.com##.ui_bubble_wrap.j_wrap[style="width: 85px; top: 77px; left: 200px; height: 50px; display: block;"]
 tieba.baidu.com##.ui_bubble_wrap.j_wrap[style="width: 150px; top: 0px; right: 50px; display: block;"]
 tieba.baidu.com##.ui_bubble_wrap.j_wrap[style="width: 220px; top: 78px; right: 210px; height: 120px; display: block;"]
+tieba.baidu.com##.umoney-promotion-dialog
 tieba.baidu.com##.cont_sign_bottom
 tieba.baidu.com##IMG[src="http://tb2.bdstatic.com/tb/static-common/widget/post_reward/img/reward_disabled_0a766255.png"]
 tieba.baidu.com##IMG[alt="高品质音乐推荐"]
@@ -149,12 +153,52 @@ zhidao.baidu.com###na-promote
 zhidao.baidu.com###selectsearch-icon
 zhidao.baidu.com##.word-replace
 
-i,baidu.com##.span_4_2:nth-child(4) > div:nth-child(1)
+i.baidu.com##.span_4_2:nth-child(4) > div:nth-child(1)
 
+!提升百度/disk/home打开速度
+||nj.cache.baidupcs.com/monitor.jpg?xcode=*
+||qd.cache.baidupcs.com/monitor.jpg?xcode=*
 
-tsdm.net###weakpassword_tip
-http://www.tsdm.net/static/tsdm/player.swf
+||img.iknow.bdimg.com/question/left-promotion/team.png
+||img.iknow.bdimg.com/0612/ws212x132.jpg
+||f.hiphotos.bdimg.com/album/s%3D1100%3Bq%3D90/sign=e39108d9087b020808c93be052e9c9a2/0823dd54564e92585c9ea6929e82d158ccbf4e27.jpg?v=tbs
+||cdn.iknow.bdimg.com/static/question/pkg/question_async_js_0_*.js
+||su.bdimg.com/static/superplus/img/sjb-guide.png?v=md5
+||tb1.bdstatic.com/tb/cms/tbmall/floatlayer_close.png
+||tb1.bdstatic.com/tb/static-common/js/pic_share/*
+||tb2.bdstatic.com/tb/static-common/img/fool^
+||tb2.bdstatic.com/tb/static-pb/img/pb_bright_background_e728640.png
+||tb2.bdstatic.com/tb/static-spage/img/big-bg_3c7e924.png
+||tb2.bdstatic.com/tb/static-pb/img/yingyin_tip_22c1c5e.png
+||tb2.bdstatic.com/tb/static-pb/img/bright_default_skin_2a916f3.jpg
+||s1.bdstatic.com/r/www/cache/static/global/img/rightHintPic-video.png
+||s1.bdstatic.com/r/www/scache/baidu_search/*
+||s1.bdstatic.com/r/www/cache/baidu_search/*
 
+||biquge.la/scripts/*
+
+!BTSOW
+||pl108266.puhtml.com/0e/1d/e4/*
+||s10.histats.com^
+||boom.1ccbt.com^$popup
+
+!cnzz
+||s24.cnzz.com/stat.php?*
+||s4.cnzz.com/z_stat.php?*
+||c.cnzz.com/core.php?*
+
+csdn.net###im_popupWindow_miniMsg
+
+cishuge.com##.bdad
+|http://www.cishuge.com/skin/*.js
+
+!dmzj
+manhua.dmzj.com##.interactive-opinion
+manhua.dmzj.com###hd
+user.dmzj.com###commentBody
+manhua.dmzj.com###floatCode
+
+!google
 google.com.hk###pmocntr2
 google.com.hk##DIV[style="margin-left:12px"]
 
@@ -162,24 +206,37 @@ google.com.hk##DIV[style="margin-left:12px"]
 ##.jfk-butterBar.jfk-butterBar-info.jfk-butterBar-shown
 ##.gb_hb.gb_kb.gb_xa
 
+mail.google.com##.ae6
 mail.google.com##TD.Bu.y3
 mail.google.com##.oM
 mail.google.com##.nH.PS
 
-xyzchenrongzhan.7958.com##.zzjs_net1
 hprt.net##TD[style="padding:0px;margin:0px;"]
 eeee42.com##.wrap.mtop.cen
 
 search.51job.com##DIV[style="text-align: center;margin-bottom:5px;"]
 phpddt.com##A[href="http://www.ibeifeng.com/"]
 
-
 luoqiu.com##DIV[style="text-align: center;"]
+
+lwxsw.org##.cad
+
+!mi
+www.mi.com##.site-bn-bar-link.ir
+www.mi.com##.site-bn-bar.site-bn-bar-20140520
+www.mi.com##.modal-backdrop.in
+www.mi.com###J_topBn
+www.mi.com###J_topBackdrop
 
 piaoyun.cc##.wumii-popup-relatedItems
 
 happycar.wenyu365.com###wenyu365adpop
 
+qidian.com###DoublePop_left
+
+!Qzone
+user.qzone.qq.com##.close._close
+||i.gtimg.cn/open/appstore/imgupload/201503/1232063194_1427793632005560.png
 app21641.qzone.qzoneapp.com##.mode_menu_tag2
 app21641.qzone.qzoneapp.com##.mod_tab
 game.9z.qq.com###toolbar
@@ -188,80 +245,48 @@ user.qzone.qq.com###appCanvasGoldInfoTips
 qzone.qq.com##.message
 user.qzone.qq.com##.fusion_dialog_header
 
-www.mi.com##.site-bn-bar-link.ir
-www.mi.com##.site-bn-bar.site-bn-bar-20140520
-www.mi.com##.modal-backdrop.in
-www.mi.com###J_topBn
-www.mi.com###J_topBackdrop
-
 www.tsdm.net###smchuncai
+tsdm.net###weakpassword_tip
+||www.tsdm.net/static/tsdm/player.swf
+
+||k.static.u17i.com/common/images/blank.gif
+
+
+||image15.poco.cn/mypoco/myphoto/20140403/11/5589980820140403110618044.jpg
+||image15.poco.cn/mypoco/myphoto/20140330/21/5589980820140330214657064.jpg
+||ox-i.majorgeeks.com/1cc/1cc5c6057548cfe44d757ebea61f7e2038bf7993/584/58423edb0c8da0a666d7a9ee4e4b21ad.png
+
+||coolshell.cn//wp-content/*.js*
+
+!去除迅雷快传检测迅雷
+||img.kuai.xunlei.com/js/downloading2.*
+kuai.xunlei.com###gray_layer
+
+||gg.blueidea.com/2014/360/*
+||js.tongji.linezing.com/604267/*
+||kkkmh.com/js.php?*
+
+||www.26953.com/js/win.js
+
+||files.nyaa.se/*.jpg
+||files.nyaa.eu/*.jpg
+
+||repaik.com/data/cache/common_extra.js?*
+
+||www.shumilou.co/style/index.php?js/*
+
+||dbank.vmall.com/app/cms/getData.php?*
+
+xiaohx001.com##.bdselect_share_box
 
 zdfans.com##.poptip[style="top:60px;left:10px;"]
 zdfans.com##.textwidget
 zdfans.com##[id*="BAIDU_DUP_wrapper_"]
 zdfans.com##[href="http://youqian.baidu.com/download/Baidusd-Setup-1.8.0.1196_1000014464.exe"]
 
-
-||adrotator.se/?*
-
-||cbjs.baidu.com/js/m.js
-|http://f.hiphotos.bdimg.com/album/s%3D1100%3Bq%3D90/sign=e39108d9087b020808c93be052e9c9a2/0823dd54564e92585c9ea6929e82d158ccbf4e27.jpg?v=tbs
-|http://imgsrc.baidu.com/forum/w%3D580/sign=a29a509269600c33f079dec02a4e5134/2f6caacc7cd98d10c8109fb7233fb80e79ec90a5.jpg
-|http://imgsrc.baidu.com/forum/w%3D580/sign=3939d8d74b540923aa696376a259d1dc/cd11728b4710b9127c74d00ac1fdfc0393452288.jpg
-|http://imgsrc.baidu.com/forum/w%3D580/sign=9994d945f3d3572c66e29cd4ba126352/1b4c510fd9f9d72af31c9eb1d52a2834349bbb26.jpg
-|http://imgsrc.baidu.com/forum/pic/item/afc379310a55b319184ab09241a98226cefc17a1.jpg
-|http://tb2.bdstatic.com/tb/static-common/img/fool^
-|http://tb2.bdstatic.com/tb/static-pb/img/pb_bright_background_e728640.png
-|http://su.bdimg.com/static/superplus/img/sjb-guide.png?v=md5
-|http://tb2.bdstatic.com/tb/static-spage/img/big-bg_3c7e924.png
-|http://tb2.bdstatic.com/tb/static-pb/img/yingyin_tip_22c1c5e.png
-|http://tb2.bdstatic.com/tb/static-pb/img/bright_default_skin_2a916f3.jpg
-|http://hiphotos.baidu.com/%CD%F2%B5%C0%D2%BB/pic/item/5adc6de5f01f3a295590b0669925bc315d607c56.jpg?v=tbs
-|http://zhanzhang.baidu.com/static/img/act/report2014/banner.jpg
-|http://image15.poco.cn/mypoco/myphoto/20140403/11/5589980820140403110618044.jpg
-|http://image15.poco.cn/mypoco/myphoto/20140330/21/5589980820140330214657064.jpg
-|http://ox-i.majorgeeks.com/1cc/1cc5c6057548cfe44d757ebea61f7e2038bf7993/584/58423edb0c8da0a666d7a9ee4e4b21ad.png
-|http://imgsrc.baidu.com/tieba/pic/item/*
-|http://tieba.baidu.com/tb/static-common/swf/worldcup_banner.swf
-||s1.bdstatic.com/r/www/scache/baidu_search/*
-||s1.bdstatic.com/r/www/cache/baidu_search/*
-||tb1.bdstatic.com/tb/cms/tbmall/floatlayer_close.png
-||tb1.bdstatic.com/tb/static-common/js/pic_share/*
-||s1.bdstatic.com/r/www/cache/static/global/img/rightHintPic-video.png
-
-||cdn.iknow.bdimg.com/static/question/pkg/question_async_js_0_*.js
-||bdimg.share.baidu.com/static/js/*
-
-|http://img.iknow.bdimg.com/question/left-promotion/team.png
-|http://img.iknow.bdimg.com/0612/ws212x132.jpg
-
-||coolshell.cn//wp-content/*.js*
-
-!去除迅雷快传检测迅雷
-||img.kuai.xunlei.com/js/downloading2.*
-
-||gg.blueidea.com/2014/360/*
-||js.tongji.linezing.com/604267/*
-||kkkmh.com/js.php?*
-
-|http://www.26953.com/js/win.js
-
-|http://files.nyaa.se/*.jpg
-|http://files.nyaa.eu/*.jpg
-
-||repaik.com/data/cache/common_extra.js?*
-!起点允许右键
-||read.qidian.com/JavaScript/*
-||free.qidian.com/Free/JavaScript/*
-
 ||zhichengboya.com/statics/css/*
 
-||dbank.vmall.com/app/cms/getData.php?*
 
-!Qzone
-user.qzone.qq.com##.close._close
-||i.gtimg.cn/open/appstore/imgupload/201503/1232063194_1427793632005560.png
 
-!BTSOW
-||pl108266.puhtml.com/0e/1d/e4/*
-||s10.histats.com^
+
+
