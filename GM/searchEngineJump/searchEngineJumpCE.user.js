@@ -4,7 +4,7 @@
 // @author		 NLF && ywzhaiqi
 // @contributor	ted423
 // @description	方便的在各个引擎之间跳转。可自定义搜索列表的 NLF 修改版。
-// @version		7.1501.13.1
+// @version		7.1501.14.0
 // @namespace	  https://greasyfork.org/users/85
 // @grant		none
 // @run-at		 document-end
@@ -163,7 +163,7 @@ var prefs = {
 			border-collapse:separate;\
 			border-top: 1px solid #E6E6E6;\
 			border-bottom: 1px solid #E6E6E6;\
-			margin-top:5px;\
+			margin-top:15px;\
 			margin-left: 10px;\
 			',
 			insertIntoDoc: {
@@ -171,6 +171,7 @@ var prefs = {
 				target: 'css;#b_header',
 				where: 'beforeEnd',
 			},
+			stylish: '#b_content{ padding: 10px 0px 20px 100px; }'
 		},
 		{
 			name: "360搜索",
