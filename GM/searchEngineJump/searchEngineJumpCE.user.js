@@ -4,7 +4,7 @@
 // @author		 NLF && ywzhaiqi
 // @contributor	ted423
 // @description	方便的在各个引擎之间跳转。可自定义搜索列表的 NLF 修改版。
-// @version		7.1502.02.0
+// @version		7.1502.03.0
 // @namespace	  https://greasyfork.org/users/85
 // @grant		none
 // @run-at		 document-end
@@ -950,7 +950,7 @@ var prefs = {
 		},
 		{
 			name: "京东",
-			url: /^https?:\/\/search\.jd\.com\/search\?/,
+			url: /^https?:\/\/search\.jd\.com\/search\?/i,
 			enabled: true,
 			engineList: "shopping",
 			style: "\
