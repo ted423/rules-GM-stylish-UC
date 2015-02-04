@@ -4,11 +4,10 @@
 // @author		 NLF && ywzhaiqi
 // @contributor	ted423
 // @description	方便的在各个引擎之间跳转。可自定义搜索列表的 NLF 修改版。
-// @version		7.1502.03.0
+// @version		7.1502.04.0
 // @namespace	  https://greasyfork.org/users/85
 // @grant		none
 // @run-at		 document-end
-// @downloadURL		https://github.com/ted423/rules-GM-stylish-UC/raw/master/GM/searchEngineJump/searchEngineJumpCE.user.js
 // ==/UserScript==
 
 
@@ -43,8 +42,6 @@ var prefs = {
 		'sociality': '社交',
 		'shopping': '网购',
 		'download': '下载',
-		'translate': '翻译',
-		'译&词典': '翻译'
 	};
 
 	function isTheSameCategory(c1, c2) {
@@ -1136,108 +1133,6 @@ var prefs = {
 				keyword: 'css;#q',
 				target: 'css;.secpan',
 				where: 'afterEnd'
-			}
-		},
-
-		// 翻译
-		{
-			name: "google翻译",
-			url: /^https?:\/\/translate\.google\./,
-			enabled: true,
-			engineList: "translate",
-			style: "\
-			text-align: center;\
-			border-bottom:1px solid #D4E9F7;\
-			border-top:1px solid #D4E9F7;\
-			",
-			insertIntoDoc: {
-				keyword: 'css;#source',
-				target: 'css;#gt-c',
-				where: 'beforeBegin'
-			}
-		},
-		{
-			name: "百度翻译",
-			url: /^https?:\/\/fanyi\.baidu\.com/,
-			enabled: true,
-			engineList: "translate",
-			style: "\
-			text-align:center;\
-			margin-bottom:10px;\
-			margin-top:0px;\
-			border-bottom:1px solid #D4E9F7;\
-			border-top:1px solid #D4E9F7;\
-			",
-			insertIntoDoc: {
-				keyword: 'css;#baidu_translate_input',
-				target: 'css;.header',
-				where: 'beforeBegin'
-			}
-		},
-		{
-			name: "有道翻译",
-			url: /^https?:\/\/fanyi\.youdao\.com/,
-			enabled: true,
-			engineList: "translate",
-			style: "\
-			margin:0 auto;\
-			",
-			insertIntoDoc: {
-				keyword: 'css;#inputText',
-				target: '//body/*[1]',
-				where: 'beforeBegin'
-			}
-		},
-		{
-			name: "bing词典",
-			url: /^https?:\/\/(cn|www)\.bing\.com\/dict\/search\?/,
-			enabled: true,
-			engineList: "translate",
-			style: "\
-			margin-top:80px;\
-			border-top:1px solid #D4E9F7;\
-			border-bottom:1px solid #D4E9F7;\
-			word-break:keep-all;\
-			white-space:nowrap;\
-			",
-			insertIntoDoc: {
-				keyword: 'css;#sb_form_q',
-				target: 'css;#sb_form',
-				where: 'afterEnd'
-			}
-		},
-		{
-			name: "bing翻译",
-			url: /^https?:\/\/www\.bing\.com\/translator/,
-			enabled: true,
-			engineList: "translate",
-			style: "\
-			margin:5px auto;\
-			word-break:keep-all;\
-			white-space:nowrap;\
-			",
-			insertIntoDoc: {
-				keyword: 'css;#InputText',
-				target: 'css;#Wrapper',
-				where: 'afterBegin'
-			}
-		},
-		{
-			name: "爱词霸翻译",
-			url: /^https?:\/\/fy\.iciba\.com/,
-			enabled: true,
-			engineList: "translate",
-			style: "\
-			position:fixed;\
-			width:90px;\
-			top:100px;\
-			left:40px;\
-			border:1px solid #D4E9F7;\
-			",
-			insertIntoDoc: {
-				keyword: 'css;#inputC',
-				target: 'css;body',
-				where: 'beforeBegin'
 			}
 		},
 		{
