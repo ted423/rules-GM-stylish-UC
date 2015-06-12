@@ -1,4 +1,4 @@
-﻿// ==UserScript==
+// ==UserScript==
 // @name           downloadPlus.uc.js
 // @description    新建下载，删除文件，下载窗口（下载重命名 + 双击复制链接 + 另存为 + 保存并打开），完成下载提示音，自动关闭下载产生的空白标签
 // @note           ywzhaiqi 修改整合（Alice0775、紫云飞）
@@ -11,7 +11,6 @@
 // ==/UserScript==
 
 (function() {
-
     let { classes: Cc, interfaces: Ci, utils: Cu, results: Cr } = Components;
     if (!window.Services) Cu.import("resource://gre/modules/Services.jsm");
 
@@ -26,17 +25,12 @@
                     ns.autoClose_blankTab();              // 自动关闭下载产生的空白标签
                     downloadSoundPlay();                  // 下载完成提示音
                     ns.saveAndOpen_on_main();             // 跟下面的 saveAndOpen 配合使用
-                    // 不完美？
-                    // ns.downloadsPanel_removeFile();    // DownloadsPanel 右键新增移除下载文件功能
                     break;
                 case "chrome://mozapps/content/downloads/unknownContentType.xul":
                     ns.download_dialog_changeName();      // 下载改名
                     ns.download_dialog_saveAs();          // 下载另存为
                     ns.download_dialog_showCompleteURL(); // 下载弹出窗口双击链接复制完整链接
                     ns.saveAndOpen();
-                    break;
-                case "chrome://browser/content/places/places.xul":
-                    // newDownload_places();  // 书签窗口新增 "新建下载" 按钮
                     break;
             }
         },
@@ -45,16 +39,6 @@
             let parent = $('downloads-button').parentNode;
 
             parent.addEventListener('click', ns.downloadsBtn_clicked, false);
-        },
-        newDownload_on_places: function () {
-            var button = $("placesToolbar").insertBefore(document.createElement("toolbarbutton"), $("clearDownloadsButton"));
-            button.id = "createNewDownload";
-            button.label = "新建下载";
-            button.style.paddingRight = "9px";
-            button.addEventListener("command", ns.open_newDownload_dialog, false);
-            window.addEventListener("click", function(e) {
-                button.style.display = ($("searchFilter").attributes.getNamedItem("collection").value == "downloads") ? "-moz-box" : "";
-            }, false);
         },
         downloadsBtn_clicked: function(event){
             if(event.target.id == "downloads-button" || event.target.id == "downloads-indicator"){
@@ -108,53 +92,6 @@
                 "name", "top=" + (window.screenY + 50) + ",left=" + (window.screenX + 50));
         },
 
-        downloadsPanel_removeFile: function() {
-            window.removeDownloadfile = {
-                removeStatus: function() {
-                    var RMBtn = $("removeDownload");
-                    var state = $("downloadsListBox").selectedItems[0].getAttribute('state');
-                    RMBtn.setAttribute("disabled", "true");
-                    if (state != "0" && state != "4" && state != "5")
-                        RMBtn.removeAttribute("disabled");
-                },
-                removeMenu: function() {
-                    try {
-                        this.removeStatus();
-                    } catch (e) {};
-
-                    let menuitem = $("removeDownload");
-                    if (!menuitem){
-                        menuitem = document.createElement("menuitem"),
-                            rlm = document.querySelector('.downloadRemoveFromHistoryMenuItem');
-                        menuitem.setAttribute("label", rlm.getAttribute("label").indexOf("History") != -1 ? "Delete File" : "从硬盘中删除");
-                        menuitem.setAttribute("id", "removeDownload");
-                        menuitem.onclick = function() {
-                            var path = decodeURI(DownloadsView.richListBox.selectedItem.image)
-                                .replace(/moz\-icon\:\/\/file\:\/\/\//, "").replace(/\?size\=32$/, "")
-                                .replace(/\?size\=32\&state\=normal$/, "").replace(/\//g, "\\\\");
-                            if (DownloadsView.richListBox.selectedItem.getAttribute('state') == "2") {
-                                path = path + ".part";
-                            }
-                            var file = Cc["@mozilla.org/file/local;1"].createInstance(Ci.nsILocalFile);
-                            file.initWithPath(path);
-                            file.exists() && file.remove(0);
-                            new DownloadsViewItemController(DownloadsView.richListBox.selectedItem).doCommand("cmd_delete");
-                        };
-                        $("downloadsContextMenu").appendChild(rlm);
-                        $("downloadsContextMenu").insertBefore(menuitem, rlm.nextSibling);
-                    }
-
-                    this.removeStatus();
-                },
-                Start: function() {
-                    $("downloadsContextMenu").addEventListener("popupshowing", this.removeMenu, false);
-                }
-            }
-            try {
-                eval("DownloadsPanel.showPanel = " + DownloadsPanel.showPanel.toString()
-                    .replace(/DownloadsPanel\.\_openPopupIfDataReady\(\)/, "{$&;removeDownloadfile\.Start\(\);}"));
-            } catch (e) {}
-        },
         autoClose_blankTab: function () {
             eval("gBrowser.mTabProgressListener = " + gBrowser.mTabProgressListener.toString().replace(/(?=var location)/, '\
                 if (aWebProgress.DOMWindow.document.documentURI == "about:blank"\
@@ -168,11 +105,11 @@
         saveAndOpen: function(){
             let acceptBtn = document.documentElement.getButton("accept");
             let saveBtn = $("save");
-
+            let extra1 = document.documentElement.getButton("extra1");
             var saveAndOpen = document.getAnonymousElementByAttribute(document.querySelector("*"), "dlgtype", "extra2");
-            saveAndOpen.parentNode.insertBefore(saveAndOpen, acceptBtn.nextSibling.nextSibling);
+            saveAndOpen.parentNode.insertBefore(saveAndOpen, extra1.nextSibling);
             saveAndOpen.setAttribute("hidden", "false");
-            saveAndOpen.setAttribute("label", "保存并打开");
+            saveAndOpen.setAttribute("label", "保存&打开");
             saveAndOpen.addEventListener("command", function(event){
                 ns.mainwin.saveAndOpen.urls.push(dialog.mLauncher.source.asciiSpec);
                 saveBtn.click();
