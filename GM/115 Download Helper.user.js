@@ -4,7 +4,7 @@
 // @description	115网盘下载帮手，能自动帮忙点普通下载，少点一次鼠标，能够批量复制下载链接
 // @include		http://115.com/?ct=pickcode*
 // @include		http://115.com/?ct=file*
-// @version		2015.02.26.0
+// @version		2015.06.18.0
 // @grant		GM_xmlhttpRequest
 // @grant		GM_setClipboard
 // @run-at		document-end
@@ -29,7 +29,8 @@ if(self.document.URL.indexOf('http://115.com/?ct=')!=-1){
 							var arr=[];
 							i=0;
 							[].forEach.call(selected,function(oneSelected){
-								URL="http://web.api.115.com/files/download?pickcode="+oneSelected.getAttribute('pick_code');
+								URL="http://web.api.115.com/files/download?pickcode="+oneSelected.getAttribute('pick_code')+"&_="+(new Date()).valueOf();
+								console.log(URL);
 								getDownloadUrl(URL,arr,li,selected.length);
 							})
 						}
@@ -49,9 +50,9 @@ if(self.document.URL.indexOf('http://115.com/?ct=')!=-1){
 		GM_xmlhttpRequest({
 			method:'GET',
 			url:URL,
-			header:{
-				"Referer":'http://web.api.115.com/bridge_2.0.html?namespace=Core.DataAccess&api=UDataAPI&_t=v5',
-				"Range": "bytes=0-1",
+			headers:{
+				"Referer":"http://web.api.115.com/bridge_2.0.html?namespace=Core.DataAccess&api=UDataAPI&_t=v5",
+				"Accept":"*/*",
 			},
 			onload:function(response){
 				//console.log(response.responseText);
@@ -60,7 +61,7 @@ if(self.document.URL.indexOf('http://115.com/?ct=')!=-1){
 				arr.push(geturl);
 				i++;
 				if(i==length){
-					console.log(arr.join('\n'));
+					//console.log(arr.join('\n'));
 					GM_setClipboard(arr.join('\n'),'text');
 					li.style.fontWeight='bold';
 					setTimeout(function(){li.style.fontWeight=''},2000)
