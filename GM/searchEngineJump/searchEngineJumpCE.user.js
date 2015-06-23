@@ -4,7 +4,7 @@
 // @author		NLF && ywzhaiqi
 // @contributor	ted423
 // @description	方便的在各个引擎之间跳转。可自定义搜索列表的 NLF 修改版。
-// @version		7.1506.23.0
+// @version		7.1506.26.0
 // @namespace	https://greasyfork.org/users/85
 // @downloadURL 	https://github.com/ted423/rules-GM-stylish-UC/raw/master/GM/searchEngineJump/searchEngineJumpCE.user.js
 // @updateURL 	https://github.com/ted423/rules-GM-stylish-UC/raw/master/GM/searchEngineJump/searchEngineJumpCE.user.js
@@ -24,12 +24,12 @@ var prefs = {
 		iconType: '', // 获取 icon 的在线服务的地址类型
 		//position: '', // 全局搜索条插入的位置：default, left, top
 		//siteInfo: {}, // 每个站点的额外信息
-		debug: false,
+		debug: true,
 	};
 
 	var engineListData = {
 		custom: '',
-		ted423: '网页\n	百度, https://www.baidu.com/s?wd=%s&ie=utf-8\n	360, http://www.haosou.com/s?ie=utf-8&q=%s\n	bing, https://cn.bing.com/search?q=%s&pc=OPER\n	搜狗, http://www.sogou.com/web?query=%s\n	DuckDuckGo, https://duckduckgo.com/?q=%s\n	Yahoo--网页\n		Yahoo, https://search.yahoo.com/search?p=%s\n	Yahoo(tw), https://tw.search.yahoo.com/search?p=%s\n Yahoo.co.jp, http://search.yahoo.co.jp/search?p=%s&aq=-1&oq=&ei=UTF-8&fr=top_ga1_sa&x=wrt\n	Google--百度\n		Google.hk, https://www.google.com.hk/search?q=%s&ie=utf-8&safe=off, https://i.imgur.com/TGyMKvy.png\n		Google.co.jp，https://www.google.co.jp/search?q=%s&ie=utf-8&safe=off, https://i.imgur.com/TGyMKvy.png\n资料-Scholar\n	百科, http://baike.baidu.com/searchword/?word=%s&pic=1&sug=1&ie=utf-8\n	Scholar, http://scholar.google.com/scholar?hl=zh-CN&q=%s&btnG=&lr=, https://i.imgur.com/hJVSUU5.png\n	知乎, http://www.zhihu.com/search?q=%s\n	萌娘百科, http://zh.moegirl.org/index.php?search=%s\n	Google Book, https://www.google.com/search?q=%s&btnG=%E6%90%9C%E7%B4%A2%E5%9B%BE%E4%B9%A6&tbm=bks&tbo=1&hl=zh-CN&gws_rd=ssl, https://i.imgur.com/TGyMKvy.png\n		WIKI--百科\n	ZWIKI, http://zh.wikipedia.org/w/index.php?search=%s&button=&title=Special%3ASearch, https://zh.wikipedia.org/static/favicon/wikipedia.ico\n	EWIKI, https://en.wikipedia.org/w/index.php?search=%s&button=&title=Special%3ASearch, https://zh.wikipedia.org/static/favicon/wikipedia.ico\n	JWIKI, http://ja.wikipedia.org/w/index.php?search=%s&button=&title=Special%3ASearch, https://zh.wikipedia.org/static/favicon/wikipedia.ico\n	开发--百科\n		stackoverflow, http://stackoverflow.com/search?q=%s, http://cdn.sstatic.net/stackoverflow/img/favicon.ico\n		MDN, https://developer.mozilla.org/en-US/search?q=%s，https://developer.cdn.mozilla.net/media/img/favicon32.png\n		github, https://github.com/search?q=%s\n		krugle, http://opensearch.krugle.org/document/search/#query=%s，http://opensearch.krugle.org/media/images/favicon.ico\n		npm, https://www.npmjs.org/search?q=%s, http://i.imgur.com/Ec0WrY8.png\n音乐\n	天天动听, http://www.dongting.com/#a=searchlist&q=%s\n	Music, http://music.baidu.com/search?key=%s&ie=utf-8&oe=utf-8\n	搜狗, http://mp3.sogou.com/music.so?query=%s\n	一听, http://so.1ting.com/all.do?q=%s\n	虾米, http://www.xiami.com/search?key=%s\n	piapro, http://piapro.jp/search/?view=audio&keyword=%s\n	Lyric, http://music.baidu.com/search/lrc?key=%s\n图片-Flickr\n	百度, http://image.baidu.com/i?ie=utf-8&word=%s\n	Google, https://www.google.com.hk/search?tbm=isch&q=%s, http://temp-ted423.qiniudn.com/google.ico\n	花瓣, http://huaban.com/search/?q=%s\n	Picsearch, http://cn.picsearch.com/index.cgi?q=%s\n	Flickr, http://www.flickr.com/search/?w=all&q=%s\n	Pixiv, http://www.pixiv.net/search.php?s_mode=s_tag&word=%s\n	dA, http://www.deviantart.com/?q=%s，ASCII\n	, http://img.jpg4.info/index.php?feed=%s, https://i.imgur.com/qkOEi8O.png\n下载-nyaa\n	dmhy, http://share.dmhy.org/topics/list?keyword=%s\n	nyaa, http://www.nyaa.se/?page=search&term=%s, https://i.imgur.com/lfuirgg.png\n	kickass, https://kickass.to/usearch/%s/, http://i.imgur.com/uz2GaPN.png\n	BTSOW, http://www.btava.com/search/%s, http://www.btava.com/app/bts/View/img/btsow.com.favicon.ico\n	BTDigg, https://btdigg.org/search?q=%s\n	ed2000, https://www.baidu.com/s?wd=%s+site:ed2000.com&ie=utf-8, http://www.biaoqing.com/2000/favicon.ico\n	字幕--下载\n		subom, http://www.subom.net/search/%s\n	, http://subhd.com/search/%s, https://i.imgur.com/kC8RATC.png\n网购\n	一淘, http://s.etao.com/search?q=%s\n	京东, http://search.jd.com/Search?keyword=%s&enc=utf-8\n	淘宝, http://s.taobao.com/search?q=%s, http://www.taobao.com/favicon.ico\n	亚马逊, http://www.amazon.cn/s/ref=nb_ss?keywords=%s\netc\n	AMO, https://addons.mozilla.org/zh-CN/firefox/search/?q=%s, https://addons.cdn.mozilla.net/favicon.ico\n	汉典, http://www.zdic.net/sousuo/?q=%s&tp=tp3\n',
+		ted423: '网页\n	百度, https://www.baidu.com/s?wd=%s&ie=utf-8\n	360, http://www.haosou.com/s?ie=utf-8&q=%s\n	bing, https://cn.bing.com/search?q=%s&pc=OPER\n	搜狗, http://www.sogou.com/web?query=%s\n	DuckDuckGo, https://duckduckgo.com/?q=%s\n	Yahoo--网页\n		Yahoo, https://search.yahoo.com/search?p=%s\n		Yahoo(tw), https://tw.search.yahoo.com/search?p=%s\n Yahoo.co.jp, http://search.yahoo.co.jp/search?p=%s&aq=-1&oq=&ei=UTF-8&fr=top_ga1_sa&x=wrt\n	Google--百度\n		Google.hk, https://www.google.com.hk/search?q=%s&ie=utf-8&safe=off, https://i.imgur.com/TGyMKvy.png\n		Google.co.jp，https://www.google.co.jp/search?q=%s&ie=utf-8&safe=off, https://i.imgur.com/TGyMKvy.png\n资料-Scholar\n	百科, http://baike.baidu.com/searchword/?word=%s&pic=1&sug=1&ie=utf-8\n	Scholar, http://scholar.google.com/scholar?hl=zh-CN&q=%s&btnG=&lr=, https://i.imgur.com/hJVSUU5.png\n	知乎, http://www.zhihu.com/search?q=%s\n	萌娘百科, http://zh.moegirl.org/index.php?search=%s\n	Google Book, https://www.google.com/search?q=%s&btnG=%E6%90%9C%E7%B4%A2%E5%9B%BE%E4%B9%A6&tbm=bks&tbo=1&hl=zh-CN&gws_rd=ssl, https://i.imgur.com/TGyMKvy.png\n		WIKI--百科\n	ZWIKI, http://zh.wikipedia.org/w/index.php?search=%s&button=&title=Special%3ASearch, https://zh.wikipedia.org/static/favicon/wikipedia.ico\n	EWIKI, https://en.wikipedia.org/w/index.php?search=%s&button=&title=Special%3ASearch, https://zh.wikipedia.org/static/favicon/wikipedia.ico\n	JWIKI, http://ja.wikipedia.org/w/index.php?search=%s&button=&title=Special%3ASearch, https://zh.wikipedia.org/static/favicon/wikipedia.ico\n	开发--百科\n		stackoverflow, http://stackoverflow.com/search?q=%s, http://cdn.sstatic.net/stackoverflow/img/favicon.ico\n		MDN, https://developer.mozilla.org/en-US/search?q=%s，https://developer.cdn.mozilla.net/media/img/favicon32.png\n		github, https://github.com/search?q=%s\n		krugle, http://opensearch.krugle.org/document/search/#query=%s，http://opensearch.krugle.org/media/images/favicon.ico\n		npm, https://www.npmjs.org/search?q=%s, http://i.imgur.com/Ec0WrY8.png\n地图\n	百度, http://map.baidu.com/?newmap=1&ie=utf-8&s=s%26wd%3D%s\n	Google, https://www.google.com/maps/search/%s/\n	搜狗, http://map.sogou.com/#lq=%s\n	Bing, https://www.bing.com/ditu/?q=%s\n音乐\n	天天动听, http://www.dongting.com/#a=searchlist&q=%s\n	Music, http://music.baidu.com/search?key=%s&ie=utf-8&oe=utf-8\n	搜狗, http://mp3.sogou.com/music.so?query=%s\n	一听, http://so.1ting.com/all.do?q=%s\n	虾米, http://www.xiami.com/search?key=%s\n	piapro, http://piapro.jp/search/?view=audio&keyword=%s\n	Lyric, http://music.baidu.com/search/lrc?key=%s\n图片-Flickr\n	百度, http://image.baidu.com/i?ie=utf-8&word=%s\n	Google, https://www.google.com.hk/search?tbm=isch&q=%s, http://temp-ted423.qiniudn.com/google.ico\n	花瓣, http://huaban.com/search/?q=%s\n	Picsearch, http://cn.picsearch.com/index.cgi?q=%s\n	Flickr, http://www.flickr.com/search/?w=all&q=%s\n	Pixiv, http://www.pixiv.net/search.php?s_mode=s_tag&word=%s\n	dA, http://www.deviantart.com/?q=%s，ASCII\n	, http://img.jpg4.info/index.php?feed=%s, https://i.imgur.com/qkOEi8O.png\n下载-nyaa\n	dmhy, http://share.dmhy.org/topics/list?keyword=%s\n	nyaa, http://www.nyaa.se/?page=search&term=%s, https://i.imgur.com/lfuirgg.png\n	kickass, https://kickass.to/usearch/%s/, http://i.imgur.com/uz2GaPN.png\n	BTSOW, http://www.btava.com/search/%s, http://www.btava.com/app/bts/View/img/btsow.com.favicon.ico\n	BTDigg, https://btdigg.org/search?q=%s\n	ed2000, https://www.baidu.com/s?wd=%s+site:ed2000.com&ie=utf-8, http://www.biaoqing.com/2000/favicon.ico\n	字幕--下载\n		subom, http://www.subom.net/search/%s\n	, http://subhd.com/search/%s, https://i.imgur.com/kC8RATC.png\n网购\n	一淘, http://s.etao.com/search?q=%s\n	京东, http://search.jd.com/Search?keyword=%s&enc=utf-8\n	淘宝, http://s.taobao.com/search?q=%s, http://www.taobao.com/favicon.ico\n	亚马逊, http://www.amazon.cn/s/ref=nb_ss?keywords=%s\netc\n	AMO, https://addons.mozilla.org/zh-CN/firefox/search/?q=%s, https://addons.cdn.mozilla.net/favicon.ico\n	汉典, http://www.zdic.net/sousuo/?q=%s&tp=tp3\n',
 	};
 
 	var MAIN_CSS = '#sej-container {\n box-shadow:0px 0px 3px #aaaaaa;\n opacity: 0.7;\n display:table;\n font-family: Comic Sans MS,"Microsoft YaHei",微软雅黑;\n position: relative;\n z-index: auto;\n padding: 1px 0 1px 10px;\n line-height: 1.5;\n font-size: 13px;\n}\n\n\n#sej-expanded-category {\n font-weight: bold;\n cursor: pointer;\n}\n#sej-expanded-category::after {\n content:"：";\n}\n\n\n.sej-engine {\n line-height: 2;\n display: inline-block;\n margin: 0;\n border: none;\n padding: 0 4px;\n text-decoration: none;\n color: #120886 !important;\n transition: background-color 0.15s ease-in-out;\n}\na.sej-engine.only-icon {\n margin-left: 3px;\n margin-right: 3px;\n}\na.sej-engine.only-icon > span {\n display: none;\n}\na.sej-engine:link, a.sej-engine:visited{\n text-decoration: none;\n}\na.sej-engine:visited, a.sej-engine:visited *, a.sej-engine:active, a.sej-engine:active *{\n color: #120886 !important;\n}\n.sej-drop-list-trigger {\n\n}\n.sej-drop-list-trigger-shown {\n background-color: #DEEDFF !important;\n}\n.sej-drop-list-trigger::after {\n content: \'\';\n display: inline-block;\n margin: 0 0 0 3px;\n padding: 0;\n width: 0;\n height: 0;\n border-top: 6px solid #BCBCBC;\n border-right: 5px solid transparent;\n border-left: 5px solid transparent;\n border-bottom: 0px solid transparent;\n vertical-align: middle;\n transition: -webkit-transform 0.3s ease-in-out;\n transition: transform 0.3s ease-in-out;\n}\n.sej-drop-list-trigger-shown::after {\n -webkit-transform: rotate(180deg);\n transform: rotate(180deg);\n}\n.sej-engine:hover {\n background-color: #EAEAEA;\n}\n.sej-drop-list > .sej-engine {\n display: block;\n padding-top: 4px;\n padding-bottom: 4px;\n}\n.sej-drop-list > .sej-engine:hover {\n background-color: #DEEDFF;\n}\n\n.sej-engine-icon {\n display: inline-block;\n height: 16px;\n border: none;\n padding: 0;\n margin: 0 3px 0 0;\n vertical-align: text-bottom;\n}\n\n\n.sej-drop-list {\n position: absolute;\n display: none;\n opacity: 0.3;\n top: -10000px;\n left: 0;\n min-width: 120px;\n border: 1px solid #FAFAFA;\n padding: 5px 0;\n text-align: center;\n font-size: 13px;\n -moz-box-shadow: 2px 2px 5px #ccc;\n -webkit-box-shadow: 2px 2px 5px #ccc;\n box-shadow: 2px 2px 5px #ccc;\n background-color: white;\n transition: opacity 0.2s ease-in-out,\n top 0.2s ease-in-out;\n}';
@@ -37,6 +37,7 @@ var prefs = {
 	// rules 和 engineList 的对应
 	var categoryMap = {
 		'web': '网页',
+		'map': '地图',
 		'video': '视频',
 		'music': '音乐',
 		'image': '图片',
@@ -307,7 +308,6 @@ var prefs = {
 				target: 'css;#top_nav',
 				where: 'beforeBegin',
 			},
-			stylish: '',
 		},
 		{
 			name: "互知识",
@@ -496,6 +496,79 @@ var prefs = {
 			insertIntoDoc: {
 				keyword: 'css;input#topsearch',
 				target: 'css;.nav',
+				where: 'beforeBegin'
+			}
+		},
+		// 地图
+		{
+			name: "百度地图",
+			url: /^https?:\/\/map\.baidu\.com\/\?newmap/,
+			enabled: true,
+			engineList: "map",
+			style: '\
+			margin-left:20px;\
+			border-top:1px solid #00000;\
+			border-bottom:1px solid #D9E1F7;\
+			',
+			insertIntoDoc: {
+				keyword: 'css;input#PoiSearch',
+				target: 'css;#searchWrapper',
+				where: 'beforeEnd'
+			}
+		},
+		{
+			name: "google地图",
+			url: /^https?:\/\/www\.google\.co.{1,4}\/maps/,
+			enabled: true,
+			engineList: "map",
+			style: '\
+			border-top:1px solid #00000;\
+			border-bottom:1px solid #D9E1F7;\
+			word-break:keep-all;\
+			white-space:nowrap;\
+			',
+			insertIntoDoc: {
+				keyword: 'css;input#searchboxinput',
+				target: 'css;#omnibox',
+				where: 'beforeEnd'
+			}
+		},
+		{
+			name: "搜狗地图",
+			url: /^https?:\/\/map\.sogou\.com\/#/,
+			enabled: true,
+			engineList: "map",
+			style: '\
+			padding-left:15px;\
+			display:block;\
+			border-top:1px solid #00000;\
+			border-bottom:1px solid #D9E1F7;\
+			word-break:keep-all;\
+			white-space:nowrap;\
+			',
+			insertIntoDoc: {
+				keyword: 'css;input#query',
+				target: 'css;#search_form',
+				where: 'afterEnd'
+			},
+			stylish: '.sej-drop-list-trigger {display:none;}'
+		},
+		{
+			name: "Bing地图",
+			url: /^https?:\/\/[^.]*\.bing\.com\/ditu\//,
+			enabled: true,
+			engineList: "map",
+			style: '\
+			display: inline-block;\
+			margin-left:15px;\
+			border-top:1px solid #00000;\
+			border-bottom:1px solid #D9E1F7;\
+			word-break:keep-all;\
+			white-space:nowrap;\
+			',
+			insertIntoDoc: {
+				keyword: 'css;input#sb_form_q',
+				target: 'css;#sw_content',
 				where: 'beforeBegin'
 			}
 		},
