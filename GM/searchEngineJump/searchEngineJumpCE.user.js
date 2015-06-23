@@ -4,7 +4,7 @@
 // @author		NLF && ywzhaiqi
 // @contributor	ted423
 // @description	方便的在各个引擎之间跳转。可自定义搜索列表的 NLF 修改版。
-// @version		7.1506.21.1
+// @version		7.1506.23.0
 // @namespace	https://greasyfork.org/users/85
 // @downloadURL 	https://github.com/ted423/rules-GM-stylish-UC/raw/master/GM/searchEngineJump/searchEngineJumpCE.user.js
 // @updateURL 	https://github.com/ted423/rules-GM-stylish-UC/raw/master/GM/searchEngineJump/searchEngineJumpCE.user.js
@@ -239,7 +239,21 @@ var prefs = {
 				where: 'afterEnd'
 			},
 		},
-
+		{
+			name: "duckduckgo",
+			url: /^https?:\/\/duckduckgo\.com\/\?/,
+			engineList: '网页',
+			enabled: true,
+			style: "\
+			margin-left:15px;\
+			border:1px solid #D4E9F7;\
+			",
+			insertIntoDoc: {
+				keyword: 'css;#search_form_input',
+				target: 'css;#zero_click_wrapper',
+				where: 'afterEnd'
+			},
+		},
 		// 知识
 		{
 			name: "谷歌学术",
