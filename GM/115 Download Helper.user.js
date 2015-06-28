@@ -2,9 +2,8 @@
 // @name		115 Download Helper
 // @authuer		ted423
 // @description	115网盘下载帮手，能自动帮忙点普通下载，少点一次鼠标，能够批量复制下载链接
-// @include		http://115.com/?ct=pickcode*
-// @include		http://115.com/?ct=file*
-// @version		2015.06.18.0
+// @include		http://115.com/?ct=*
+// @version		2015.06.28.0
 // @grant		GM_xmlhttpRequest
 // @grant		GM_setClipboard
 // @run-at		document-end
@@ -16,7 +15,7 @@ if(self.document.URL.indexOf('http://115.com/?ct=')!=-1){
 	var	callback = function(records){
 		records.map(function(record){
 			if(record.addedNodes[0]){
-				if(record.addedNodes[0].baseURI.indexOf('http://115.com/?ct=pickcode')!=-1&&record.addedNodes[0].nodeName=='#text'){
+				if(record.addedNodes[0].baseURI.indexOf('http://115.com/?ct=download')!=-1&&record.addedNodes[0].nodeName=='#text'){
 					var target=self.document.querySelector('.btn-green');
 					//target.removeAttribute('target');
 					target.click();
