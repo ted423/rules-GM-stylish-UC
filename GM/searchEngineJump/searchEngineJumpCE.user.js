@@ -4,7 +4,7 @@
 // @author		NLF && ywzhaiqi
 // @contributor	ted423
 // @description	方便的在各个引擎之间跳转。可自定义搜索列表的 NLF 修改版。
-// @version		7.1506.27.0
+// @version		7.1507.14.0
 // @namespace	https://greasyfork.org/users/85
 // @downloadURL 	https://github.com/ted423/rules-GM-stylish-UC/raw/master/GM/searchEngineJump/searchEngineJumpCE.user.js
 // @updateURL 	https://github.com/ted423/rules-GM-stylish-UC/raw/master/GM/searchEngineJump/searchEngineJumpCE.user.js
@@ -356,7 +356,7 @@ var prefs = {
 		},
 		{
 			name: "wiki[ZH]",
-			url: /^https?:\/\/zh\.wikipedia\.org\/(?:zh-|wiki\/|w\/index.php\?search=)/,
+			url: /^https?:\/\/zh\.wikipedia\.org\/(?:zh|wiki\/|w\/index.php\?search=)/,
 			enabled: true,
 			engineList: "资料",
 			style: '\
