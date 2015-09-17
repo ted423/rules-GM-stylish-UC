@@ -8,7 +8,7 @@
 // @homepageURL  https://greasyfork.org/scripts/1771/
 
 // @icon         http://tb.himg.baidu.com/sys/portrait/item/d4346e6f65313332ac06
-// @version      2015.01.14.3
+// @version      2015.09.17.0
 // @grant        GM_xmlhttpRequest
 // @run-at       document-start
 // ==/UserScript==
@@ -33,7 +33,13 @@ function decode(url, target){
 		onreadystatechange: function(response) {
 			if(response.readyState==4||response.status==0){
 				var newUrl = response.finalUrl;
-				target.setAttribute('href', newUrl);
+				if(newUrl.indexOf('www.baidu.com')==-1)
+					target.setAttribute('href', newUrl);
+				else if (response.responseText.indexOf('window.location.replace')!=-1){
+					console.log(response.responseTex);
+					var a=response.responseText.split('"');
+					target.setAttribute('href', a[1]);
+				};
 			}
 		},
 	});
