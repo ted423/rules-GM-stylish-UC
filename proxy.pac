@@ -52,6 +52,8 @@ function FindProxyForURL(url, host)
 	if (shExpMatch(host, "*.btava.com" ))return proxy;
 	if (shExpMatch(host, "*.bt2mag.com" ))return proxy;
 
+	if (shExpMatch(host, "*.cloudfront.net" ))return proxy;
+	if (shExpMatch(host, "*.eyny.com" ))return proxy;
 	if (shExpMatch(host, "*.dmhy.org" ))return proxy;
 	if (shExpMatch(host, "*.blogimg.jp" ))return proxy;
 	if (shExpMatch(host, "goo.gl" ))return proxy;
