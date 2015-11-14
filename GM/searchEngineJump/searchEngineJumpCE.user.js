@@ -4,7 +4,7 @@
 // @author		NLF && ywzhaiqi
 // @contributor	ted423
 // @description	方便的在各个引擎之间跳转。可自定义搜索列表的 NLF 修改版。
-// @version		7.1511.10.1
+// @version		7.1511.14.1
 // @namespace	https://greasyfork.org/users/85
 // @downloadURL	https://github.com/ted423/rules-GM-stylish-UC/raw/master/GM/searchEngineJump/searchEngineJumpCE.user.js
 // @updateURL 	https://github.com/ted423/rules-GM-stylish-UC/raw/master/GM/searchEngineJump/searchEngineJumpCE.user.js
@@ -21,7 +21,7 @@ var prefs = {
 	iconType: '', // 获取 icon 的在线服务的地址类型
 	//position: '', // 全局搜索条插入的位置：default, left, top
 	//siteInfo: {}, // 每个站点的额外信息
-	debug: false,
+	debug: true,
 };
 
 var engineListData = {
@@ -87,7 +87,7 @@ var rules = [
 			var input = document.getElementById('lst-ib');
 			if (input) return input.value;
 		}, */
-		keyword: '//input[@name="q"]',
+		keyword: 'css;input[name="q"]',
 		target: 'css;#top_nav',
 		where: 'beforeBegin',
 	},
@@ -109,7 +109,7 @@ var rules = [
 
 
 		insertIntoDoc: {
-			keyword: '//input[@name="q"]',
+			keyword: 'css;input[name="q"]',
 			target: 'css;#top_nav',
 			where: 'beforeBegin',
 		},
@@ -131,7 +131,7 @@ var rules = [
 				var input = document.querySelector('input#kw') || document.querySelector('input[name="wd"]');
 				if (input) return input.value;
 			},
-			target: 'id("container") | html/body/table[2]',
+			target: 'css;#container',
 			where: 'beforeBegin',
 		},
 	},
@@ -266,7 +266,7 @@ var rules = [
 		',
 		insertIntoDoc: {
 			target: 'css;#gs_ab',
-			keyword: '//input[@name="q"]',
+			keyword: 'css;input[name="q"]',
 			where: 'beforeBegin'
 		}
 	},
@@ -328,7 +328,7 @@ var rules = [
 
 
 		insertIntoDoc: {
-			keyword: '//input[@name="q"]',
+			keyword: 'css;input[name="q"]',
 			target: 'css;#top_nav',
 			where: 'beforeBegin',
 		},
@@ -668,7 +668,7 @@ var rules = [
 		margin:0 auto;\
 		",
 		insertIntoDoc: {
-			keyword: '//input[@name="keyword"]',
+			keyword: 'css;input[name="keyword"]',
 			target: 'css;.search_title',
 			where: 'beforeBegin'
 		},
@@ -739,7 +739,7 @@ var rules = [
 	},
 	{
 		name: "百度图片",
-		url: /^https?:\/\/image\.baidu\.c(om|n)\/i/,
+		url: /^https?:\/\/image\.baidu\.c(om|n)\/search/,
 		enabled: true,
 		engineList: "image",
 		style: '\
@@ -923,15 +923,12 @@ var rules = [
 	},
 	{
 		name: "jpg4",
-		url: /^http:\/\/img\.jpger\.info\//,
+		url: /^http:\/\/img\.jpg4\.info\//,
 		engineList: "image",
 		enabled: true,
-		style: "\
-		margin-top:300px;\
-		",
 		insertIntoDoc: {
-			keyword: 'css;input[name=feed]',
-			target: '//div[@align="center"]',
+			keyword: 'css;input[name="feed"]',
+			target: 'css;div[align="center"]',
 			where: 'beforeEnd'
 		}
 	},
@@ -1405,11 +1402,11 @@ var rules = [
 		return lines;
 	}
 	//xpath 获取单个元素
-	function getElementByXPath(xPath, contextNode, doc) {
+	/*function getElementByXPath(xPath, contextNode, doc) {
 		doc = doc || document;
 		contextNode = contextNode || doc;
 		return doc.evaluate(xPath, contextNode, null, 9, null).singleNodeValue;
-	};
+	};*/
 
 	// 事件支持检测.
 	// 比如 eventSupported('fullscreenchange', document);
@@ -1538,7 +1535,7 @@ var rules = [
 			if (selector.indexOf('css;') == 0) {
 				return document.querySelector(selector.slice(4));
 			} else {
-				return getElementByXPath(selector);
+				return "";
 			};
 		};
 
@@ -1862,16 +1859,15 @@ if (!style) {
 
 function addContainer(iTarget, iInput) {
 	var pageEncoding = (document.characterSet || document.charset).toLowerCase();
+	// 创建dom
+	var aPattern = '<a href="" class="sej-engine"' + (prefs.openInNewTab ? ' target="_blank" ' : ' ') +
+	'encoding="$encoding$" url="$url$" onclick="$onclick$" _title="$title$">' +
+	'<img src="$favicon$" class="sej-engine-icon" />$form$<span>$name$</span></a>';
 
-// 创建dom
-var aPattern = '<a href="" class="sej-engine"' + (prefs.openInNewTab ? ' target="_blank" ' : ' ') +
-'encoding="$encoding$" url="$url$" onclick="$onclick$" _title="$title$">' +
-'<img src="$favicon$" class="sej-engine-icon" />$form$<span>$name$</span></a>';
+	var container = document.createElement('sejspan');
+	container.id = 'sej-container';
 
-var container = document.createElement('sejspan');
-container.id = 'sej-container';
-
-container.addEventListener('mousedown', mousedownhandler, true);
+	container.addEventListener('mousedown', mousedownhandler, true);
 
 // container.style.cssText = 'margin: 0 auto; max-width: 1100px;';
 if (matchedRule.style) {
@@ -2021,27 +2017,7 @@ dropLists.forEach(function (item, index) {
 
 // 设置插入的位置
 var insertWhere = matchedRule.insertIntoDoc.where;
-/*if (matchedRule.left != false) {
-	switch (prefs.position) {
-		case 'left':
-		prefs.hideEnglineLabel = 0;
-		insertWhere = 'beforebegin';
-		iTarget = document.body;
-		container.style.cssText = '\
-		position: fixed;\
-		top: 104px;\
-		width: 100px;\
-		z-index: 9999;\
-		';
-		break;
-		case 'top':
-		insertWhere = 'beforebegin';
-		iTarget = document.body;
-		break;
-		case 'default':
-		break;
-	}
-}*/
+
 
 // 插入到文档中
 switch (insertWhere.toLowerCase()) {
@@ -2090,7 +2066,7 @@ if (typeof matchedRule.endFix == 'function') {
 function mousedownhandler(e) {
 	var target = e.target;
 
-	target = getElementByXPath('ancestor-or-self::a[contains(@class, "sej-engine")]', target);
+	target = target.parentNode;
 
 	// if (!target || target.className.indexOf('sej-engine') == -1) return;
 	if (!target || !this.contains(target)) return;
