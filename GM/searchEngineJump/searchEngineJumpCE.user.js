@@ -4,7 +4,7 @@
 // @author		NLF && ywzhaiqi
 // @contributor	ted423
 // @description	方便的在各个引擎之间跳转。可自定义搜索列表的 NLF 修改版。
-// @version		7.1511.14.1
+// @version		7.1511.14.2
 // @namespace	https://greasyfork.org/users/85
 // @downloadURL	https://github.com/ted423/rules-GM-stylish-UC/raw/master/GM/searchEngineJump/searchEngineJumpCE.user.js
 // @updateURL 	https://github.com/ted423/rules-GM-stylish-UC/raw/master/GM/searchEngineJump/searchEngineJumpCE.user.js
@@ -75,8 +75,8 @@ var rules = [
 
 		// 插入文档,相关
 		// target 将引擎跳转工具栏插入到文档的某个元素
-		// (请使用xpath匹配,比如: '//*[@id="subform_ctrl"]'  或者 css匹配(请加上 'css;' 的前缀),比如: 'css;#subform_ctrl' );
-		// keyword 使用 xpath 或者 css选中一个form input元素 或者 该项是一个函数，使用返回值
+		// (请使用css匹配(请加上 'css;' 的前缀),比如: 'css;#subform_ctrl' );
+		// keyword 使用 css选中一个form input元素 或者 该项是一个函数，使用返回值
 		// where 四种:
 		// 'beforeBegin'(插入到给定元素的前面) ;
 		// 'afterBegin'(作为给定元素的第一个子元素) ;
@@ -117,7 +117,7 @@ var rules = [
 	},
 	{
 		name: "baidu 网页搜索",// 新增了百度简洁搜索：https://www.baidu.com/s?wd=firefox&ie=utf-8&tn=baidulocal
-		url: /^https?:\/\/www\.baidu\.com\/(?:s|baidu|)/,
+		url: /^https?:\/\/www\.baidu\.com\/(?:s|baidu)(?!.*tn=baidulocal)/,
 		mutationTitle: true,
 		enabled: true,
 		engineList: 'web',
@@ -127,11 +127,24 @@ var rules = [
 		margin-left: 122px;\
 		',
 		insertIntoDoc: {
-			keyword: function() {
-				var input = document.querySelector('input#kw') || document.querySelector('input[name="wd"]');
-				if (input) return input.value;
-			},
+			keyword: 'css;#kw',
 			target: 'css;#container',
+			where: 'beforeBegin',
+		},
+	},
+	{
+		name: "baidu 简洁搜索",//百度简洁搜索：https://www.baidu.com/s?wd=firefox&ie=utf-8&tn=baidulocal
+		url: /^https?:\/\/www\.baidu\.com\/s\?.*tn=baidulocal/,
+		enabled: true,
+		engineList: 'web',
+		style: '\
+		border-top:1px solid #D9E1F7;\
+		border-bottom:1px solid #D9E1F7;\
+		margin-left: 122px;\
+		',
+		insertIntoDoc: {
+			keyword: 'css;input[name="wd"]',
+			target: 'css;table[bgcolor="#e6e6e6"]',
 			where: 'beforeBegin',
 		},
 	},
@@ -2065,8 +2078,7 @@ if (typeof matchedRule.endFix == 'function') {
 
 function mousedownhandler(e) {
 	var target = e.target;
-
-	target = target.parentNode;
+	if(!target.href)target = target.parentNode;
 
 	// if (!target || target.className.indexOf('sej-engine') == -1) return;
 	if (!target || !this.contains(target)) return;
