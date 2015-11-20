@@ -3,7 +3,7 @@
 // @author		NLF && ywzhaiqi
 // @contributor	ted423
 // @description	方便的在各个引擎之间跳转。可自定义搜索列表的 NLF 修改版。
-// @version		7.1511.17.0
+// @version		7.1511.20.0
 // @namespace	https://greasyfork.org/users/85
 // @downloadURL	https://github.com/ted423/rules-GM-stylish-UC/raw/master/GM/searchEngineJump/searchEngineJumpCE.user.js
 // @updateURL 	https://github.com/ted423/rules-GM-stylish-UC/raw/master/GM/searchEngineJump/searchEngineJumpCE.user.js
@@ -305,7 +305,10 @@
 			z-index: 999999;\
 			",
 			insertIntoDoc: {
-				keyword: 'css;#firstHeading',
+				keyword: function () {
+					if(document.getElementById('searchText'))return document.getElementById('searchText').value;
+					else return document.getElementById('firstHeading').textContent;
+				},
 				target: 'css;#content',
 				where: 'afterBegin',
 			},
