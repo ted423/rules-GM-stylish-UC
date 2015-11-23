@@ -3,7 +3,7 @@
 // @author		NLF && ywzhaiqi
 // @contributor	ted423
 // @description	方便的在各个引擎之间跳转。可自定义搜索列表的 NLF 修改版。
-// @version		7.1511.20.0
+// @version		7.1511.23.0
 // @namespace	https://greasyfork.org/users/85
 // @downloadURL	https://github.com/ted423/rules-GM-stylish-UC/raw/master/GM/searchEngineJump/searchEngineJumpCE.user.js
 // @updateURL 	https://github.com/ted423/rules-GM-stylish-UC/raw/master/GM/searchEngineJump/searchEngineJumpCE.user.js
@@ -99,8 +99,8 @@
 			},
 		},
 		{
-			name: "baidu 网页搜索",// 新增了百度简洁搜索：https://www.baidu.com/s?wd=firefox&ie=utf-8&tn=baidulocal
-			url: /^https?:\/\/www\.baidu\.com\/(?:s|baidu)(?!.*tn=baidulocal)/,
+			name: "baidu 网页搜索",
+			url: /^https?:\/\/www\.baidu\.com\/(?:s(?!.*tn=baidulocal)|baidu(?!.*tn=baidulocal)|)/,
 			mutationTitle: true,
 			enabled: true,
 			engineList: 'web',
