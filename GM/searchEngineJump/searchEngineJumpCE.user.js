@@ -3,7 +3,7 @@
 // @author		NLF && ywzhaiqi
 // @contributor	ted423
 // @description	方便的在各个引擎之间跳转。可自定义搜索列表的 NLF 修改版。
-// @version		7.1512.13.1
+// @version		8.1601.08.0
 // @namespace	https://greasyfork.org/users/85
 // @downloadURL	https://github.com/ted423/rules-GM-stylish-UC/raw/master/GM/searchEngineJump/searchEngineJumpCE.user.js
 // @updateURL 	https://github.com/ted423/rules-GM-stylish-UC/raw/master/GM/searchEngineJump/searchEngineJumpCE.user.js
@@ -19,15 +19,15 @@
 		engineListDataType: 'ted423', // 搜索列表默认类型
 		iconType: '', // 获取 icon 的在线服务的地址类型
 		//position: '', // 全局搜索条插入的位置：default, left, top
-		debug: true,
+		debug: false,
 	};
 
 	var engineListData = {
 		custom: '',
-		ted423: '网页\n	百度, https://www.baidu.com/s?wd=%s&ie=utf-8\n	360, http://www.haosou.com/s?ie=utf-8&q=%s\n	bing, https://cn.bing.com/search?q=%s&pc=OPER\n	搜狗, http://www.sogou.com/web?query=%s\n	DuckDuckGo, https://duckduckgo.com/?q=%s\n	Yahoo--网页\n		Yahoo, https://search.yahoo.com/search?p=%s\n		Yahoo(tw), https://tw.search.yahoo.com/search?p=%s\n 		Yahoo.co.jp, http://search.yahoo.co.jp/search?p=%s&aq=-1&oq=&ei=UTF-8&fr=top_ga1_sa&x=wrt\n	Google--百度\n		Google.hk, https://www.google.com.hk/search?q=%s&ie=utf-8&safe=off, https://i.imgur.com/xK23DKf.png\n		Google.co.jp，https://www.google.co.jp/search?q=%s&ie=utf-8&safe=off, https://i.imgur.com/xK23DKf.png\n资料-Scholar\n	百科, http://baike.baidu.com/searchword/?word=%s&pic=1&sug=1&ie=utf-8\n	Scholar, http://scholar.google.com/scholar?hl=zh-CN&q=%s&btnG=&lr=, https://i.imgur.com/hJVSUU5.png\n	学术, http://xueshu.baidu.com/s?wd=%s\n	知乎, http://www.zhihu.com/search?q=%s\n	萌娘百科, http://zh.moegirl.org/index.php?search=%s\n	Google Book, https://www.google.com/search?q=%s&btnG=%E6%90%9C%E7%B4%A2%E5%9B%BE%E4%B9%A6&tbm=bks&tbo=1&hl=zh-CN&gws_rd=ssl, https://i.imgur.com/xK23DKf.png\n	WIKI--百科\n		ZWIKI, http://zh.wikipedia.org/w/index.php?search=%s&button=&title=Special%3ASearch, https://zh.wikipedia.org/static/favicon/wikipedia.ico\n		EWIKI, https://en.wikipedia.org/w/index.php?search=%s&button=&title=Special%3ASearch, https://zh.wikipedia.org/static/favicon/wikipedia.ico\n		JWIKI, http://ja.wikipedia.org/w/index.php?search=%s&button=&title=Special%3ASearch, https://zh.wikipedia.org/static/favicon/wikipedia.ico\n	开发--百科\n		stackoverflow, http://stackoverflow.com/search?q=%s, http://cdn.sstatic.net/stackoverflow/img/favicon.ico\n		MDN, https://developer.mozilla.org/en-US/search?q=%s，https://developer.cdn.mozilla.net/media/img/favicon32.png\n		github, https://github.com/search?q=%s\n		krugle, http://opensearch.krugle.org/document/search/#query=%s，http://opensearch.krugle.org/media/images/favicon.ico\n		npm, https://www.npmjs.org/search?q=%s, http://i.imgur.com/Ec0WrY8.png\n地图\n	百度, http://map.baidu.com/?newmap=1&ie=utf-8&s=s%26wd%3D%s\n	Google, https://www.google.com/maps/search/%s/\n	搜狗, http://map.sogou.com/#lq=%s\n	Bing, https://www.bing.com/ditu/?q=%s\n音乐\n	天天动听, http://www.dongting.com/#a=searchlist&q=%s\n	Music, http://music.baidu.com/search?key=%s&ie=utf-8&oe=utf-8\n	搜狗, http://mp3.sogou.com/music.so?query=%s\n	一听, http://so.1ting.com/all.do?q=%s\n	虾米, http://www.xiami.com/search?key=%s\n	piapro, http://piapro.jp/search/?view=audio&keyword=%s\n	Lyric, http://music.baidu.com/search/lrc?key=%s\n图片-Flickr\n	百度, http://image.baidu.com/search/index?tn=baiduimage&word=%s\n	Google, https://www.google.com.hk/search?tbm=isch&q=%s, https://i.imgur.com/xK23DKf.png\n	花瓣, http://huaban.com/search/?q=%s\n	Picsearch, http://cn.picsearch.com/index.cgi?q=%s\n	Flickr, http://www.flickr.com/search/?w=all&q=%s\n	Pixiv, http://www.pixiv.net/search.php?s_mode=s_tag&word=%s\n	dA, http://www.deviantart.com/?q=%s, UTF16\n	, http://img.jpg4.info/index.php?feed=%s, https://i.imgur.com/qkOEi8O.png\n下载-nyaa\n	dmhy, http://share.dmhy.org/topics/list?keyword=%s\n	kickass, https://kat.cr/usearch/%s/, http://i.imgur.com/uz2GaPN.png\n	BTSOW, http://www.bt2mag.com/search/%s, http://www.bt2mag.com/app/bts/View/img/btsow.com.favicon.ico\n	BTDigg, https://btdigg.org/search?q=%s\n	ed2000, https://www.baidu.com/s?wd=%s+site:ed2000.com&ie=utf-8, http://www.biaoqing.com/2000/favicon.ico\n	字幕--下载\n		subom, http://www.subom.net/search/%s\n		, http://subhd.com/search/%s, https://i.imgur.com/kC8RATC.png\n		射手网(伪), http://sub.makedie.me/sub/?searchword=%s\n	nyaa--dmhy\n		nyaa.se, http://www.nyaa.se/?page=search&term=%s, https://i292.photobucket.com/albums/mm30/ted423/favicon_zpsdxwbxo6t.png\n		nyaa.eu, http://www.nyaa.eu/?page=search&term=%s, https://i292.photobucket.com/albums/mm30/ted423/favicon_zpsdxwbxo6t.png\n		sukebei.nyaa.se, http://sukebei.nyaa.se/?page=search&cats=0_0&filter=0&term=%s, https://i292.photobucket.com/albums/mm30/ted423/favicon_zpsdxwbxo6t.png\n		sukebei.nyaa.eu, http://sukebei.nyaa.eu/?page=search&cats=0_0&filter=0&term=%s, https://i292.photobucket.com/albums/mm30/ted423/favicon_zpsdxwbxo6t.png\n网购\n	一淘, http://s.etao.com/search?q=%s\n	京东, http://search.jd.com/Search?keyword=%s&enc=utf-8\n	淘宝, http://s.taobao.com/search?q=%s, http://www.taobao.com/favicon.ico\n	亚马逊, http://www.amazon.cn/s/ref=nb_ss?keywords=%s\netc\n	AMO, https://addons.mozilla.org/zh-CN/firefox/search/?q=%s, https://addons.cdn.mozilla.net/favicon.ico\n	汉典, http://www.zdic.net/sousuo/?q=%s&tp=tp3\n',
+		ted423: '网页\n	百度, https://www.baidu.com/s?wd=%s&ie=utf-8\n	360, https://www.haosou.com/s?ie=utf-8&q=%s\n	bing, https://cn.bing.com/search?q=%s&pc=OPER\n	搜狗, https://www.sogou.com/web?query=%s\n	DuckDuckGo, https://duckduckgo.com/?q=%s\n	Yahoo--网页\n		Yahoo, https://search.yahoo.com/search?p=%s\n		Yahoo(tw), https://tw.search.yahoo.com/search?p=%s\n 		Yahoo.co.jp, https://search.yahoo.co.jp/search?p=%s&aq=-1&oq=&ei=UTF-8&fr=top_ga1_sa&x=wrt\n	Google--百度\n		Google.hk, https://www.google.com.hk/search?q=%s&ie=utf-8&safe=off, https://i.imgur.com/xK23DKf.png\n		Google.co.jp，https://www.google.co.jp/search?q=%s&ie=utf-8&safe=off, https://i.imgur.com/xK23DKf.png\n资料-Scholar\n	百科, http://baike.baidu.com/searchword/?word=%s&pic=1&sug=1&ie=utf-8, https://www.baidu.com/favicon.ico\n	Scholar, http://scholar.google.com/scholar?hl=zh-CN&q=%s&btnG=&lr=, https://i.imgur.com/hJVSUU5.png\n	学术, http://xueshu.baidu.com/s?wd=%s, https://www.baidu.com/favicon.ico\n	知乎, https://www.zhihu.com/search?q=%s\n	萌娘百科, http://zh.moegirl.org/index.php?search=%s, https://zh.moegirl.org/favicon.ico\n	Google Book, https://www.google.com/search?q=%s&btnG=%E6%90%9C%E7%B4%A2%E5%9B%BE%E4%B9%A6&tbm=bks&tbo=1&hl=zh-CN&gws_rd=ssl, https://i.imgur.com/xK23DKf.png\n	WIKI--百科\n		ZWIKI, http://zh.wikipedia.org/w/index.php?search=%s&button=&title=Special%3ASearch, https://zh.wikipedia.org/static/favicon/wikipedia.ico\n		EWIKI, https://en.wikipedia.org/w/index.php?search=%s&button=&title=Special%3ASearch, https://zh.wikipedia.org/static/favicon/wikipedia.ico\n		JWIKI, http://ja.wikipedia.org/w/index.php?search=%s&button=&title=Special%3ASearch, https://zh.wikipedia.org/static/favicon/wikipedia.ico\n	开发--百科\n		stackoverflow, https://stackoverflow.com/search?q=%s, https://cdn.sstatic.net/stackoverflow/img/favicon.ico\n		MDN, https://developer.mozilla.org/en-US/search?q=%s，https://developer.cdn.mozilla.net/media/img/favicon32.png\n		github, https://github.com/search?q=%s\n		krugle, http://opensearch.krugle.org/document/search/#query=%s，http://opensearch.krugle.org/media/images/favicon.ico\n		npm, https://www.npmjs.org/search?q=%s, https://i.imgur.com/Ec0WrY8.png\n地图\n	百度, http://map.baidu.com/?newmap=1&ie=utf-8&s=s%26wd%3D%s, https://www.baidu.com/favicon.ico\n	Google, https://www.google.com/maps/search/%s/, https://i.imgur.com/xK23DKf.png\n	搜狗, http://map.sogou.com/#lq=%s, https://www.sogou.com/favicon.ico\n	Bing, https://www.bing.com/ditu/?q=%s\n音乐\n	天天动听, http://www.dongting.com/#a=searchlist&q=%s\n	Music, http://music.baidu.com/search?key=%s&ie=utf-8&oe=utf-8, https://www.baidu.com/favicon.ico\n	搜狗, http://mp3.sogou.com/music.so?query=%s, https://www.sogou.com/favicon.ico\n	一听, http://so.1ting.com/all.do?q=%s\n	虾米, http://www.xiami.com/search?key=%s\n	piapro, https://piapro.jp/search/?view=audio&keyword=%s\n	Lyric, http://music.baidu.com/search/lrc?key=%s, https://www.baidu.com/favicon.ico\n图片-Flickr\n	百度, http://image.baidu.com/search/index?tn=baiduimage&word=%s, https://www.baidu.com/favicon.ico\n	Google, https://www.google.com.hk/search?tbm=isch&q=%s, https://i.imgur.com/xK23DKf.png\n	花瓣, https://huaban.com/search/?q=%s\n	Picsearch, http://cn.picsearch.com/index.cgi?q=%s\n	Flickr, https://www.flickr.com/search/?w=all&q=%s\n	Pixiv, http://www.pixiv.net/search.php?s_mode=s_tag&word=%s\n	dA, https://www.deviantart.com/browse/all/?q=%s, UTF16\n	, http://img.jpg4.info/index.php?feed=%s, https://i.imgur.com/qkOEi8O.png\n下载-nyaa\n	dmhy, https://share.dmhy.org/topics/list?keyword=%s\n	kickass, https://kat.cr/usearch/%s/, https://i.imgur.com/uz2GaPN.png\n	BTSOW, http://www.bt2mag.com/search/%s, http://www.bt2mag.com/app/bts/View/img/btsow.com.favicon.ico\n	BTDigg, https://btdigg.org/search?q=%s\n	xiaohx, http://www.xiaohx.net/search?key=%s, http://s.cdn.acgimg.com/xiaohx.com/images/favicon.ico\n	ed2000, https://www.baidu.com/s?wd=%s+site:ed2000.com&ie=utf-8, http://www.biaoqing.com/2000/favicon.ico\n	字幕--下载\n		subom, http://www.subom.net/search/%s\n		, http://subhd.com/search/%s, https://i.imgur.com/kC8RATC.png\n		射手网(伪), http://sub.makedie.me/sub/?searchword=%s\n	nyaa--dmhy\n		nyaa.eu, https://www.nyaa.eu/?page=search&term=%s, https://i292.photobucket.com/albums/mm30/ted423/favicon_zpsdxwbxo6t.png\n		nyaa.se, http://www.nyaa.se/?page=search&term=%s, https://i292.photobucket.com/albums/mm30/ted423/favicon_zpsdxwbxo6t.png\n		sukebei.nyaa.eu, https://sukebei.nyaa.eu/?page=search&cats=0_0&filter=0&term=%s, https://i292.photobucket.com/albums/mm30/ted423/favicon_zpsdxwbxo6t.png\n		sukebei.nyaa.se, http://sukebei.nyaa.se/?page=search&cats=0_0&filter=0&term=%s, https://i292.photobucket.com/albums/mm30/ted423/favicon_zpsdxwbxo6t.png\n网购\n	一淘, http://s.etao.com/search?q=%s\n	京东, https://search.jd.com/Search?keyword=%s&enc=utf-8\n	淘宝, https://s.taobao.com/search?q=%s\n	亚马逊, https://www.amazon.cn/s/ref=nb_ss?keywords=%s\netc\n	AMO, https://addons.mozilla.org/zh-CN/firefox/search/?q=%s, https://addons.cdn.mozilla.net/favicon.ico\n	汉典, http://www.zdic.net/sousuo/?q=%s&tp=tp3',
 	};
 
-	var MAIN_CSS = '#sej-container {\n box-shadow:0px 0px 3px #aaaaaa;\n opacity: 0.7;\n display:table;\n font-family: Comic Sans MS,"Microsoft YaHei",微软雅黑;\n position: relative;\n padding: 1px 0 1px 10px;\n line-height: 1.5;\n font-size: 13px;\n}\n\n\n#sej-expanded-category {\n font-weight: bold;\n}\n#sej-expanded-category::after {\n content:"：";\n}\n\n\n.sej-engine {\n line-height: 2;\n display: inline-block;\n margin: 0;\n border: none;\n padding: 0 4px;\n text-decoration: none;\n color: #120886 !important;\n transition: background-color 0.15s ease-in-out;\n}\na.sej-engine.only-icon {\n margin-left: 3px;\n margin-right: 3px;\n}\na.sej-engine.only-icon > span {\n display: none;\n}\na.sej-engine:link, a.sej-engine:visited{\n text-decoration: none;\n}\na.sej-engine:visited, a.sej-engine:visited *, a.sej-engine:active, a.sej-engine:active *{\n color: #120886 !important;\n}\n.sej-drop-list-trigger {\n\n}\n.sej-drop-list-trigger-shown {\n background-color: #DEEDFF !important;\n}\n.sej-drop-list-trigger::after {\n content: \'\';\n display: inline-block;\n margin: 0 0 0 3px;\n padding: 0;\n width: 0;\n height: 0;\n border-top: 6px solid #BCBCBC;\n border-right: 5px solid transparent;\n border-left: 5px solid transparent;\n border-bottom: 0px solid transparent;\n vertical-align: middle;\n transition: -webkit-transform 0.3s ease-in-out;\n transition: transform 0.3s ease-in-out;\n}\n.sej-drop-list-trigger-shown::after {\n -webkit-transform: rotate(180deg);\n transform: rotate(180deg);\n}\n.sej-engine:hover {\n background-color: #EAEAEA;\n}\n.sej-drop-list > .sej-engine {\n display: block;\n padding-top: 4px;\n padding-bottom: 4px;\n}\n.sej-drop-list > .sej-engine:hover {\n background-color: #DEEDFF;\n}\n\n.sej-engine-icon {\n display: inline-block;\n height: 16px;\n border: none;\n padding: 0;\n margin: 0 3px 0 0;\n vertical-align: text-bottom;\n}\n\n\n.sej-drop-list {\n position: absolute;\n display: none;\n opacity: 0.3;\n top: -10000px;\n left: 0;\n min-width: 120px;\n border: 1px solid #FAFAFA;\n padding: 5px 0;\n text-align: center;\n font-size: 13px;\n -moz-box-shadow: 2px 2px 5px #ccc;\n -webkit-box-shadow: 2px 2px 5px #ccc;\n box-shadow: 2px 2px 5px #ccc;\n background-color: white;\n transition: opacity 0.2s ease-in-out,\n top 0.2s ease-in-out;\n}';
+	var MAIN_CSS = '#sej-container {\n box-shadow:0px 0px 3px #aaaaaa;\n margin:0 auto;\n opacity: 0.7;\n display:table;\n font-family: Comic Sans MS,"Microsoft YaHei",微软雅黑;\n position: relative;\n padding: 1px 0 1px 10px;\n line-height: 1.5;\n font-size: 13px;\n}\n\n\n#sej-expanded-category {\n font-weight: bold;\n}\n#sej-expanded-category::after {\n content:"：";\n}\n\n\n.sej-engine {\n line-height: 2;\n display: inline-block;\n margin: 0;\n border: none;\n padding: 0 4px;\n text-decoration: none;\n color: #120886 !important;\n transition: background-color 0.15s ease-in-out;\n}\na.sej-engine.only-icon {\n margin-left: 3px;\n margin-right: 3px;\n}\na.sej-engine.only-icon > span {\n display: none;\n}\na.sej-engine:link, a.sej-engine:visited{\n text-decoration: none;\n}\na.sej-engine:visited, a.sej-engine:visited *, a.sej-engine:active, a.sej-engine:active *{\n color: #120886 !important;\n}\n.sej-drop-list-trigger {\n\n}\n.sej-drop-list-trigger-shown {\n background-color: #DEEDFF !important;\n}\n.sej-drop-list-trigger::after {\n content: \'\';\n display: inline-block;\n margin: 0 0 0 3px;\n padding: 0;\n width: 0;\n height: 0;\n border-top: 6px solid #BCBCBC;\n border-right: 5px solid transparent;\n border-left: 5px solid transparent;\n border-bottom: 0px solid transparent;\n vertical-align: middle;\n transition: -webkit-transform 0.3s ease-in-out;\n transition: transform 0.3s ease-in-out;\n}\n.sej-drop-list-trigger-shown::after {\n -webkit-transform: rotate(180deg);\n transform: rotate(180deg);\n}\n.sej-engine:hover {\n background-color: #EAEAEA;\n}\n.sej-drop-list > .sej-engine {\n display: block;\n padding-top: 4px;\n padding-bottom: 4px;\n}\n.sej-drop-list > .sej-engine:hover {\n background-color: #DEEDFF;\n}\n\n.sej-engine-icon {\n display: inline-block;\n height: 16px;\n border: none;\n padding: 0;\n margin: 0 3px 0 0;\n vertical-align: text-bottom;\n}\n\n\n.sej-drop-list {\n position: absolute;\n display: none;\n opacity: 0.3;\n top: -10000px;\n left: 0;\n min-width: 120px;\n border: 1px solid #FAFAFA;\n padding: 5px 0;\n text-align: center;\n font-size: 13px;\n -moz-box-shadow: 2px 2px 5px #ccc;\n -webkit-box-shadow: 2px 2px 5px #ccc;\n box-shadow: 2px 2px 5px #ccc;\n background-color: white;\n transition: opacity 0.2s ease-in-out,\n top 0.2s ease-in-out;\n}';
 
 
 	var categoryMap = {// rules 和 engineList 的对应
@@ -53,8 +53,8 @@
 		{
 			name: "google网页搜索",// 你要加载的网站的名字(方便自己查找)
 			enabled: true,// 是否启用
-			url: /^https?:\/\/(www|encrypted)\.google\.(?!co\.jp)[^\/]{2,9}\/(webhp|search|#|$|\?)(?!.*tbm=)/,// 在哪个网站上加载,正则.
-			mutationTitle: true,	// 是否要监视标题的变化
+			url: /^https?:\/\/(encrypted\.google\.com|www\.google\.(?!co\.jp)[^\/]{2,9})\/(webhp|search|#|$|\?)(?!.*tbm=)/,// 在哪个网站上加载,正则.
+			change: 'mutationTitle',	// mutationTitle监视标题的变化,runAtComplete在页面结束时执行
 			engineList: 'web',// 加载哪个类型的列表:
 			style: '\
 			border-bottom: 1px solid #E5E5E5;\
@@ -72,7 +72,6 @@
 			// 'beforeEnd' (作为给定元素的最后一个子元素) ;
 			// 'afterEnd'(插入到给定元素的后面);.
 			insertIntoDoc: {
-				keyword: 'css;input[name="q"]',
 				target: 'css;#top_nav',
 				where: 'beforeBegin',
 			},
@@ -81,8 +80,8 @@
 		{
 			name: "google.co.jp",
 			enabled: true,
-			url: /^https?:\/\/(www|encrypted)\.google\.co\.jp\/(webhp|search|#|$|\?)(?:.(?!&tbm=))*$/,
-			mutationTitle: true,
+			url: /^https?:\/\/www\.google\.co\.jp\/(webhp|search|#|$|\?)(?:.(?!&tbm=))*$/,
+			change: 'mutationTitle',
 			engineList: 'web',
 			style: '\
 			border-bottom: 1px solid #E5E5E5;\
@@ -93,15 +92,14 @@
 
 
 			insertIntoDoc: {
-				keyword: 'css;input[name="q"]',
 				target: 'css;#top_nav',
 				where: 'beforeBegin',
 			},
 		},
 		{
 			name: "baidu 网页搜索",
-			url: /^https?:\/\/www\.baidu\.com\/(?:s(?!.*tn=baidulocal)|baidu(?!.*tn=baidulocal)|)/,
-			mutationTitle: true,
+			url: /^https?:\/\/www\.baidu\.com\/(?:s(?!.*tn=baidulocal).*|baidu(?!.*tn=baidulocal).*|)&/,
+			change: 'mutationTitle',
 			enabled: true,
 			engineList: 'web',
 			style: '\
@@ -110,7 +108,6 @@
 			margin-left: 122px;\
 			',
 			insertIntoDoc: {
-				keyword: 'css;#kw',
 				target: 'css;#container',
 				where: 'beforeBegin',
 			},
@@ -126,7 +123,6 @@
 			margin-left: 122px;\
 			',
 			insertIntoDoc: {
-				keyword: 'css;input[name="wd"]',
 				target: 'css;table[bgcolor="#e6e6e6"]',
 				where: 'beforeBegin',
 			},
@@ -143,7 +139,6 @@
 			margin-left: 10px;\
 			',
 			insertIntoDoc: {
-				keyword: 'css;#sb_form_q',
 				target: 'css;#b_header',
 				where: 'beforeEnd',
 			},
@@ -160,7 +155,6 @@
 			margin-left: 20px;\
 			',
 			insertIntoDoc: {
-				keyword: 'css;#keyword',
 				target: 'css;#head',
 				where: 'afterEnd',
 			},
@@ -176,7 +170,6 @@
 			margin-left: 35px;\
 			",
 			insertIntoDoc: {
-				keyword: 'css;#upquery',
 				target: 'css;#wrapper',
 				where: 'beforeBegin',
 			},
@@ -188,12 +181,11 @@
 			engineList: '网页',
 			enabled: true,
 			style: "\
-			text-align:left;\
+			margin-left: 15px;\
 			border-top:1px solid #D4E9F7;\
 			border-bottom:1px solid #D4E9F7;\
 			",
 			insertIntoDoc: {
-				keyword: 'css;#yschsp',
 				target: 'css;#hd',
 				where: 'afterEnd'
 			},
@@ -211,7 +203,6 @@
 			border-bottom:1px solid #D4E9F7;\
 			",
 			insertIntoDoc: {
-				keyword: 'css;#yschsp',
 				target: 'css;#sticky-hd',
 				where: 'beforeEnd'
 			},
@@ -227,7 +218,6 @@
 			border:1px solid #D4E9F7;\
 			",
 			insertIntoDoc: {
-				keyword: 'css;#yschsp',
 				target: 'css;#ygma',
 				where: 'afterEnd'
 			},
@@ -242,7 +232,6 @@
 			border:1px solid #D4E9F7;\
 			",
 			insertIntoDoc: {
-				keyword: 'css;#search_form_input',
 				target: 'css;#zero_click_wrapper',
 				where: 'afterEnd'
 			},
@@ -261,7 +250,6 @@
 			',
 			insertIntoDoc: {
 				target: 'css;#gs_ab',
-				keyword: 'css;input[name="q"]',
 				where: 'beforeBegin'
 			}
 		},
@@ -274,7 +262,6 @@
 			border-bottom:1px solid #D9E1F7;\
 			',
 			insertIntoDoc: {
-				keyword: 'css;#kw',
 				target: 'css;#head',
 				where: 'afterEnd',
 			},
@@ -286,11 +273,9 @@
 			engineList: "资料",
 			enabled: true,
 			style: "\
-			margin:0 auto;\
 			z-index: 999999;\
 			",
 			insertIntoDoc: {
-				keyword: 'css;input#query',
 				target: 'css;.header-wrapper',
 				where: 'afterEnd',
 			},
@@ -316,7 +301,7 @@
 			name: "google book",
 			enabled: true,
 			url: /^https?:\/\/www\.google\.co.{1,3}\/search\?.*(&btnG=%E6)|(tbm=bks)/,
-			mutationTitle: true,
+			change: 'mutationTitle',
 			engineList: '资料',
 			style: '\
 			border-bottom: 1px solid #E5E5E5;\
@@ -324,10 +309,7 @@
 			width:100%;\
 			padding-left: 15px;\
 			',
-
-
 			insertIntoDoc: {
-				keyword: 'css;input[name="q"]',
 				target: 'css;#top_nav',
 				where: 'beforeBegin',
 			},
@@ -343,7 +325,6 @@
 			right:2%;\
 			width:90px;\
 			z-index:99;\
-			margin:0 auto;\
 			',
 			insertIntoDoc: {
 				keyword: function() {
@@ -372,7 +353,6 @@
 			margin-top:5px;\
 			',
 			insertIntoDoc: {
-				keyword: 'css;#searchInput',
 				target: 'css;#siteNotice',
 				where: 'beforeBegin'
 			}
@@ -446,7 +426,6 @@
 			margin-bottom: 8px;\
 			',
 			insertIntoDoc: {
-				keyword: 'css;input#kw',
 				target: 'css;#body',
 				where: 'beforeBegin'
 			},
@@ -462,9 +441,6 @@
 			white-space: nowrap;\
 			',
 			insertIntoDoc: {
-				keyword: function() {
-					return document.querySelector('#kw').value;
-				},
 				target: 'css;#body',
 				where: 'beforeBegin'
 			},
@@ -485,7 +461,6 @@
 			margin: 0 auto;\
 			',
 			insertIntoDoc: {
-				keyword: 'css;input#q',
 				target: 'css;.zu-top',
 				where: 'afterEnd'
 			},
@@ -500,7 +475,6 @@
 			border-bottom:1px solid #D9E1F7;\
 			',
 			insertIntoDoc: {
-				keyword: 'css;input#kw',
 				target: 'css;#hd',
 				where: 'afterEnd'
 			}
@@ -511,13 +485,11 @@
 			enabled: true,
 			engineList: "资料",
 			style: '\
-			margin:0 auto;\
 			padding-top:65px;\
 			border-top:1px solid #00000;\
 			border-bottom:1px solid #D9E1F7;\
 			',
 			insertIntoDoc: {
-				keyword: 'css;input#topsearch',
 				target: 'css;.nav',
 				where: 'beforeBegin'
 			}
@@ -534,7 +506,6 @@
 			border-bottom:1px solid #D9E1F7;\
 			',
 			insertIntoDoc: {
-				keyword: 'css;input#PoiSearch',
 				target: 'css;#searchWrapper',
 				where: 'beforeEnd'
 			}
@@ -548,7 +519,6 @@
 			margin-top: 3px;\
 			',
 			insertIntoDoc: {
-				keyword: 'css;input#searchboxinput',
 				target: 'css;#omnibox',
 				where: 'beforeEnd'
 			},
@@ -568,7 +538,6 @@
 			white-space:nowrap;\
 			',
 			insertIntoDoc: {
-				keyword: 'css;input#query',
 				target: 'css;#search_form',
 				where: 'afterEnd'
 			},
@@ -588,7 +557,6 @@
 			white-space:nowrap;\
 			',
 			insertIntoDoc: {
-				keyword: 'css;input#sb_form_q',
 				target: 'css;#sw_content',
 				where: 'beforeBegin'
 			}
@@ -616,11 +584,7 @@
 			url: /^https?:\/\/music\.baidu\.com\/search/,
 			enabled: true,
 			engineList: "music",
-			style: "\
-			margin:0 auto;\
-			",
 			insertIntoDoc: {
-				keyword: 'css;#ww',
 				target: 'css;.nav-wrapper',
 				where: 'beforeBegin'
 			}
@@ -634,7 +598,6 @@
 			margin:2px auto;\
 			",
 			insertIntoDoc: {
-				keyword: 'css;#search_input',
 				target: 'css;#search_result',
 				where: 'beforeBegin'
 			}
@@ -644,11 +607,7 @@
 			url: /^https?:\/\/mp3\.sogou\.com\/music\.so/,
 			enabled: true,
 			engineList: "music",
-			style: "\
-			margin:0 auto;\
-			",
 			insertIntoDoc: {
-				keyword: 'css;#queryinput',
 				target: 'css;#header_sogou',
 				where: 'afterEnd'
 			}
@@ -658,11 +617,7 @@
 			url: /^https?:\/\/so\.yinyuetai\.com\/mv\?/,
 			enabled: true,
 			engineList: "music",
-			style: "\
-			margin:0 auto;\
-			",
 			insertIntoDoc: {
-				keyword: 'css;input[name="keyword"]',
 				target: 'css;.search_title',
 				where: 'beforeBegin'
 			},
@@ -673,11 +628,9 @@
 			enabled: true,
 			engineList: "music",
 			style: "\
-			margin:0 auto;\
 			width: 960px;\
 			",
 			insertIntoDoc: {
-				keyword: 'css;#keyword',
 				target: 'css;.nav',
 				where: 'beforeBegin'
 			}
@@ -688,13 +641,11 @@
 			enabled: true,
 			engineList: "music",
 			style: "\
-			margin:0 auto;\
 			word-break:keep-all;\
 			white-space:nowrap;\
 			background-color:#E6E6E6;\
 			",
 			insertIntoDoc: {
-				keyword: 'css;#sb',
 				target: 'css;head',
 				where: 'beforeBegin'
 			}
@@ -709,7 +660,6 @@
 			margin-right: 205px;\
 			",
 			insertIntoDoc: {
-				keyword: 'css;#search_text',
 				target: 'css;.more_cols_left_inner',
 				where: 'beforeBegin'
 			}
@@ -722,11 +672,9 @@
 			enabled: true,
 			engineList: "image",
 			style: '\
-			border-top:1px solid #ccc;\
-			border-bottom:1px solid #ccc;\
+			margin-left:0px;\
 			',
 			insertIntoDoc: {
-				keyword: 'css;input[name=q]',
 				target: 'css;#top_nav',
 				where: 'beforeBegin'
 			}
@@ -740,14 +688,13 @@
 			margin-left:40px;\
 			',
 			insertIntoDoc: {
-				keyword: 'css;input#kw',
 				target: 'css;#search',
 				where: 'afterEnd'
 			}
 		},
 		{
 			name: "360图片",
-			url: /^https?:\/\/\image\.so\.com\/i\?/,
+			url: /^https?:\/\/\image\.haosou\.com\/i\?/,
 			enabled: true,
 			engineList: "image",
 			style: '\
@@ -758,7 +705,6 @@
 			text-align:left;\
 			',
 			insertIntoDoc: {
-				keyword: 'css;input#search_kw',
 				target: 'css;#searchBox',
 				where: 'afterBegin'
 			},
@@ -777,13 +723,9 @@
 			border-collapse:separate;\
 			',
 			insertIntoDoc: {
-				keyword: 'css;#sb_form_q',
 				target: 'css;#rfPane',
 				where: 'beforeEnd'
 			},
-			etc: function() {
-				document.getElementById("rf_hold").style.height = '120px';
-			}
 		},
 		{
 			name: "搜狗图片",
@@ -791,19 +733,14 @@
 			engineList: "image",
 			enabled: true,
 			style: "\
-			top:-9px;\
-			border-top:1px solid #BFBDEA;\
-			border-bottom:1px solid #BFBDEA;\
+			margin-top: 10px;\
+			margin-left:35px;\
 			",
 			insertIntoDoc: {
-				keyword: 'css;#form_querytext',
 				target: 'css;.fix_area',
 				where: 'beforeEnd'
 			},
-			etc: function() {
-				document.getElementsByClassName("hd_fix")[0].style.height = '130px';
-				document.getElementsByClassName("hd_fix")[0].nextElementSibling.style.height = '130px';
-			}
+			stylish:'#hdFix{height:130px !important;}',
 		},
 		{
 			name: "有道图片",
@@ -813,7 +750,6 @@
 			style: "\
 			",
 			insertIntoDoc: {
-				keyword: 'css;#query',
 				target: 'css;#w',
 				where: 'beforeBegin'
 			}
@@ -829,7 +765,6 @@
 			text-align:center;\
 			",
 			insertIntoDoc: {
-				keyword: 'css;#query',
 				target: 'css;#header',
 				where: 'beforeEnd'
 			},
@@ -842,19 +777,14 @@
 			enabled: true,
 			style: "\
 			position:fixed;\
-			text-align:center;\
-			top:65px;\
+			top:50px;\
 			left: 50%;\
-			transform: translate(-50%, -50%);\
-			width:auto;\
+			transform: translate(-50%,0);\
 			z-index:1999;\
-			background-color:#FFFFFF;\
-			border-top:1px solid #EBF1FF;\
-			border-bottom:1px solid #EBF1FF;\
 			",
 			insertIntoDoc: {
 				keyword: function() {
-					var input = document.getElementById("gn-search-field");
+					var input = document.querySelector("input[type='text'][value]");
 					if (input) return input.value;
 					else {
 						var m = location.search.match(/q=([^&]+)/i);
@@ -863,13 +793,6 @@
 				},
 				target: 'css;body',
 				where: 'beforeBegin'
-			},
-			endFix: function() {
-				var container = document.getElementById('sej-container');
-				if (container) {
-					var height = (container.clientHeight + 3);
-					document.getElementsByTagName("section")[0].style.setProperty("top", height + "px", "important");
-				}
 			}
 		},
 		{
@@ -892,7 +815,6 @@
 			engineList: "image",
 			enabled: true,
 			style: "\
-			margin: 0 auto;\
 			box-shadow:none;\
 			",
 			insertIntoDoc: {
@@ -903,14 +825,13 @@
 		},
 		{
 			name: "deviantart",
-			url: /^http:\/\/www\.deviantart\.com\/browse\/all\//,
+			url: /^https?:\/\/www\.deviantart\.com\/browse\/all\//,
 			engineList: "image",
 			enabled: true,
 			style: "\
 			margin-bottom:10px;\
 			",
 			insertIntoDoc: {
-				keyword: 'css;#searchInput',
 				target: 'css;.browse-top-bar',
 				where: 'afterEnd'
 			}
@@ -921,26 +842,20 @@
 			engineList: "image",
 			enabled: true,
 			insertIntoDoc: {
-				keyword: 'css;input[name="feed"]',
-				target: 'css;div[align="center"]',
+				target: 'css;form[name="formMAIN"]',
 				where: 'beforeEnd'
 			}
 		},
 
 		// 下载
 		{
-			name: "我爱p2p",
-			url: /^http:\/\/(?:oabt|www\.byhh)\.org\/\?topic_title=/,
+			name: "cili008",
+			url: /^http:\/\/cili008\.com\/\?topic_title/,
 			engineList: "下载",
 			enabled: true,
-			style: "\
-			margin: 0 auto;\
-			padding-left: 16px;\
-			",
 			insertIntoDoc: {
-				keyword: 'css;#username',
-				target: 'css;#seamain',
-				where: 'beforeEnd',
+				target: 'css;.header-box',
+				where: 'afterEnd',
 			},
 		},
 		{
@@ -948,9 +863,6 @@
 			url: /^https?:\/\/share\.dmhy\.org\/topics\/list/,
 			engineList: "download",
 			enabled: true,
-			style: "\
-			margin:0 auto;\
-			",
 			insertIntoDoc: {
 				keyword: function(){var key=document.querySelector('#keyword').value;if(key)return key;else key=document.title.split(/「|」/)[1];return key;},
 				target: 'css;.quick_search',
@@ -962,21 +874,17 @@
 			url: /^https?:\/\/kat\.cr\/usearch\//,
 			engineList: "download",
 			enabled: true,
-			style: "\
-			",
 			insertIntoDoc: {
-				keyword: 'css;#contentSearch',
 				target: 'css;#menu',
 				where: 'afterEnd'
 			},
 		},
 		{
-			name: "nyaa.se",
-			url: /^https?:\/\/www\.nyaa\.se\/\?page=search/,
+			name: "nyaa",
+			url: /^https?:\/\/www\.nyaa\.(se|eu)\/\?page=search/,
 			engineList: "download",
 			enabled: true,
 			style: "\
-			margin:0 auto;\
 			top:44px;\
 			position: fixed;\
 			left: 50%;\
@@ -984,19 +892,17 @@
 			white-space: nowrap;\
 			",
 			insertIntoDoc: {
-				keyword: 'css;.inputsearchterm',
 				target: 'css;#topbar',
 				where: 'afterEnd'
 			},
 			stylish:'#main{padding-top:70px;}',
 		},
 		{
-			name: "nyaa.eu",
-			url: /^https?:\/\/www\.nyaa\.eu\/\?page=search/,
+			name: "sukebei.nyaa",
+			url: /^https?:\/\/sukebei\.nyaa\.(se|eu)\/\?page=search/,
 			engineList: "download",
 			enabled: true,
 			style: "\
-			margin:0 auto;\
 			top:44px;\
 			position: fixed;\
 			left: 50%;\
@@ -1004,51 +910,20 @@
 			white-space: nowrap;\
 			",
 			insertIntoDoc: {
-				keyword: 'css;.inputsearchterm',
 				target: 'css;#topbar',
 				where: 'afterEnd'
 			},
 			stylish:'#main{padding-top:70px;}',
 		},
 		{
-			name: "sukebei.nyaa.se",
-			url: /^https?:\/\/sukebei\.nyaa\.se\/\?page=search/,
+			name: "xiaohx",
+			url: /^https?:\/\/www\.xiaohx\.net\/search\?/,
 			engineList: "download",
 			enabled: true,
-			style: "\
-			margin:0 auto;\
-			top:44px;\
-			position: fixed;\
-			left: 50%;\
-			transform: translate(-50%, 0px);\
-			white-space: nowrap;\
-			",
 			insertIntoDoc: {
-				keyword: 'css;.inputsearchterm',
-				target: 'css;#topbar',
+				target: 'css;.header_box',
 				where: 'afterEnd'
 			},
-			stylish:'#main{padding-top:70px;}',
-		},
-		{
-			name: "sukebei.nyaa.eu",
-			url: /^https?:\/\/sukebei\.nyaa\.eu\/\?page=search/,
-			engineList: "download",
-			enabled: true,
-			style: "\
-			margin:0 auto;\
-			top:44px;\
-			position: fixed;\
-			left: 50%;\
-			transform: translate(-50%, 0px);\
-			white-space: nowrap;\
-			",
-			insertIntoDoc: {
-				keyword: 'css;.inputsearchterm',
-				target: 'css;#topbar',
-				where: 'afterEnd'
-			},
-			stylish:'#main{padding-top:70px;}',
 		},
 		{
 			name: "ed2000",
@@ -1056,10 +931,12 @@
 			engineList: "download",
 			enabled: true,
 			style: "\
-			border: 1px solid #E5E5E5;\
+			word-break:keep-all;\
+			white-space:nowrap;\
+			left: 50%;\
+    		transform: translate(-50%, 0);\
 			",
 			insertIntoDoc: {
-				keyword: 'css;input[name=SearchWord]',
 				target: 'css;.topsearch',
 				where: 'afterEnd'
 			},
@@ -1075,7 +952,6 @@
 			margin:10px auto;\
 			',
 			insertIntoDoc: {
-				keyword: 'css;.form-inline > div:nth-child(1) > input:nth-child(1)',
 				target: 'css;.fullsearch-form.search',
 				where: 'afterEnd'
 			},
@@ -1085,13 +961,11 @@
 		},
 		{
 			name: "torrentkitty",
-			url: /^https?:\/\/(www\.)?torrentkitty\.(com|org)\/search\//,
+			url: /^https?:\/\/(www\.)?torrentkitty\.(net|org)\/search\//,
 			enabled: true,
 			engineList: "download",
 			style: '\
-			border-top:1px solid #FFFFFF;\
-			border-bottom:1px solid #FFFFFF;\
-			margin:0 auto;\
+			background-color:#FFFFFF;\
 			margin-top:50px;\
 			',
 			insertIntoDoc: {
@@ -1107,13 +981,7 @@
 			url: /^https?:\/\/btdigg\.org\/search\?/,
 			enabled: true,
 			engineList: "download",
-			style: '\
-			margin:0 auto;\
-			border-top:1px solid #D4E9F7;\
-			border-bottom:1px solid #D4E9F7;\
-			',
 			insertIntoDoc: {
-				keyword: 'css;input#searchq',
 				target: 'css;.pager',
 				where: 'beforeBegin'
 			}
@@ -1125,11 +993,7 @@
 			url: /^https?:\/\/www\.subom\.net\/search/,
 			engineList: "download",
 			enabled: true,
-			style: "\
-			margin: 0px auto;\
-			",
 			insertIntoDoc: {
-				keyword: 'css;#search_box',
 				target: 'css;#container',
 				where: 'afterBegin'
 			}
@@ -1140,27 +1004,19 @@
 			engineList: "download",
 			enabled: true,
 			style: "\
-			text-align:center;\
-			display:block;\
 			top: -10px;\
 			",
 			insertIntoDoc: {
-				keyword: 'css;#sn',
 				target: 'css;.container.list',
 				where: 'beforeBegin'
 			}
 		},
 		{
 			name: "射手网(伪)",
-			url: /^https?:\/\/sub\.makedie\.me\/sub\/\?searchword/,
+			url: /^https?:\/\/sub\.makedie\.me\/sub\/\?s/,
 			engineList: "download",
 			enabled: true,
-			style: "\
-			text-align:center;\
-			margin:0 auto;\
-			",
 			insertIntoDoc: {
-				keyword: 'css;b',
 				target: 'css;#site_header',
 				where: 'afterEnd'
 			}
@@ -1171,15 +1027,7 @@
 			url: /^https?:\/\/s8?\.etao\.com\/search/,
 			enabled: true,
 			engineList: "shopping",
-			style: "\
-			border-top:1px solid #D4E9F7;\
-			border-bottom:1px solid #D4E9F7;\
-			margin:0 auto;\
-			word-break:keep-all;\
-			white-space:nowrap;\
-			",
 			insertIntoDoc: {
-				keyword: 'css;#J_searchIpt',
 				target: 'css;#etao-header-bd',
 				where: 'beforeBegin'
 			}
@@ -1189,39 +1037,22 @@
 			url: /^https?:\/\/search\.jd\.com\/(S|s)earch\?/i,
 			enabled: true,
 			engineList: "shopping",
-			style: "\
-			margin:0 auto;\
-			border-bottom:1px solid #E5E5E5;\
-			border-top:1px solid #E5E5E5;\
-			margin-bottom:3px;\
-			",
 			insertIntoDoc: {
-				keyword: 'css;#key',
 				target: 'css;div[id*="nav-201"]',
 				where: 'beforeBegin'
 			}
 		},
 		{
 			name: "淘宝搜索",
-			url: /^https?:\/\/s\.taobao\.com\/search/,
+			url: /^https?:\/\/(s|haosou\.ai)\.taobao\.com\/search/,
 			enabled: true,
+			change:'runAtComplete',
 			engineList: "shopping",
 			style: "\
 			width:100%;\
 			text-align:center;\
 			",
 			insertIntoDoc: {
-				keyword: function() {
-					var input = document.querySelector('#q');
-					if (input) {
-						return input.value;
-					} else {
-						var m = location.search.match(/q=([^&]+)/);
-						if (m) {
-							return true;
-						}
-					}
-				},
 				target: 'css;body',
 				where: 'beforeBegin',
 			},
@@ -1236,23 +1067,20 @@
 			background-color:#FFFFFF;\
 			",
 			insertIntoDoc: {
-				keyword: 'css;#q_show',
 				target: 'css;.ic_header',
 				where: 'beforeEnd'
 			}
 		},
 		{
 			name: "苏宁",
-			url: /^https?:\/\/(search)\.suning\.com\//,
+			url: /^https?:\/\/search\.suning\.com\//,
 			enabled: true,
 			engineList: "shopping",
 			style: "\
-			border-top:1px solid #E5E5E5;\
-			margin:0 auto;\
+			border-bottom:1px solid #E5E5E5;\
 			",
 			insertIntoDoc: {
-				keyword: 'css;#searchKeywords',
-				target: 'css;.g-header',
+				target: 'css;.ng-header',
 				where: 'afterEnd'
 			}
 		},
@@ -1262,15 +1090,12 @@
 			enabled: true,
 			engineList: "shopping",
 			style: "\
-			margin:0 auto;\
-			border-bottom:1px solid #E5E5E5;\
 			border-top:1px solid #E5E5E5;\
 			margin-bottom:3px;\
 			",
 			insertIntoDoc: {
-				keyword: 'css;#mq',
-				target: 'css;#mallNav',
-				where: 'beforeBegin'
+				target: 'css;#header',
+				where: 'afterEnd'
 			}
 		},
 		{
@@ -1279,10 +1104,10 @@
 			enabled: true,
 			engineList: "shopping",
 			style: "\
-			border-top:1px solid #E5E5E5;\
+			width: 100%;\
+    		text-align: center;\
 			",
 			insertIntoDoc: {
-				keyword: 'css;#twotabsearchtextbox',
 				target: 'css;#navbar',
 				where: 'beforeEnd'
 			}
@@ -1292,84 +1117,29 @@
 			url: /^https?:\/\/search\.dangdang\.com\/\?key/,
 			enabled: true,
 			engineList: "shopping",
-			style: "\
-			margin:0 auto;\
-			border-bottom:1px solid #E5E5E5;\
-			border-top:1px solid #E5E5E5;\
-			margin-bottom:3px;\
-			",
 			insertIntoDoc: {
-				keyword: 'css;#key_S',
 				target: 'css;#bd',
 				where: 'beforeBegin'
 			}
 		},
 		{
 			name: "拍拍",
-			url: /^https?:\/\/s\.paipai\.com\/[a-z]/,
+			url: /^https?:\/\/(www|duobao)\.paipai\.com\/(list)?\?/,
 			enabled: true,
 			engineList: "shopping",
-			style: "\
-			text-align:left;\
-			",
 			insertIntoDoc: {
-				keyword: 'css;#KeyWord',
-				target: 'css;.mod_s',
-				where: 'beforeEnd'
-			}
-		},
-		{
-			name: "QQ网购",
-			url: /^https?:\/\/se?\.wanggou\.com\/[a-z]/,
-			enabled: true,
-			engineList: "shopping",
-			style: "\
-			margin:0 auto;\
-			background-color:#C8C8C8;\
-			border-bottom:1px solid #E5E5E5;\
-			border-top:1px solid #E5E5E5;\
-			margin-bottom:3px;\
-			",
-			insertIntoDoc: {
-				keyword: 'css;#KeyWord',
-				target: 'css;.wg_header',
+				keyword: 'css;input[type="text"]',
+				target: 'css;#toTop',
 				where: 'afterEnd'
 			}
 		},
-		{
-			name: "360购物",
-			url: /^https?:\/\/s\.mall\.360\.cn\/search/,
-			enabled: true,
-			engineList: "shopping",
-			style: "\
-			margin:0 auto;\
-			word-break:keep-all;\
-			white-space:nowrap;\
-			border-bottom:1px solid #E5E5E5;\
-			border-top:1px solid #E5E5E5;\
-			",
-			insertIntoDoc: {
-				keyword: 'css;#mall_keyword',
-				target: 'css;.header',
-				where: 'afterEnd'
-			}
-		},
-
 		// 词典
 		{
 			name: "汉典",
 			url: /^https?:\/\/www\.zdic\.net\/sousuo/,
 			enabled: true,
 			engineList: "etc",
-			style: "\
-			word-break:keep-all;\
-			white-space:nowrap;\
-			margin:0 auto;\
-			border-bottom:1px solid #D4E9F7;\
-			border-top:1px solid #D4E9F7;\
-			",
 			insertIntoDoc: {
-				keyword: 'css;#q',
 				target: 'css;.secpan',
 				where: 'afterEnd'
 			}
@@ -1432,12 +1202,6 @@
 		lines = lines.substring(lines.indexOf("/*") + 3, lines.lastIndexOf("*/"));
 		return lines;
 	}
-	//xpath 获取单个元素
-	/*function getElementByXPath(xPath, contextNode, doc) {
-		doc = doc || document;
-		contextNode = contextNode || doc;
-		return doc.evaluate(xPath, contextNode, null, 9, null).singleNodeValue;
-	};*/
 
 	// 事件支持检测.
 	// 比如 eventSupported('fullscreenchange', document);
@@ -1756,7 +1520,6 @@
 		exports.parseUri = parseUri;
 	}
 
-	
 	function DropDownList(a, list) {// 列表对象
 		this.a = a;
 		this.list = list;
@@ -1912,7 +1675,7 @@
 			var engineList = allEngineList[categoryStr];
 			engineList.forEach(function (engine) {
 				if (matchedRule.engineList && !isMatched && toRE(matchedRule.url).test(engine.url)) { // 去掉跳转到当前引擎的引擎
-					isMatched = true;  // 去除当前搜索只匹配一次
+					isMatched = false;  // 去除当前搜索只匹配一次
 					return;
 				}
 
@@ -2097,7 +1860,7 @@
 					else if (encoding == 'utf16') value = toUTF16(value);
 
 				target.href = target.getAttribute('url').replace(/%s/g, value); // 替换“全部”关键词
-			} 
+			}
 			else{ // 提交方式为 POST
 				var inputs = target.getElementsByTagName('input');
 				for (var i = 0; i < inputs.length; i++) inputs[i].value = inputs[i].value.replace(/%s/g, value); // // 替换“全部”关键词
@@ -2110,13 +1873,19 @@
 			// 判断插入位置和输入框是否存在
 			var iTarget = getElement(matchedRule.insertIntoDoc.target);
 			var iInput;
-			if (typeof matchedRule.insertIntoDoc.keyword == 'function') {
-				iInput = matchedRule.insertIntoDoc.keyword;
-				if (!iInput()) {
-					return;
+			if(matchedRule.insertIntoDoc.keyword){
+				if (typeof matchedRule.insertIntoDoc.keyword == 'function') {
+					iInput = matchedRule.insertIntoDoc.keyword;
+					if (!iInput()) {
+						return;
+					}
+				} else {
+					iInput = getElement(matchedRule.insertIntoDoc.keyword);
 				}
-			} else {
-				iInput = getElement(matchedRule.insertIntoDoc.keyword);
+			}
+			else{
+				iInput=document.querySelector('input[type="search"],input[name][value]:not([type]),input[type="text"][value][name]');
+				if(!iInput){iInput=document.querySelector('input[autocomplete="off"]:not([type]),input[type="text"]');}
 			}
 			debug('插入的位置为 %o', iTarget);
 			debug('匹配的输入框为 %o', iInput);
@@ -2173,18 +1942,28 @@
 
 	if (!matchedRule || !matchedRule.enabled) return;
 
-	run();
-
-	if (matchedRule.mutationTitle) {
-		debug('添加标题节点监视器: title');
-
-		var watch = document.querySelector('title');
-		var observer = new MutationObserver(function(mutations){
-			debug('标题发生了变化', document.title);
+	if (matchedRule.change) {
+		if(matchedRule.change=="mutationTitle"){
 			run();
-		});
-		observer.observe(watch, {childList: true, subtree: true, characterData: true});
+			debug('添加标题节点监视器: title');
+
+			var watch = document.querySelector('title');
+			var observer = new MutationObserver(function(mutations){
+				debug('标题发生了变化', document.title);
+				run();
+			});
+			observer.observe(watch, {childList: true, subtree: true, characterData: true});
+		}
+		if(matchedRule.change=="runAtComplete"){
+			document.onreadystatechange = function() {
+				debug('onreadystatechange');
+				if (document.readyState == "complete"){
+					run();
+				}
+			}
+		}
 	}
+	else run();
 
 
 })()
