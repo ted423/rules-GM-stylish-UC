@@ -1,12 +1,13 @@
 // ==UserScript==
 // @name        tsdm no Popups
 // @author         Ted423
-// @description 天使动漫论坛签到防弹窗处理
+// @description 天使动漫论坛签到点击表情防弹窗处理
 // @namespace   https://greasyfork.org/users/85
 // @include     http://www.tsdm.net/*
+// @include     http://www.tsdm.me/*
 // @downloadURL https://greasyfork.org/scripts/2393/code.user.js
 // @updateURL https://greasyfork.org/scripts/2393/code.meta.js
-// @version     1.4
+// @version     1.5
 // @grant       none
 // ==/UserScript==
 var temp=document.getElementById("inner_stat");

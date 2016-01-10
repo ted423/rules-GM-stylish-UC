@@ -1,0 +1,10 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("www.36dm.com") {
+  .box>.clear{width: 100% !important;}
+  .table_fixed{table-layout:auto;}
+}
+
+@-moz-document domain("www.acgsou.com") {
+  .table_fixed{table-layout:auto;}
+}

@@ -1,0 +1,101 @@
+网页--search
+	Google
+		Google, https://www.google.com/search?q=%s&safe=off, fa-google
+		Google.hk, https://www.google.com.hk/search?q=%s&safe=off, fa-google
+		Google.co.jp，https://www.google.co.jp/search?q=%s&safe=off, fa-google
+	百度
+		百度, https://www.baidu.com/s?wd=%s, fa-paw
+		简洁搜索, https://www.baidu.com/s?wd=firefox&ie=utf-8&tn=baidulocal, fa-paw
+	360, https://www.so.com/s?q=%s
+	Bing
+		Bing(CN), https://cn.bing.com/search?q=%s, fa-bing
+		Bing(Global), https://global.bing.com/search?q=%s&setmkt=en-us&setlang=en-us, fa-bing
+	搜狗, https://www.sogou.com/web?query=%s
+	DuckDuckGo, https://duckduckgo.com/?q=%s, fa-duckduckgo
+	Yahoo
+		Yahoo, https://search.yahoo.com/search?p=%s, fa-yahoo
+		Yahoo(tw), https://tw.search.yahoo.com/search?p=%s, fa-yahoo
+ 		Yahoo.co.jp, https://search.yahoo.co.jp/search?p=%s&aq=-1&x=wrt, fa-yahoo
+资料--book
+	WIKI
+		ZWIKI, http://zh.wikipedia.org/w/index.php?search=%s&button=&title=Special%3ASearch, fa-wikipedia-w
+		EWIKI, https://en.wikipedia.org/w/index.php?search=%s&button=&title=Special%3ASearch, fa-wikipedia-w
+		JWIKI, http://ja.wikipedia.org/w/index.php?search=%s&button=&title=Special%3ASearch, fa-wikipedia-w
+	百科, http://baike.baidu.com/searchword/?word=%s, fa-paw
+	Internet Archive, https://archive.org/search.php?query=%s
+	Scholar, http://scholar.google.com/scholar?hl=zh-CN&q=%s&btnG=&lr=, fa-scholar
+	学术, http://xueshu.baidu.com/s?wd=%s, fa-paw
+	知乎, https://www.zhihu.com/search?q=%s, fa-zhihu
+	萌娘百科, http://zh.moegirl.org/index.php?search=%s, https://zh.moegirl.org/favicon.ico
+	Book, https://www.google.com/search?q=%s&btnG=%E6%90%9C%E7%B4%A2%E5%9B%BE%E4%B9%A6&tbm=bks&tbo=1&hl=zh-CN&gws_rd=ssl, fa-google
+	开发
+		stackoverflow, https://stackoverflow.com/search?q=%s, fa-stack-overflow
+		MDN, https://developer.mozilla.org/en-US/search?q=%s，fa-MDN
+		github, https://github.com/search?q=%s
+		krugle, http://opensearch.krugle.org/document/search/#query=%s，http://opensearch.krugle.org/media/images/favicon.ico
+		npm, https://www.npmjs.org/search?q=%s, https://i.imgur.com/Ec0WrY8.png
+地图--map
+	百度, http://map.baidu.com/?newmap=1&s=s%26wd%3D%s, fa-paw
+	Google, https://www.google.com/maps/search/%s/, fa-google
+	Bing, https://www.bing.com/ditu/?q=%s, fa-bing
+	搜狗, http://map.sogou.com/#lq=%s, https://www.sogou.com/favicon.ico
+音乐--music
+	Music, http://music.baidu.com/search?key=%s&ie=utf-8&oe=utf-8, fa-paw
+	搜狗, http://mp3.sogou.com/music.so?query=%s, https://www.sogou.com/favicon.ico
+	一听, http://so.1ting.com/all.do?q=%s
+	虾米, http://www.xiami.com/search?key=%s, fa-xiami
+	piapro, https://piapro.jp/search/?view=audio&keyword=%s
+	Lyric, http://music.baidu.com/search/lrc?key=%s, fa-paw
+图片--image
+	百度, http://image.baidu.com/search/index?tn=baiduimage&word=%s, fa-paw
+	Google, https://www.google.com.hk/search?tbm=isch&q=%s, fa-google
+	花瓣, https://huaban.com/search/?q=%s, https://huaban.com/img/touch-icon-iphone.png
+	Picsearch, http://cn.picsearch.com/index.cgi?q=%s
+	Flickr, https://www.flickr.com/search/?w=all&q=%s, fa-flickr
+	Pixiv, http://www.pixiv.net/search.php?s_mode=s_tag&word=%s
+	dA, https://www.deviantart.com/browse/all/?q=%s, fa-deviantart
+下载--download
+	二次元
+		dmhy, https://share.dmhy.org/topics/list?keyword=%s
+		Tokyotosho, https://www.tokyotosho.info/search.php?terms=%s
+		Mikan, http://mikanani.me/Home/Search?searchstr=%s
+		＊MioBT＊, http://www.miobt.com/search.php?keyword=%s, http://www.miobt.com/images/favicon/miobt.ico
+		ACG搜，http://www.acgsou.com/search.php?keyword=%s, fa-download
+		简单动漫, http://www.36dm.com/search.php?keyword=%s, fa-download
+		KOTOMI RSS, https://moe4sale.in/?kw=%s, fa-download
+		ACG狗狗, http://bt.acg.gg/search.php?keyword=%s
+		ACG.RIP, https://acg.rip/?term=%s
+	nyaa
+		nyaa.eu, https://www.nyaa.eu/?page=search&term=%s, https://i292.photobucket.com/albums/mm30/ted423/favicon_zpsdxwbxo6t.png
+		nyaa.se, http://www.nyaa.se/?page=search&term=%s, https://i292.photobucket.com/albums/mm30/ted423/favicon_zpsdxwbxo6t.png
+		sukebei(eu), https://sukebei.nyaa.eu/?page=search&cats=0_0&filter=0&term=%s, https://i292.photobucket.com/albums/mm30/ted423/favicon_zpsdxwbxo6t.png
+		sukebei(se), http://sukebei.nyaa.se/?page=search&cats=0_0&filter=0&term=%s, https://i292.photobucket.com/albums/mm30/ted423/favicon_zpsdxwbxo6t.png
+	BTSOW, https://btso.pw/search/%s, https://btso.pw/app/bts/View/img/btsow.com.favicon.ico
+	种子狗, http://www.zhongzigou.net/so/%s/, http://www.zhongzigou.net/app/bts/View/img/favicon.ico
+	影视
+		kat.how, https://kat.how/usearch/%s/, https://kat.how/favicon.ico
+		thepiratebay, https://thepiratebay.org/search/%s
+		ExtraTorrent, http://extratorrent.cc/search/?search=%s
+		isoHunt, https://isohunt.to/torrents/?ihq=%s
+		1337x, http://1337x.to/search/%s/1/
+		RARBG, https://rarbg.to/torrents.php?search=%s
+	GGBases, http://www.ggbases.com/search.so?title=%s, fa-g
+	TK, https://www.torrentkitty.tv/search/%s
+	ed2k
+		ed2kers, https://www.google.com/search?q=%s+site%3Aed2kers.com, http://www.ed2kers.com/favicon.ico
+		xiaohx, http://www.xiaohx.net/search?key=%s, http://s.cdn.acgimg.com/xiaohx.com/images/favicon.ico
+		逛电驴, http://verycd.gdajie.com/find.htm?keyword=%s
+	字幕
+		subom, http://www.subom.net/search/%s
+		sub HD, http://subhd.com/search/%s, fa-subhd
+		射手网(伪), http://assrt.net/sub/?searchword=%s
+网购--cart-arrow-down
+	一淘, http://s.etao.com/search?q=%s
+	京东, https://search.jd.com/Search?keyword=%s&enc=utf-8, fa-jd
+	淘宝, https://s.taobao.com/search?q=%s
+	亚马逊, https://www.amazon.cn/s/ref=nb_ss?keywords=%s
+etc--plus-square
+	邮编库, http://www.youbianku.com/%s
+	AMO, https://addons.mozilla.org/zh-CN/firefox/search/?q=%s, fa-firefox
+	汉典(字), http://www.zdic.net/sousuo/?q=%s&tp=tp1
+	汉典(词), http://www.zdic.net/sousuo/?q=%s&tp=tp3

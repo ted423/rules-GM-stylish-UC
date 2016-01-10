@@ -1,7 +1,7 @@
 // ==UserScript==
 // @id             baidupan@ywzhaiqi@gmail.com
 // @name           BaiduPanDownloadHelper modify by ted423
-// @version        2015.12.29.0
+// @version        2016.12.13.0
 // @namespace      https://github.com/ywzhaiqi
 // @author         ywzhaiqi
 // @description    批量导出百度盘的下载链接
@@ -31,10 +31,10 @@
 // @run-at         document-start
 // ==/UserScript==
 (function() {
-	// 下面的去除云管家，会对上传插件无法显示上传文件夹   
+	// 下面的去除云管家，会对上传插件无法显示上传文件夹
 
 	var tmpScript = document.createElement('script');
-	tmpScript.textContent = "navigator.__defineGetter__('platform', function() {return 'Linux x86';});";
+	tmpScript.textContent = "navigator.__defineGetter__('platform', function() {return 'Linux x86';});navigator.__defineGetter__('userAgent', function() {return 'Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:48.0) Gecko/20100101 Firefox/48.0';});";
 	document.head.appendChild(tmpScript);
 	document.head.removeChild(tmpScript);
 	//阻止百度网盘wap版自动跳转,来自https://greasyfork.org/zh-CN/scripts/13434
@@ -50,7 +50,7 @@ document.onreadystatechange = function() {
 		var isChrome = !!this.chrome;
 
 		function HttpSendRead(info) {
-			if (info.contentType != null) info.contentType = "application/x-www-form-urlencoded; charset=UTF-8";
+			if (info.contentType !== null) info.contentType = "application/x-www-form-urlencoded; charset=UTF-8";
 			GM_xmlhttpRequest({
 				method: info.type,
 				url: info.url,
@@ -73,7 +73,7 @@ document.onreadystatechange = function() {
 				}
 			});
 		};
-	    var SetMessage = function(msg, type) {   
+	    var SetMessage = function(msg, type) {
 	            var Toast = require("common:widget/toast/toast.js");
 	            Toast.obtain.useToast(cloneInto({
 	                toastMode: Toast.obtain[type],
@@ -125,17 +125,16 @@ document.onreadystatechange = function() {
 			getParam: function(name, url) {
 				var regexp = new RegExp("(?:^|\\?|#|&)" + name + "=([^&#]*)(?:$|&|#)", "i"),
 					matches = regexp.exec(url || location.href);
-				return matches ? decodeURIComponent(matches[1]) : ""
+				return matches ? decodeURIComponent(matches[1]) : "";
 			},
 		};
 
 		var mHome = (function() { // 个人主页
 			if (!require) return;
-			
 			var downloadAll = function() {
-				var context=require("disk-system:widget/context/context.js");
-				var dlinkService=require("disk-system:widget/plugin/download/service/dlinkService.js");
-				var downloadController=require("disk-system:widget/plugin/download/controller/downloadController.js");
+				var context=require("system-core:context/context.js");
+				var dlinkService=require("disk-system:widget/system/fileService/fileDownLoad/dlinkService.js");
+				var downloadController=require("file-widget-1:download/controller/downloadController.js");
 
 				// 得到选中的条目，过滤文件夹
 				var selected=context.prototype.list.getSelected();
@@ -318,7 +317,7 @@ document.onreadystatechange = function() {
 				yunData=unsafeWindow.yunData;
 				if (yunData.SHAREPAGETYPE == "single_file_page") {
 					var fid_list = 'fid_list=' + JSON.stringify([yunData.FS_ID]);
-					self.set_share_data(yunData, fid_list);
+					set_share_data(yunData, fid_list);
 				} else {
 					var File = require("common:widget/data-center/data-center.js");
 					var Filename = File.get("selectedItemList");
@@ -327,89 +326,87 @@ document.onreadystatechange = function() {
 						SetMessage("先选择一下你要下载的文件哦", "MODE_CAUTION");
 						return;
 					}
-
+					var count=0;
 					for (var i = 0; i < Filename.length; i++) {
 						if (Filename[i].attr("data-extname") != "dir") {
 							var lastFlag=false;
-							var fid_list = 'fid_list=' + JSON.stringify([Filename[i].attr("data-id")]);
+							fid_list = 'fid_list=' + JSON.stringify([Filename[i].attr("data-id")]);
 							yunData["isdir"] = 0;
-							if (i==Filename.length-1)lastFlag=true;
-							self.set_share_data(yunData, fid_list, file_list, lastFlag);
+							set_share_data(yunData, fid_list, file_list);
 						}
-						
 					}
 				}
-			},
-			set_share_data: function(obj, fid_list, file_list, lastFlag) {
-				var self = this;
-				var data = "encrypt=0&product=share&uk=" + yunData.SHARE_UK + "&primaryid=" + yunData.SHARE_ID + "&" + fid_list;
-				if (yunData.SHARE_PUBLIC == 0) {
-					var Service = require("common:widget/commonService/commonService.js");
-					data = data + "&extra=" + encodeURIComponent(JSON.stringify({
-						sekey: Service.getCookie("BDCLND")
-					}));
+				function set_share_data(obj, fid_list, file_list) {
+					var data = "encrypt=0&product=share&uk=" + yunData.SHARE_UK + "&primaryid=" + yunData.SHARE_ID + "&" + fid_list;
+					if (yunData.SHARE_PUBLIC == 0) {
+						var Service = require("common:widget/commonService/commonService.js");
+						data = data + "&extra=" + encodeURIComponent(JSON.stringify({
+							sekey: Service.getCookie("BDCLND")
+						}));
+					}
+					if (obj.isdir == 1) {
+						data = data + "&type=batch";
+					}
+					get_share_dlink(obj, data, file_list);
 				}
-				if (obj.isdir == 1) {
-					data = data + "&type=batch";
-				}
-				self.get_share_dlink(obj, data, file_list, lastFlag);
-			},
-			get_share_dlink: function(obj, data, file_list, lastFlag) {
-				var self = this;
-				var download = "http://" + window.location.host + "/api/sharedownload?channel=chunlei&clienttype=0&web=1&app_id=" + yunData.FILEINFO[0].app_id + "&timestamp=" + yunData.TIMESTAMP + "&sign=" + yunData.SIGN + "&bdstoken=" + yunData.MYBDSTOKEN;
-				var pic = "http://" + window.location.host + "/api/getcaptcha?prod=share&channel=chunlei&clienttype=0&web=1&bdstoken=" + yunData.MYBDSTOKEN + "&app_id=" + yunData.FILEINFO[0].app_id;
-				var parameter = {
-					'url': download,
-					'dataType': 'json',
-					type: 'POST',
-					'data': data
-				};
-				$.ajax(parameter)
-					.done(function(json, textStatus, jqXHR) {
-						if (json.errno == -20) {
-							$.ajax({
-									'url': pic,
-									'dataType': 'json',
-									type: 'GET'
-								})
-								.done(function(json, textStatus, jqXHR) {
-									if (data.indexOf("input") != -1) {
-										json.auth = true;
-									}
-									SetMessage("需输入验证码，无法继续", "MODE_FAILURE");
-									console.log('需输入验证码，无法继续');
-								})
-								.fail(function(json, textStatus, jqXHR) {
-									SetMessage("获取验证码失败?", "MODE_FAILURE");
-								});
-
-						} else if (json.errno == 0) {
-
-							if (obj.isdir == 1) {
-								self.get_dir(JSON.stringify(json));
-								return;
-							} else {
-								for (var i = 0; i < json.list.length; i++) {
-									var list = json.list[i];
-									file_list.push({
-										server_filename: list.path.slice(yunData.PATH.lastIndexOf("/") + 1, list.path.length),
-										dlink: list.dlink
+				function get_share_dlink(obj, data, file_list) {
+					var download = "http://" + window.location.host + "/api/sharedownload?channel=chunlei&clienttype=0&web=1&app_id=" + yunData.FILEINFO[0].app_id + "&timestamp=" + yunData.TIMESTAMP + "&sign=" + yunData.SIGN + "&bdstoken=" + yunData.MYBDSTOKEN;
+					var pic = "http://" + window.location.host + "/api/getcaptcha?prod=share&channel=chunlei&clienttype=0&web=1&bdstoken=" + yunData.MYBDSTOKEN + "&app_id=" + yunData.FILEINFO[0].app_id;
+					var parameter = {
+						'url': download,
+						'dataType': 'json',
+						type: 'POST',
+						'data': data
+					};
+					$.ajax(parameter)
+						.done(function(json, textStatus, jqXHR) {
+							if (json.errno == -20) {
+								$.ajax({
+										'url': pic,
+										'dataType': 'json',
+										type: 'GET'
+									})
+									.done(function(json, textStatus, jqXHR) {
+										if (data.indexOf("input") != -1) {
+											json.auth = true;
+										}
+										SetMessage("需输入验证码，无法继续", "MODE_FAILURE");
+										console.log('需输入验证码，无法继续');
+									})
+									.fail(function(json, textStatus, jqXHR) {
+										SetMessage("获取验证码失败?", "MODE_FAILURE");
 									});
-								}
-								debug(file_list,lastFlag);
-								if(lastFlag==true)
-								Pan.showPanel(file_list);
-							}
-						} else {
-							debug(json);
-							SetMessage("出现异常!", "MODE_FAILURE");
-						}
 
-					})
-					.fail(function(jqXHR, textStatus, errorThrown) {
-						SetMessage("获取地址失败?", "MODE_FAILURE");
-					});
+							} else if (json.errno == 0) {
+
+								if (obj.isdir == 1) {
+									self.get_dir(JSON.stringify(json));
+									return;
+								} else {
+									for (var i = 0; i < json.list.length; i++) {
+										var list = json.list[i];
+										file_list.push({
+											server_filename: list.path.slice(yunData.PATH.lastIndexOf("/") + 1, list.path.length),
+											dlink: list.dlink
+										});
+									}
+									count++;
+									debug(count,Filename.length);
+									if(count==Filename.length)
+									Pan.showPanel(file_list);
+								}
+							} else {
+								debug(json);
+								SetMessage("出现异常!", "MODE_FAILURE");
+							}
+
+						})
+						.fail(function(jqXHR, textStatus, errorThrown) {
+							SetMessage("获取地址失败?", "MODE_FAILURE");
+						});
+				}
 			},
+
 			getList: function(item) {
 				var self = this;
 				var dir, restUrl;
@@ -444,12 +441,12 @@ document.onreadystatechange = function() {
 					this.panel = this.createPanel();
 				}
 				var linksHTML = this.createDLinksHtml(checkedItems, dlinkMap);
-				console.log('run2');
 				$("#mDownload-links").html(linksHTML);
 				this.panel.style.display = "block";
 				$('.dlinks').each(function(i) {
-					decode($('.dlinks')[i].href, i);
-				})
+					var temp=$('.dlinks')[i].href.replace("https","http");
+					decode(temp, i);
+				});
 			},
 			createPanel: function() {
 				var self = this;
@@ -579,4 +576,4 @@ document.onreadystatechange = function() {
 			}
 		Pan.init();
 	}
-}
+};

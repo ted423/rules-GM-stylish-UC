@@ -1,16 +1,13 @@
-[Adblock Plus 2.1]
-! Version: 20151224
-! Title: XX
+# Write by ted423 for personal use
+
 123yq.com##.contads
 
 151xs.com##.lcad
 151xs.com##.rcad
 ||151xs.com/js/*
 
-259se.com##IMG[src="http://3pp.otzo.com:19881/303.gif"]
-259se.com###msg_content
 
-269s.com##.hm-t-container
+||www.26953.com/js/win.js
 
 360.cn###wifiAnywhere
 yunpan.cn###get-36T
@@ -28,24 +25,24 @@ bing.com##[class*="sb_ad"]
 bay181.mail.live.com##.adBar
 
 !baidu
+baidu.com###share-ad-bottom
 cb.baidu.com###room
-
 hi.baidu.com##.q-menu-item-game
-
+||hiphotos.baidu.com/%CD%F2%B5%C0%D2%BB/pic/item/5adc6de5f01f3a295590b0669925bc315d607c56.jpg?v=tbs
+||hm.baidu.com*
 jingyan.baidu.com###exp-msgbox-wrapper
 
 pan.baidu.com##.upload-bar
 pan.baidu.com##.b-dialog.alert-dialog1.newhand-tips-dialog
 pan.baidu.com##.tips-bg.newhandTips3-bg
 pan.baidu.com###uploadExceptionMsgContainer
-baidu.com###share-ad-bottom
 
 ||imgsrc.baidu.com/forum/w%3D580/sign=a29a509269600c33f079dec02a4e5134/2f6caacc7cd98d10c8109fb7233fb80e79ec90a5.jpg
 ||imgsrc.baidu.com/forum/w%3D580/sign=3939d8d74b540923aa696376a259d1dc/cd11728b4710b9127c74d00ac1fdfc0393452288.jpg
 ||imgsrc.baidu.com/forum/w%3D580/sign=9994d945f3d3572c66e29cd4ba126352/1b4c510fd9f9d72af31c9eb1d52a2834349bbb26.jpg
 ||imgsrc.baidu.com/forum/pic/item/afc379310a55b319184ab09241a98226cefc17a1.jpg
 ||imgsrc.baidu.com/tieba/pic/item/*
-||hiphotos.baidu.com/%CD%F2%B5%C0%D2%BB/pic/item/5adc6de5f01f3a295590b0669925bc315d607c56.jpg?v=tbs
+
 ||zhanzhang.baidu.com/static/img/act/report2014/banner.jpg
 ||bdimg.share.baidu.com/static/js/*
 
@@ -105,7 +102,6 @@ tieba.baidu.com##.ui_bubble_wrap.j_wrap[style="width: 150px; top: 0px; right: 50
 tieba.baidu.com##.ui_bubble_wrap.j_wrap[style="width: 220px; top: 78px; right: 210px; height: 120px; display: block;"]
 tieba.baidu.com##.umoney-promotion-dialog
 tieba.baidu.com##.cont_sign_bottom
-tieba.baidu.com##IMG[src="http://tb2.bdstatic.com/tb/static-common/widget/post_reward/img/reward_disabled_0a766255.png"]
 tieba.baidu.com##IMG[alt="高品质音乐推荐"]
 tieba.baidu.com##.guide_wrap.guide_wrap_magic
 tieba.baidu.com##.ltbtn.btn_badge_top[href="/tbmall/tshow?tab=detail&c=118"]
@@ -164,13 +160,15 @@ i.baidu.com##.span_4_2:nth-child(4) > div:nth-child(1)
 ||f.hiphotos.bdimg.com/album/s%3D1100%3Bq%3D90/sign=e39108d9087b020808c93be052e9c9a2/0823dd54564e92585c9ea6929e82d158ccbf4e27.jpg?v=tbs
 ||cdn.iknow.bdimg.com/static/question/pkg/question_async_js_0_*.js
 ||su.bdimg.com/static/superplus/img/sjb-guide.png?v=md5
+||tb1.bdstatic.com/tb/cms/ngmis/adsense/*
 ||tb1.bdstatic.com/tb/cms/tbmall/floatlayer_close.png
 ||tb1.bdstatic.com/tb/static-common/js/pic_share/*
-||tb2.bdstatic.com/tb/static-common/img/fool^
+||tb2.bdstatic.com/tb/static-common/img/fool*
 ||tb2.bdstatic.com/tb/static-pb/img/pb_bright_background_e728640.png
 ||tb2.bdstatic.com/tb/static-spage/img/big-bg_3c7e924.png
 ||tb2.bdstatic.com/tb/static-pb/img/yingyin_tip_22c1c5e.png
 ||tb2.bdstatic.com/tb/static-pb/img/bright_default_skin_2a916f3.jpg
+||tb2.bdstatic.com/tb/static-common/widget/post_reward/*
 ||s1.bdstatic.com/r/www/cache/static/global/img/rightHintPic-video.png
 ||s1.bdstatic.com/r/www/scache/baidu_search/*
 ||s1.bdstatic.com/r/www/cache/baidu_search/*
@@ -179,8 +177,11 @@ i.baidu.com##.span_4_2:nth-child(4) > div:nth-child(1)
 
 !BTSOW
 ||pl108266.puhtml.com/0e/1d/e4/*
-||s10.histats.com^
+||s10.histats.com*
 ||boom.1ccbt.com^$popup
+||adstract.adk2.co*
+||clickadu.com*
+||creative.wwwpromoter.com*
 
 !cnzz
 ||s24.cnzz.com/stat.php?*
@@ -193,10 +194,16 @@ cishuge.com##.bdad
 |http://www.cishuge.com/skin/*.js
 
 !dmzj
+dmzj.com###app_manhua
+dmzj.com###show_tip_bg
+dmzj.com##.login_tip
 manhua.dmzj.com##.interactive-opinion
+manhua.dmzj.com###floatCode
 manhua.dmzj.com###hd
 user.dmzj.com###commentBody
-manhua.dmzj.com###floatCode
+||www1.orchidscape.net:8080/*
+||183.136.168.76/*
+
 
 !google
 google.com.hk###pmocntr2
@@ -212,10 +219,18 @@ mail.google.com##.oM
 mail.google.com##.nH.PS
 
 hprt.net##TD[style="padding:0px;margin:0px;"]
-eeee42.com##.wrap.mtop.cen
+
+||static.javhd.com/*
+||cdn.abcsrv1.com/network/javbucks/javhd/b/*
+
+||a.kickass.to/callback/*$popup
+||ai-gb.mgid.com/u670182/8992/*
+||aggregatorgetb.com/async?*
 
 search.51job.com##DIV[style="text-align: center;margin-bottom:5px;"]
 phpddt.com##A[href="http://www.ibeifeng.com/"]
+
+||liveadexchanger.com/a/*
 
 luoqiu.com##DIV[style="text-align: center;"]
 
@@ -233,6 +248,10 @@ piaoyun.cc##.wumii-popup-relatedItems
 happycar.wenyu365.com###wenyu365adpop
 
 qidian.com###DoublePop_left
+vipreader.qidian.com###QDCode_float > .transparent_box
+
+!discuz的电脑管家链接检测
+||s.pc.qq.com/discuz/*
 
 !Qzone
 user.qzone.qq.com##.close._close
@@ -245,9 +264,8 @@ user.qzone.qq.com###appCanvasGoldInfoTips
 qzone.qq.com##.message
 user.qzone.qq.com##.fusion_dialog_header
 
-www.tsdm.net###smchuncai
-tsdm.net###weakpassword_tip
-||www.tsdm.net/static/tsdm/player.swf
+www.tsdm.me###smchuncai
+tsdm.me###weakpassword_tip
 
 ||k.static.u17i.com/common/images/blank.gif
 
@@ -256,26 +274,36 @@ tsdm.net###weakpassword_tip
 ||image15.poco.cn/mypoco/myphoto/20140330/21/5589980820140330214657064.jpg
 ||ox-i.majorgeeks.com/1cc/1cc5c6057548cfe44d757ebea61f7e2038bf7993/584/58423edb0c8da0a666d7a9ee4e4b21ad.png
 
+!淘宝推广
+||a.tbcdn.cn/s/aplus_v2.js
+||g.alicdn.com/alilog/mlog/aplus_v2.js
+||afpmm.alicdn.com*
+||afpeng.alimama.com*
+||afptrack.alimama.com*
+
 ||coolshell.cn//wp-content/*.js*
 
-!去除迅雷快传检测迅雷
-||img.kuai.xunlei.com/js/downloading2.*
-kuai.xunlei.com###gray_layer
+||api.themoviedb.org/3/find/*
+
 
 ||gg.blueidea.com/2014/360/*
 ||js.tongji.linezing.com/604267/*
 ||kkkmh.com/js.php?*
 
-||www.26953.com/js/win.js
 
 ||files.nyaa.se/*.jpg
 ||files.nyaa.eu/*.jpg
+||art.lead-ad.jp^
+||mediad2.jp/ad/*
 
 ||repaik.com/data/cache/common_extra.js?*
 
 ||www.shumilou.co/style/index.php?js/*
 
 ||dbank.vmall.com/app/cms/getData.php?*
+
+xdowns.com###download_box ul:first-child
+||www.xdowns.com/dd/dcr.gif
 
 xiaohx001.com##.bdselect_share_box
 
