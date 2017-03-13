@@ -1,4 +1,5 @@
 # Write by ted423 for personal use
+#2017-03-13
 
 123yq.com##.contads
 
@@ -218,6 +219,8 @@ mail.google.com##TD.Bu.y3
 mail.google.com##.oM
 mail.google.com##.nH.PS
 
+dict.hjenglish.com###regscrollcontainer
+
 hprt.net##TD[style="padding:0px;margin:0px;"]
 
 ||static.javhd.com/*
@@ -290,9 +293,10 @@ tsdm.me###weakpassword_tip
 ||js.tongji.linezing.com/604267/*
 ||kkkmh.com/js.php?*
 
-
-||files.nyaa.se/*.jpg
-||files.nyaa.eu/*.jpg
+!nyaa
+sukebei.nyaa.se##[id^="banner-"]
+||media.gssp.asia/ls/opt_icon_text.png$image
+||img.gsspat.jp$image
 ||art.lead-ad.jp^
 ||mediad2.jp/ad/*
 
