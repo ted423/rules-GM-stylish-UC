@@ -3,7 +3,7 @@
 // @author		ted423
 // @contributor	NLF && ywzhaiqi
 // @description	方便的在各个引擎之间跳转。可自定义搜索列表的 NLF 修改版。
-// @version		8.1702.24.0
+// @version		8.1703.13.0
 // @include		*
 // @exclude		*.mediatek.inc/*
 // @exclude		http://tieba.baidu.com/*
@@ -741,6 +741,11 @@
 			name: "当当",
 			url: /^https?:\/\/search\.dangdang\.com\/\?key/,
 			engineList: "shopping"
+		}, {
+			name: "newegg",
+			url: /^https?:\/\/www\.newegg\.com\.tw\/search\?/,
+			engineList: "shopping",
+			keyword: "#searchword",
 		}, 
 	];
 
