@@ -3,7 +3,7 @@
 // @author		ted423
 // @contributor	NLF && ywzhaiqi
 // @description	方便的在各个引擎之间跳转。可自定义搜索列表的 NLF 修改版。
-// @version		8.1703.13.0
+// @version		8.1703.14.0
 // @include		*
 // @exclude		*.mediatek.inc/*
 // @exclude		http://tieba.baidu.com/*
@@ -746,7 +746,7 @@
 			url: /^https?:\/\/www\.newegg\.com\.tw\/search\?/,
 			engineList: "shopping",
 			keyword: "#searchword",
-		}, 
+		},
 	];
 
 	function loadPrefs() {
@@ -1198,7 +1198,7 @@
 		configBtn.className = "fa fa-cog fa-spin";
 		configBtn.onclick = openPrefs;
 		container.lastChild.appendChild(configBtn);
-		
+
 
 		switch (insertWhere.toLowerCase()) { //插入到文档中
 			case "beforebegin":
@@ -1285,7 +1285,7 @@
 		// 判断是否存在
 		var container = document.getElementById("sej-container");
 
-		if (!container) {} 
+		if (!container) {}
 		else if (container) {
 			container.parentNode.removeChild(container);
 		}
@@ -1335,7 +1335,17 @@
 		if (matchedRule.change == "mutationTitle") {
 			run();
 			debug("添加标题节点监视器: title");
-
+			function restoreGlobalAPI(name) {//处理百度把MutationObserver的问题
+				if (window[name])
+					return;
+				var iframe = document.createElement('iframe');
+				iframe.width = iframe.height = 0;
+				iframe.style.display = 'none';
+				document.body.appendChild(iframe);
+				window[name] = iframe.contentWindow[name];
+				iframe.remove();
+				}
+				restoreGlobalAPI('MutationObserver');
 			var watch = document.querySelector("title");
 			var observer = new MutationObserver(function() {
 				debug("标题发生了变化", document.title);
