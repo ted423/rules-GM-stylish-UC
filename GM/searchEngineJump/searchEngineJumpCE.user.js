@@ -3,10 +3,8 @@
 // @author		ted423
 // @contributor	NLF && ywzhaiqi
 // @description	方便的在各个引擎之间跳转。可自定义搜索列表的 NLF 修改版。
-// @version		8.1703.14.0
+// @version		8.1703.25.0
 // @include		*
-// @exclude		*.mediatek.inc/*
-// @exclude		http://tieba.baidu.com/*
 // @namespace	https://greasyfork.org/users/85
 // @require		http://code.jquery.com/jquery-2.2.0.min.js
 // @downloadURL	https://github.com/ted423/rules-GM-stylish-UC/raw/master/GM/searchEngineJump/searchEngineJumpCE.user.js
@@ -14,7 +12,7 @@
 // @grant		GM_getValue
 // @grant		GM_setValue
 // @grant		GM_addStyle
-// @run-at		document-end
+// @run-at		document-start
 // ==/UserScript==
 (function() {
 	"use strict";
@@ -77,7 +75,7 @@
 		{
 			name: "google网页搜索", //你要加载的网站的名字(方便自己查找)
 			url: /^https?:\/\/(encrypted\.google\.com|www\.google\.(?!co\.jp)[^\/]{2,9})\/(webhp|search|#|$|\?)(?!.*tbm=)/, //在哪个网站上加载,正则.
-			change: "mutationTitle", //mutationTitle监视标题的变化,runAtComplete在页面结束时执行
+			mutationTitle: true, //mutationTitle监视标题的变化
 			engineList: "web", //加载哪个类型的列表:
 			style: "width: calc(100% - 15px);padding-left: 15px;top: 1px;", //给引擎列表的样式
 			// keyword 使用 css选中一个form input元素 或者 该项是一个函数，使用返回值
@@ -97,7 +95,7 @@
 		}, {
 			name: "google.co.jp",
 			url: /^https?:\/\/www\.google\.co\.jp\/(webhp|search|#|$|\?)(?:.(?!&tbm=))*$/,
-			change: "mutationTitle",
+			mutationTitle: true,
 			engineList: "web",
 			style: "width: calc(100% - 15px);padding-left: 15px;top: 1px;",
 			insertIntoDoc: {
@@ -114,14 +112,16 @@
 		}, {
 			name: "baidu 网页搜索", //因为不刷新搜索，所以百度跳简洁搜索会有问题
 			url: /^https?:\/\/www\.baidu\.com\/(?:s.*|baidu.*|)$/,
-			change: "mutationTitle",
+			mutationTitle: true,
 			engineList: "web",
 			style: "margin-left: 122px;",
 			insertIntoDoc: {
 				target: "#s_tab",
 				where: "afterEnd",
 			},
-			endFix: function() {if (getComputedStyle(document.getElementById("lg")).display != "none") remove();} //通过检测首页图片判断在首页的话不显示
+			endFix: function() {
+					if (getComputedStyle(document.getElementById("lg")).display != "none") remove();
+				} //通过检测首页图片判断在首页的话不显示
 		}, {
 			name: "bing(global)",
 			url: /^https?:\/\/global\.bing\.com\/search/,
@@ -229,7 +229,7 @@
 		}, {
 			name: "Google book",
 			url: /^https?:\/\/www\.google\.co.{1,3}\/search\?.*(&btnG=%E6)|(tbm=bks)/,
-			change: "mutationTitle",
+			mutationTitle: true,
 			engineList: "资料",
 			style: "width: calc(100% - 15px);padding-left: 15px;top: 1px;",
 			insertIntoDoc: {
@@ -366,8 +366,8 @@
 		}, {
 			name: "google地图",
 			url: /^https?:\/\/www\.google\.co.{1,4}\/maps/,
-			change: "runAtComplete",
 			engineList: "map",
+			mutationTitle: true,
 			style: "z-index: 9999999;",
 		}, {
 			name: "Bing地图",
@@ -556,7 +556,7 @@
 			url: /^https?:\/\/mikanani\.me\/Home\/Search\?searchstr/,
 			engineList: "download",
 			stylish: defaultStyleFix,
-		},{
+		}, {
 			name: "acgsou",
 			url: /^https?:\/\/www\.acgsou\.com\/search\.php/,
 			engineList: "download",
@@ -699,7 +699,6 @@
 		}, {
 			name: "淘宝搜索",
 			url: /^https?:\/\/(s|haosou\.ai)\.taobao\.com\/search/,
-			change: "runAtComplete",
 			engineList: "shopping",
 			style: "box-shadow: none;",
 			insertIntoDoc: {
@@ -736,7 +735,7 @@
 			name: "亚马逊",
 			url: /^https?:\/\/www\.amazon\.cn\/s\/ref/,
 			engineList: "shopping",
-			stylish:defaultStyleFixNoMarginTop,
+			stylish: defaultStyleFixNoMarginTop,
 		}, {
 			name: "当当",
 			url: /^https?:\/\/search\.dangdang\.com\/\?key/,
@@ -1330,40 +1329,29 @@
 	debug("匹配的规则为", matchedRule);
 
 	if (!matchedRule) return;
-
-	if (matchedRule.change) {
-		if (matchedRule.change == "mutationTitle") {
+	document.onreadystatechange = function() {
+		if (document.readyState == "interactive") {
+			debug("onreadystatechange: " + document.readyState);
 			run();
-			debug("添加标题节点监视器: title");
-			function restoreGlobalAPI(name) {//处理百度把MutationObserver的问题
-				if (window[name])
-					return;
-				var iframe = document.createElement('iframe');
-				iframe.width = iframe.height = 0;
-				iframe.style.display = 'none';
-				document.body.appendChild(iframe);
-				window[name] = iframe.contentWindow[name];
-				iframe.remove();
-				}
-				restoreGlobalAPI('MutationObserver');
-			var watch = document.querySelector("title");
-			var observer = new MutationObserver(function() {
-				debug("标题发生了变化", document.title);
-				run();
-			});
-			observer.observe(watch, {
-				childList: true,
-				subtree: true,
-				characterData: true
-			});
-		} else if (matchedRule.change == "runAtComplete") {
-			document.onreadystatechange = function() {
-				debug("onreadystatechange");
-				if (document.readyState == "complete") {
-					run();
-					if(window.navigator.userAgent.indexOf("Chrome")!=-1){setTimeout(run(),1000)}
-				}
-			};
-		} else run();
-	} else run();
+		} else if (document.readyState == "complete") {
+			debug("onreadystatechange: " + document.readyState);
+			run();
+			/*if (window.navigator.userAgent.indexOf("Chrome") != -1) {
+				setTimeout(run(), 1000);
+			}*/
+		}
+	};
+	if (matchedRule.mutationTitle) {
+		debug("添加标题节点监视器: title");
+		var watch = document.querySelector("title");
+		var observer = new window.MutationObserver(function(mutations) {
+			debug("标题发生了变化", document.title);
+			run();
+		});
+		observer.observe(watch, {
+			childList: true,
+			subtree: true,
+			characterData: true
+		});
+	} 
 })();
