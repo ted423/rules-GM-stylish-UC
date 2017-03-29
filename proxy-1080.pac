@@ -22,7 +22,7 @@ function FindProxyForURL(url, host) {
 		"gamer.com.tw": 1,
 		"gbf.wiki": 1,
 		"ggbases.com": 1,
-		"gghpt.com": 1,
+		"ggpht.com": 1,
 		"github.com": 1,
 		"google.com": 1,
 		"google.com.hk": 1,
