@@ -1272,7 +1272,7 @@
 		addContainer(iTarget, iInput);
 		//if (matchedRule.stylish && matchedRule.stylish.indexOf("fixed") != -1) {
 			container = document.getElementById("sej-container");
-			container.style.left = "pointer-events: none;calc(50% - " + getComputedStyle(container).width + " / 2)";
+			container.style.left = "calc(50% - " + getComputedStyle(container).width + " / 2)";
 		//}
 	}
 
