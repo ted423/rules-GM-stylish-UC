@@ -1,5 +1,5 @@
 function FindProxyForURL(url, host) {
-	var proxy = "SOCKS5 127.0.0.1:1080;";
+	var proxy = "PROXY 127.0.0.1:1080;";
 	var needDomain = {
 		"amazonaws.com": 1,
 		"blogger.com": 1,
@@ -32,6 +32,7 @@ function FindProxyForURL(url, host) {
 		"googleusercontent.com": 1,
 		"googlevideo.com": 1,
 		"granbluefantasy.jp": 1,
+		"greasyfork.org": 1,
 		"gstatic.com": 1,
 		"hkgolden.com": 1,
 		"isohunt.to": 1,
@@ -56,7 +57,7 @@ function FindProxyForURL(url, host) {
 		"sourceforge.net": 1,
 		"archive.org": 1,
 		"wikipedia.org": 1,
-		"wnacg.org": 1,
+		"wnacg.org": 1
 	}
 	var specialDomain ={
 		"com.tw": 1,
