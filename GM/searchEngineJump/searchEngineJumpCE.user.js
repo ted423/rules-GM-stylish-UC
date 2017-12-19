@@ -109,7 +109,6 @@
 			url: /^https?:\/\/www\.baidu\.com\/s\?.*tn=baidulocal/,
 			engineList: "web",
 			keyword: "input[name='wd']",
-			stylish: defaultStyleFix,
 		}, {
 			name: "baidu 网页搜索", //因为不刷新搜索，所以百度跳简洁搜索会有问题
 			url: /^https?:\/\/www\.baidu\.com\/(?:s.*|baidu.*|)$/,
@@ -128,13 +127,11 @@
 			url: /^https?:\/\/global\.bing\.com\/search/,
 			engineList: "web",
 			style: "border-collapse:separate;",
-			stylish: defaultStyleFix,
 		}, {
 			name: "必应网页搜索",
 			url: /^https?:\/\/(cn|www)\.bing\.com\/search/,
 			engineList: "web",
 			style: "border-collapse:separate;",
-			stylish: defaultStyleFix,
 		}, {
 			name: "360搜索",
 			url: /^https?:\/\/www\.so\.com\/s\?/,
@@ -149,6 +146,7 @@
 			url: /^https?:\/\/www\.sogou\.com\/(?:web|s)/,
 			engineList: "web",
 			style: "margin-bottom: 10px;margin-left: 35px;",
+			keyword: "#upquery",
 			insertIntoDoc: {
 				target: "#wrapper",
 				where: "beforeBegin",
@@ -180,12 +178,10 @@
 			name: "yahoo.co.jp",
 			url: /^https?:\/\/search\.yahoo\.co\.jp\/search/,
 			engineList: "web",
-			stylish: defaultStyleFix,
 		}, {
 			name: "duckduckgo",
 			url: /^https?:\/\/duckduckgo\.com\/\?/,
 			engineList: "web",
-			stylish: defaultStyleFix,
 		},
 		// 知识
 		{
@@ -348,7 +344,6 @@
 			name: "百度文库",
 			url: /^https?:\/\/wenku\.baidu\.com\/search\?/,
 			engineList: "资料",
-			stylish: defaultStyleFix,
 		}, {
 			name: "豆丁",
 			url: /^https?:\/\/www\.docin\.com\/search\.do/,
@@ -385,7 +380,6 @@
 			name: "百度音乐",
 			url: /^https?:\/\/music\.baidu\.com\/search/,
 			engineList: "music",
-			stylish: defaultStyleFix,
 		}, {
 			name: "搜狗音乐",
 			url: /^https?:\/\/mp3\.sogou\.com\/music\.so/,
@@ -413,7 +407,6 @@
 			engineList: "music",
 			style: "word-break:keep-all;margin-right: 205px;",
 			keyword: "#search_text",
-			stylish: defaultStyleFix,
 		},
 		// 图片
 		{
@@ -488,7 +481,6 @@
 			name: "picsearch",
 			url: /^http:\/\/(..|...)\.picsearch\.com\/index\.cgi/,
 			engineList: "image",
-			stylish: defaultStyleFix,
 		}, {
 			name: "pixiv",
 			url: /^http:\/\/www\.pixiv\.net\/search\.php/,
@@ -539,24 +531,20 @@
 			name: "Tokyotosho",
 			url: /^https?:\/\/www\.tokyotosho\.info\/search\.php/,
 			engineList: "download",
-			stylish: defaultStyleFix,
 		}, {
 			name: "＊MioBT＊",
 			url: /^https?:\/\/www\.miobt\.com\/search\.php/,
 			engineList: "download",
 			keyword: "#topsearch",
-			stylish: defaultStyleFix,
 		}, {
 			name: "爱恋动漫",
 			url: /^https?:\/\/www\.kisssub\.org\/search\.php/,
 			engineList: "download",
 			keyword: "#topsearch",
-			stylish: defaultStyleFix,
 		}, {
 			name: "Mikan",
 			url: /^https?:\/\/mikanani\.me\/Home\/Search\?searchstr/,
 			engineList: "download",
-			stylish: defaultStyleFix,
 		}, {
 			name: "acgsou",
 			url: /^https?:\/\/www\.acgsou\.com\/search\.php/,
@@ -573,13 +561,11 @@
 			name: "KOTOMI RSS",
 			url: /^https?:\/\/moe4sale\.in\/\?kw/,
 			engineList: "download",
-			stylish: defaultStyleFix,
 		}, {
 			name: "ACG狗狗",
 			url: /^https?:\/\/bt\.acg\.gg\/search/,
 			engineList: "download",
 			keyword: "#topsearch",
-			stylish: defaultStyleFix,
 		}, {
 			name: "nyaa",
 			url: /^https?:\/\/www\.nyaa\.(se|eu)\/\?page=search/,
@@ -606,12 +592,10 @@
 			name: "GGBases",
 			url: /^https?:\/\/www\.ggbases\.com\/search/,
 			engineList: "download",
-			stylish: defaultStyleFix,
 		}, {
 			name: "ACG.RIP",
 			url: /^https?:\/\/acg\.rip\/\?term/,
 			engineList: "download",
-			stylish: defaultStyleFix,
 		}, {
 			name: "xiaohx",
 			url: /^https?:\/\/www\.xiaohx\.net\/search\?/,
@@ -624,7 +608,6 @@
 			name: "ed2000",
 			url: /^https?:\/\/www\.ed2000\.com\/FileList\.asp/,
 			engineList: "download",
-			stylish: defaultStyleFix,
 		}, {
 			name: "BTSOW",
 			url: /^https?:\/\/btso\.pw\/search\//,
