@@ -88,10 +88,6 @@
 			// "afterBegin"(作为给定元素的第一个子元素) ;
 			// "beforeEnd" (作为给定元素的最后一个子元素) ;
 			// "afterEnd"(插入到给定元素的后面);.
-			insertIntoDoc: {
-				target: "body",
-				where: "beforeBegin",
-			}
 		}, {
 			name: "google.co.jp",
 			url: /^https?:\/\/www\.google\.co\.jp\/(webhp|search|#|$|\?)(?:.(?!&tbm=))*$/,
@@ -108,8 +104,6 @@
 			url: /^https?:\/\/www\.baidu\.com\/(?:s.*|baidu.*|)$/,
 			mutationTitle: true,
 			engineList: "web",
-			style: "margin-left: 122px;",
-			
 			endFix: function() {
 					if (getComputedStyle(document.getElementById("lg")).display != "none") remove();
 				} //通过检测首页图片判断在首页的话不显示
@@ -117,39 +111,29 @@
 			name: "bing(global)",
 			url: /^https?:\/\/global\.bing\.com\/search/,
 			engineList: "web",
-			style: "border-collapse:separate;",
 		}, {
 			name: "必应网页搜索",
 			url: /^https?:\/\/(cn|www)\.bing\.com\/search/,
 			engineList: "web",
-			style: "border-collapse:separate;",
 		}, {
 			name: "360搜索",
 			url: /^https?:\/\/www\.so\.com\/s\?/,
 			engineList: "web",
-			style: "margin-left: 20px;",
-			
 		}, {
 			name: "搜狗网页搜索",
 			url: /^https?:\/\/www\.sogou\.com\/(?:web|s)/,
 			engineList: "web",
-			style: "margin-bottom: 10px;margin-left: 35px;",
 			keyword: "#upquery",
-			
 		}, {
 			name: "雅虎网页搜索",
 			url: /^https?:\/\/search\.yahoo\.com\/search/,
 			change: "noExternalRequests",
 			engineList: "网页",
-			style: "margin-left: 15px;",
-			
 		}, {
 			name: "tw.yahoo",
 			url: /^https?:\/\/tw\.search\.yahoo\.com\/search/,
 			change: "noExternalRequests",
 			engineList: "web",
-			style: "margin-left:15px;margin-top:5px;",
-			
 		}, {
 			name: "yahoo.co.jp",
 			url: /^https?:\/\/search\.yahoo\.co\.jp\/search/,
@@ -164,11 +148,6 @@
 			name: "Scholar",
 			url: /^https?:\/\/scholar\.google(?:\.\D{1,3}){1,2}\/scholar\?/,
 			engineList: "资料",
-			style: "margin-left:0px;width: 100%;",
-			insertIntoDoc: {
-				target: "#gs_ab",
-				where: "beforeBegin"
-			}
 		}, {
 			name: "百度学术",
 			url: /^https?:\/\/xueshu\.baidu\.com\/s\?/,
@@ -178,31 +157,24 @@
 			name: "百度百科",
 			url: /^https?:\/\/baike\.baidu\.com\/(search|item)/,
 			engineList: "资料",
-			style: "z-index: 999999;",
-			
 		}, {
 			name: "萌娘百科",
 			url: /^https?:\/\/zh\.moegirl\.org\/./,
 			engineList: "资料",
-			style: "z-index: 999999;",
 			keyword: function() {
 				if (document.getElementById("searchText")) return document.querySelector("input[type='search']").value;
 				else return document.getElementById("firstHeading").textContent;
 			},
-			
 		}, {
 			name: "Google book",
 			url: /^https?:\/\/www\.google\.co.{1,3}\/search\?.*(&btnG=%E6)|(tbm=bks)/,
 			mutationTitle: true,
 			engineList: "资料",
-			style: "width: calc(100% - 15px);padding-left: 15px;top: 1px;",
-			
 		}, {
 			name: "互动百科",
 			url: /^https?:\/\/[a-z]{2,3}\.baike\.com\/[a-z]/,
 			engineList: "资料",
-			style: "z-index:99999;padding:0,auto;",
-			keyword: function() {
+						keyword: function() {
 				var input;
 				if (document.getElementsByClassName("ac_input")[0] != undefined) {
 					if (document.getElementsByClassName("ac_input")[0].value != "")
@@ -217,23 +189,16 @@
 			name: "wiki",
 			url: /^https?:\/\/..\.wikipedia\.org\/w\/index\.php(?!.*\?search=)/,
 			engineList: "资料",
-			insertIntoDoc: {
-				target: "#siteNotice",
-				where: "beforeBegin"
-			}
+			
 		}, {
 			name: "wiki[ZH]",
 			url: /^https?:\/\/zh\.wikipedia\.org\/(?:zh|wiki\/|w\/index.php\?search=)/,
 			engineList: "资料",
 			keyword: function() {
-				if (document.getElementById("searchText"))
-					return document.getElementById("searchText").value;
+				if (document.getElementById("searchText"))return document.getElementById("searchText").value;
 				else return document.getElementById("firstHeading").childNodes[0].textContent;
 			},
-			insertIntoDoc: {
-				target: "#siteNotice",
-				where: "beforeBegin"
-			}
+			
 		}, {
 			name: "wiki[EN]",
 			url: /^https?:\/\/en\.wikipedia\.org\/(wiki\/|w\/index\.php\?search=)/,
@@ -243,55 +208,32 @@
 					return document.getElementById("searchText").value;
 				else return document.getElementById("firstHeading").childNodes[0].textContent;
 			},
-			insertIntoDoc: {
-				target: "#siteNotice",
-				where: "beforeBegin"
-			}
+			
 		}, {
 			name: "wiki[JP]",
 			url: /^https?:\/\/ja\.wikipedia\.org\/(wiki\/|w\/index\.php\?search=)/,
 			engineList: "资料",
 			keyword: function() {
-				if (document.getElementById("searchText"))
-					return document.getElementById("searchText").value;
+				if (document.getElementById("searchText"))return document.getElementById("searchText").value;
 				else return document.getElementById("firstHeading").childNodes[0].textContent;
 			},
-			insertIntoDoc: {
-				target: "#siteNotice",
-				where: "beforeBegin"
-			}
 		}, {
 			name: "百度知道(search)",
 			url: /^https?:\/\/zhidao\.baidu\.com\/search/,
 			engineList: "资料",
-			style: "margin-bottom: 8px;margin-left: 21px;",
-			
 		}, {
 			name: "百度知道(question)",
 			url: /^https?:\/\/zhidao\.baidu\.com\/question/,
 			engineList: "资料",
-			style: "white-space: nowrap;",
-			
-			endFix: function() { //插入搜索条后修正绿色背景错位的问题
-				var container = document.getElementById("sej-container");
-				if (container && document.body.classList.contains("has-menu")) {
-					document.body.style.backgroundPosition = "0px " + (95 + container.clientHeight) + "px";
-				}
-			},
 		}, {
 			name: "知乎",
 			url: /^https?:\/\/www\.zhihu\.com\/search\?/,
 			change: "noExternalRequests",
 			engineList: "资料",
-			
 		}, {
 			name: "stackoverflow",
 			url: /^https?:\/\/stackoverflow\.com\/search\?/,
 			engineList: "资料",
-			insertIntoDoc: {
-				target: ".topbar",
-				where: "afterEnd"
-			}
 		}, {
 			name: "百度文库",
 			url: /^https?:\/\/wenku\.baidu\.com\/search\?/,
@@ -300,10 +242,7 @@
 			name: "豆丁",
 			url: /^https?:\/\/www\.docin\.com\/search\.do/,
 			engineList: "资料",
-			insertIntoDoc: {
-				target: ".theme_header",
-				where: "afterEnd"
-			}
+			
 		},
 		// 地图
 		{
@@ -315,8 +254,7 @@
 			url: /^https?:\/\/www\.google\.co.{1,4}\/maps/,
 			engineList: "map",
 			mutationTitle: true,
-			style: "z-index: 9999999;",
-		}, {
+					}, {
 			name: "Bing地图",
 			url: /^https?:\/\/[^.]*\.bing\.com\/ditu\//,
 			engineList: "map",
@@ -338,20 +276,14 @@
 			name: "音悦台",
 			url: /^https?:\/\/so\.yinyuetai\.com\/mv\?/,
 			engineList: "music",
-			
 		}, {
 			name: "一听音乐",
 			url: /^https?:\/\/so\.1ting\.com\//,
 			engineList: "music",
-			insertIntoDoc: {
-				target: ".nav",
-				where: "beforeBegin"
-			}
 		}, {
 			name: "xiami",
 			url: /^https?:\/\/www\.xiami\.com\/search/,
 			engineList: "music",
-			style: "word-break:keep-all;margin-right: 205px;",
 			keyword: "#search_text",
 		},
 		// 图片
@@ -359,8 +291,6 @@
 			name: "谷歌图片",
 			url: /^https?:\/\/\w{2,10}\.google(?:\.\D{1,3}){1,2}\/search\?(.*tbs=sbi)|(.*tbm=isch)/,
 			engineList: "image",
-			style: "margin-left:0px;width:100%",
-			
 		}, {
 			name: "百度图片",
 			url: /^https?:\/\/image\.baidu\.c(om|n)\/search/,
@@ -370,25 +300,18 @@
 			name: "360图片",
 			url: /^https?:\/\/\image\.so\.com\/i\?/,
 			engineList: "image",
-			style: "word-break:keep-all;white-space:nowrap;margin-top: 7px;",
-			
 		}, {
 			name: "bing图片",
 			url: /^https?:\/\/.*\.bing\.com\/images\/search/,
 			engineList: "image",
-			style: "z-index:9999",
-		}, {
+					}, {
 			name: "搜狗图片",
 			url: /^https?:\/\/pic\.sogou\.com\/pic/,
 			engineList: "image",
-			style: "margin-top: 10px;margin-left:35px;",
-			
 		}, {
 			name: "花瓣",
 			url: /^https?:\/\/huaban\.com\/search\/\?/,
 			engineList: "image",
-			style: "box-shadow:none;",
-			
 		}, {
 			name: "flickr",
 			url: /^https?:\/\/www\.flickr\.com\/search/,
@@ -402,7 +325,6 @@
 					if (m) return true;
 				}
 			},
-			
 		}, {
 			name: "picsearch",
 			url: /^http:\/\/(..|...)\.picsearch\.com\/index\.cgi/,
@@ -411,15 +333,12 @@
 			name: "pixiv",
 			url: /^http:\/\/www\.pixiv\.net\/search\.php/,
 			engineList: "image",
-			style: "z-index:9999",
 			keyword: "input[name=word]",
 		}, {
 			name: "deviantart",
 			url: /^https?:\/\/www\.deviantart\.com\/browse\/all\//,
 			engineList: "image",
-			style: "margin-bottom:10px;",
 			keyword: "#searchInput",
-			
 			etc: function() { //这个是为了调整编码
 				if (window.location.href.indexOf("%26%23") == -1 && /%[A-Fa-f8-9][A-Fa-f0-9]/.test(window.location.href)) {
 					var url = window.location.href.split("q=");
@@ -438,15 +357,11 @@
 				else key = document.title.split(/「|」/)[1];
 				return key;
 			},
-			insertIntoDoc: {
-				target: ".quick_search",
-				where: "afterEnd"
-			}
+			
 		}, {
 			name: "kat.how",
 			url: /^https?:\/\/kat\.how\/u?search/,
 			engineList: "download",
-			
 		}, {
 			name: "Tokyotosho",
 			url: /^https?:\/\/www\.tokyotosho\.info\/search\.php/,
@@ -485,20 +400,6 @@
 			engineList: "download",
 			keyword: "#topsearch",
 		}, {
-			name: "nyaa",
-			url: /^https?:\/\/www\.nyaa\.(se|eu)\/\?page=search/,
-			engineList: "download",
-			style: "top:44px;",
-			keyword: "input[name='term']",
-			
-		}, {
-			name: "sukebei.nyaa",
-			url: /^https?:\/\/sukebei\.nyaa\.(se|eu)\/\?page=search/,
-			engineList: "download",
-			style: "top:44px;",
-			keyword: "input[name='term']",
-			
-		}, {
 			name: "GGBases",
 			url: /^https?:\/\/www\.ggbases\.com\/search/,
 			engineList: "download",
@@ -510,7 +411,6 @@
 			name: "xiaohx",
 			url: /^https?:\/\/www\.xiaohx\.net\/search\?/,
 			engineList: "download",
-			
 		}, {
 			name: "ed2000",
 			url: /^https?:\/\/www\.ed2000\.com\/FileList\.asp/,
@@ -519,9 +419,7 @@
 			name: "BTSOW",
 			url: /^https?:\/\/btso\.pw\/search\//,
 			engineList: "download",
-			style: "word-break:keep-all;white-space:nowrap;margin: 5px 0;",
 			keyword: "input[name='keyword'][value]",
-			
 			etc: function() {
 				if (window.location.href.indexOf("%20") != -1) window.location.href = window.location.href.replace("%20", "+");
 			}
@@ -529,93 +427,52 @@
 			name: "torrentkitty",
 			url: /^https?:\/\/(www\.)?torrentkitty\.(net|org|tv)\/search\//,
 			engineList: "download",
-			style: "margin-top:50px;",
 			keyword: function() {
 				return document.getElementsByTagName("h2")[0].innerHTML.slice(18, -1);
 			},
-			insertIntoDoc: {
-				target: ".wrapper",
-				where: "afterEnd"
-			}
 		},
 		//字幕
 		{
 			name: "subom",
 			url: /^https?:\/\/www\.subom\.net\/search/,
 			engineList: "download",
-			insertIntoDoc: {
-				target: "#container",
-				where: "afterBegin"
-			}
 		}, {
 			name: "subhd",
 			url: /^https?:\/\/subhd\.com\/search/,
 			engineList: "download",
-			style: "top: -10px; text-align: left;",
 			keyword: "#sn",
-			insertIntoDoc: {
-				target: ".container.list",
-				where: "beforeBegin"
-			}
 		}, {
 			name: "射手网(伪)",
 			url: /^https?:\/\/assrt\.net\/sub\/\?s/,
 			engineList: "download",
-			style: "text-align: left;",
-			insertIntoDoc: {
-				target: "#site_header",
-				where: "afterEnd"
-			}
 		},
 		// 购物
 		{
 			name: "一淘",
 			url: /^https?:\/\/www?\.etao\.com\/search/,
 			engineList: "shopping",
-			insertIntoDoc: {
-				target: ".etao-header",
-				where: "beforeBegin"
-			}
+			
 		}, {
 			name: "京东",
 			url: /^https?:\/\/search\.jd\.com\/(S|s)earch\?/i,
 			engineList: "shopping",
-			insertIntoDoc: {
-				target: "div[id*='nav-201']",
-				where: "beforeBegin"
-			}
+			
 		}, {
 			name: "淘宝搜索",
 			url: /^https?:\/\/(s|haosou\.ai)\.taobao\.com\/search/,
 			engineList: "shopping",
-			style: "box-shadow: none;",
-			
 		}, {
 			name: "易迅",
 			url: /^https?:\/\/searchex\.yixun\.com\/html\?/,
 			engineList: "shopping",
-			insertIntoDoc: {
-				target: ".ic_header",
-				where: "beforeEnd"
-			}
 		}, {
 			name: "苏宁",
 			url: /^https?:\/\/search\.suning\.com\//,
 			engineList: "shopping",
-			style: "border-bottom:1px solid #E5E5E5;",
-			insertIntoDoc: {
-				target: ".ng-header",
-				where: "afterEnd"
-			}
 		}, {
 			name: "天猫",
 			url: /^https?:\/\/list\.tmall\.com\/\/?search/,
 			engineList: "shopping",
-			style: "margin-bottom:3px;",
-			insertIntoDoc: {
-				target: "#header",
-				where: "afterEnd"
-			}
 		}, {
 			name: "亚马逊",
 			url: /^https?:\/\/www\.amazon\.cn\/s\/ref/,
