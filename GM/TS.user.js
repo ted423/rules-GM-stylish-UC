@@ -7,7 +7,7 @@
 // @include     http://www.tsdm.me/*
 // @downloadURL https://greasyfork.org/scripts/2393/code.user.js
 // @updateURL https://greasyfork.org/scripts/2393/code.meta.js
-// @version     1.6
+// @version     1.7
 // @grant       none
 // ==/UserScript==
 var temp=document.getElementById("inner_stat");
@@ -18,6 +18,7 @@ if(temp!==null){temp=temp.childNodes;
 		temp=temp[i];
 	}
 	temp.childNodes[0].textContent="签到";
+	var tempOnclick=temp.onclick;
 }
 else temp =document.getElementsByTagName("font")[0];
 temp.textContent="签到";
@@ -59,5 +60,5 @@ temp.onclick = function(){
 		};
 		var element = document.getElementById("fwin_content_dsu_paulsign");
 		mo.observe(document.body, option);
-		showWindow('dsu_paulsign', 'plugin.php?id=dsu_paulsign:sign&7ff5428e');
+		tempOnclick();
 	}
