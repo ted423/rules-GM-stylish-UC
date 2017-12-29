@@ -11,11 +11,11 @@
 // @grant       none
 // ==/UserScript==
 var temp=document.getElementById("inner_stat");
-if(temp!=null){temp=temp.childNodes;
+if(temp!==null){temp=temp.childNodes;
 	for(i=0;i<temp.length;i++)
 	{
 		if(temp[i].href==="javascript:;")
-		temp=temp[i]
+		temp=temp[i];
 	}
 	temp.childNodes[0].textContent="签到";
 }
@@ -59,5 +59,5 @@ temp.onclick = function(){
 		};
 		var element = document.getElementById("fwin_content_dsu_paulsign");
 		mo.observe(document.body, option);
-
+		showWindow('dsu_paulsign', 'plugin.php?id=dsu_paulsign:sign&7ff5428e');
 	}
