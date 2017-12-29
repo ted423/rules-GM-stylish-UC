@@ -645,7 +645,7 @@
 		// 购物
 		{
 			name: "一淘",
-			url: /^https?:\/\/s8?\.etao\.com\/search/,
+			url: /^https?:\/\/www?\.etao\.com\/search/,
 			engineList: "shopping",
 			insertIntoDoc: {
 				target: ".etao-header",
