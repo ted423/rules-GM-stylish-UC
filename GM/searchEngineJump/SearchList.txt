@@ -91,7 +91,7 @@
 		sub HD, http://subhd.com/search/%s
 		射手网(伪), http://assrt.net/sub/?searchword=%s
 网购--cart-arrow-down
-	一淘, http://s.etao.com/search?q=%s
+	一淘, https://www.etao.com/search.htm?nq=%s
 	京东, https://search.jd.com/Search?keyword=%s&enc=utf-8
 	淘宝, https://s.taobao.com/search?q=%s
 	亚马逊, https://www.amazon.cn/s/ref=nb_ss?keywords=%s
