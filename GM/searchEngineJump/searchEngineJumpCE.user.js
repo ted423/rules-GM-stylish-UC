@@ -32,7 +32,7 @@
 		ted423: "网页--search\n	Google\n		Google, https://www.google.com/search?q=%s&safe=off\n		Google.hk, https://www.google.com.hk/search?q=%s&safe=off\n		Google.co.jp，https://www.google.co.jp/search?q=%s&safe=off\n	百度\n		百度, https://www.baidu.com/s?wd=%s\n		简洁搜索, https://www.baidu.com/s?wd=firefox&ie=utf-8&tn=baidulocal\n	360, https://www.so.com/s?q=%s\n	Bing\n		Bing(CN), https://cn.bing.com/search?q=%s\n		Bing(Global), https://global.bing.com/search?q=%s&setmkt=en-us&setlang=en-us\n	搜狗, https://www.sogou.com/web?query=%s\n	DuckDuckGo, https://duckduckgo.com/?q=%s\n	Yahoo\n		Yahoo, https://search.yahoo.com/search?p=%s\n		Yahoo(tw), https://tw.search.yahoo.com/search?p=%s\n 		Yahoo.co.jp, https://search.yahoo.co.jp/search?p=%s&aq=-1&x=wrt\n资料--book\n	WIKI\n		ZWIKI, http://zh.wikipedia.org/w/index.php?search=%s&button=&title=Special%3ASearch\n		EWIKI, https://en.wikipedia.org/w/index.php?search=%s&button=&title=Special%3ASearch\n		JWIKI, http://ja.wikipedia.org/w/index.php?search=%s&button=&title=Special%3ASearch\n	百科, http://baike.baidu.com/searchword/?word=%s\n	Internet Archive, https://archive.org/search.php?query=%s\n	Scholar, http://scholar.google.com/scholar?hl=zh-CN&q=%s&btnG=&lr=\n	学术, http://xueshu.baidu.com/s?wd=%s\n	知乎, https://www.zhihu.com/search?q=%s\n	萌娘百科, http://zh.moegirl.org/index.php?search=%s\n	Book, https://www.google.com/search?q=%s&btnG=%E6%90%9C%E7%B4%A2%E5%9B%BE%E4%B9%A6&tbm=bks&tbo=1&hl=zh-CN&gws_rd=ssl\n	开发\n		stackoverflow, https://stackoverflow.com/search?q=%s\n		MDN, https://developer.mozilla.org/en-US/search?q=%s\n		github, https://github.com/search?q=%s\n		krugle, http://opensearch.krugle.org/document/search/#query=%s\n		npm, https://www.npmjs.org/search?q=%s\n地图--map\n	百度, http://map.baidu.com/?newmap=1&s=s%26wd%3D%s\n	Google, https://www.google.com/maps/search/%s/\n	Bing, https://www.bing.com/ditu/?q=%s\n	搜狗, http://map.sogou.com/#lq=%s\n音乐--music\n	Music, http://music.baidu.com/search?key=%s&ie=utf-8&oe=utf-8\n	搜狗, http://mp3.sogou.com/music.so?query=%s\n	一听, http://so.1ting.com/all.do?q=%s\n	虾米, http://www.xiami.com/search?key=%s\n	piapro, https://piapro.jp/search/?view=audio&keyword=%s\n	Lyric, http://music.baidu.com/search/lrc?key=%s\n图片--image\n	百度, http://image.baidu.com/search/index?tn=baiduimage&word=%s\n	Google, https://www.google.com.hk/search?tbm=isch&q=%s\n	花瓣, https://huaban.com/search/?q=%s\n	Picsearch, http://cn.picsearch.com/index.cgi?q=%s\n	Flickr, https://www.flickr.com/search/?w=all&q=%s\n	Pixiv, http://www.pixiv.net/search.php?s_mode=s_tag&word=%s\n	dA, https://www.deviantart.com/browse/all/?q=%s\n下载--download\n	二次元\n		dmhy, https://share.dmhy.org/topics/list?keyword=%s\n		Tokyotosho, https://www.tokyotosho.info/search.php?terms=%s\n		Mikan, http://mikanani.me/Home/Search?searchstr=%s\n		＊MioBT＊, http://www.miobt.com/search.php?keyword=%s\n		ACG搜，http://www.acgsou.com/search.php?keyword=%s\n		简单动漫, http://www.36dm.com/search.php?keyword=%s\n		KOTOMI RSS, https://moe4sale.in/?kw=%s\n		ACG狗狗, http://bt.acg.gg/search.php?keyword=%s\n		ACG.RIP, https://acg.rip/?term=%s\n	BTSOW, https://btso.pw/search/%s\n	种子狗, http://www.zhongzigou.net/so/%s/\n	影视\n		kat.how, https://kat.how/usearch/%s/\n		thepiratebay, https://thepiratebay.org/search/%s\n		isoHunt, https://isohunt.to/torrents/?ihq=%s\n		1337x, http://1337x.to/search/%s/1/\n		RARBG, https://rarbg.to/torrents.php?search=%s\n	GGBases, http://www.ggbases.com/search.so?title=%s\n	TK, https://www.torrentkitty.tv/search/%s\n	ed2k\n		ed2kers, https://www.google.com/search?q=%s+site%3Aed2kers.com\n		xiaohx, http://www.xiaohx.net/search?key=%s\n		逛电驴, http://verycd.gdajie.com/find.htm?keyword=%s\n	字幕\n		subom, http://www.subom.net/search/%s\n		sub HD, http://subhd.com/search/%s\n		射手网(伪), http://assrt.net/sub/?searchword=%s\n网购--cart-arrow-down\n	一淘, http://s.etao.com/search?q=%s\n	京东, https://search.jd.com/Search?keyword=%s&enc=utf-8\n	淘宝, https://s.taobao.com/search?q=%s\n	亚马逊, https://www.amazon.cn/s/ref=nb_ss?keywords=%s\netc--plus-square\n	邮编库, http://www.youbianku.com/%s\n	AMO, https://addons.mozilla.org/zh-CN/firefox/search/?q=%s\n	汉典(字), http://www.zdic.net/sousuo/?q=%s&tp=tp1\n	汉典(词), http://www.zdic.net/sousuo/?q=%s&tp=tp3\n",
 	};
 
-	var MAIN_CSS = "#sej-container{pointer-events:none;position:fixed;top:0px;z-index:91111111111;margin:0;background:white;box-shadow:0px 0px 3px #aaaaaa;margin:0 auto;opacity:0.2;display:table;font-family:Comic Sans MS, 'Microsoft YaHei', 微软雅黑;line-height:1.5;font-size:13px;transition: opacity 0.5s ease-in-out;}sejul{border:1px solid #333;}#sej-container svg{height:20px;vertical-align:text-bottom;}sejul, sejli{margin:0;padding:0;list-style:none outside;}sejli{display:list-item;}sejli:hover>sejul{display:block;}body>sejul>sejli{float:left;}sejli sejul{position:absolute;}sejli sejul sejul{margin-left:100px;margin-top:-30px;}sejli sejul .sej-engine{padding:4px 0px;width:100%;text-align:left;text-indent:5px;}#sej-container>sejli{float:left;border-right:1px solid #333;}#sej-container>sejli:last-child{border-right:none;}#sej-expanded-category{display:inline-block;font-weight:bold;padding:2px 4px;line-height:2;}#sej-expanded-category::after{content:' :';}.sej-engine{line-height:2;display:inline-block;margin:0;border:none;padding:2px 4px;text-decoration:none;transition:background-color 0.15s ease-in-out;}a.sej-engine{white-space:nowrap;min-width:80px;text-align:center;}a.sej-engine:visited, a.sej-engine:active{color:#120886;}a.sej-engine:link, a.sej-engine:visited{text-decoration:none;}.sej-drop-list-trigger-shown{background-color:#DEEDFF !important;}.sej-drop-list-trigger::after {content:\'\';display:inline-block;margin:0 0 0 3px;padding:0;width:0;height:0;border-top:6px solid #BCBCBC;border-right:5px solid transparent;border-left:5px solid transparent;border-bottom:0px solid transparent;transition:-webkit-transform 0.3s ease-in-out;transition:transform 0.3s ease-in-out;}.sej-drop-list-trigger-shown::after {-webkit-transform:rotate(180deg);transform:rotate(180deg);}.sej-engine:hover {background-color:#EAEAEA;}.sej-engine-icon {display:inline-block;height:16px;border:none;padding:0;margin:0 3px 0 0;vertical-align:sub;}.sej-drop-list {display:none;float:left;min-width:100px;font-size:13px;-moz-box-shadow:2px 2px 5px #ccc;-webkit-box-shadow:2px 2px 5px #ccc;box-shadow:2px 2px 5px #ccc;background-color:white;}.sej-drop-list> sejli {border-bottom:1px solid #333;}.sej-drop-list> sejli:last-child {border-bottom:none;}";
+	var MAIN_CSS = "#sej-container{position:fixed;top:0px;z-index:91111111111;margin:0;background: white;box-shadow:0px 0px 3px #aaaaaa;margin:0 auto;opacity:0.8;display:table;font-family: Comic Sans MS, 'Microsoft YaHei', 微软雅黑;line-height: 1.5;font-size: 9px;transition: opacity 0.5s ease-in-out;}sejul{border: 1px solid #333;}#sej-container svg{height:15px;vertical-align: text-bottom;}sejul, sejli{margin: 0;padding: 0;list-style: none outside;}sejli{display: list-item;}sejli:hover>sejul{display:block;}body>sejul>sejli{float: left;}sejli sejul{position: absolute;}sejli sejul sejul{margin-left: 100px;margin-top: -30px;}sejli sejul .sej-engine{padding: 4px 0px;width:100%;text-align: left;text-indent: 5px;}#sej-container>sejli{float: left;border-right: 1px solid #333;}#sej-container>sejli:last-child{border-right: none;}#sej-expanded-category{display: inline-block;font-weight: bold;padding: 0px 4px;line-height: 2;}#sej-expanded-category::after{content:' :';}.sej-engine{line-height: 2;display: inline-block;margin: 0;border: none;padding: 0px 4px;text-decoration: none;transition: background-color 0.15s ease-in-out;}a.sej-engine{white-space: nowrap;min-width: 80px;text-align: center;}a.sej-engine:visited, a.sej-engine:active{color: #120886;}a.sej-engine:link, a.sej-engine:visited{text-decoration: none;}.sej-drop-list-trigger-shown{background-color: #DEEDFF !important;}.sej-drop-list-trigger::after {content:\'\';display: inline-block;margin: 0 0 0 3px;padding: 0;width: 0;height: 0;border-top: 6px solid #BCBCBC;border-right: 5px solid transparent;border-left: 5px solid transparent;border-bottom: 0px solid transparent;transition: -webkit-transform 0.3s ease-in-out;transition: transform 0.3s ease-in-out;}.sej-drop-list-trigger-shown::after {-webkit-transform: rotate(180deg);transform: rotate(180deg);}.sej-engine:hover {background-color: #EAEAEA;}.sej-engine-icon {display: inline-block;height: 16px;border: none;padding: 0;margin: 0 3px 0 0;vertical-align: sub;}.sej-drop-list {display: none;float: left;min-width: 100px;font-size: 13px;-moz-box-shadow: 2px 2px 5px #ccc;-webkit-box-shadow: 2px 2px 5px #ccc;box-shadow: 2px 2px 5px #ccc;background-color: white;}.sej-drop-list> sejli {border-bottom: 1px solid #333;}.sej-drop-list> sejli:last-child {border-bottom: none;}";
 
 	var categoryMap = { //rules 和 engineList 的对应
 		"web": "网页",
@@ -68,9 +68,7 @@
 		return engineListIntroduce.replace(/(（.*?）)/g, "<span>$1</span>")
 			.replace(/"(.*?)"/g, "<span>$1</span>");
 	}
-	var defaultStyleFix = "html{margin-top:32.1px;}#sej-container{position:fixed;top:0px;z-index:1999;margin:0;}";
-	var defaultStyleFixNoMarginTop = "#sej-container{position:fixed;top:0px;z-index:1999;margin:0;}";
-
+	
 	function isTheSameCategory(c1, c2) {
 		return (categoryMap[c1] || c1) == (categoryMap[c2] || c2);
 	}
@@ -103,7 +101,6 @@
 				target: "#top_nav",
 				where: "beforeBegin",
 			},
-			stylish: "#top_nav{padding-top: 23px;}",
 		}, {
 			name: "baidu 简洁搜索", //百度简洁搜索：https://www.baidu.com/s?wd=firefox&ie=utf-8&tn=baidulocal
 			url: /^https?:\/\/www\.baidu\.com\/s\?.*tn=baidulocal/,
@@ -151,7 +148,6 @@
 				target: "#wrapper",
 				where: "beforeBegin",
 			},
-			stylish: ".header{ margin-bottom: 5px; }"
 		}, {
 			name: "雅虎网页搜索",
 			url: /^https?:\/\/search\.yahoo\.com\/search/,
@@ -162,7 +158,6 @@
 				target: "#hd",
 				where: "afterEnd"
 			},
-			stylish: "#doc #sticky-hd ~ #bd {margin-top: 110px;}"
 		}, {
 			name: "tw.yahoo",
 			url: /^https?:\/\/tw\.search\.yahoo\.com\/search/,
@@ -173,7 +168,6 @@
 				target: "#sticky-hd",
 				where: "beforeEnd"
 			},
-			stylish: "#bd {margin-top: 105px!important;}"
 		}, {
 			name: "yahoo.co.jp",
 			url: /^https?:\/\/search\.yahoo\.co\.jp\/search/,
@@ -233,7 +227,6 @@
 				target: "#top_nav",
 				where: "beforeBegin",
 			},
-			stylish: "#top_nav{padding-top: 23px;}",
 		}, {
 			name: "互动百科",
 			url: /^https?:\/\/[a-z]{2,3}\.baike\.com\/[a-z]/,
@@ -250,7 +243,6 @@
 				else input = document.evaluate("//h1", document, null, 9, null).singleNodeValue.innerHTML;
 				return input;
 			},
-			stylish: ".bk-head{background:none}",
 		}, {
 			name: "wiki",
 			url: /^https?:\/\/..\.wikipedia\.org\/w\/index\.php(?!.*\?search=)/,
@@ -331,7 +323,6 @@
 				target: ".zu-top",
 				where: "afterEnd"
 			},
-			stylish: "#sej-container{position:fixed;z-index:10;}"
 		}, {
 			name: "stackoverflow",
 			url: /^https?:\/\/stackoverflow\.com\/search\?/,
@@ -358,7 +349,6 @@
 			name: "百度地图",
 			url: /^https?:\/\/map\.baidu\.com\/\?newmap/,
 			engineList: "map",
-			stylish: defaultStyleFixNoMarginTop,
 		}, {
 			name: "google地图",
 			url: /^https?:\/\/www\.google\.co.{1,4}\/maps/,
@@ -369,7 +359,6 @@
 			name: "Bing地图",
 			url: /^https?:\/\/[^.]*\.bing\.com\/ditu\//,
 			engineList: "map",
-			stylish: "html{height:calc(100% - 32.1px)}",
 		}, {
 			name: "搜狗地图",
 			url: /^https?:\/\/map\.sogou\.com\/#/,
@@ -384,7 +373,6 @@
 			name: "搜狗音乐",
 			url: /^https?:\/\/mp3\.sogou\.com\/music\.so/,
 			engineList: "music",
-			stylish: defaultStyleFixNoMarginTop + "html{margin-top:20px}",
 		}, {
 			name: "音悦台",
 			url: /^https?:\/\/so\.yinyuetai\.com\/mv\?/,
@@ -418,7 +406,6 @@
 				target: "#top_nav",
 				where: "beforeBegin"
 			},
-			stylish: "#top_nav{padding-top: 23px;}",
 		}, {
 			name: "百度图片",
 			url: /^https?:\/\/image\.baidu\.c(om|n)\/search/,
@@ -433,7 +420,6 @@
 				target: "#searchBox",
 				where: "beforeEnd"
 			},
-			stylish: "#searchBox{height:75px !important;}.searchwrap{height:60px}"
 		}, {
 			name: "bing图片",
 			url: /^https?:\/\/.*\.bing\.com\/images\/search/,
@@ -448,7 +434,6 @@
 				target: ".fix_area",
 				where: "beforeEnd"
 			},
-			stylish: "#hdFix{height:130px !important;}",
 		}, {
 			name: "花瓣",
 			url: /^https?:\/\/huaban\.com\/search\/\?/,
@@ -458,7 +443,6 @@
 				target: "#header",
 				where: "beforeEnd"
 			},
-			stylish: "#page{padding-top: 75px;}#header{height: 80px;}.floating{top: 80px !important;}",
 		}, {
 			name: "flickr",
 			url: /^https?:\/\/www\.flickr\.com\/search/,
@@ -476,7 +460,6 @@
 				target: "body",
 				where: "beforeBegin"
 			},
-			stylish: "#sej-container{position:fixed;z-index:1999;top:50px}.sej-engine{padding:0 4px}"
 		}, {
 			name: "picsearch",
 			url: /^http:\/\/(..|...)\.picsearch\.com\/index\.cgi/,
@@ -550,13 +533,11 @@
 			url: /^https?:\/\/www\.acgsou\.com\/search\.php/,
 			engineList: "download",
 			keyword: "#topsearch",
-			stylish: defaultStyleFix + ".table_fixed{table-layout:auto;}",
 		}, {
 			name: "36dm",
 			url: /^https?:\/\/www\.36dm\.com\/search\.php/,
 			engineList: "download",
 			keyword: "#topsearch",
-			stylish: defaultStyleFix + ".table_fixed{table-layout:auto;}",
 		}, {
 			name: "KOTOMI RSS",
 			url: /^https?:\/\/moe4sale\.in\/\?kw/,
@@ -576,7 +557,6 @@
 				target: "#topbar",
 				where: "afterEnd"
 			},
-			stylish: "#main{padding-top:70px;}",
 		}, {
 			name: "sukebei.nyaa",
 			url: /^https?:\/\/sukebei\.nyaa\.(se|eu)\/\?page=search/,
@@ -587,7 +567,6 @@
 				target: "#topbar",
 				where: "afterEnd"
 			},
-			stylish: "#main{padding-top:70px;}",
 		}, {
 			name: "GGBases",
 			url: /^https?:\/\/www\.ggbases\.com\/search/,
@@ -719,7 +698,6 @@
 			name: "亚马逊",
 			url: /^https?:\/\/www\.amazon\.cn\/s\/ref/,
 			engineList: "shopping",
-			stylish: defaultStyleFixNoMarginTop,
 		}, {
 			name: "当当",
 			url: /^https?:\/\/search\.dangdang\.com\/\?key/,
@@ -1246,9 +1224,9 @@
 				$(iInput).addClass("sej-setDblclick");
 				$(iInput).dblclick(function(){
 					if($("#sej-container").css("pointer-events")==="none"){
-						$("#sej-container").css("pointer-events","all").css("opacity","1");
+						$("#sej-container").css("pointer-events","all").css("opacity","0.8");
 					}else{
-						$("#sej-container").css("pointer-events","none").css("opacity","0.2");
+						$("#sej-container").css("pointer-events","none").css("opacity","0.1");
 					}
 				});
 			}
