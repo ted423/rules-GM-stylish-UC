@@ -7,7 +7,7 @@
 // @include     http://www.tsdm.me/*
 // @downloadURL https://greasyfork.org/scripts/2393/code.user.js
 // @updateURL https://greasyfork.org/scripts/2393/code.meta.js
-// @version     1.5
+// @version     1.6
 // @grant       none
 // ==/UserScript==
 var temp=document.getElementById("inner_stat");
