@@ -68,10 +68,12 @@
 		KOTOMI RSS, https://moe4sale.in/?kw=%s
 		ACG狗狗, http://bt.acg.gg/search.php?keyword=%s
 		ACG.RIP, https://acg.rip/?term=%s
+		AcgnX, https://www.acgnx.se/search.php?sort_id=0&keyword=%s
+		Anisearch, https://anisearch.ru/torrents?search=%s
 	BTSOW, https://btso.pw/search/%s
 	种子狗, http://www.zhongzigou.net/so/%s/
 	影视
-		kat.how, https://kat.how/usearch/%s/
+		thekat.nz, https://thekat.nz/usearch/%s/
 		thepiratebay, https://thepiratebay.org/search/%s
 		isoHunt, https://isohunt.to/torrents/?ihq=%s
 		1337x, http://1337x.to/search/%s/1/
@@ -79,9 +81,10 @@
 	GGBases, http://www.ggbases.com/search.so?title=%s
 	TK, https://www.torrentkitty.tv/search/%s
 	Sukebei
-		sukebei.nyaa.si, https://sukebei.nyaa.si/?f=0&c=0_0&q=%s
+		nyaa.si, https://sukebei.nyaa.si/?f=0&c=0_0&q=%s
 		NayaPantsu, https://sukebei.pantsu.cat/search?c=_&userID=0&q=%s
 		NayaPantsu(nyoo), https://sukebei.nyoo.moe/search?c=_&userID=0&q=%s
+		AniDex, https://anidex.info/?q=%s
 	ed2k
 		ed2kers, https://www.google.com/search?q=%s+site%3Aed2kers.com
 		xiaohx, http://www.xiaohx.net/search?key=%s

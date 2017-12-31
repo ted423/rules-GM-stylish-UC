@@ -112,6 +112,7 @@ a.sej-engine:link, a.sej-engine:visited{
 	border-bottom: 0px solid transparent;
 	transition: -webkit-transform 0.3s ease-in-out;
 	transition: transform 0.3s ease-in-out;
+	vertical-align: unset;
 }
 .sej-drop-list-trigger-shown::after {
 	-webkit-transform: rotate(180deg);
