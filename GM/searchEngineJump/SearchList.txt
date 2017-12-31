@@ -56,6 +56,9 @@
 	dA, https://www.deviantart.com/browse/all/?q=%s
 下载--download
 	二次元
+		NyaaPantsu, https://pantsu.cat/search?c=_&userID=0&q=%s
+		nyoo.moe(NyaaPantsu), https://nyoo.moe/search?c=_&userID=0&q=%s
+		nyaa.si, https://nyaa.si/?f=0&c=0_0&q=%s
 		dmhy, https://share.dmhy.org/topics/list?keyword=%s
 		Tokyotosho, https://www.tokyotosho.info/search.php?terms=%s
 		Mikan, http://mikanani.me/Home/Search?searchstr=%s
@@ -65,10 +68,6 @@
 		KOTOMI RSS, https://moe4sale.in/?kw=%s
 		ACG狗狗, http://bt.acg.gg/search.php?keyword=%s
 		ACG.RIP, https://acg.rip/?term=%s
-		nyaa.si, https://nyaa.si/?f=0&c=0_0&q=%s
-		NyaaPantsu
-			NyaaPantsu, https://nyaa.pantsu.cat/search?c=_&userID=0&q=%s
-			nyoo.moe, https://nyaa.pantsu.cat/search?c=_&userID=0&q=%s
 	BTSOW, https://btso.pw/search/%s
 	种子狗, http://www.zhongzigou.net/so/%s/
 	影视
@@ -81,7 +80,7 @@
 	TK, https://www.torrentkitty.tv/search/%s
 	Sukebei
 		sukebei.nyaa.si, https://sukebei.nyaa.si/?f=0&c=0_0&q=%s
-		NayaPantsu(sukebei), https://sukebei.pantsu.cat/search?c=_&userID=0&q=%s
+		NayaPantsu, https://sukebei.pantsu.cat/search?c=_&userID=0&q=%s
 			
 	ed2k
 		ed2kers, https://www.google.com/search?q=%s+site%3Aed2kers.com
