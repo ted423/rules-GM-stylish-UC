@@ -57,7 +57,7 @@
 下载--download
 	二次元
 		NyaaPantsu, https://pantsu.cat/search?c=_&userID=0&q=%s
-		nyoo.moe(NyaaPantsu), https://nyoo.moe/search?c=_&userID=0&q=%s
+		nyoo(NyaaPantsu), https://nyoo.moe/search?c=_&userID=0&q=%s
 		nyaa.si, https://nyaa.si/?f=0&c=0_0&q=%s
 		dmhy, https://share.dmhy.org/topics/list?keyword=%s
 		Tokyotosho, https://www.tokyotosho.info/search.php?terms=%s
@@ -81,7 +81,7 @@
 	Sukebei
 		sukebei.nyaa.si, https://sukebei.nyaa.si/?f=0&c=0_0&q=%s
 		NayaPantsu, https://sukebei.pantsu.cat/search?c=_&userID=0&q=%s
-			
+		NayaPantsu(nyoo), https://sukebei.nyoo.moe/search?c=_&userID=0&q=%s
 	ed2k
 		ed2kers, https://www.google.com/search?q=%s+site%3Aed2kers.com
 		xiaohx, http://www.xiaohx.net/search?key=%s
