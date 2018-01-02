@@ -77,6 +77,7 @@
 		1337x, http://1337x.to/search/%s/1/
 		RARBG, https://rarbg.to/torrents.php?search=%s
 	BTSOW, https://btso.pw/search/%s
+	BTDigg, https://www.btdig.com/search?q=%s
 	种子狗, http://www.zhongzigou.net/so/%s/
 	Torrentz2, https://torrentz2.eu/search?f=%s
 	GGBases, http://www.ggbases.com/search.so?title=%s
