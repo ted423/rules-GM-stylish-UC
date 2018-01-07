@@ -3,7 +3,7 @@
 // @author		ted423
 // @contributor	NLF && ywzhaiqi
 // @description	方便的在各个引擎之间跳转。可自定义搜索列表的 NLF 修改版。
-// @version		9.1801.02.0
+// @version		9.1801.07.0
 // @include		*
 // @namespace	https://greasyfork.org/users/85
 // @require		http://code.jquery.com/jquery-2.2.0.min.js
@@ -189,13 +189,12 @@
 			name: "wiki",
 			url: /^https?:\/\/..\.wikipedia\.org\/w\/index\.php(?!.*\?search=)/,
 			engineList: "资料",
-			
 		}, {
 			name: "wiki[ZH]",
 			url: /^https?:\/\/zh\.wikipedia\.org\/(?:zh|wiki\/|w\/index.php\?search=)/,
 			engineList: "资料",
 			keyword: function() {
-				if (document.getElementById("searchText"))return document.getElementById("searchText").value;
+				if (document.getElementById("searchText"))return document.querySelector("#searchText>input").value;
 				else return document.getElementById("firstHeading").childNodes[0].textContent;
 			},
 			
@@ -205,7 +204,7 @@
 			engineList: "资料",
 			keyword: function() {
 				if (document.getElementById("searchText"))
-					return document.getElementById("searchText").value;
+					return document.querySelector("#searchText>input").value;
 				else return document.getElementById("firstHeading").childNodes[0].textContent;
 			},
 			
@@ -214,7 +213,7 @@
 			url: /^https?:\/\/ja\.wikipedia\.org\/(wiki\/|w\/index\.php\?search=)/,
 			engineList: "资料",
 			keyword: function() {
-				if (document.getElementById("searchText"))return document.getElementById("searchText").value;
+				if (document.getElementById("searchText"))return document.querySelector("#searchText>input").value;
 				else return document.getElementById("firstHeading").childNodes[0].textContent;
 			},
 		}, {
