@@ -253,7 +253,7 @@
 			url: /^https?:\/\/www\.google\.co.{1,4}\/maps/,
 			engineList: "map",
 			mutationTitle: true,
-					}, {
+		}, {
 			name: "Bing地图",
 			url: /^https?:\/\/[^.]*\.bing\.com\/ditu\//,
 			engineList: "map",

@@ -51,6 +51,7 @@ function FindProxyForURL(url, host) {
 		"steamcommunity.com": 1,
 		"steampowered.com": 1,
 		"steamstatic.com": 1,
+		"softether-download.com": 1,
 		"tumblr.com": 1,
 		"thepiratebay.org": 1,
 		"toranoana.jp": 1,
