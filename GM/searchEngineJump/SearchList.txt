@@ -75,7 +75,8 @@
 		thepiratebay, https://thepiratebay.org/search/%s
 		isoHunt, https://isohunt.to/torrents/?ihq=%s
 		1337x, http://1337x.to/search/%s/1/
-		RARBG, https://rarbg.to/torrents.php?search=%s
+		RARBG.to, https://rarbgproxy.org/torrents.php?search=%s
+		rarbg.is, https://rarbg.is/torrents.php?search=%s
 	BTSOW, https://btso.pw/search/%s
 	BTDigg, https://www.btdig.com/search?q=%s
 	种子狗, http://www.zhongzigou.net/so/%s/
