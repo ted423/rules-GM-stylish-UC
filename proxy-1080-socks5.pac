@@ -46,6 +46,7 @@ function FindProxyForURL(url, host) {
 		"mbga.jp": 1,
 		"andapp.jp": 1,
 		"mobage.jp": 1,
+		"mega.nz": 1,
 		"nyaa.se": 1,
 		"nyaa.eu": 1,
 		"steamcommunity.com": 1,
