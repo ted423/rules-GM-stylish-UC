@@ -91,7 +91,7 @@
 		AniRena, https://www.anirena.com/?s=%s
 	ed2k
 		ed2kers, https://www.google.com/search?q=%s+site%3Aed2kers.com
-		xiaohx, http://www.xiaohx.net/search?key=%s
+		xiaohx, http://www.xiaohx.org/search?key=%s
 		逛电驴, http://verycd.gdajie.com/find.htm?keyword=%s
 	字幕
 		sub HD, http://subhd.com/search/%s
