@@ -9,9 +9,9 @@
 // @require		http://code.jquery.com/jquery-2.2.0.min.js
 // @downloadURL	https://github.com/ted423/rules-GM-stylish-UC/raw/master/GM/searchEngineJump/searchEngineJumpCE.user.js
 // @updateURL	https://github.com/ted423/rules-GM-stylish-UC/raw/master/GM/searchEngineJump/searchEngineJumpCE.user.js
-// @grant		GM_getValue
-// @grant		GM_setValue
-// @grant		GM_addStyle
+// @grant		GM.getValue
+// @grant		GM.setValue
+// @grant		GM.addStyle
 // @run-at		document-start
 // ==/UserScript==
 
@@ -544,11 +544,11 @@
 	];
 
 	function loadPrefs() {
-		prefs.openInNewTab = GM_getValue("openInNewTab", prefs.openInNewTab);
-		prefs.debug = GM_getValue("debug", prefs.debug);
-		prefs.engineListDataType = GM_getValue("engineListDataType", prefs.engineListDataType);
+		prefs.openInNewTab = GM.getValue("openInNewTab", prefs.openInNewTab);
+		prefs.debug = GM.getValue("debug", prefs.debug);
+		prefs.engineListDataType = GM.getValue("engineListDataType", prefs.engineListDataType);
 
-		engineListData.custom = GM_getValue("engineList") || "";
+		engineListData.custom = GM.getValue("engineList") || "";
 
 		reloadDebug();
 	}
@@ -564,7 +564,7 @@
 			};
 			if ($("setup")) return;
 
-			var styleNode = GM_addStyle("\
+			var styleNode = GM.addStyle("\
 		#sej-prefs-setup { position:fixed;z-index:2147483647;top:38px;right:60px;padding:20px 30px 10px;background:#eee;width:500px;border:1px solid black; }\
 		#sej-prefs-setup * { color:black;text-align:left;line-height:normal;font-size:12px; }\
 		#sej-prefs-setup i { 'Microsoft YaHei UI','微软雅黑',Arial; }\
@@ -631,13 +631,13 @@
 			};
 
 			on($("ok"), "click", function() {
-				GM_setValue("openInNewTab", prefs.openInNewTab = !!$("openInNewTab").checked);
-				GM_setValue("debug", prefs.debug = !!$("debug").checked);
-				GM_setValue("engineListDataType", prefs.engineListDataType = engineListType_sel.value);
-				// GM_setValue("position", prefs.position = $("position").value);
+				GM.setValue("openInNewTab", prefs.openInNewTab = !!$("openInNewTab").checked);
+				GM.setValue("debug", prefs.debug = !!$("debug").checked);
+				GM.setValue("engineListDataType", prefs.engineListDataType = engineListType_sel.value);
+				// GM.setValue("position", prefs.position = $("position").value);
 
 				if (engineListType_sel.value == "custom") {
-					GM_setValue("engineList", engineListData.custom = engineList_txt.value);
+					GM.setValue("engineList", engineListData.custom = engineList_txt.value);
 				}
 
 				// 刷新工具条
