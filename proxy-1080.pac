@@ -2,6 +2,7 @@ function FindProxyForURL(url, host) {
 	var proxy = "PROXY 127.0.0.1:1080;";
 	var needDomain = {
 		"amazonaws.com": 1,
+		"autolyric.com": 1,
 		"blogger.com": 1,
 		"blogspot.com": 1,
 		"blogspot.jp": 1,
