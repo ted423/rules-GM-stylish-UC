@@ -294,13 +294,12 @@ tsdm.me###weakpassword_tip
 ||kkkmh.com/js.php?*
 
 !nyaa
-sukebei.nyaa.se##[id^="banner-"]
 ||media.gssp.asia/ls/opt_icon_text.png$image
 ||img.gsspat.jp$image
 ||art.lead-ad.jp^
 ||mediad2.jp/ad/*
 
-||repaik.com/data/cache/common_extra.js?*
+
 
 ||www.shumilou.co/style/index.php?js/*
 
