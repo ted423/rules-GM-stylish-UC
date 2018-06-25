@@ -30,7 +30,7 @@
 	function panlinkWithPw(){
 		var href = window.location.href,site = null,i = 0;
 		while (standByList[i]) if(standByList[i++].test(href)) {standBy = true; break;}
-		var panlinks,r = null,reg,i,nC,nN,pN,pos,subS;
+		var panlinks,r = null,reg,nC,nN,pN,pos,subS;
 		for (var key in prefs) {
 			reg = prefs[key][1] || common_reg;
 			panlinks = document.querySelectorAll('a[href^="'+prefs[key][0]+'"]'),i=0;
