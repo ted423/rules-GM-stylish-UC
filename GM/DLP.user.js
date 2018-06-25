@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name		DownloadPlus
+// @name		DownloadPlus - 自动处理网盘链接及其提取码变成支持自动填充密码的方式的链接（百度云、360pan等）,右键下载种子
 // @author		jasonshaw,jasake,ted423
 // @namespace		XX
-// @version		1.5
+// @version		1.6
 // @updateURL		https://raw.githubusercontent.com/ted423/rules-GM-stylish-UC/master/GM/DLP.user.js
 // @description		自动处理网盘链接及其提取码变成支持自动填充密码的方式的链接（百度云、360pan等）,右键下载种子
 // @grant		unsafeWindow
@@ -19,14 +19,13 @@
 	var prefs = {
 			tieba:['http://jump.bdimg.com/safecheck'],//这个有大量的误操作，因为这只是新浪的短网址，而不一定是网盘，自选使用
 			pan:['http://pan.baidu.com/s/'],//第一个参数定义链接类型，第二个可选参数：后续紧跟着的提取码之类的前缀提示符
-	        yunpan:['http://yunpan.cn/'],
-	        yunpans:['https://yunpan.cn/'],
+	        yunpan:['https://yunpan.360.cn/'],
 	        pans:['https://pan.baidu.com/s/'],
                 pan2:['http://pan.baidu.com/share/'],
                 pan2s:['https://pan.baidu.com/share/'],
+                ebaidu:['https://eyun.baidu.com/s/'],
 	        tpan:['http://t.cn/'],//这个有大量的误操作，因为这只是新浪的短网址，而不一定是网盘，自选使用
-	        wpan:['http://vdisk.weibo.com/lc/'],
-                weiyunpan:['http://share.weiyun.com/'],
+            weiyunpan:['http://share.weiyun.com/'],
 	};
 	function panlinkWithPw(){
 		var href = window.location.href,site = null,i = 0;
@@ -73,7 +72,7 @@
 		magnetMenu.id="magnet-menu";
 		magnetMenu.innerHTML='\
 		<menu label="获取种子">\
-			<menuitem label="Torrasave.top" onclick="var str=activeElement.href.match(/\\w{40}/g)[0];window.open(\'https://torrasave.top/torrent/\' + str.toLocaleUpperCase()+\'.torrent\');"></menuitem>\
+			<menuitem label="itorrents.org" onclick="var str=activeElement.href.match(/\\w{40}/g)[0];window.open(\'https://itorrents.org/torrent/\' + str.toLocaleUpperCase()+\'.torrent\');"></menuitem>\
 		</menu>';
 		document.head.appendChild(magnetMenu);
 	}
