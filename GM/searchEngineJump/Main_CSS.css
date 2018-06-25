@@ -32,6 +32,7 @@ sejul{
 #sej-container svg{
 	height:15px;
 	vertical-align: text-bottom;
+	padding-right: 1px;
 }
 sejul, sejli{
 	margin: 0;
