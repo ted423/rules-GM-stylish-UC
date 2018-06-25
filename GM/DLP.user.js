@@ -1,10 +1,10 @@
 // ==UserScript==
-// @name		DownloadPlus - 自动处理网盘链接及其提取码变成支持自动填充密码的方式的链接（百度云、360pan等）,右键下载种子
+// @name		DownloadPlus - 自动处理网盘链接及其提取码变成支持自动填充密码的方式的链接（百度云、360pan等）,磁力链转种子
 // @author		jasonshaw,jasake,ted423
 // @namespace		XX
-// @version		1.6
+// @version		1.7
 // @updateURL		https://raw.githubusercontent.com/ted423/rules-GM-stylish-UC/master/GM/DLP.user.js
-// @description		自动处理网盘链接及其提取码变成支持自动填充密码的方式的链接（百度云、360pan等）,右键下载种子
+// @description		自动处理网盘链接及其提取码变成支持自动填充密码的方式的链接（百度云、360pan等）,磁力链转种子
 // @grant		unsafeWindow
 // @include		*
 // @run-at		document-end
@@ -66,15 +66,16 @@
 			}
 		}
 		var magnet=document.querySelectorAll('a[href^="magnet"]');
-		[].forEach.call(magnet,function(a){a.setAttribute('contextmenu','magnet-menu')});
-		var magnetMenu = document.createElement('menu');
-		magnetMenu.type="context";
-		magnetMenu.id="magnet-menu";
-		magnetMenu.innerHTML='\
-		<menu label="获取种子">\
-			<menuitem label="itorrents.org" onclick="var str=activeElement.href.match(/\\w{40}/g)[0];window.open(\'https://itorrents.org/torrent/\' + str.toLocaleUpperCase()+\'.torrent\');"></menuitem>\
-		</menu>';
-		document.head.appendChild(magnetMenu);
+		[].forEach.call(magnet,function(a){
+			var magnet2torrent = document.createElement('a'), str=a.href.match(/\w{40}/g)[0],sup= document.createElement('sup');
+			magnet2torrent.textContent="2torrent";
+			magnet2torrent.target="_blank";
+			magnet2torrent.style=""
+			magnet2torrent.title="itorrents.org";
+			magnet2torrent.href="https://itorrents.org/torrent/" + str.toLocaleUpperCase()+".torrent";
+			sup.appendChild(magnet2torrent);
+			a.parentNode.appendChild(sup);
+			});
 	}
 	function addMutationObserver(selector, callback) {
 		var watch = document.querySelector(selector);
