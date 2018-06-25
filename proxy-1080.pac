@@ -50,6 +50,7 @@ function FindProxyForURL(url, host) {
 		"mega.nz": 1,
 		"nyaa.se": 1,
 		"nyaa.eu": 1,
+		"community.steam-api.com": 1,
 		"steamcommunity.com": 1,
 		"steampowered.com": 1,
 		"steamstatic.com": 1,
