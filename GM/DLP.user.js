@@ -84,7 +84,7 @@
 				var magnet2torrent = document.createElement('a'), sup = document.createElement('sup'), str = a.href.match(/\w{40}/g)[0];
 				magnet2torrent.textContent = "2torrent";
 				magnet2torrent.target = "_blank";
-				magnet2torrent.style = ""
+				magnet2torrent.style = "opacity: 0.5;"
 				magnet2torrent.title = "itorrents.org";
 				magnet2torrent.href = "https://itorrents.org/torrent/" + str.toLocaleUpperCase() + ".torrent";
 				sup.appendChild(magnet2torrent);
