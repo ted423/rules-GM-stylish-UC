@@ -70,6 +70,7 @@
 		KOTOMI RSS, https://moe4sale.in/?kw=%s
 		ACG狗狗, http://bt.acg.gg/search.php?keyword=%s
 		ACG.RIP, https://acg.rip/?term=%s
+		age动漫, http://bt.agefans.com/search?input=%s
 		AcgnX, https://www.acgnx.se/search.php?sort_id=0&keyword=%s
 	影视
 		thekat.nz, https://thekat.nz/usearch/%s/
@@ -78,7 +79,7 @@
 		1337x, http://1337x.to/search/%s/1/
 		RARBG.to, https://rarbgproxy.org/torrents.php?search=%s
 		rarbg.is, https://rarbg.is/torrents.php?search=%s
-	BTSOW, https://www.btsow.info/search/%s
+	BTSOW, http://www.btsow.info/search/%s
 	BTDigg, https://www.btdig.com/search?q=%s
 	种子狗, http://www.zhongzigou.net/so/%s/
 	Torrentz2, https://torrentz2.eu/search?f=%s
