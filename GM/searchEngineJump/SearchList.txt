@@ -73,9 +73,8 @@
 		age动漫, http://bt.agefans.com/search?input=%s
 		AcgnX, https://www.acgnx.se/search.php?sort_id=0&keyword=%s
 	影视
-		thekat.nz, https://thekat.nz/usearch/%s/
+		kat.ag, https://kat.ag/usearch/%s/
 		thepiratebay, https://thepiratebay.org/search/%s
-		isoHunt, https://isohunt.to/torrents/?ihq=%s
 		1337x, http://1337x.to/search/%s/1/
 		RARBG.to, https://rarbgproxy.org/torrents.php?search=%s
 		rarbg.is, https://rarbg.is/torrents.php?search=%s
