@@ -80,7 +80,8 @@
 		rarbg.is, https://rarbg.is/torrents.php?search=%s
 	BTSOW, http://www.btsow.info/search/%s
 	BTDigg, https://www.btdig.com/search?q=%s
-	种子狗, http://www.zhongzigou.net/so/%s/
+	种子狗, http://www.zhongzigou3.com/so/%s/
+	SoCiLi, http://www.sobt.red/search/%s/
 	Torrentz2, https://torrentz2.eu/search?f=%s
 	GGBases, http://www.ggbases.com/search.so?title=%s
 	TK, https://www.torrentkitty.tv/search/%s
