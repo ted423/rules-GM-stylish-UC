@@ -42,7 +42,7 @@
 音乐--music
 	Music, http://music.baidu.com/search?key=%s&ie=utf-8&oe=utf-8
 	搜狗, http://mp3.sogou.com/music.so?query=%s
-	一听, http://so.1ting.com/all.do?q=%s
+	一听, http://so.1ting.com/song?q=%s
 	虾米, http://www.xiami.com/search?key=%s
 	piapro, https://piapro.jp/search/?view=audio&keyword=%s
 	Lyric, http://music.baidu.com/search/lrc?key=%s
@@ -54,44 +54,50 @@
 	Flickr, https://www.flickr.com/search/?w=all&q=%s
 	Pixiv, http://www.pixiv.net/search.php?s_mode=s_tag&word=%s
 	dA, https://www.deviantart.com/browse/all/?q=%s
-下载--download
-	二次元
+ACG
+	NyaaPantsu
 		NyaaPantsu, https://pantsu.cat/search?c=_&userID=0&q=%s
-		nyoo(NyaaPantsu), https://nyoo.moe/search?c=_&userID=0&q=%s
-		nyaa.pt(NyaaPantsu), https://nyaa.pt/search?c=_&q=%s
-		nyaa.si, https://nyaa.si/?f=0&c=0_0&q=%s
-		dmhy, https://share.dmhy.org/topics/list?keyword=%s
-		Tokyotosho, https://www.tokyotosho.info/search.php?terms=%s
-		Mikan, http://mikanani.me/Home/Search?searchstr=%s
-		＊MioBT＊, http://www.miobt.com/search.php?keyword=%s
-		ACG搜，http://www.acgsou.com/search.php?keyword=%s
-		shana project, https://www.shanaproject.com/search/?title=%s
-		简单动漫, http://www.36dm.com/search.php?keyword=%s
-		KOTOMI RSS, https://moe4sale.in/?kw=%s
-		ACG狗狗, http://bt.acg.gg/search.php?keyword=%s
-		ACG.RIP, https://acg.rip/?term=%s
-		age动漫, http://bt.agefans.com/search?input=%s
-		AcgnX, https://www.acgnx.se/search.php?sort_id=0&keyword=%s
+		nyoo, https://nyoo.moe/search?c=_&userID=0&q=%s
+		nyaa.pt, https://nyaa.pt/search?c=_&q=%s
+	nyaa.si, https://nyaa.si/?f=0&c=0_0&q=%s
+	dmhy, https://share.dmhy.org/topics/list?keyword=%s
+	Tokyotosho, https://www.tokyotosho.info/search.php?terms=%s
+	Mikan, http://mikanani.me/Home/Search?searchstr=%s
+	＊MioBT＊, http://www.miobt.com/search.php?keyword=%s
+	ACG搜，http://www.acgsou.com/search.php?keyword=%s
+	shana project, https://www.shanaproject.com/search/?title=%s
+	简单动漫, http://www.36dm.com/search.php?keyword=%s
+	KOTOMI RSS, https://moe4sale.in/?kw=%s
+	ACG狗狗, http://bt.acg.gg/search.php?keyword=%s
+	ACG.RIP, https://acg.rip/?term=%s
+	age动漫, http://bt.agefans.com/search?input=%s
+	AcgnX, https://www.acgnx.se/search.php?sort_id=0&keyword=%s
+Sukebei
+	NyaaPantsu
+		NayaPantsu, https://sukebei.pantsu.cat/search?c=_&userID=0&q=%s
+		nyoo, https://sukebei.nyoo.moe/search?c=_&userID=0&q=%s
+		nyaa.pt, https://sukebei.nyaa.pt/search?c=_&q=%s
+	nyaa.si, https://sukebei.nyaa.si/?f=0&c=0_0&q=%s
+	AniDex, https://anidex.info/?q=%s
+	AniRena, https://www.anirena.com/?s=%s
+	GGBases, http://www.ggbases.com/search.so?title=%s
+下载--download
 	影视
 		kat.ag, https://kat.ag/usearch/%s/
 		thepiratebay, https://thepiratebay.org/search/%s
 		1337x, http://1337x.to/search/%s/1/
 		RARBG.to, https://rarbgproxy.org/torrents.php?search=%s
 		rarbg.is, https://rarbg.is/torrents.php?search=%s
-	BTSOW, http://www.btsow.info/search/%s
-	BTDigg, https://www.btdig.com/search?q=%s
-	种子狗, http://www.zhongzigou3.com/so/%s/
-	SoCiLi, http://www.sobt.red/search/%s/
+	Magnet
+		BTDB, https://btdb.to/q/%s
+		BTDigg, https://www.btdig.com/search?q=%s
+		BTSOW, http://www.btsow.info/s/%s
+		种子狗, http://www.zhongzigou3.com/so/%s/
+		SoCiLi, http://www.sobt.red/search/%s/
+		TK, https://www.torrentkitty.tv/search/%s
+		idope, https://www.idope.site/search/%s/
 	Torrentz2, https://torrentz2.eu/search?f=%s
-	GGBases, http://www.ggbases.com/search.so?title=%s
-	TK, https://www.torrentkitty.tv/search/%s
-	Sukebei
-		nyaa.si, https://sukebei.nyaa.si/?f=0&c=0_0&q=%s
-		NayaPantsu, https://sukebei.pantsu.cat/search?c=_&userID=0&q=%s
-		NayaPantsu(nyoo), https://sukebei.nyoo.moe/search?c=_&userID=0&q=%s
-		nyaa.pt(NyaaPantsu), https://sukebei.nyaa.pt/search?c=_&q=%s
-		AniDex, https://anidex.info/?q=%s
-		AniRena, https://www.anirena.com/?s=%s
+	limetorrents, https://www.limetorrents.info/search/all/%s
 	ed2k
 		ed2kers, https://www.google.com/search?q=%s+site%3Aed2kers.com
 		xiaohx, http://www.xiaohx.org/search?key=%s
