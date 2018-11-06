@@ -88,7 +88,7 @@ sejli sejul .sej-engine{
 }
 a.sej-engine{
 	white-space: nowrap;
-	min-width: 80px;
+	min-width: 55px;
 	text-align: center;
 }
 a.sej-engine:visited, a.sej-engine:active{
