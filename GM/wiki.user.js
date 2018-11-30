@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name		wiki open image
-// @version		2.1
+// @version		2.2
 // @description	wiki
-// @include		http://*.wikia.com/wiki/*
-// @include		http://img1.wikia.nocookie.net/*
+// @include		https://*.wikia.com/wiki/*
+// @include		https://*.wikia.nocookie.net/*
 // @grant		none
 // @run-at		document-end
 // ==/UserScript==
