@@ -3,7 +3,7 @@
 // @author		ted423
 // @contributor	NLF && ywzhaiqi
 // @description	方便的在各个引擎之间跳转。可自定义搜索列表的 NLF 修改版。
-// @version		9.1811.06.0
+// @version		10.1812.19.0
 // @include		*
 // @namespace	https://greasyfork.org/users/85
 // @require		https://code.jquery.com/jquery-3.3.1.min.js
@@ -19,9 +19,11 @@
 (function() {
 	"use strict";
 	var prefs = {
-		openInNewTab: false, //是否在新页面打开.
+		display: true,
+		dottype: "dbclick",
+		openInNewTab: true, //是否在新页面打开.
 		engineListDataType: "ted423", //搜索列表默认类型
-		debug: true
+		debug: false
 	};
 	var svg ={
 		list: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 511.626 511.626"><path d="M63.953 164.453H9.135c-2.474 0-4.615.9-6.423 2.709C.903 168.972 0 171.114 0 173.589v54.817c0 2.473.903 4.619 2.712 6.424 1.809 1.803 3.949 2.712 6.423 2.712h54.818c2.474 0 4.615-.905 6.423-2.712 1.809-1.809 2.712-3.951 2.712-6.424v-54.817c0-2.475-.904-4.617-2.712-6.427-1.808-1.806-3.949-2.709-6.423-2.709zM63.953 383.722H9.135c-2.474 0-4.615.896-6.423 2.707C.903 388.238 0 390.378 0 392.854v54.82c0 2.471.903 4.609 2.712 6.42 1.809 1.813 3.949 2.714 6.423 2.714h54.818c2.474 0 4.615-.903 6.423-2.714 1.809-1.807 2.712-3.949 2.712-6.42v-54.82c0-2.477-.904-4.616-2.712-6.426-1.808-1.803-3.949-2.706-6.423-2.706zM63.953 274.082H9.135c-2.474 0-4.615.91-6.423 2.714S0 280.749 0 283.22v54.815c0 2.478.903 4.62 2.712 6.427 1.809 1.808 3.949 2.707 6.423 2.707h54.818c2.474 0 4.615-.896 6.423-2.707 1.809-1.807 2.712-3.949 2.712-6.427V283.22c0-2.471-.904-4.613-2.712-6.424-1.808-1.807-3.949-2.714-6.423-2.714zM63.953 54.817H9.135c-2.474 0-4.615.903-6.423 2.712S0 61.479 0 63.953v54.817c0 2.475.903 4.615 2.712 6.424s3.949 2.712 6.423 2.712h54.818c2.474 0 4.615-.9 6.423-2.712 1.809-1.809 2.712-3.949 2.712-6.424V63.953c0-2.475-.904-4.615-2.712-6.424-1.808-1.804-3.949-2.712-6.423-2.712zM502.49 383.722H118.771c-2.474 0-4.615.896-6.423 2.707-1.809 1.81-2.712 3.949-2.712 6.426v54.82c0 2.471.903 4.609 2.712 6.42 1.809 1.813 3.946 2.714 6.423 2.714H502.49c2.478 0 4.616-.903 6.427-2.714 1.81-1.811 2.71-3.949 2.71-6.42v-54.82c0-2.477-.903-4.616-2.71-6.426-1.811-1.804-3.95-2.707-6.427-2.707zM502.49 274.082H118.771c-2.474 0-4.615.91-6.423 2.714s-2.712 3.953-2.712 6.424v54.815c0 2.478.903 4.62 2.712 6.427 1.809 1.808 3.946 2.707 6.423 2.707H502.49c2.478 0 4.616-.896 6.427-2.707 1.81-1.807 2.71-3.949 2.71-6.427V283.22c0-2.471-.903-4.613-2.71-6.424-1.811-1.804-3.95-2.714-6.427-2.714zM508.917 57.529c-1.811-1.805-3.949-2.712-6.427-2.712H118.771c-2.474 0-4.615.903-6.423 2.712s-2.712 3.949-2.712 6.424v54.817c0 2.475.903 4.615 2.712 6.424s3.946 2.712 6.423 2.712H502.49c2.478 0 4.616-.9 6.427-2.712 1.81-1.809 2.71-3.949 2.71-6.424V63.953c-.001-2.474-.904-4.615-2.71-6.424zM502.49 164.453H118.771c-2.474 0-4.615.9-6.423 2.709-1.809 1.81-2.712 3.952-2.712 6.427v54.817c0 2.473.903 4.615 2.712 6.424 1.809 1.803 3.946 2.712 6.423 2.712H502.49c2.478 0 4.616-.905 6.427-2.712 1.81-1.809 2.71-3.951 2.71-6.424v-54.817c0-2.475-.903-4.617-2.71-6.427-1.811-1.806-3.95-2.709-6.427-2.709z"/></svg>',
@@ -32,7 +34,7 @@
 		ted423: "网页--search\n	Google\n		Google, https://www.google.com/search?q=%s&safe=off\n		Google.hk, https://www.google.com.hk/search?q=%s&safe=off\n		Google.co.jp，https://www.google.co.jp/search?q=%s&safe=off\n	百度\n		百度, https://www.baidu.com/s?wd=%s\n		简洁搜索, https://www.baidu.com/s?wd=firefox&ie=utf-8&tn=baidulocal\n	360, https://www.so.com/s?q=%s\n	Bing\n		Bing(CN), https://cn.bing.com/search?q=%s\n		Bing(Global), https://global.bing.com/search?q=%s&setmkt=en-us&setlang=en-us\n	搜狗, https://www.sogou.com/web?query=%s\n	DuckDuckGo, https://duckduckgo.com/?q=%s\n	Yahoo\n		Yahoo, https://search.yahoo.com/search?p=%s\n		Yahoo(tw), https://tw.search.yahoo.com/search?p=%s\n 		Yahoo.co.jp, https://search.yahoo.co.jp/search?p=%s&aq=-1&x=wrt\n资料--book\n	WIKI\n		ZWIKI, http://zh.wikipedia.org/w/index.php?search=%s&button=&title=Special%3ASearch\n		EWIKI, https://en.wikipedia.org/w/index.php?search=%s&button=&title=Special%3ASearch\n		JWIKI, http://ja.wikipedia.org/w/index.php?search=%s&button=&title=Special%3ASearch\n	百科, http://baike.baidu.com/searchword/?word=%s\n	Internet Archive, https://archive.org/search.php?query=%s\n	Scholar, http://scholar.google.com/scholar?hl=zh-CN&q=%s&btnG=&lr=\n	学术, http://xueshu.baidu.com/s?wd=%s\n	知乎, https://www.zhihu.com/search?q=%s\n	萌娘百科, http://zh.moegirl.org/index.php?search=%s\n	Book, https://www.google.com/search?q=%s&btnG=%E6%90%9C%E7%B4%A2%E5%9B%BE%E4%B9%A6&tbm=bks&tbo=1&hl=zh-CN&gws_rd=ssl\n	开发\n		stackoverflow, https://stackoverflow.com/search?q=%s\n		MDN, https://developer.mozilla.org/en-US/search?q=%s\n		github, https://github.com/search?q=%s\n		krugle, http://opensearch.krugle.org/document/search/#query=%s\n		npm, https://www.npmjs.org/search?q=%s\n地图--map\n	百度, http://map.baidu.com/?newmap=1&s=s%26wd%3D%s\n	Google, https://www.google.com/maps/search/%s/\n	Bing, https://www.bing.com/ditu/?q=%s\n	搜狗, http://map.sogou.com/#lq=%s\n音乐--music\n	Music, http://music.baidu.com/search?key=%s&ie=utf-8&oe=utf-8\n	搜狗, http://mp3.sogou.com/music.so?query=%s\n	一听, http://so.1ting.com/song?q=%s\n	虾米, http://www.xiami.com/search?key=%s\n	piapro, https://piapro.jp/search/?view=audio&keyword=%s\n	Lyric, http://music.baidu.com/search/lrc?key=%s\n图片--image\n	百度, http://image.baidu.com/search/index?tn=baiduimage&word=%s\n	Google, https://www.google.com.hk/search?tbm=isch&q=%s\n	花瓣, https://huaban.com/search/?q=%s\n	Picsearch, http://cn.picsearch.com/index.cgi?q=%s\n	Flickr, https://www.flickr.com/search/?w=all&q=%s\n	Pixiv, http://www.pixiv.net/search.php?s_mode=s_tag&word=%s\n	dA, https://www.deviantart.com/browse/all/?q=%s\nACG\n	NyaaPantsu\n		NyaaPantsu, https://pantsu.cat/search?c=_&userID=0&q=%s\n		nyoo, https://nyoo.moe/search?c=_&userID=0&q=%s\n		nyaa.pt, https://nyaa.pt/search?c=_&q=%s\n	nyaa.si, https://nyaa.si/?f=0&c=0_0&q=%s\n	dmhy, https://share.dmhy.org/topics/list?keyword=%s\n	Tokyotosho, https://www.tokyotosho.info/search.php?terms=%s\n	Mikan, http://mikanani.me/Home/Search?searchstr=%s\n	＊MioBT＊, http://www.miobt.com/search.php?keyword=%s\n	ACG搜，http://www.acgsou.com/search.php?keyword=%s\n	shana project, https://www.shanaproject.com/search/?title=%s\n	简单动漫, http://www.36dm.com/search.php?keyword=%s\n	KOTOMI RSS, https://moe4sale.in/?kw=%s\n	ACG狗狗, http://bt.acg.gg/search.php?keyword=%s\n	ACG.RIP, https://acg.rip/?term=%s\n	age动漫, http://bt.agefans.com/search?input=%s\n	AcgnX, https://www.acgnx.se/search.php?sort_id=0&keyword=%s\nSukebei\n	NyaaPantsu\n		NayaPantsu, https://sukebei.pantsu.cat/search?c=_&userID=0&q=%s\n		nyoo, https://sukebei.nyoo.moe/search?c=_&userID=0&q=%s\n		nyaa.pt, https://sukebei.nyaa.pt/search?c=_&q=%s\n	nyaa.si, https://sukebei.nyaa.si/?f=0&c=0_0&q=%s\n	AniDex, https://anidex.info/?q=%s\n	AniRena, https://www.anirena.com/?s=%s\n	GGBases, http://www.ggbases.com/search.so?title=%s\n下载--download\n	影视\n		kat.ag, https://kat.ag/usearch/%s/\n		thepiratebay, https://thepiratebay.org/search/%s\n		1337x, http://1337x.to/search/%s/1/\n		RARBG.to, https://rarbgproxy.org/torrents.php?search=%s\n		rarbg.is, https://rarbg.is/torrents.php?search=%s\n	Magnet\n		BTDB, https://btdb.to/q/%s\n		BTDigg, https://www.btdig.com/search?q=%s\n		BTSOW, http://www.btsow.info/s/%s\n		种子狗, http://www.zhongzigou3.com/so/%s/\n		SoCiLi, http://www.sobt.red/search/%s/\n		TK, https://www.torrentkitty.tv/search/%s\n		idope, https://www.idope.site/search/%s/\n	Torrentz2, https://torrentz2.eu/search?f=%s\n	limetorrents, https://www.limetorrents.info/search/all/%s\n	ed2k\n		ed2kers, https://www.google.com/search?q=%s+site%3Aed2kers.com\n		xiaohx, http://www.xiaohx.org/search?key=%s\n		逛电驴, http://verycd.gdajie.com/find.htm?keyword=%s\n	字幕\n		sub HD, http://subhd.com/search/%s\n		射手网(伪), http://assrt.net/sub/?searchword=%s\n网购--cart-arrow-down\n	一淘, https://www.etao.com/search.htm?nq=%s\n	京东, https://search.jd.com/Search?keyword=%s&enc=utf-8\n	淘宝, https://s.taobao.com/search?q=%s\n	亚马逊, https://www.amazon.cn/s/ref=nb_ss?keywords=%s\netc--plus-square\n	邮编库, http://www.youbianku.com/%s\n	AMO, https://addons.mozilla.org/zh-CN/firefox/search/?q=%s\n	汉典(字), http://www.zdic.net/sousuo/?q=%s&tp=tp1\n	汉典(词), http://www.zdic.net/sousuo/?q=%s&tp=tp3",
 	};
 
-	var MAIN_CSS = "#sej-button{position:fixed;top:0px;left:0px;width:14px;height:14px;background:grey;border-radius:7px;display:block;z-index:91111111111;cursor:crosshair;}#sej-container{pointer-events:none;position:fixed;top:0px;z-index:91111111111;margin:0;background: white;box-shadow:0px 0px 3px #aaaaaa;margin:0 auto;opacity:0.1;display:table;font-family: Comic Sans MS, 'Microsoft YaHei', 微软雅黑;line-height: 1.5;font-size: 9px;transition: opacity 0.5s ease-in-out;}sejul{border: 1px solid #333;}#sej-container svg{height:15px;vertical-align: text-bottom;padding-right: 1px;}sejul, sejli{margin: 0;padding: 0;list-style: none outside;}sejli{display: list-item;}sejli:hover>sejul{display:block;}body>sejul>sejli{float: left;}sejli sejul{position: absolute;}sejli sejul sejul{margin-left: 100px;margin-top: -30px;}sejli sejul .sej-engine{padding: 4px 0px;width:100%;text-align: left;text-indent: 5px;}#sej-container>sejli{float: left;border-right: 1px solid #333;}#sej-container>sejli:last-child{border-right: none;}#sej-expanded-category{display: inline-block;font-weight: bold;padding: 0px 4px;line-height: 2;}#sej-expanded-category::after{content:' :';}.sej-engine{line-height: 2;display: inline-block;margin: 0;border: none;padding: 0px 4px;text-decoration: none;transition: background-color 0.15s ease-in-out;}a.sej-engine{white-space: nowrap;min-width: 55px;text-align: center;}a.sej-engine:visited, a.sej-engine:active{color: #120886;}a.sej-engine:link, a.sej-engine:visited{text-decoration: none;}.sej-drop-list-trigger-shown{background-color: #DEEDFF !important;}.sej-drop-list-trigger::after {content:\'\';display: inline-block;margin: 0 0 0 3px;padding: 0;width: 0;height: 0;border-top: 6px solid #BCBCBC;border-right: 5px solid transparent;border-left: 5px solid transparent;border-bottom: 0px solid transparent;transition: -webkit-transform 0.3s ease-in-out;transition: transform 0.3s ease-in-out;vertical-align: unset;}.sej-drop-list-trigger-shown::after {-webkit-transform: rotate(180deg);transform: rotate(180deg);}.sej-engine:hover {background-color: #EAEAEA;}.sej-engine-icon {display: inline-block;height: 16px;border: none;padding: 0;margin: 0 3px 0 0;vertical-align: sub;}.sej-drop-list {display: none;float: left;min-width: 100px;font-size: 13px;-moz-box-shadow: 2px 2px 5px #ccc;-webkit-box-shadow: 2px 2px 5px #ccc;box-shadow: 2px 2px 5px #ccc;background-color: white;}.sej-drop-list> sejli {border-bottom: 1px solid #333;}.sej-drop-list> sejli:last-child {border-bottom: none;}";
+	var MAIN_CSS = "#sej-button{position:fixed;top:0px;left:0px;width:14px;height:14px;background:grey;border-radius:7px;display:block;z-index:91111111111;cursor:crosshair;}#sej-container{position:fixed;top:0px;z-index:91111111111;margin:0;background: white;box-shadow:0px 0px 3px #aaaaaa;margin:0 auto;display:table;font-family: Comic Sans MS, 'Microsoft YaHei', 微软雅黑;line-height: 1.5;font-size: 9px;transition: opacity 0.5s ease-in-out;}sejul{border: 1px solid #333;}#sej-container svg{height:15px;vertical-align: text-bottom;padding-right: 1px;}sejul, sejli{margin: 0;padding: 0;list-style: none outside;}sejli{display: list-item;}sejli:hover>sejul{display:block;}body>sejul>sejli{float: left;}sejli sejul{position: absolute;}sejli sejul sejul{margin-left: 100px;margin-top: -30px;}sejli sejul .sej-engine{padding: 4px 0px;width:100%;text-align: left;text-indent: 5px;}#sej-container>sejli{float: left;border-right: 1px solid #333;}#sej-container>sejli:last-child{border-right: none;}#sej-expanded-category{display: inline-block;font-weight: bold;padding: 0px 4px;line-height: 2;}#sej-expanded-category::after{content:' :';}.sej-engine{line-height: 2;display: inline-block;margin: 0;border: none;padding: 0px 4px;text-decoration: none;transition: background-color 0.15s ease-in-out;}a.sej-engine{white-space: nowrap;min-width: 55px;text-align: center;}a.sej-engine:visited, a.sej-engine:active{color: #120886;}a.sej-engine:link, a.sej-engine:visited{text-decoration: none;}.sej-drop-list-trigger-shown{background-color: #DEEDFF !important;}.sej-drop-list-trigger::after {content:\'\';display: inline-block;margin: 0 0 0 3px;padding: 0;width: 0;height: 0;border-top: 6px solid #BCBCBC;border-right: 5px solid transparent;border-left: 5px solid transparent;border-bottom: 0px solid transparent;transition: -webkit-transform 0.3s ease-in-out;transition: transform 0.3s ease-in-out;vertical-align: unset;}.sej-drop-list-trigger-shown::after {-webkit-transform: rotate(180deg);transform: rotate(180deg);}.sej-engine:hover {background-color: #EAEAEA;}.sej-engine-icon {display: inline-block;height: 16px;border: none;padding: 0;margin: 0 3px 0 0;vertical-align: sub;}.sej-drop-list {display: none;float: left;min-width: 100px;font-size: 13px;-moz-box-shadow: 2px 2px 5px #ccc;-webkit-box-shadow: 2px 2px 5px #ccc;box-shadow: 2px 2px 5px #ccc;background-color: white;}.sej-drop-list> sejli {border-bottom: 1px solid #333;}.sej-drop-list> sejli:last-child {border-bottom: none;}";
 
 	var categoryMap = { //rules 和 engineList 的对应
 		"web": "网页",
@@ -565,7 +567,9 @@
 	];
 
 	function loadPrefs() {
+		prefs.display = GM_getValue("display", prefs.display);
 		prefs.openInNewTab = GM_getValue("openInNewTab", prefs.openInNewTab);
+		prefs.dottype = GM_getValue("dottype", prefs.dottype);
 		prefs.debug = GM_getValue("debug", prefs.debug);
 		prefs.engineListDataType = GM_getValue("engineListDataType", prefs.engineListDataType);
 
@@ -836,6 +840,13 @@
 			style.type = "text/css";
 			style.textContent = MAIN_CSS + "\n" + (matchedRule.stylish || "");
 			document.head.appendChild(style);
+			if (prefs.display === false){
+				style = document.createElement("style");
+				style.id = "sej-display-style";
+				style.type = "text/css";
+				style.textContent = "#sej-container{pointer-events:none;opacity: 0.1;}";
+				document.head.appendChild(style);
+			}
 		}
 
 	}
@@ -992,8 +1003,10 @@
 		button.onmouseover = function() {
 				if ($("#sej-container").css("pointer-events") === "none") {
 					$("#sej-container").css("pointer-events", "all").css("opacity", "1");
+					GM_setValue("display", true);
 				} else {
 					$("#sej-container").css("pointer-events", "none").css("opacity", "0.1");
+					GM_setValue("display", false);
 				}
 			}
 		document.head.parentNode.insertBefore(button,document.head);
@@ -1110,9 +1123,9 @@
 
 	// iframe 禁止加载
 	if (window.self != window.top) return;
-
+	
 	loadPrefs();
-
+	
 	var matchedRule;
 
 	rules.some(function(rule) {
