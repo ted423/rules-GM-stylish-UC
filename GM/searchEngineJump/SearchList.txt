@@ -18,16 +18,16 @@
  		Yahoo.co.jp, https://search.yahoo.co.jp/search?p=%s&aq=-1&x=wrt
 资料--book
 	WIKI
-		ZWIKI, http://zh.wikipedia.org/w/index.php?search=%s&button=&title=Special%3ASearch
+		ZWIKI, https://zh.wikipedia.org/w/index.php?search=%s&button=&title=Special%3ASearch
 		EWIKI, https://en.wikipedia.org/w/index.php?search=%s&button=&title=Special%3ASearch
-		JWIKI, http://ja.wikipedia.org/w/index.php?search=%s&button=&title=Special%3ASearch
-	百科, http://baike.baidu.com/searchword/?word=%s
+		JWIKI, https://ja.wikipedia.org/w/index.php?search=%s&button=&title=Special%3ASearch
+	百科, https://baike.baidu.com/searchword/?word=%s
 	Internet Archive, https://archive.org/search.php?query=%s
 	Scholar, http://scholar.google.com/scholar?hl=zh-CN&q=%s&btnG=&lr=
-	学术, http://xueshu.baidu.com/s?wd=%s
+	百度学术, https://xueshu.baidu.com/s?wd=%s
 	知乎, https://www.zhihu.com/search?q=%s
 	萌娘百科, http://zh.moegirl.org/index.php?search=%s
-	Book, https://www.google.com/search?q=%s&btnG=%E6%90%9C%E7%B4%A2%E5%9B%BE%E4%B9%A6&tbm=bks&tbo=1&hl=zh-CN&gws_rd=ssl
+	Google Book, https://www.google.com/search?q=%s&btnG=%E6%90%9C%E7%B4%A2%E5%9B%BE%E4%B9%A6&tbm=bks&tbo=1&hl=zh-CN&gws_rd=ssl
 	开发
 		stackoverflow, https://stackoverflow.com/search?q=%s
 		MDN, https://developer.mozilla.org/en-US/search?q=%s
@@ -38,14 +38,15 @@
 	百度, http://map.baidu.com/?newmap=1&s=s%26wd%3D%s
 	Google, https://www.google.com/maps/search/%s/
 	Bing, https://www.bing.com/ditu/?q=%s
-	搜狗, http://map.sogou.com/#lq=%s
+	搜狗, https://map.sogou.com/#lq=%s
 音乐--music
-	Music, http://music.baidu.com/search?key=%s&ie=utf-8&oe=utf-8
-	搜狗, http://mp3.sogou.com/music.so?query=%s
-	一听, http://so.1ting.com/song?q=%s
+	千千, https://music.taihe.com/search?key=%s&ie=utf-8&oe=utf-8
+	QQ, https://y.qq.com/portal/search.html#page=1&searchid=1&t=song&w=%s
+	一听, https://so.1ting.com/song?q=%s
 	虾米, http://www.xiami.com/search?key=%s
 	piapro, https://piapro.jp/search/?view=audio&keyword=%s
-	Lyric, http://music.baidu.com/search/lrc?key=%s
+	千千歌词, https://music.taihe.com/search/lrc?key=%s
+	QQ歌词, https://y.qq.com/portal/search.html#page=1&searchid=1&t=lyric&w=%s
 图片--image
 	百度, http://image.baidu.com/search/index?tn=baiduimage&word=%s
 	Google, https://www.google.com.hk/search?tbm=isch&q=%s
