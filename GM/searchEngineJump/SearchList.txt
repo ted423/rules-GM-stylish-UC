@@ -21,7 +21,7 @@
 		ZWIKI, https://zh.wikipedia.org/w/index.php?search=%s&button=&title=Special%3ASearch
 		EWIKI, https://en.wikipedia.org/w/index.php?search=%s&button=&title=Special%3ASearch
 		JWIKI, https://ja.wikipedia.org/w/index.php?search=%s&button=&title=Special%3ASearch
-	百科, https://baike.baidu.com/searchword/?word=%s
+	百度百科, https://baike.baidu.com/searchword/?word=%s
 	Internet Archive, https://archive.org/search.php?query=%s
 	Scholar, http://scholar.google.com/scholar?hl=zh-CN&q=%s&btnG=&lr=
 	百度学术, https://xueshu.baidu.com/s?wd=%s
