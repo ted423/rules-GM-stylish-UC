@@ -45,8 +45,10 @@
 	一听, https://so.1ting.com/song?q=%s
 	虾米, http://www.xiami.com/search?key=%s
 	piapro, https://piapro.jp/search/?view=audio&keyword=%s
-	千千歌词, https://music.taihe.com/search/lrc?key=%s
-	QQ歌词, https://y.qq.com/portal/search.html#page=1&searchid=1&t=lyric&w=%s
+	歌词
+		千千歌词, https://music.taihe.com/search/lrc?key=%s
+		QQ歌词, https://y.qq.com/portal/search.html#page=1&searchid=1&t=lyric&w=%s
+		一听歌词, https://so.1ting.com/lyric?q=%s
 图片--image
 	百度, http://image.baidu.com/search/index?tn=baiduimage&word=%s
 	Google, https://www.google.com.hk/search?tbm=isch&q=%s
