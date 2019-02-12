@@ -3,7 +3,7 @@
 // @author		ted423
 // @contributor	NLF && ywzhaiqi
 // @description	方便的在各个引擎之间跳转。可自定义搜索列表的 NLF 修改版。
-// @version		10.1812.20.0
+// @version		10.1902.12.0
 // @include		*
 // @namespace	https://greasyfork.org/users/85
 // @require		https://code.jquery.com/jquery-3.3.1.min.js
@@ -156,6 +156,11 @@
 			engineList: "资料",
 			
 		}, {
+			name: "IA",
+			url: /^https?:\/\/archive\.org\/search\.php/,
+			engineList: "资料",
+			keyword: "input[type='text'][value]",
+		}, {
 			name: "百度百科",
 			url: /^https?:\/\/baike\.baidu\.com\/(search|item)/,
 			engineList: "资料",
@@ -176,7 +181,7 @@
 			name: "互动百科",
 			url: /^https?:\/\/[a-z]{2,3}\.baike\.com\/[a-z]/,
 			engineList: "资料",
-						keyword: function() {
+			keyword: function() {
 				var input;
 				if (document.getElementsByClassName("ac_input")[0] != undefined) {
 					if (document.getElementsByClassName("ac_input")[0].value != "")
