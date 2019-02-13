@@ -96,10 +96,7 @@ Sukebei
 		RARBG.to, https://rarbgproxy.org/torrents.php?search=%s
 		rarbg.is, https://rarbg.is/torrents.php?search=%s
 	Magnet
-		BTDB, https://btdb.to/q/%s
 		BTDigg, https://www.btdig.com/search?q=%s
-		BTSOW, http://www.btsow.info/s/%s
-		种子狗, http://www.zhongzigou3.com/so/%s/
 		SoCiLi, http://www.sobt.red/search/%s/
 		TK, https://www.torrentkitty.tv/search/%s
 		idope, https://www.idope.site/search/%s/
