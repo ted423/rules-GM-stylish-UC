@@ -52,7 +52,9 @@ function FindProxyForURL(url, host) {
 		"books.com.tw": 1,
 		"btava.com": 1,
 		"cangku.in": 1,
+		"cnbtkitty.xyz": 1,
 		"crystalmark.info": 1,
+		"digbt.org": 1,
 		"discordapp.net" :1,
 		"discordapp.com" :1,
 		"discord.gg" :1,
@@ -112,6 +114,8 @@ function FindProxyForURL(url, host) {
 		"tumblr.com": 1,
 		"wikipedia.org": 1,
 		"wnacg.org": 1,
+		"yahoo.com": 1,
+		"yahoo.co.jp": 1,
 		"yande.re": 1
 	}
 	var specialDomain ={
