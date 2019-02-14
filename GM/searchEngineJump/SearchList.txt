@@ -96,10 +96,13 @@ Sukebei
 		RARBG.to, https://rarbgproxy.org/torrents.php?search=%s
 		rarbg.is, https://rarbg.is/torrents.php?search=%s
 	Magnet
+		BTSOW, http://btsow.pw/search/%s
 		BTDigg, https://www.btdig.com/search?q=%s
 		SoCiLi, http://www.sobt.red/search/%s/
 		TK, https://www.torrentkitty.tv/search/%s
-		idope, https://www.idope.site/search/%s/
+		AliCili, http://alicili.ws/list/%s/1-2-0/
+		种子神器, http://zhongzishenqi.pw/shenqi/%s/1-2-0/
+		DIGBT, https://www.digbt.org/search/%s
 	Torrentz2, https://torrentz2.eu/search?f=%s
 	limetorrents, https://www.limetorrents.info/search/all/%s
 	ed2k
