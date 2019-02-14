@@ -103,12 +103,12 @@
 			keyword: "input[name='wd']",
 		}, {
 			name: "baidu 网页搜索", //因为不刷新搜索，所以百度跳简洁搜索会有问题
-			url: /^https?:\/\/www\.baidu\.com\/(?:s.*|baidu.*|)$/,
+			url: /^https?:\/\/www\.baidu\.com\/(?:s.*|baidu.*|\?bn.*|)$/,//bn是推广之类的东西
 			mutationTitle: true,
 			engineList: "web",
 			endFix: function() {
 					if (getComputedStyle(document.getElementById("lg")).display != "none") remove();
-				} //通过检测首页图片判断在首页的话不显示
+				} //通过检测首页图片判断，在首页的话不显示
 		}, {
 			name: "bing(global)",
 			url: /^https?:\/\/global\.bing\.com\/search/,
@@ -1164,6 +1164,11 @@
 		var elems = document.querySelectorAll("#sej-container");
 		if (!elems) return;
 
+		[].forEach.call(elems, function(elem) {
+			elem.parentNode.removeChild(elem);
+		});
+		
+		elems = document.querySelectorAll("#sej-button");
 		[].forEach.call(elems, function(elem) {
 			elem.parentNode.removeChild(elem);
 		});
