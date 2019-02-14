@@ -9,7 +9,7 @@
 // @include     http://*.yunpan.360.cn/lk/*
 // @include     https://*.yunpan.360.cn/lk/*
 // @include     http://share.weiyun.com/*
-// @version     1.0.3.8
+// @version     1.0.3.9
 // @grant       none
 // @run-at      document-start
 // ==/UserScript==
@@ -32,7 +32,7 @@
 			btn:  '.verify-input .pickpw a.g-button'
 		},
 		'eyun.baidu.com': {
-			chk:  /^[a-z0-9]{4}$/i,
+			chk:  /^[a-z0-9]{4,6}$/i,
 			code: '.share-access-code',
 			btn:  '.g-button.g-button-blue'
 		},
