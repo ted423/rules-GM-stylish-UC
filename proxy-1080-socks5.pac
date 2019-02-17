@@ -50,6 +50,7 @@ function FindProxyForURL(url, host) {
 		"anirena.com": 1,
 		"autolyric.com": 1,
 		"books.com.tw": 1,
+		"box.com": 1,
 		"btava.com": 1,
 		"cangku.in": 1,
 		"cnbtkitty.xyz": 1,
