@@ -105,6 +105,7 @@ function FindProxyForURL(url, host) {
 		"playoverwatch.com": 1,
 		"proxifier.com": 1,
 		"ptt.cc": 1,
+		"quora.com": 1,
 		"shadowsocks.org": 1,
 		"sourceforge.net": 1,
 		"thepiratebay.org": 1,
