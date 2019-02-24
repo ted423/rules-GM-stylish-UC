@@ -64,6 +64,7 @@ function FindProxyForURL(url, host) {
 		"dropboxstatic.com": 1,
 		"dropboxusercontent.com": 1,
 		"dropbooks.tv": 1,
+		"duckduckgo.com": 1,
 		"eyny.com": 1,
 		"e-hentai.org": 1,
 		"exhentai.org": 1,
