@@ -103,6 +103,7 @@ function FindProxyForURL(url, host) {
 		"peazip.org": 1,
 		"piapro.jp": 1,
 		"pixiv.net": 1,
+		"pximg.net": 1,
 		"playoverwatch.com": 1,
 		"proxifier.com": 1,
 		"ptt.cc": 1,
