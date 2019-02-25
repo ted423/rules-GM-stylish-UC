@@ -3,7 +3,7 @@
 // @author		ted423
 // @contributor	NLF && ywzhaiqi
 // @description	方便的在各个引擎之间跳转。可自定义搜索列表的 NLF 修改版。
-// @version		10.1902.14.0
+// @version		10.1902.25.0
 // @include		*
 // @namespace	https://greasyfork.org/users/85
 // @require		https://code.jquery.com/jquery-3.3.1.min.js
@@ -103,7 +103,7 @@
 			keyword: "input[name='wd']",
 		}, {
 			name: "baidu 网页搜索", //因为不刷新搜索，所以百度跳简洁搜索会有问题
-			url: /^https?:\/\/www\.baidu\.com\/(?:s.*|baidu.*|\?bn.*|)$/,//bn是推广之类的东西
+			url: /^https?:\/\/www\.baidu\.com\/(?:s.*|baidu.*|\?bn.*|\?tn.*|)$/,//bn、tn是推广之类的东西
 			mutationTitle: true,
 			engineList: "web",
 			endFix: function() {
