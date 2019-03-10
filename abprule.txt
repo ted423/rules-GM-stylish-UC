@@ -267,14 +267,12 @@ user.qzone.qq.com###appCanvasGoldInfoTips
 qzone.qq.com##.message
 user.qzone.qq.com##.fusion_dialog_header
 
-www.tsdm.me###smchuncai
-tsdm.me###weakpassword_tip
+www.tsdm.love###smchuncai
+tsdm.love###weakpassword_tip
 
 ||k.static.u17i.com/common/images/blank.gif
 
 
-||image15.poco.cn/mypoco/myphoto/20140403/11/5589980820140403110618044.jpg
-||image15.poco.cn/mypoco/myphoto/20140330/21/5589980820140330214657064.jpg
 ||ox-i.majorgeeks.com/1cc/1cc5c6057548cfe44d757ebea61f7e2038bf7993/584/58423edb0c8da0a666d7a9ee4e4b21ad.png
 
 !淘宝推广
