@@ -78,6 +78,7 @@ function FindProxyForURL(url, host) {
 		"ggbases.com": 1,
 		"gghpt.com": 1,
 		"github.com": 1,
+		"githubassets.com": 1,
 		"githubusercontent.com": 1,
 		"granbluefantasy.jp": 1,
 		"greasyfork.org": 1,
