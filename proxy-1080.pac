@@ -28,6 +28,12 @@ function FindProxyForURL(url, host) {
 		"youtube.com": 1,
 		"youtu.be": 1,
 		"ytimg.com": 1,
+		//microsoft
+		"live.com": 1,
+		"1drv.com": 1,
+		"office365.com
+		"skype.com": 1,
+		"microsoft.com": 1,
 		//Steam
 		"community.steam-api.com": 1,
 		"steamcommunity.com": 1,
@@ -89,8 +95,6 @@ function FindProxyForURL(url, host) {
 		"lightnovel.cn": 1,
 		"lilith-soft.com": 1,
 		"limetorrents.info": 1,
-		"live.com": 1,
-		"1drv.com": 1,
 		"livedoor.jp": 1,
 		"wikia.com": 1,
 		"mmxdm.net": 1,
