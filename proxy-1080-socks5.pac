@@ -106,6 +106,7 @@ function FindProxyForURL(url, host) {
 		"nyaa.si": 1,
 		"nyoo.moe": 1,
 		"offcloud.com": 1,
+		"pantsu.cat": 1,
 		"peazip.org": 1,
 		"piapro.jp": 1,
 		"pixiv.net": 1,
