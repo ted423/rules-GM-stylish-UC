@@ -5,6 +5,7 @@ function FindProxyForURL(url, host) {
 		"facebook.com": 1,
 		"facebook.net": 1,
 		"fbcdn.net": 1,
+		"fbsbx.com": 1,
 		"instagram.com": 1,
 		"cdninstagram.com": 1,
 		//google
