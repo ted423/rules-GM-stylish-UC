@@ -2,7 +2,7 @@
 // @name		Lofter显示原图
 // @namespace	https://github.com/ted423
 // @version		1.0
-// @description	Lofter显示原图
+// @description	Lofter显示原图,直接显示,用于页面批量下载
 // @grant		unsafeWindow
 // @author		ted423
 // @match		*://*.lofter.com/post/*
