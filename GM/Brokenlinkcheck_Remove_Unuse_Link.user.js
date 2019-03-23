@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name		Brokenlinkcheck Remove Unuse Link
-// @namespace	https://greasyfork.org/users/85
+// @namespace	https://github.com/ted423
 // @description 用来移除磁力链以及ed2k这些链接的
 // @include		http://www.brokenlinkcheck.com/broken-links.php#status
 // @require		http://code.jquery.com/jquery-2.1.4.min.js

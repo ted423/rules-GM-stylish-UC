@@ -1,18 +1,18 @@
 // ==UserScript==
-// @name		DownloadPlus - 自动处理网盘链接及其提取码变成支持自动填充密码的方式的链接（百度云、360pan等）,磁力链转种子
-// @author		jasonshaw,jasake,ted423
-// @namespace		XX
-// @version		2.0
+// @name			DownloadPlus - 自动处理网盘链接及其提取码变成支持自动填充密码的方式的链接（百度云、360pan等）,磁力链转种子
+// @author			jasonshaw,jasake,ted423
+// @namespace		https://github.com/ted423
+// @version			2.0
 // @updateURL		https://raw.githubusercontent.com/ted423/rules-GM-stylish-UC/master/GM/DLP.user.js
 // @description		自动处理网盘链接及其提取码变成支持自动填充密码的方式的链接（百度云、360pan等）,磁力链转种子
-// @grant		unsafeWindow
-// @include		*
-// @exclude		https://sukebei.pantsu.cat/search*
-// @exclude		https://sukebei.pantsu.cat
-// @exclude		https://nyaa.pantsu.cat/search*
-// @exclude		https://nyaa.pantsu.cat
-// @run-at		document-end
-// @copyright	2014+, jasonshaw
+// @grant			unsafeWindow
+// @include			*
+// @exclude			https://sukebei.pantsu.cat/search*
+// @exclude			https://sukebei.pantsu.cat
+// @exclude			https://nyaa.pantsu.cat/search*
+// @exclude			https://nyaa.pantsu.cat
+// @run-at			document-end
+// @copyright		2014+, jasonshaw
 // ==/UserScript==
 (function() {
 	//runningman-fan 免点击显示下载地址

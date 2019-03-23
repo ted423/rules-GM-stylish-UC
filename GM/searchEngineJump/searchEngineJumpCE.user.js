@@ -5,7 +5,7 @@
 // @description	方便的在各个引擎之间跳转。可自定义搜索列表的 NLF 修改版。
 // @version		10.1902.25.0
 // @include		*
-// @namespace	https://greasyfork.org/users/85
+// @namespace	https://github.com/ted423
 // @require		https://code.jquery.com/jquery-3.3.1.min.js
 // @downloadURL	https://github.com/ted423/rules-GM-stylish-UC/raw/master/GM/searchEngineJump/searchEngineJumpCE.user.js
 // @updateURL	https://github.com/ted423/rules-GM-stylish-UC/raw/master/GM/searchEngineJump/searchEngineJumpCE.user.js
