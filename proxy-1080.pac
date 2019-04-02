@@ -15,6 +15,7 @@ function FindProxyForURL(url, host) {
 		"blogspot.jp": 1,
 		"blogspot.tw": 1,
 		"ggpht.com": 1,
+		"google.bt": 1,
 		"google.com": 1,
 		"google.com.hk": 1,
 		"google.com.sg": 1,
