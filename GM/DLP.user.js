@@ -1,10 +1,10 @@
 // ==UserScript==
-// @name			DownloadPlus - 自动处理网盘链接及其提取码变成支持自动填充密码的方式的链接（百度云、360pan等）,磁力链转种子
+// @name			DownloadPlus - 自动处理网盘链接及其提取码变成支持自动填充密码的方式的链接（百度云、360pan等）
 // @author			jasonshaw,jasake,ted423
 // @namespace		https://github.com/ted423
-// @version			2.0
+// @version			2.1
 // @updateURL		https://raw.githubusercontent.com/ted423/rules-GM-stylish-UC/master/GM/DLP.user.js
-// @description		自动处理网盘链接及其提取码变成支持自动填充密码的方式的链接（百度云、360pan等）,磁力链转种子
+// @description		自动处理网盘链接及其提取码变成支持自动填充密码的方式的链接（百度云、360pan等）
 // @grant			unsafeWindow
 // @include			*
 // @exclude			https://sukebei.pantsu.cat/search*
@@ -82,7 +82,7 @@
 				i++;
 			}
 		}
-		var magnet = document.querySelectorAll('a[href^="magnet"]');
+		/*var magnet = document.querySelectorAll('a[href^="magnet"]');
 		[].forEach.call(magnet, function(a) {
 			if (a.href.match(/\w{40}/g)) {
 				var magnet2torrent = document.createElement('a'), sup = document.createElement('sup'), str = a.href.match(/\w{40}/g)[0];
@@ -94,7 +94,7 @@
 				sup.appendChild(magnet2torrent);
 				a.parentNode.appendChild(sup);
 			}
-		});
+		});*/
 	}
 
 	function addMutationObserver(selector, callback) {
