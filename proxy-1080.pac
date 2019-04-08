@@ -118,6 +118,7 @@ function FindProxyForURL(url, host) {
 		"ptt.cc": 1,
 		"quora.com": 1,
 		"quoracdn.net": 1,
+		"reddit.com": 1,
 		"shadowsocks.org": 1,
 		"sourceforge.net": 1,
 		"thepiratebay.org": 1,
