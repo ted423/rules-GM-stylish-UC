@@ -60,7 +60,6 @@
 ACG
 	NyaaPantsu
 		NyaaPantsu, https://pantsu.cat/search?c=_&userID=0&q=%s
-		nyoo, https://nyoo.moe/search?c=_&userID=0&q=%s
 		nyaa.pt, https://nyaa.pt/search?c=_&q=%s
 	nyaa.si
 		nyaa.si, https://nyaa.si/?f=0&c=0_0&q=%s
@@ -75,12 +74,10 @@ ACG
 	KOTOMI RSS, https://moe4sale.in/?kw=%s
 	ACG狗狗, http://bt.acg.gg/search.php?keyword=%s
 	ACG.RIP, https://acg.rip/?term=%s
-	age动漫, http://bt.agefans.com/search?input=%s
 	AcgnX, https://www.acgnx.se/search.php?sort_id=0&keyword=%s
 Sukebei
 	NyaaPantsu
 		NayaPantsu, https://sukebei.pantsu.cat/search?c=_&userID=0&q=%s
-		nyoo, https://sukebei.nyoo.moe/search?c=_&userID=0&q=%s
 		nyaa.pt, https://sukebei.nyaa.pt/search?c=_&q=%s
 	nyaa.si
 		nyaa.si, https://sukebei.nyaa.si/?f=0&c=0_0&q=%s
