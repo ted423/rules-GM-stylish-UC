@@ -67,6 +67,7 @@ function FindProxyForURL(url, host) {
 		"discordapp.net" :1,
 		"discordapp.com" :1,
 		"discord.gg" :1,
+		"dmhy.org" :1,
 		"donmai.us" :1,
 		"dropbox.com": 1,
 		"dropboxstatic.com": 1,
