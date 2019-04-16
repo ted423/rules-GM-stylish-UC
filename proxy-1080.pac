@@ -27,6 +27,7 @@ function FindProxyForURL(url, host) {
 		"googleusercontent.com": 1,
 		"googlevideo.com": 1,
 		"gstatic.com": 1,
+		"withgoogle.com": 1,
 		"youtube.com": 1,
 		"youtu.be": 1,
 		"ytimg.com": 1,
