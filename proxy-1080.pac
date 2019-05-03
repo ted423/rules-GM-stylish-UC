@@ -1,6 +1,11 @@
 function FindProxyForURL(url, host) {
 	var proxy = "PROXY 127.0.0.1:1080;";
 	var needDomain = {
+		//e-hentai
+		"e-hentai.org": 1,
+		"exhentai.org": 1,
+		"37.48.124.86": 1,
+		"46.166.148.137": 1,
 		//facebook
 		"facebook.com": 1,
 		"facebook.net": 1,
@@ -21,6 +26,7 @@ function FindProxyForURL(url, host) {
 		"google.com.sg": 1,
 		"google.co.jp": 1,
 		"google.co.kr": 1,
+		"google.ru": 1,
 		"google-analytics": 1,
 		"googleapis.com": 1,
 		"googletagmanager.com": 1,
@@ -77,8 +83,6 @@ function FindProxyForURL(url, host) {
 		"duckduckgo.com": 1,
 		"eset.com": 1,
 		"eyny.com": 1,
-		"e-hentai.org": 1,
-		"exhentai.org": 1,
 		"fc2.com": 1,
 		"gamer.com.tw": 1,
 		"getchu.com": 1,
