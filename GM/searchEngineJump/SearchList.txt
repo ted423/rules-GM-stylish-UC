@@ -83,6 +83,7 @@ Sukebei
 		nyaa.si, https://sukebei.nyaa.si/?f=0&c=0_0&q=%s
 		nyaa.uk, https://sukebei.nyaa.uk/?f=0&c=0_0&q=%s
 	AniDex, https://anidex.info/?q=%s
+	AcgnX Ero, https://ero.acgnx.se/search.php?sort_id=0&keyword=%s
 	AniRena, https://www.anirena.com/?s=%s
 	GGBases, http://www.ggbases.com/search.so?title=%s
 下载--download
@@ -97,12 +98,12 @@ Sukebei
 		BTDigg, https://www.btdig.com/search?q=%s
 		TK, https://www.torrentkitty.tv/search/%s
 		DIGBT, https://www.digbt.org/search/%s
+		AliCili, http://alicilibt.xyz/list/%s/1-2-0/
 	Torrentz2, https://torrentz2.eu/search?f=%s
 	limetorrents, https://www.limetorrents.info/search/all/%s
 	ed2k
-		ed2kers, https://www.google.com/search?q=%s+site%3Aed2kers.com
+		ed2kers, http://www.ed2kers.net/index.php/Index/search?keyword=%s
 		xiaohx, http://www.xiaohx.org/search?key=%s
-		逛电驴, http://verycd.gdajie.com/find.htm?keyword=%s
 	字幕
 		sub HD, http://subhd.com/search/%s
 		射手网(伪), http://assrt.net/sub/?searchword=%s
