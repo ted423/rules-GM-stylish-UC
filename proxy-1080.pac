@@ -40,6 +40,7 @@ function FindProxyForURL(url, host) {
 		//microsoft
 		"live.com": 1,
 		"1drv.com": 1,
+		"1drv.ms": 1,
 		"office365.com": 1,
 		"skype.com": 1,
 		"microsoft.com": 1,
