@@ -116,6 +116,7 @@ function FindProxyForURL(url, host) {
 		"mega.co.nz": 1,
 		"mikocon.com": 1,
 		"mmxdm.net": 1,
+		"mobile01.com": 1,
 		"nyaa.si": 1,
 		"nyoo.moe": 1,
 		"offcloud.com": 1,
