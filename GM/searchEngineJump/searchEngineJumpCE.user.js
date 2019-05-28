@@ -3,7 +3,7 @@
 // @author		ted423
 // @contributor	NLF && ywzhaiqi
 // @description	方便的在各个引擎之间跳转。可自定义搜索列表的 NLF 修改版。
-// @version		10.1905.23.0
+// @version		10.1905.28.0
 // @include		*
 // @namespace	https://github.com/ted423
 // @require		https://code.jquery.com/jquery-3.3.1.min.js
@@ -1114,6 +1114,7 @@
 			if (document.characterSet != "UTF-8") value = encodeURIComponent(value);
 			// 根据后代元素中是否存在 form 元素，判断提交方式并进行处理
 			// 如果没有 form 元素，将会使用 GET 方法提交；如果有，将会使用 POST 方法提交
+			value = value.replace("&","%26");//&直接提交到地址栏中无法搜索，可能还有其他特殊符号也需要类似处理。
 			var forms = target.getElementsByTagName("form");
 			if (forms.length == 0) { //提交方式为 GET
 				target.href = target.getAttribute("url").replace(/%s/g, value); //替换"全部"关键词
