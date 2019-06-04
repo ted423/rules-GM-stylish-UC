@@ -140,6 +140,7 @@ function FindProxyForURL(url, host) {
 		"reddit.com": 1,
 		"shadowsocks.org": 1,
 		"sourceforge.net": 1,
+		"startpage.com": 1,
 		"thepiratebay.org": 1,
 		"tineye.com": 1,
 		"tinypic.com": 1,
