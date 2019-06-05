@@ -128,6 +128,7 @@ function FindProxyForURL(url, host) {
 		"nyoo.moe": 1,
 		"offcloud.com": 1,
 		"openvpn.net": 1,
+		"openvpn.org": 1,
 		"pantsu.cat": 1,
 		"peazip.org": 1,
 		"piapro.jp": 1,
