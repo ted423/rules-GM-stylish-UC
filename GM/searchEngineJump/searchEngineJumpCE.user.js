@@ -3,7 +3,7 @@
 // @author		ted423
 // @contributor	NLF && ywzhaiqi
 // @description	方便的在各个引擎之间跳转。可自定义搜索列表的 NLF 修改版。
-// @version		10.1906.06.0
+// @version		10.1906.06.1
 // @include		*
 // @namespace	https://github.com/ted423
 // @require		https://code.jquery.com/jquery-3.3.1.min.js
@@ -93,6 +93,12 @@
 		}, {
 			name: "google.co.jp",
 			url: /^https?:\/\/www\.google\.co\.jp\/(webhp|search|#|$|\?)(?:.(?!&tbm=))*$/,
+			mutationTitle: true,
+			engineList: "web",
+			
+		}, {
+			name: "Startpage",
+			url: /^https?:\/\/[a-z0-9]{3}\.startpage\.com\/do/,
 			mutationTitle: true,
 			engineList: "web",
 			
