@@ -16,6 +16,7 @@
 		Yahoo, https://search.yahoo.com/search?p=%s
 		Yahoo(tw), https://tw.search.yahoo.com/search?p=%s
  		Yahoo.co.jp, https://search.yahoo.co.jp/search?p=%s&aq=-1&x=wrt
+	Startpage, https://www.startpage.com/do/search/%q
 资料--book
 	WIKI
 		ZWIKI, https://zh.wikipedia.org/w/index.php?search=%s&button=&title=Special%3ASearch
