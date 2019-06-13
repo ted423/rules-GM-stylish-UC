@@ -154,6 +154,7 @@ function FindProxyForURL(url, host) {
 		"wnacg.org": 1,
 		"yahoo.com": 1,
 		"yahoo.co.jp": 1,
+		"flickr": 1,
 		"yande.re": 1
 	}
 	var specialDomain ={
