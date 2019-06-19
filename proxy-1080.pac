@@ -125,7 +125,6 @@ function FindProxyForURL(url, host) {
 		"mmxdm.net": 1,
 		"mobile01.com": 1,
 		"nyaa.si": 1,
-		"nyoo.moe": 1,
 		"offcloud.com": 1,
 		"openvpn.net": 1,
 		"openvpn.org": 1,
