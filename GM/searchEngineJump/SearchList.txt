@@ -3,9 +3,8 @@
 		Google, https://www.google.com/search?q=%s&safe=off
 		Google.hk, https://www.google.com.hk/search?q=%s&safe=off
 		Google.co.jp，https://www.google.co.jp/search?q=%s&safe=off
-	百度
-		百度, https://www.baidu.com/s?wd=%s
-		简洁搜索, https://www.baidu.com/s?wd=firefox&ie=utf-8&tn=baidulocal
+	百度, https://www.baidu.com/s?wd=%s
+	秘迹, https://mijisou.com/?q=%s
 	360, https://www.so.com/s?q=%s
 	Bing
 		Bing(CN), https://cn.bing.com/search?q=%s

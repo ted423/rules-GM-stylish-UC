@@ -5,7 +5,7 @@
     width: 14px;
     height: 14px;
     background: grey;
-    border-radius: 7px;
+    border-radius: 7px !important;
     display: block;
     z-index: 91111111111;
     cursor: crosshair;
