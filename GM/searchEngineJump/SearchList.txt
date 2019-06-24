@@ -58,6 +58,26 @@
 	Flickr, https://www.flickr.com/search/?w=all&q=%s
 	Pixiv, http://www.pixiv.net/search.php?s_mode=s_tag&word=%s
 	dA, https://www.deviantart.com/browse/all/?q=%s
+下载--download
+	影视
+		kickass(替代), https://kickass1.to/usearch/%s/
+		thepiratebay, https://thepiratebay.org/search/%s
+		1337x, http://1337x.to/search/%s/1/
+		RARBG.to, https://rarbgproxy.org/torrents.php?search=%s
+		rarbg.is, https://rarbg.is/torrents.php?search=%s
+	Magnet
+		BTSOW, http://btsow.pw/search/%s
+		BTDigg, https://www.btdig.com/search?q=%s
+		TK, https://www.torrentkitty.tv/search/%s
+		DIGBT, https://www.digbt.org/search/%s
+		AliCili, http://alicilibt.xyz/list/%s/1-2-0/
+		StoreBT, http://storebt.com/s/%s/0/0/1.html
+	Torrentz2, https://torrentz2.eu/search?f=%s
+	limetorrents, https://www.limetorrents.info/search/all/%s
+	xiaohx, http://www.xiaohx.org/search?key=%s
+	字幕
+		sub HD, https://subhd.tv/search/%s
+		射手网(伪), https://assrt.net/sub/?searchword=%s
 ACG
 	NyaaPantsu
 		NyaaPantsu, https://pantsu.cat/search?c=_&userID=0&q=%s
@@ -87,28 +107,6 @@ Sukebei
 	AcgnX Ero, https://ero.acgnx.se/search.php?sort_id=0&keyword=%s
 	AniRena, https://www.anirena.com/?s=%s
 	GGBases, http://www.ggbases.com/search.so?title=%s
-下载--download
-	影视
-		kickass(替代), https://kickass1.to/usearch/%s/
-		thepiratebay, https://thepiratebay.org/search/%s
-		1337x, http://1337x.to/search/%s/1/
-		RARBG.to, https://rarbgproxy.org/torrents.php?search=%s
-		rarbg.is, https://rarbg.is/torrents.php?search=%s
-	Magnet
-		BTSOW, http://btsow.pw/search/%s
-		BTDigg, https://www.btdig.com/search?q=%s
-		TK, https://www.torrentkitty.tv/search/%s
-		DIGBT, https://www.digbt.org/search/%s
-		AliCili, http://alicilibt.xyz/list/%s/1-2-0/
-		StoreBT, http://storebt.com/s/%s/0/0/1.html
-	Torrentz2, https://torrentz2.eu/search?f=%s
-	limetorrents, https://www.limetorrents.info/search/all/%s
-	ed2k
-		ed2kers, http://www.ed2kers.net/index.php/Index/search?keyword=%s
-		xiaohx, http://www.xiaohx.org/search?key=%s
-	字幕
-		sub HD, http://subhd.com/search/%s
-		射手网(伪), http://assrt.net/sub/?searchword=%s
 网购--cart-arrow-down
 	一淘, https://www.etao.com/search.htm?nq=%s
 	京东, https://search.jd.com/Search?keyword=%s&enc=utf-8
