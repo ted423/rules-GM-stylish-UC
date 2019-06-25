@@ -46,6 +46,7 @@
 	一听, https://so.1ting.com/song?q=%s
 	虾米, http://www.xiami.com/search?key=%s
 	piapro, https://piapro.jp/search/?view=audio&keyword=%s
+	刘志进, https://music.liuzhijin.cn/?name=%s&type=qq
 	歌词
 		千千歌词, https://music.taihe.com/search/lrc?key=%s
 		QQ歌词, https://y.qq.com/portal/search.html#page=1&searchid=1&t=lyric&w=%s
