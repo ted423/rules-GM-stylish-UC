@@ -15,7 +15,7 @@
 		Yahoo, https://search.yahoo.com/search?p=%s
 		Yahoo(tw), https://tw.search.yahoo.com/search?p=%s
  		Yahoo.co.jp, https://search.yahoo.co.jp/search?p=%s&aq=-1&x=wrt
-	Startpage, https://www.startpage.com/do/search/%q
+	Startpage, https://www.startpage.com/do/search/%post#query=%s
 资料--book
 	WIKI
 		ZWIKI, https://zh.wikipedia.org/w/index.php?search=%s&button=&title=Special%3ASearch
@@ -27,7 +27,8 @@
 	百度学术, https://xueshu.baidu.com/s?wd=%s
 	知乎, https://www.zhihu.com/search?q=%s
 	萌娘百科, http://zh.moegirl.org/index.php?search=%s
-	Google Book, https://www.google.com/search?q=%s&btnG=%E6%90%9C%E7%B4%A2%E5%9B%BE%E4%B9%A6&tbm=bks&tbo=1&hl=zh-CN&gws_rd=ssl
+	Google Book, https://www.google.com/search?q=%s&btnG=搜索图书&tbm=bks&tbo=1&hl=zh-CN&gws_rd=ssl
+	维普, http://lib.cqvip.com/Qikan/Search/Index?from=Qikan_Search_Index/%post#key=u%3D%s#indexKey=%s
 	开发
 		stackoverflow, https://stackoverflow.com/search?q=%s
 		MDN, https://developer.mozilla.org/en-US/search?q=%s
