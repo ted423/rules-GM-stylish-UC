@@ -148,6 +148,7 @@ function FindProxyForURL(url, host) {
 		"tokyotosho.info": 1,
 		"toranoana.jp": 1,
 		"tumblr.com": 1,
+		"videohelp.com": 1,
 		"vivaldi.net": 1,
 		"wikipedia.org": 1,
 		"wnacg.org": 1,
