@@ -89,10 +89,11 @@ a.sej-engine{
 	min-width: 55px;
 	text-align: center;
 }
-button.sej-engine
-{
+button.sej-engine{
 	background-color: #FFFFFF;
 	font-family: Comic Sans MS, 'Microsoft YaHei', 微软雅黑;
+	color: #120886;
+	cursor:pointer;
 }
 a.sej-engine:visited, a.sej-engine:active{
 	color: #120886;
