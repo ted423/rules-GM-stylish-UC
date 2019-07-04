@@ -1,4 +1,4 @@
-网页--search
+网页
 	Google
 		Google, https://www.google.com/search?q=%s&safe=off
 		Google.hk, https://www.google.com.hk/search?q=%s&safe=off
@@ -16,7 +16,7 @@
 		Yahoo(tw), https://tw.search.yahoo.com/search?p=%s
  		Yahoo.co.jp, https://search.yahoo.co.jp/search?p=%s&aq=-1&x=wrt
 	Startpage, https://www.startpage.com/do/search/%post#query=%s
-资料--book
+资料
 	Wiki
 		ZWiki, https://zh.wikipedia.org/w/index.php?search=%s&button=&title=Special%3ASearch
 		EWiki, https://en.wikipedia.org/w/index.php?search=%s&button=&title=Special%3ASearch
@@ -35,12 +35,12 @@
 		github, https://github.com/search?q=%s
 		krugle, http://opensearch.krugle.org/document/search/#query=%s
 		npm, https://www.npmjs.org/search?q=%s
-地图--map
+地图
 	百度, http://map.baidu.com/?newmap=1&s=s%26wd%3D%s
 	Google, https://www.google.com/maps/search/%s/
 	Bing, https://www.bing.com/ditu/?q=%s
 	搜狗, https://map.sogou.com/#lq=%s
-音乐--music
+音乐
 	千千, https://music.taihe.com/search?key=%s&ie=utf-8&oe=utf-8
 	QQ, https://y.qq.com/portal/search.html#page=1&searchid=1&t=song&w=%s
 	一听, https://so.1ting.com/song?q=%s
@@ -51,7 +51,7 @@
 		千千歌词, https://music.taihe.com/search/lrc?key=%s
 		QQ歌词, https://y.qq.com/portal/search.html#page=1&searchid=1&t=lyric&w=%s
 		一听歌词, https://so.1ting.com/lyric?q=%s
-图片--image
+图片
 	百度, http://image.baidu.com/search/index?tn=baiduimage&word=%s
 	Google, https://www.google.com.hk/search?tbm=isch&q=%s
 	花瓣, https://huaban.com/search/?q=%s
@@ -59,7 +59,7 @@
 	Flickr, https://www.flickr.com/search/?w=all&q=%s
 	Pixiv, http://www.pixiv.net/search.php?s_mode=s_tag&word=%s
 	dA, https://www.deviantart.com/browse/all/?q=%s
-下载--download
+下载
 	BTSOW, http://btsow.pw/search/%s
 	BTDigg, https://www.btdig.com/search?q=%s
 	TK, https://www.torrentkitty.tv/search/%s
@@ -112,12 +112,12 @@ Sukebei
 	AcgnX Ero, https://ero.acgnx.se/search.php?sort_id=0&keyword=%s
 	AniRena, https://www.anirena.com/?s=%s
 	GGBases, http://www.ggbases.com/search.so?title=%s
-网购--cart-arrow-down
+网购
 	一淘, https://www.etao.com/search.htm?nq=%s
 	京东, https://search.jd.com/Search?keyword=%s&enc=utf-8
 	淘宝, https://s.taobao.com/search?q=%s
 	亚马逊, https://www.amazon.cn/s/ref=nb_ss?keywords=%s
-etc--plus-square
+etc
 	邮编库, http://www.youbianku.com/%s
 	AMO, https://addons.mozilla.org/zh-CN/firefox/search/?q=%s
 	汉典(字), http://www.zdic.net/sousuo/?q=%s&tp=tp1
