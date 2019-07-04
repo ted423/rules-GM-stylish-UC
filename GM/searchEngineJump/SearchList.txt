@@ -79,7 +79,12 @@
 		kat.am, https://kat.am/usearch/%s/
 		kickasstorrent.cr, https://kickasstorrent.cr/usearch/%s/
 	thepiratebay, https://thepiratebay.org/search/%s
-	1337x, http://1337x.to/search/%s/1/
+	1337x
+		1337x.to, http://www.1337x.to/search/%s/1/
+		1337x.am, http://www.1337x.am/search/%s/1/
+	Torlock, https://www.torlock.com/all/torrents/%s.html
+	TD, https://www.torrentdownloads.me/search/?search=%s
+	extratorrent.si, https://extratorrent.si/search/?search=%s
 	RARBG
 		RARBG.to, https://rarbgproxy.org/torrents.php?search=%s
 		rarbg.is, https://rarbg.is/torrents.php?search=%s
