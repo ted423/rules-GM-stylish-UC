@@ -57,6 +57,7 @@ function FindProxyForURL(url, host) {
 		"steamcommunity.com": 1,
 		"steampowered.com": 1,
 		"steamstatic.com": 1,
+		"gvt1.com": 1,
 		//twitter
 		"twitter.com": 1,
 		"twitch.tv": 1,
@@ -65,6 +66,7 @@ function FindProxyForURL(url, host) {
 		"twimg.com": 1,
 		"t.co": 1,
 		//
+		"1337x.to": 1,
 		"akamaihd.net": 1,
 		"akamaized.net": 1,
 		"archive.org": 1,
