@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name		searchEngineJump-NextStage
+// @name			searchEngineJump-NextStage
 // @author		ted423
 // @contributor	NLF && ywzhaiqi
 // @description	方便的在各个引擎之间跳转。可自定义搜索列表的 NLF 修改版。
@@ -9,18 +9,19 @@
 // @require		https://code.jquery.com/jquery-3.3.1.min.js
 // @downloadURL	https://github.com/ted423/rules-GM-stylish-UC/raw/master/GM/searchEngineJump/searchEngineJumpCE.user.js
 // @updateURL	https://github.com/ted423/rules-GM-stylish-UC/raw/master/GM/searchEngineJump/searchEngineJumpCE.user.js
-// @grant		GM_getValue
-// @grant		GM_setValue
-// @grant		GM_addStyle
-// @run-at		document-start
+// @grant			GM_getValue
+// @grant			GM_setValue
+// @grant			GM_addStyle
+// @grant      	GM_registerMenuCommand
+// @run-at			document-start
 // ==/UserScript==
 
 
 (function() {
 	"use strict";
+	
 	var prefs = {
 		display: true,
-		dottype: "dbclick",
 		openInNewTab: true, //是否在新页面打开.
 		engineListDataType: "ted423", //搜索列表默认类型
 		debug: false
@@ -662,7 +663,6 @@
 	function loadPrefs() {
 		prefs.display = GM_getValue("display", prefs.display);
 		prefs.openInNewTab = GM_getValue("openInNewTab", prefs.openInNewTab);
-		prefs.dottype = GM_getValue("dottype", prefs.dottype);
 		prefs.debug = GM_getValue("debug", prefs.debug);
 		prefs.engineListDataType = GM_getValue("engineListDataType", prefs.engineListDataType);
 
@@ -752,7 +752,6 @@
 				GM_setValue("openInNewTab", prefs.openInNewTab = !!$("openInNewTab").checked);
 				GM_setValue("debug", prefs.debug = !!$("debug").checked);
 				GM_setValue("engineListDataType", prefs.engineListDataType = engineListType_sel.value);
-				// GM_setValue("position", prefs.position = $("position").value);
 
 				if (engineListType_sel.value == "custom") {
 					GM_setValue("engineList", engineListData.custom = engineList_txt.value);
@@ -1257,6 +1256,7 @@
 		flag = 1;
 		if (document.readyState == "interactive") {
 			debug("onreadystatechange: " + document.readyState);
+			GM_registerMenuCommand("设置",openPrefs);
 			run();
 		} else if (document.readyState == "complete") {
 			debug("onreadystatechange: " + document.readyState);
