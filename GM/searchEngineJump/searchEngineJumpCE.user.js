@@ -1,18 +1,18 @@
 // ==UserScript==
 // @name			searchEngineJump-NextStage
-// @author		ted423
-// @contributor	NLF && ywzhaiqi
-// @description	方便的在各个引擎之间跳转。可自定义搜索列表的 NLF 修改版。
-// @version		10.1907.24.1
-// @include		*
-// @namespace	https://github.com/ted423
-// @require		https://code.jquery.com/jquery-3.3.1.min.js
-// @downloadURL	https://github.com/ted423/rules-GM-stylish-UC/raw/master/GM/searchEngineJump/searchEngineJumpCE.user.js
-// @updateURL	https://github.com/ted423/rules-GM-stylish-UC/raw/master/GM/searchEngineJump/searchEngineJumpCE.user.js
+// @author			ted423
+// @contributor		NLF && ywzhaiqi
+// @description		方便的在各个引擎之间跳转。可自定义搜索列表的 NLF 修改版。
+// @version			10.1907.24.1
+// @include			*
+// @namespace		https://github.com/ted423
+// @require			https://code.jquery.com/jquery-3.3.1.min.js
+// @downloadURL		https://github.com/ted423/rules-GM-stylish-UC/raw/master/GM/searchEngineJump/searchEngineJumpCE.user.js
+// @updateURL		https://github.com/ted423/rules-GM-stylish-UC/raw/master/GM/searchEngineJump/searchEngineJumpCE.user.js
 // @grant			GM_getValue
 // @grant			GM_setValue
 // @grant			GM_addStyle
-// @grant      	GM_registerMenuCommand
+// @grant      		GM_registerMenuCommand
 // @run-at			document-start
 // ==/UserScript==
 
