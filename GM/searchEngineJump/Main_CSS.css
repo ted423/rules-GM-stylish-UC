@@ -32,6 +32,9 @@ sejul{
 	vertical-align: text-bottom;
 	padding-right: 1px;
 }
+#sej-container button{
+	font-size:9px;\n}
+
 sejul, sejli{
 	margin: 0;
 	padding: 0;

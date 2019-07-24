@@ -14,3 +14,6 @@ searchEngineJump-NextStage 是根据 ywzhaiqi 的 searchEngineJump-CE 来进行�
 ```
 
 其中 http://lib.cqvip.com/Qikan/Search/Index?from=Qikan_Search_Index/ 为完整的搜索Url,%post后面的任意内容都会被截取掉，"#"用于分割参数
+
+
+1337x由于该页面自身有些脚本会对同类站点连接做动作，会影响脚本运行
