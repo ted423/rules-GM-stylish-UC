@@ -19,7 +19,6 @@
 
 (function() {
 	"use strict";
-	
 	var prefs = {
 		display: true,
 		openInNewTab: true, //是否在新页面打开.
@@ -665,9 +664,7 @@
 		prefs.openInNewTab = GM_getValue("openInNewTab", prefs.openInNewTab);
 		prefs.debug = GM_getValue("debug", prefs.debug);
 		prefs.engineListDataType = GM_getValue("engineListDataType", prefs.engineListDataType);
-
 		engineListData.custom = GM_getValue("engineList") || "";
-
 		reloadDebug();
 	}
 
@@ -1114,7 +1111,6 @@
 		configBtn.onclick = openPrefs;
 		container.appendChild(configBtn);
 
-
 		switch (insertWhere.toLowerCase()) { //插入到文档中
 			case "beforebegin":
 				iTarget.parentNode.insertBefore(container, iTarget);
@@ -1206,10 +1202,10 @@
 			container.parentNode.removeChild(container);
 		}
 		addContainer(iTarget, iInput);
-		//if (matchedRule.stylish && matchedRule.stylish.indexOf("fixed") != -1) {
-			container = document.getElementById("sej-container");
 			container.style.left = "calc(50% - " + getComputedStyle(container).width + " / 2)";
-		//}
+		
+		container = document.getElementById("sej-container");
+		if(container)container.style.left = "calc(50% - " + getComputedStyle(container).width + " / 2)";
 	}
 
 	function remove() {
@@ -1252,11 +1248,11 @@
 	debug("脚本执行于:"+document.readyState);
 	debug("onreadystatechange function:"+document.onreadystatechange);
 	if (!matchedRule) return;
+	GM_registerMenuCommand("设置",openPrefs);
 	document.onreadystatechange = function() {
 		flag = 1;
 		if (document.readyState == "interactive") {
 			debug("onreadystatechange: " + document.readyState);
-			GM_registerMenuCommand("设置",openPrefs);
 			run();
 		} else if (document.readyState == "complete") {
 			debug("onreadystatechange: " + document.readyState);
