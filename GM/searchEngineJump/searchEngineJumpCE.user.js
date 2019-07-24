@@ -1202,8 +1202,6 @@
 			container.parentNode.removeChild(container);
 		}
 		addContainer(iTarget, iInput);
-			container.style.left = "calc(50% - " + getComputedStyle(container).width + " / 2)";
-		
 		container = document.getElementById("sej-container");
 		if(container)container.style.left = "calc(50% - " + getComputedStyle(container).width + " / 2)";
 	}
