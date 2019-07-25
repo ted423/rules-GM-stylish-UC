@@ -51,6 +51,7 @@
 		千千歌词, https://music.taihe.com/search/lrc?key=%s
 		QQ歌词, https://y.qq.com/portal/search.html#page=1&searchid=1&t=lyric&w=%s
 		一听歌词, https://so.1ting.com/lyric?q=%s
+		歌词迷, http://gecimi.com/search/?keyword=%s
 图片
 	百度, http://image.baidu.com/search/index?tn=baiduimage&word=%s
 	Google, https://www.google.com.hk/search?tbm=isch&q=%s
