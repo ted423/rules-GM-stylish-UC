@@ -28,6 +28,7 @@
 	知乎, https://www.zhihu.com/search?q=%s
 	萌娘百科, http://zh.moegirl.org/index.php?search=%s
 	Google Book, https://www.google.com/search?q=%s&btnG=搜索图书&tbm=bks&tbo=1&hl=zh-CN&gws_rd=ssl
+	爱学术, https://s.ixueshu.com/?q=%s
 	维普, http://lib.cqvip.com/Qikan/Search/Index?from=Qikan_Search_Index/%post#key=u%3D%s#indexKey=%s
 	开发
 		stackoverflow, https://stackoverflow.com/search?q=%s
