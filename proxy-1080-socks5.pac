@@ -149,6 +149,7 @@ function FindProxyForURL(url, host) {
 		"tinypic.com": 1,
 		"tokyotosho.info": 1,
 		"toranoana.jp": 1,
+		"torlock.com": 1,
 		"tumblr.com": 1,
 		"videohelp.com": 1,
 		"vivaldi.net": 1,
