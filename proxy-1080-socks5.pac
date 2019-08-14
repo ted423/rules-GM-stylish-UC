@@ -144,6 +144,8 @@ function FindProxyForURL(url, host) {
 		"shadowsocks.org": 1,
 		"sourceforge.net": 1,
 		"startpage.com": 1,
+		"t.me": 1,
+		"telegram.org": 1,
 		"thepiratebay.org": 1,
 		"tineye.com": 1,
 		"tinypic.com": 1,
