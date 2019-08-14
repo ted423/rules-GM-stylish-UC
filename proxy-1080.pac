@@ -153,6 +153,7 @@ function FindProxyForURL(url, host) {
 		"toranoana.jp": 1,
 		"torlock.com": 1,
 		"tumblr.com": 1,
+		"vcb-s.com": 1,
 		"videohelp.com": 1,
 		"vivaldi.net": 1,
 		"wikipedia.org": 1,
