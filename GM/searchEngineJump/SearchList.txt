@@ -62,11 +62,11 @@
 	Pixiv, http://www.pixiv.net/search.php?s_mode=s_tag&word=%s
 	dA, https://www.deviantart.com/browse/all/?q=%s
 下载
-	BTSOW, http://btsow.pw/search/%s
+	BTSOW, http://btspread.com/search/%s
 	BTDigg, https://www.btdig.com/search?q=%s
 	TK, https://www.torrentkitty.tv/search/%s
 	DIGBT, https://www.digbt.org/search/%s
-	AliCili, http://alicilibt.xyz/list/%s/1-2-0/
+	AliCili, http://alicili8.com/list/%s/1-2-0/
 	StoreBT, http://storebt.com/s/%s/0/0/1.html
 	Torrentz2, https://torrentz2.eu/search?f=%s
 	limetorrents, https://www.limetorrents.info/search/all/%s
