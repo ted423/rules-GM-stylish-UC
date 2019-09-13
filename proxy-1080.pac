@@ -120,6 +120,7 @@ function FindProxyForURL(url, host) {
 		"livedoor.jp": 1,
 		"blog.jp": 1,
 		"wikia.com": 1,
+		"m-team.cc": 1,
 		"mbga.jp": 1,
 		"andapp.jp": 1,
 		"mobage.jp": 1,
