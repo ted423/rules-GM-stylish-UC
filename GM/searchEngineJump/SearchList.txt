@@ -85,7 +85,7 @@
 		1337x.to, https://www.1337x.to/search/%s/1/
 		1337x.am, https://www.1337x.am/search/%s/1/
 		1337x.is, https://www.1337x.am/search/%s/1/
-	Torlock, https://www.torlock.com/all/torrents/%s.html
+	Torlock, https://www.torlock2.com/all/torrents/%s.html
 	YourBT, https://yourbittorrent.com/?q=%s
 	TD, https://www.torrentdownloads.me/search/?search=%s
 	extratorrent.si, https://extratorrent.si/search/?search=%s
