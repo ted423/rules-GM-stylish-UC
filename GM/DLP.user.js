@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name			DownloadPlus - 自动处理网盘链接及其提取码变成支持自动填充密码的方式的链接（百度云、360pan等）
+// @name			DownloadPlus - 网盘连接自动填充密码 and 磁力链转种子
 // @author			jasonshaw,jasake,ted423
 // @namespace		https://github.com/ted423
 // @version			3.0
