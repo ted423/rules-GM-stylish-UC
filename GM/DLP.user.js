@@ -2,15 +2,12 @@
 // @name			DownloadPlus - 自动处理网盘链接及其提取码变成支持自动填充密码的方式的链接（百度云、360pan等）
 // @author			jasonshaw,jasake,ted423
 // @namespace		https://github.com/ted423
-// @version			2.1
+// @version			3.0
 // @updateURL		https://raw.githubusercontent.com/ted423/rules-GM-stylish-UC/master/GM/DLP.user.js
 // @description		自动处理网盘链接及其提取码变成支持自动填充密码的方式的链接（百度云、360pan等）
 // @grant			unsafeWindow
 // @include			*
-// @exclude			https://sukebei.pantsu.cat/search*
-// @exclude			https://sukebei.pantsu.cat
-// @exclude			https://nyaa.pantsu.cat/search*
-// @exclude			https://nyaa.pantsu.cat
+// @grant			GM_addStyle
 // @run-at			document-end
 // @copyright		2014+, jasonshaw
 // ==/UserScript==
@@ -82,19 +79,27 @@
 				i++;
 			}
 		}
-		/*var magnet = document.querySelectorAll('a[href^="magnet"]');
+
+		var magnet = document.querySelectorAll('a[href^="magnet"]');
+		GM_addStyle("dlp-div{position:fixed;z-index:2147483647;top:calc(50%);left:calc(50% - 250px);padding:20px;background:#eee;border:1px solid black;}\
+		");
 		[].forEach.call(magnet, function(a) {
-			if (a.href.match(/\w{40}/g)) {
-				var magnet2torrent = document.createElement('a'), sup = document.createElement('sup'), str = a.href.match(/\w{40}/g)[0];
-				magnet2torrent.textContent = "2torrent";
-				magnet2torrent.target = "_blank";
-				magnet2torrent.style = "opacity: 0.5;"
-				magnet2torrent.title = "itorrents.org";
-				magnet2torrent.href = "https://itorrents.org/torrent/" + str.toLocaleUpperCase() + ".torrent";
-				sup.appendChild(magnet2torrent);
-				a.parentNode.appendChild(sup);
+			a.onmouseover = function (){a.focus();}
+			a.onkeydown = function (){
+				if(event.keyCode==77){
+					var magnet2torrent = document.getElementsByTagName("dlp-div")[0],str = a.href.match(/\w{40}/g)[0];
+					if(magnet2torrent){magnet2torrent.parentNode.removeChild(magnet2torrent);}
+					else {
+						magnet2torrent = document.createElement('dlp-div');
+						magnet2torrent.innerHTML = '<ul><li>itorrents: <a target = "_blank" href="https://itorrents.org/torrent/' + str.toLocaleUpperCase() + '.torrent">https://itorrents.org/torrent/' + str.toLocaleUpperCase() + '.torrent</a></li><li>btcache.me: <a target = "_blank" href="http://btcache.me/torrent/'+str.toLocaleUpperCase()+'">http://btcache.me/torrent/'+str.toLocaleUpperCase()+'</a></li><li>torrage.info: <a target = "_blank" href="https://torrage.info/torrent.php?h='+str.toLocaleUpperCase()+'">https://torrage.info/torrent.php?h='+str.toLocaleUpperCase()+'</a></li>'
+						a.onmouseover = function (){magnet2torrent.focus();console.log("focus");}
+						magnet2torrent.tabIndex = 0;
+						magnet2torrent.onkeydown = function(){debugger;if(event.keyCode==77)magnet2torrent.parentNode.removeChild(magnet2torrent);console.log("remove");}
+						document.body.appendChild(magnet2torrent);
+					}
+				}
 			}
-		});*/
+		});
 	}
 
 	function addMutationObserver(selector, callback) {
