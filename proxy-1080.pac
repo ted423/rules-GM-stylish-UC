@@ -65,6 +65,10 @@ function FindProxyForURL(url, host) {
 		"ttvnw.net": 1,
 		"twimg.com": 1,
 		"t.co": 1,
+		//avistaz
+		"avistaz.to": 1,
+		"exoticaz.to": 1,
+		"cinemaz.to": 1,
 		//
 		"1337x.to": 1,
 		"akamaihd.net": 1,
@@ -146,6 +150,8 @@ function FindProxyForURL(url, host) {
 		"shadowsocks.org": 1,
 		"sourceforge.net": 1,
 		"startpage.com": 1,
+		"stackoverflow.com": 1,
+        "sstatic.net": 1,
 		"t.me": 1,
 		"telegram.org": 1,
 		"tdesktop.com": 1,
