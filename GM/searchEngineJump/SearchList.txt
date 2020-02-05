@@ -62,37 +62,38 @@
 	Pixiv, http://www.pixiv.net/search.php?s_mode=s_tag&word=%s
 	dA, https://www.deviantart.com/browse/all/?q=%s
 下载
-	BTSOW, http://btspread.com/search/%s
-	BTDigg, https://www.btdig.com/search?q=%s
-	TK, https://www.torrentkitty.tv/search/%s
-	DIGBT, https://www.digbt.org/search/%s
-	AliCili, http://alicili8.com/list/%s/1-2-0/
-	StoreBT, http://storebt.com/s/%s/0/0/1.html
-	Torrentz2, https://torrentz2.eu/search?f=%s
-	limetorrents, https://www.limetorrents.info/search/all/%s
+	BTSOW, https://btio.pw/search/%s
+	BTDigg, https://btdig.com/search?q=%s
+	limetorrents
+		co, https://www.limetorrents.co/search/all/%s
+		asia, https://www.limetorrents.asia/search/all/%s
+		pro, https://www.limetor.pro/search/all/%s
 	xiaohx, http://www.xiaohx.org/search?key=%s
 	字幕
-		sub HD, https://subhd.tv/search/%s
+		sub HD, https://subhd.la/search/%s
 		射手网(伪), https://assrt.net/sub/?searchword=%s
+		YYeTs, http://www.rrys2019.com/search/index?keyword=%s
+		zimuku, http://www.zimuku.la/search?q=%s
 影视
-	kickass(镜像1), https://kat.sx/search.php?q=%s
-	kickass(镜像2)
-		kickass1.to, https://kickass1.to/usearch/%s/
-		kat.am, https://kat.am/usearch/%s/
-		kickasstorrent.cr, https://kickasstorrent.cr/usearch/%s/
+	idope, https://idope.se/torrent-list/%s
 	thepiratebay, https://thepiratebay.org/search/%s
 	1337x
 		1337x.to, https://www.1337x.to/search/%s/1/
 		1337x.am, https://www.1337x.am/search/%s/1/
 		1337x.is, https://www.1337x.am/search/%s/1/
 	Torlock, https://www.torlock2.com/all/torrents/%s.html
-	YourBT, https://yourbittorrent.com/?q=%s
+	YourBT, https://yourbittorrent2.com/?q=%s
 	TD, https://www.torrentdownloads.me/search/?search=%s
 	extratorrent.si, https://extratorrent.si/search/?search=%s
 	RARBG
 		rarbg.is, https://rarbg.is/torrents.php?search=%s
 		rarbgproxy, https://rarbgproxy.org/torrents.php?search=%s
 		rarbgprx, https://rarbgprx.org/torrents.php?search=%s
+	kickass(镜像1), https://kat.sx/search.php?q=%s
+	kickass(镜像2)
+		kickass1.to, https://kickass1.to/usearch/%s/
+		kat.am, https://kat.am/usearch/%s/
+		kickasstorrent.cr, https://kickasstorrent.cr/usearch/%s/
 ACG
 	NyaaPantsu
 		NyaaPantsu, https://pantsu.cat/search?c=_&userID=0&q=%s
