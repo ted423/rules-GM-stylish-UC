@@ -77,8 +77,7 @@
 影视
 	idope, https://idope.se/torrent-list/%s
 	thepiratebay, https://thepiratebay.org/search/%s
-	1337x
-		1337x.to, https://www.1377x.to/search/%s/1/
+	1337x.to, https://www.1377x.to/search/%s/1/
 	Torlock, https://www.torlock2.com/all/torrents/%s.html
 	YourBT, https://yourbittorrent2.com/?q=%s
 	TD, https://www.torrentdownloads.me/search/?search=%s
