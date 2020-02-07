@@ -78,17 +78,15 @@
 	idope, https://idope.se/torrent-list/%s
 	thepiratebay, https://thepiratebay.org/search/%s
 	1337x
-		1337x.to, https://www.1337x.to/search/%s/1/
-		1337x.am, https://www.1337x.am/search/%s/1/
-		1337x.is, https://www.1337x.am/search/%s/1/
+		1337x.to, https://www.1377x.to/search/%s/1/
 	Torlock, https://www.torlock2.com/all/torrents/%s.html
 	YourBT, https://yourbittorrent2.com/?q=%s
 	TD, https://www.torrentdownloads.me/search/?search=%s
 	extratorrent.si, https://extratorrent.si/search/?search=%s
+	bt4g, https://bt4g.com/search/%s
 	RARBG
-		rarbg.is, https://rarbg.is/torrents.php?search=%s
-		rarbgproxy, https://rarbgproxy.org/torrents.php?search=%s
 		rarbgprx, https://rarbgprx.org/torrents.php?search=%s
+		rarbgproxy, https://rarbgproxy.org/torrents.php?search=%s
 	kickass(镜像1), https://kat.sx/search.php?q=%s
 	kickass(镜像2)
 		kickass1.to, https://kickass1.to/usearch/%s/
