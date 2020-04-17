@@ -1,23 +1,7 @@
 # Write by ted423 for personal use
 #2017-03-13
 
-123yq.com##.contads
-
-151xs.com##.lcad
-151xs.com##.rcad
-||151xs.com/js/*
-
-
-||www.26953.com/js/win.js
-
 360.cn###wifiAnywhere
-yunpan.cn###get-36T
-
-67.220.92.014###ad_text
-
-8yyls.com##[id*="ad_bar"]
-
-xyzchenrongzhan.7958.com##.zzjs_net1
 
 ads.nicovideo.jp##EMBED[flashvars="clickTAG=https%3A%2F%2Fads.nicovideo.jp%2Fclick%3Fbannerid%3D40050%26zoneid%3D124"]
 
@@ -123,6 +107,9 @@ tieba.baidu.com##.guessing_watermark
 tieba.baidu.com##.tb_paper_wall_bottom
 tieba.baidu.com##.tb_paper_wall_wrap
 tieba.baidu.com##.j_thread_list[data-field*="\"id\":3040975267,"]
+||internal-amis-res.cdn.bcebos.com/images/2019-8/1565866888178/8630ac0f9569.jpg$image
+tieba.baidu.com###game_swap_card
+||internal-amis-res.cdn.bcebos.com/images/2019-8/1566197483234/190283f2dedf.jpg$image
 
 wenku.baidu.com###Zuniqueid__4
 
@@ -174,8 +161,6 @@ i.baidu.com##.span_4_2:nth-child(4) > div:nth-child(1)
 ||s1.bdstatic.com/r/www/scache/baidu_search/*
 ||s1.bdstatic.com/r/www/cache/baidu_search/*
 
-||biquge.la/scripts/*
-
 !BTSOW
 ||pl108266.puhtml.com/0e/1d/e4/*
 ||s10.histats.com*
@@ -190,6 +175,8 @@ i.baidu.com##.span_4_2:nth-child(4) > div:nth-child(1)
 ||c.cnzz.com/core.php?*
 
 csdn.net###im_popupWindow_miniMsg
+||passport.csdn.net/account/login?from=https://blog.csdn.net/happyeveryday62/article/details/85121760&utm_source=auto_pv30$subdocument
+blog.csdn.net##.login-mark
 
 cishuge.com##.bdad
 |http://www.cishuge.com/skin/*.js
@@ -226,7 +213,6 @@ hprt.net##TD[style="padding:0px;margin:0px;"]
 ||static.javhd.com/*
 ||cdn.abcsrv1.com/network/javbucks/javhd/b/*
 
-||a.kickass.to/callback/*$popup
 ||ai-gb.mgid.com/u670182/8992/*
 ||aggregatorgetb.com/async?*
 
@@ -234,10 +220,6 @@ search.51job.com##DIV[style="text-align: center;margin-bottom:5px;"]
 phpddt.com##A[href="http://www.ibeifeng.com/"]
 
 ||liveadexchanger.com/a/*
-
-luoqiu.com##DIV[style="text-align: center;"]
-
-lwxsw.org##.cad
 
 !mi
 www.mi.com##.site-bn-bar-link.ir
@@ -247,8 +229,6 @@ www.mi.com###J_topBn
 www.mi.com###J_topBackdrop
 
 piaoyun.cc##.wumii-popup-relatedItems
-
-happycar.wenyu365.com###wenyu365adpop
 
 qidian.com###DoublePop_left
 vipreader.qidian.com###QDCode_float > .transparent_box
@@ -267,8 +247,9 @@ user.qzone.qq.com###appCanvasGoldInfoTips
 qzone.qq.com##.message
 user.qzone.qq.com##.fusion_dialog_header
 
-www.tsdm.love###smchuncai
-tsdm.love###weakpassword_tip
+www.tsdm.live###smchuncai
+tsdm.live###weakpassword_tip
+||www.tsdmw.net/img01/MP3/pm_1.mp3
 
 ||k.static.u17i.com/common/images/blank.gif
 
@@ -296,17 +277,24 @@ tsdm.love###weakpassword_tip
 ||img.gsspat.jp$image
 ||art.lead-ad.jp^
 ||mediad2.jp/ad/*
+! 2017/3/13 下午6:29:25 https://sukebei.nyaa.se/?page=view&tid=2266343
+||media.gssp.asia/ls/opt_icon_text.png$image
+||img.gsspat.jp$image
+nyaa.se##[id^="banner-"]
 
-
+! pantsu.cat
+||monklerm.pro^$script,domain=nyaa.net
+||monklerm.pro^$script
+||*.nyaa.net$inline-script
+nyaa.net###torrent-download-link[href^="https://www.gaming-adult.com/"]
+||cdn.jsdelivr.net/npm/@widgetbot/crate@3$script,domain=nyaa.net
+pantsu.cat###torrent-download-link[href^="https://www.gaming-adult.com/"]
 
 ||www.shumilou.co/style/index.php?js/*
 
-||dbank.vmall.com/app/cms/getData.php?*
 
 xdowns.com###download_box ul:first-child
 ||www.xdowns.com/dd/dcr.gif
-
-xiaohx001.com##.bdselect_share_box
 
 zdfans.com##.poptip[style="top:60px;left:10px;"]
 zdfans.com##.textwidget
@@ -315,6 +303,43 @@ zdfans.com##[href="http://youqian.baidu.com/download/Baidusd-Setup-1.8.0.1196_10
 
 ||zhichengboya.com/statics/css/*
 
+! 2019/9/15 torlock2.com
+||35.224.227.218^$popup
+
+
+! 2019/10/28 https://pt.btschool.club
+||pt.btschool.club/adv/gqsd.jpg$image
+||pt.btschool.club/adv/gqsd1.jpg$image
+||pt.btschool.club/adv/goodnas.gif$image
+
+! 2017/4/14 上午7:40:02 http://imgblank.com/img-58eb82cd75bcf.html
+||shurkatsa.ru/handler_static/swf/game.swf$object
+
+
+! 2017/12/31 上午11:34:15 http://55888.eu/img-596606e0a93ff.html
+||55888.eu/aB.php?$image
+! 2017/12/31 下午12:37:29 thekat.nz
+||thekat.nz/vpn/=$popup,first-party
+
+! 2018/6/21 上午10:13:26 https://www.facebook.com/goddesskissgame/?hc_ref=ARQCkqy3_2N9tG4xA5nLIZlJgKVYiSyXgy7CMiG8raULV3C87TvJEfhEpcWr89mI6Rg&fref=nf#
+www.facebook.com###u_0_45
+
+! 2018/6/30 上午10:57:40 https://www.facebook.com/goddesskissgame/?hc_ref=ARQCkqy3_2N9tG4xA5nLIZlJgKVYiSyXgy7CMiG8raULV3C87TvJEfhEpcWr89mI6Rg&fref=nf#
+www.facebook.com###pagelet_growth_expanding_cta
+
+
+! 2019/1/5 下午7:57:54 https://m.weibo.cn/detail/4287861065360420?display=0&retcode=6102
+m.weibo.cn##.m-wpop-box
+
+www.xiaohx.org##[id^="bdSharePopup"]
+
+! 2019/6/20 https://max.book118.com
+||max.book118.com/Public/book118/images/down.gif$image
+||max.book118.com/Public/book118/images/claim.png$image
+
+
+! 2019/9/15 torlock2.com
+||35.224.227.218^$popup
 
 
 
