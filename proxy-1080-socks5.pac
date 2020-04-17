@@ -73,6 +73,10 @@ function FindProxyForURL(url, host) {
 		"rarbgprx.org": 1,
 		//
 		"1337x.to": 1,
+		"adobe.com": 1,
+		"adobelogin.com": 1,
+		"adobedc.net": 1,
+		"typekit.net": 1,
 		"akamaihd.net": 1,
 		"akamaized.net": 1,
 		"alicili8.com": 1,
@@ -82,6 +86,9 @@ function FindProxyForURL(url, host) {
 		"anidex.info": 1,
 		"anirena.com": 1,
 		"autolyric.com": 1,
+		"bbci.co.uk": 1,
+        "bbc.co.uk": 1,
+        "bbc.com": 1,
 		"books.com.tw": 1,
 		"box.com": 1,
 		"bt4g.com": 1,
@@ -126,6 +133,7 @@ function FindProxyForURL(url, host) {
 		"idope.se": 1,
 		"imgur.com": 1,
 		"javlibrary.com": 1,
+		"jpopsuki.eu": 1,
 		"lightnovel.cn": 1,
 		"lilith-soft.com": 1,
 		"limetorrents.info": 1,
@@ -145,8 +153,10 @@ function FindProxyForURL(url, host) {
 		"offcloud.com": 1,
 		"openvpn.net": 1,
 		"openvpn.org": 1,
-		"pantsu.cat": 1,
+		"oppaiti.me": 1,
 		"peazip.org": 1,
+		"petges.lu": 1,
+		"ptpimg.me": 1,
 		"piapro.jp": 1,
 		"pixiv.net": 1,
 		"pximg.net": 1,
@@ -179,7 +189,8 @@ function FindProxyForURL(url, host) {
 		"yahoo.com": 1,
 		"yahoo.co.jp": 1,
 		"flickr": 1,
-		"yande.re": 1
+		"yande.re": 1,
+		"yingk.com": 1
 	}
 	var specialDomain ={
 		"com.tw": 1,
