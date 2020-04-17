@@ -341,6 +341,9 @@ www.xiaohx.org##[id^="bdSharePopup"]
 ! 2019/9/15 torlock2.com
 ||35.224.227.218^$popup
 
+! 2020/4/17 http://www.seabreezecomputers.com
+www.seabreezecomputers.com##[href*="//chrome.google.com/webstore/detail/speech-recognition-anywhe/kdnnmhpmcakdilnofmllgcigkibjonof"]
+
 
 
 
