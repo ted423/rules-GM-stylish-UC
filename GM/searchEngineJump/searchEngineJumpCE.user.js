@@ -465,6 +465,14 @@
 			url: /^https?:\/\/yourbittorrent2?\.com\/\?q/,
 			engineList: "Movie",
 		}, {
+			name: "torrentfunk2",
+			url: /^https?:\/\/www\.torrentfunk2\.com\/[a-z]/,
+			engineList: "download",
+		}, {
+			name: "idope",
+			url: /^https?:\/\/zooqle\.com\/search\?/,
+			engineList: "download",
+		}, {
 			name: "torlock",
 			url: /^https?:\/\/www\.torlock2\.com\/[a-zA-Z]/,
 			engineList: "Movie",
