@@ -2,7 +2,7 @@
 // @name		Brokenlinkcheck Remove Unuse Link
 // @namespace	https://github.com/ted423
 // @description 用来移除磁力链以及ed2k这些链接的
-// @include		http://www.brokenlinkcheck.com/broken-links.php#status
+// @include		https://www.brokenlinkcheck.com/broken-links.php
 // @require		http://code.jquery.com/jquery-2.1.4.min.js
 // @require     https://greasyfork.org/scripts/13495-jquery-resize/code/jquery-resize.js
 // @version		1
