@@ -2,7 +2,7 @@
 // @name			DownloadPlus - 网盘连接自动填充密码 and 磁力链转种子
 // @author			jasonshaw,jasake,ted423
 // @namespace		https://github.com/ted423
-// @version			3.0
+// @version			3.1
 // @updateURL		https://raw.githubusercontent.com/ted423/rules-GM-stylish-UC/master/GM/DLP.user.js
 // @description		自动处理网盘链接及其提取码变成支持自动填充密码的方式的链接（百度云、360pan等）
 // @grant			unsafeWindow
@@ -91,7 +91,7 @@
 					if(magnet2torrent){magnet2torrent.parentNode.removeChild(magnet2torrent);}
 					else {
 						magnet2torrent = document.createElement('dlp-div');
-						magnet2torrent.innerHTML = '<ul><li>itorrents: <a target = "_blank" href="https://itorrents.org/torrent/' + str.toLocaleUpperCase() + '.torrent">https://itorrents.org/torrent/' + str.toLocaleUpperCase() + '.torrent</a></li><li>btcache.me: <a target = "_blank" href="http://btcache.me/torrent/'+str.toLocaleUpperCase()+'">http://btcache.me/torrent/'+str.toLocaleUpperCase()+'</a></li><li>torrage.info: <a target = "_blank" href="https://torrage.info/torrent.php?h='+str.toLocaleUpperCase()+'">https://torrage.info/torrent.php?h='+str.toLocaleUpperCase()+'</a></li>'
+						magnet2torrent.innerHTML = '<ul><li>itorrents: <a target = "_blank" href="https://itorrents.org/torrent/' + str.toLocaleUpperCase() + '.torrent">https://itorrents.org/torrent/' + str.toLocaleUpperCase() + '.torrent</a></li><li>btcache.me: <a target = "_blank" href="http://btcache.me/torrent/'+str.toLocaleUpperCase()+'">http://btcache.me/torrent/'+str.toLocaleUpperCase()+'</a></li><li>torrage.info: <a target = "_blank" href="https://torrage.info/torrent.php?h='+str.toLocaleUpperCase()+'">https://torrage.info/torrent.php?h='+str.toLocaleUpperCase()+'</a></li><li>downloadtorrentfile: <a target="_blank" href="https://downloadtorrentfile.com/hash/'+str.toLocaleUpperCase()+'">https://downloadtorrentfile.com/hash/'+str.toLocaleUpperCase()+'</a></li></ul>'
 						a.onmouseover = function (){magnet2torrent.focus();console.log("focus");}
 						magnet2torrent.tabIndex = 0;
 						magnet2torrent.onkeydown = function(){debugger;if(event.keyCode==77)magnet2torrent.parentNode.removeChild(magnet2torrent);console.log("remove");}
