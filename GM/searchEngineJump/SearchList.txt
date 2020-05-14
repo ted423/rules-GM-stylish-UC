@@ -79,6 +79,7 @@
 	torrentfunk2, https://www.torrentfunk2.com/all/torrents/%s.html?v=&smi=&sma=&i=250
 	thepiratebay, https://thepiratebay.org/search/%s
 	zooqle, https://zooqle.com/search?q=%s
+	pianyuan, http://www.pianyuan.la/search?q=%s
 	Torrentz2, https://torrentz2.eu/search?f=%s
 	1337x.to, https://www.1377x.to/search/%s/1/
 	Torlock, https://www.torlock2.com/all/torrents/%s.html
