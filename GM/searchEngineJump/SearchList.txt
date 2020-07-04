@@ -104,7 +104,7 @@ ACG
 	Mikan, http://mikanani.me/Home/Search?searchstr=%s
 	＊MioBT＊, http://www.miobt.com/search.php?keyword=%s
 	shana project, https://www.shanaproject.com/search/?title=%s
-	简单动漫, http://www.36dm.com/search.php?keyword=%s
+	简单动漫, https://www.36dm.com/search.php?keyword=%s
 	KOTOMI RSS, https://moe4sale.in/?kw=%s
 	ACG狗狗, http://bt.acg.gg/search.php?keyword=%s
 	ACG.RIP, https://acg.rip/?term=%s
