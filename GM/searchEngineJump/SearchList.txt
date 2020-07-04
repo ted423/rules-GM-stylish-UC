@@ -103,7 +103,6 @@ ACG
 	Tokyotosho, https://www.tokyotosho.info/search.php?terms=%s
 	Mikan, http://mikanani.me/Home/Search?searchstr=%s
 	＊MioBT＊, http://www.miobt.com/search.php?keyword=%s
-	ACG搜，http://www.acgsou.com/search.php?keyword=%s
 	shana project, https://www.shanaproject.com/search/?title=%s
 	简单动漫, http://www.36dm.com/search.php?keyword=%s
 	KOTOMI RSS, https://moe4sale.in/?kw=%s
