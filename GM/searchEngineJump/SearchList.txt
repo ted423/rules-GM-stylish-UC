@@ -117,7 +117,7 @@ Sukebei
 		nyaa.uk, https://sukebei.nyaa.uk/?f=0&c=0_0&q=%s
 	Glodls, https://glodls.to/search_results.php?search=%s
 	AniDex, https://anidex.info/?q=%s
-	AcgnX Ero, https://ero.acgnx.se/search.php?sort_id=0&keyword=%s
+	AcgnX Ero, https://www.anix.moe/search.php?sort_id=0&keyword=%s
 	AniRena, https://www.anirena.com/?s=%s
 	GGBases, http://www.ggbases.com/search.so?title=%s
 网购
