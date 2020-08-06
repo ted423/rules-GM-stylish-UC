@@ -591,9 +591,9 @@
 			url: /^https?:\/\/sukebei\.(pantsu\.cat|nyaa\.pt)\/search\?/,
 			engineList: "Sukebei",
 		}, {
-			name: "AcgnX",
+			name: "anix",
 			url: /^https?:\/\/www\.anix\.moe\/search\.php\?/,
-			engineList: "ACG",
+			engineList: "Sukebei",
 			keyword: "#topsearch",
 		}, {
 			name: "AniDex",
