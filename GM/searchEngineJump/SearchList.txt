@@ -42,14 +42,13 @@
 	Bing, https://www.bing.com/ditu/?q=%s
 	搜狗, https://map.sogou.com/#lq=%s
 音乐
-	千千, https://music.taihe.com/search?key=%s&ie=utf-8&oe=utf-8
+	千千, https://music.taihe.com/search?word=%s
 	QQ, https://y.qq.com/portal/search.html#page=1&searchid=1&t=song&w=%s
 	一听, https://so.1ting.com/song?q=%s
 	虾米, http://www.xiami.com/search?key=%s
 	piapro, https://piapro.jp/search/?view=audio&keyword=%s
 	刘志进, https://music.liuzhijin.cn/?name=%s&type=qq
 	歌词
-		千千歌词, https://music.taihe.com/search/lrc?key=%s
 		QQ歌词, https://y.qq.com/portal/search.html#page=1&searchid=1&t=lyric&w=%s
 		一听歌词, https://so.1ting.com/lyric?q=%s
 		歌词迷, http://gecimi.com/search/?keyword=%s
@@ -69,7 +68,9 @@
 		co, https://www.limetorrents.co/search/all/%s
 		asia, https://www.limetorrents.asia/search/all/%s
 		pro, https://www.limetor.pro/search/all/%s
-	xiaohx, http://www.xiaohx.org/search?key=%s
+	ED2K
+		xiaohx, https://v1.xiaohx.org/search?key=%s
+		cdsoso, https://www.cdsoso.cc/searches-%s-hot-1-null.html
 	字幕
 		sub HD, https://subhd.la/search/%s
 		射手网(伪), https://assrt.net/sub/?searchword=%s
@@ -86,11 +87,13 @@
 	YourBT, https://yourbittorrent2.com/?q=%s
 	TD, https://www.torrentdownloads.me/search/?search=%s
 	extratorrent.si, https://extratorrent.si/search/?search=%s
+	xiaohx, https://www.xiaohx.org/search?key=%s
 	RARBG
 		rarbgprx, https://rarbgprx.org/torrents.php?search=%s
 		rarbgproxy, https://rarbgproxy.org/torrents.php?search=%s
 	kickass(镜像1), https://kat.sx/search.php?q=%s
 	kickass(镜像2)
+		kickasstorrents, https://kickasstorrents.to/usearch/%s
 		kickass1.to, https://kickass1.to/usearch/%s/
 		kat.am, https://kat.am/usearch/%s/
 		kickasstorrent.cr, https://kickasstorrent.cr/usearch/%s/
