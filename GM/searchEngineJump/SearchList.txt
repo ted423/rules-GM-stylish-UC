@@ -74,8 +74,10 @@
 	字幕
 		sub HD, https://subhd.la/search/%s
 		射手网(伪), https://assrt.net/sub/?searchword=%s
-		YYeTs, http://www.rrys2019.com/search/index?keyword=%s
+		YYeTs, http://www.rrys2020.com/search/index?keyword=%s
 		zimuku, http://www.zimuku.la/search?q=%s
+		Subscene, https://subscene.com/subtitles/searchbytitle%post#query=%s
+		R3SUB, https://r3sub.com/search.php?s=%s
 影视
 	torrentfunk2, https://www.torrentfunk2.com/all/torrents/%s.html?v=&smi=&sma=&i=250
 	thepiratebay, https://thepiratebay.org/search/%s
