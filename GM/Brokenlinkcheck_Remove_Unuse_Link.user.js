@@ -10,7 +10,7 @@
 // @run-at         document-end
 // ==/UserScript==
 
-$('#inputForm').resize(function(){
+$('#brokenLinkTable').resize(function(){
 	console.log('resize');
 	$('input[value*="ed2k://"]').parent().parent().remove();
 	$('input[value*="qqdl://"]').parent().parent().remove();
