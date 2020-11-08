@@ -72,7 +72,7 @@
 		xiaohx, https://v1.xiaohx.org/search?key=%s
 		cdsoso, https://www.cdsoso.cc/searches-%s-hot-1-null.html
 	字幕
-		sub HD, https://subhd.la/search/%s
+		sub HD, https://subhd.tv/search/%s
 		射手网(伪), https://assrt.net/sub/?searchword=%s
 		YYeTs, http://www.rrys2020.com/search/index?keyword=%s
 		zimuku, http://www.zimuku.la/search?q=%s
@@ -83,12 +83,12 @@
 	thepiratebay, https://thepiratebay.org/search/%s
 	zooqle, https://zooqle.com/search?q=%s
 	pianyuan, http://www.pianyuan.la/search?q=%s
-	Torrentz2, https://torrentz2.eu/search?f=%s
+	Torrentz2, https://www.torrentz2.xyz/?q=%s
+	Torrentz2k, https://torrentz2k.xyz/search/%post#q=%s#category=all
 	1337x.to, https://www.1377x.to/search/%s/1/
 	Torlock, https://www.torlock2.com/all/torrents/%s.html
 	YourBT, https://yourbittorrent2.com/?q=%s
 	TD, https://www.torrentdownloads.me/search/?search=%s
-	extratorrent.si, https://extratorrent.si/search/?search=%s
 	xiaohx, https://www.xiaohx.org/search?key=%s
 	RARBG
 		rarbgprx, https://rarbgprx.org/torrents.php?search=%s
