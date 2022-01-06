@@ -72,7 +72,7 @@
 		xiaohx, https://v1.xiaohx.org/search?key=%s
 		cdsoso, https://www.cdsoso.cc/searches-%s-hot-1-null.html
 	字幕
-		zimuku, http://www.zimuku.la/search?q=%s
+		zimuku, http://zimuku.org/search?q=%s
 		射手网(伪), https://assrt.net/sub/?searchword=%s
 		sub HD, https://subhd.la/search/%s
 		字幕天堂, https://www.zimutiantang.com/search/?q=%s&f=_all&m=yes&s=relevance
@@ -100,10 +100,7 @@
 		kat.am, https://kat.am/usearch/%s/
 		kickasstorrent.cr, https://kickasstorrent.cr/usearch/%s/
 ACG
-	NyaaPantsu, https://nyaa.net/search?c=_&userID=0&q=%s
-	nyaa.si
-		nyaa.si, https://nyaa.si/?f=0&c=0_0&q=%s
-		nyaa.uk, https://nyaa.uk/?f=0&c=0_0&q=%s
+	nyaa.si, https://nyaa.si/?f=0&c=0_0&q=%s
 	dmhy, https://share.dmhy.org/topics/list?keyword=%s
 	Tokyotosho, https://www.tokyotosho.info/search.php?terms=%s
 	Mikan, http://mikanani.me/Home/Search?searchstr=%s
