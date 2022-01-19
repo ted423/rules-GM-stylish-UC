@@ -75,7 +75,6 @@
 		zimuku, http://zimuku.org/search?q=%s
 		射手网(伪), https://assrt.net/sub/?searchword=%s
 		sub HD, https://subhd.la/search/%s
-		字幕天堂, https://www.zimutiantang.com/search/?q=%s&f=_all&m=yes&s=relevance
 		Subscene, https://subscene.com/subtitles/searchbytitle%post#query=%s
 		R3SUB, https://r3sub.com/search.php?s=%s
 影视
