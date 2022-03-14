@@ -4,7 +4,6 @@
 		Google.hk, https://www.google.com.hk/search?q=%s&safe=off
 		Google.co.jp，https://www.google.co.jp/search?q=%s&safe=off
 	百度, https://www.baidu.com/s?wd=%s
-	秘迹, https://mijisou.com/?q=%s
 	360, https://www.so.com/s?q=%s
 	Bing
 		Bing(CN), https://cn.bing.com/search?q=%s
@@ -112,10 +111,7 @@ ACG
 	AcgnX, https://www.acgnx.se/search.php?sort_id=0&keyword=%s
 	末日動漫, https://share.acgnx.se/search.php?sort_id=0&keyword=%s
 Sukebei
-	NayaPantsu, https://sukebei.nyaa.net/search?c=_&userID=0&q=%s
-	nyaa.si
-		nyaa.si, https://sukebei.nyaa.si/?f=0&c=0_0&q=%s
-		nyaa.uk, https://sukebei.nyaa.uk/?f=0&c=0_0&q=%s
+	nyaa.si, https://sukebei.nyaa.si/?f=0&c=0_0&q=%s
 	Glodls, https://glodls.to/search_results.php?search=%s
 	AniDex, https://anidex.info/?q=%s
 	AcgnX Ero, https://www.anix.moe/search.php?sort_id=0&keyword=%s
