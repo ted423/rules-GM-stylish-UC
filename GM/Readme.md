@@ -3,6 +3,13 @@
 
 Readme都懒得维护，有空再改
 
+# 未修改版
+微博相册图片地址批量获取工具
+
+只是改了下注释，316行改len可以只获取前面几页的图片
+
+
+
 # 部分是修改版
 ## searchEngineJump
 最早的作者是NLF,然后[ywzhaiqi](https://github.com/ywzhaiqi/userscript)做了CE。
