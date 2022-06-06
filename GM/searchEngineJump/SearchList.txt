@@ -72,7 +72,7 @@
 		xiaohx, https://v1.xiaohx.org/search?key=%s
 		cdsoso, https://www.cdsoso.cc/searches-%s-hot-1-null.html
 	字幕
-		zimuku, http://zimuku.org/search?q=%s
+		zimuku, https://zimuku.org/search?q=%s&vertoken=d49cac93
 		射手网(伪), https://assrt.net/sub/?searchword=%s
 		sub HD, https://subhd.la/search/%s
 		Subscene, https://subscene.com/subtitles/searchbytitle%post#query=%s
