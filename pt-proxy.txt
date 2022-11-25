@@ -1,0 +1,9 @@
+payload:
+  - 'bootytape.com'
+  - 'jpopsuki.eu'
+  - 'm-team.cc'
+  - 'dmhy.org'
+  - 'hdbits.org'
+  - 'jptv.club'
+  - 'aidoru-online.me'
+  - 'pterclub.com'
