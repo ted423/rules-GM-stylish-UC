@@ -7,3 +7,4 @@ payload:
   - 'jptv.club'
   - 'aidoru-online.me'
   - 'pterclub.com'
+  - 'keepfrds.com'
