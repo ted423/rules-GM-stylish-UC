@@ -9,3 +9,4 @@ payload:
   - '+.pterclub.com'
   - '+.keepfrds.com'
   - '+.chdbits.co'
+  - '+.pornbits.net'
