@@ -3,6 +3,5 @@ payload:
   - '+.jpopsuki.eu'
   - '+.blutopia.xyz'
   - '+.dmhy.org'
-  - '+.hdbits.org'
   - '+.aidoru-online.me'
   - '+.pornbits.net'
