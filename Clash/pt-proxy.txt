@@ -5,3 +5,4 @@ payload:
   - '+.dmhy.org'
   - '+.aidoru-online.me'
   - '+.pornbits.net'
+  - '+.keepfrds.com'
