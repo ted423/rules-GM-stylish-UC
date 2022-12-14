@@ -1,8 +1,8 @@
 payload:
+  - '+.keepfrds.com'
   - '+.bootytape.com'
   - '+.jpopsuki.eu'
   - '+.blutopia.xyz'
   - '+.dmhy.org'
   - '+.aidoru-online.me'
   - '+.pornbits.net'
-  - '+.keepfrds.com'
