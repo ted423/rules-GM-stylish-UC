@@ -8,3 +8,4 @@ payload:
   - '+.orpheus.network'
   - '+.opsfet.ch'
   - '+.morethantv.me'
+  - '+.aither.cc'
