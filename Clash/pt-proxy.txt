@@ -6,4 +6,5 @@ payload:
   - '+.aidoru-online.me'
   - '+.pornbits.net'
   - '+.orpheus.network'
+  - '+.opsfet.ch'
   - '+.morethantv.me'
