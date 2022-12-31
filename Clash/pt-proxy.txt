@@ -5,3 +5,5 @@ payload:
   - '+.dmhy.org'
   - '+.aidoru-online.me'
   - '+.pornbits.net'
+  - '+.orpheus.network'
+  - '+.morethantv.me'
