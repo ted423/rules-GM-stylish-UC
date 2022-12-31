@@ -9,3 +9,4 @@ payload:
   - '+.opsfet.ch'
   - '+.morethantv.me'
   - '+.aither.cc'
+  - '+.uhdbits.org'
