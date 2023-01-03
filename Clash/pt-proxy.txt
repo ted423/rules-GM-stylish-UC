@@ -10,3 +10,4 @@ payload:
   - '+.morethantv.me'
   - '+.aither.cc'
   - '+.uhdbits.org'
+  - '+.jptv.club'
