@@ -11,3 +11,4 @@ payload:
   - '+.aither.cc'
   - '+.uhdbits.org'
   - '+.jptv.club'
+  - '+.beyond-hd.me'
