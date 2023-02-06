@@ -12,3 +12,4 @@ payload:
   - '+.uhdbits.org'
   - '+.jptv.club'
   - '+.beyond-hd.me'
+  - '+.bluebird-hd.org'
