@@ -1,2 +1,3 @@
 payload:
   - '+.qbittorrent.org'
+  - '+.ovhcloud.com'
