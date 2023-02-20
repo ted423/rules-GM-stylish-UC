@@ -50,3 +50,4 @@ payload:
   - 'pt.sjtu.edu.cn'
   - 'hudbt.hust.edu.cn'
   - '+.pthome.net'
+  - '+.sugoimusic.me'
