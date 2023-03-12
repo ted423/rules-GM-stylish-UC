@@ -1,3 +1,4 @@
 payload:
   - '+.qbittorrent.org'
   - '+.ovhcloud.com'
+  - '+.8world.com'
