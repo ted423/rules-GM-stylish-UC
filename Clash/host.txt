@@ -3,3 +3,4 @@ payload:
   - '+.ovhcloud.com'
   - '+.8world.com'
   - '+.algolia.com'
+  - '+.scootersoftware.com'
