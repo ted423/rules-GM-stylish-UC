@@ -51,3 +51,4 @@ payload:
   - 'hudbt.hust.edu.cn'
   - '+.pthome.net'
   - '+.sugoimusic.me'
+  - '+.fsm.name'
