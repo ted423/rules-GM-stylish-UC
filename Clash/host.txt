@@ -4,3 +4,4 @@ payload:
   - '+.8world.com'
   - '+.algolia.com'
   - '+.scootersoftware.com'
+  - '+.winget.run'
