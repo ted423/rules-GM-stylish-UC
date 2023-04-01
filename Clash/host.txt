@@ -5,3 +5,4 @@ payload:
   - '+.algolia.com'
   - '+.scootersoftware.com'
   - '+.winget.run'
+  - '+.highcharts.com'
