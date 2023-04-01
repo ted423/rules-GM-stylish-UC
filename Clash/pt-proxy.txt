@@ -52,3 +52,4 @@ payload:
   - '+.pthome.net'
   - '+.sugoimusic.me'
   - 'fsm.name'
+  - 'hd-torrents.org'
