@@ -7,3 +7,5 @@ payload:
   - '+.winget.run'
   - '+.highcharts.com'
   - 'dl.dell.com'
+  - '+.google.com'
+  - '+.google.com.hk'
