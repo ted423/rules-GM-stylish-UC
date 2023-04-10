@@ -9,3 +9,4 @@ payload:
   - 'dl.dell.com'
   - '+.google.com'
   - '+.google.com.hk'
+  - '+.github.com'
