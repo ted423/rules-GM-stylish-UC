@@ -6,3 +6,4 @@ payload:
   - '+.scootersoftware.com'
   - '+.winget.run'
   - '+.highcharts.com'
+  - 'dl.dell.com'
