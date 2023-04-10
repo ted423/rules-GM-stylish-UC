@@ -53,3 +53,4 @@ payload:
   - '+.sugoimusic.me'
   - 'fsm.name'
   - 'hd-torrents.org'
+  - 'jpopsuki.eu'
