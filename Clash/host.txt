@@ -11,3 +11,4 @@ payload:
   - '+.google.com.hk'
   - '+.github.com'
   - '+.dropbox.com'
+  - '+.walkerservers.com'
