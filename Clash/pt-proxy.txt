@@ -1,5 +1,6 @@
 payload:
   - '+.keepfrds.com'
+  - '+.keepfrds.workers.dev'
   - '+.bootytape.com'
   - '+.blutopia.xyz'
   - '+.dmhy.org'
