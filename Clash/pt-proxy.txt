@@ -9,7 +9,6 @@ payload:
   - '+.orpheus.network'
   - '+.opsfet.ch'
   - '+.morethantv.me'
-  - '+.aither.cc'
   - '+.uhdbits.org'
   - '+.jptv.club'
   - '+.beyond-hd.me'
