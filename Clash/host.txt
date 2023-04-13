@@ -13,3 +13,4 @@ payload:
   - '+.dropbox.com'
   - '+.dropboxapi.com'
   - '+.walkerservers.com'
+  - '+.reddit.com'
