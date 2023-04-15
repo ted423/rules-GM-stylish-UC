@@ -19,3 +19,4 @@ payload:
   - '+.linuxhint.com'
   - '+.launchpad.net'
   - 'askubuntu.com'
+   - '+.stackexchange.com'
