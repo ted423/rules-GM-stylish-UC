@@ -14,9 +14,11 @@ payload:
   - '+.dropboxapi.com'
   - '+.walkerservers.com'
   - '+.reddit.com'
-  
+
   - 'serverfault.com'
   - '+.linuxhint.com'
   - '+.launchpad.net'
   - 'askubuntu.com'
-   - '+.stackexchange.com'
+  - '+.stackexchange.com'
+
+  - '+.imgur.com'
