@@ -22,3 +22,5 @@ payload:
   - '+.stackexchange.com'
 
   - '+.imgur.com'
+
+  - '+.npmjs.com'
