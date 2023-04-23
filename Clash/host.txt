@@ -12,7 +12,10 @@ payload:
   - '+.github.com'
   - '+.dropbox.com'
   - '+.dropboxapi.com'
+  
   - '+.walkerservers.com'
+  - '+.digitalocean.co'
+  
   - '+.reddit.com'
   - '+.readthedocs.io'
 
