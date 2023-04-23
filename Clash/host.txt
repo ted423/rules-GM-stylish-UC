@@ -25,3 +25,4 @@ payload:
   - '+.imgur.com'
 
   - '+.npmjs.com'
+  - 'nodejs.org'
