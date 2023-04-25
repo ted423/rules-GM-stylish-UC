@@ -4,12 +4,19 @@ payload:
   - '+.8world.com'
   - '+.algolia.com'
   - '+.scootersoftware.com'
-  - '+.winget.run'
   - '+.highcharts.com'
   - 'dl.dell.com'
+
+  - '+.winget.run'
+  - '+.office.net'
+  - '+.akamaihd.net'
+  - '+.microsoftonline.com'
+  - '+.microsoft.com'
+  - '+.github.com'
+  
   - '+.google.com'
   - '+.google.com.hk'
-  - '+.github.com'
+
   - '+.dropbox.com'
   - '+.dropboxapi.com'
   
