@@ -1,12 +1,13 @@
 payload:
   - '+.qbittorrent.org'
-  - '+.ovhcloud.com'
   - '+.8world.com'
   - '+.algolia.com'
   - '+.scootersoftware.com'
   - '+.highcharts.com'
   - 'dl.dell.com'
-
+  - '+.reddit.com'
+  - '+.readthedocs.io'
+  
   - '+.winget.run'
   - '+.office.net'
   - '+.akamaihd.net'
@@ -22,9 +23,7 @@ payload:
   
   - '+.walkerservers.com'
   - '+.digitalocean.co'
-  
-  - '+.reddit.com'
-  - '+.readthedocs.io'
+  - '+.ovhcloud.com'
 
   - 'serverfault.com'
   - '+.linuxhint.com'
@@ -36,3 +35,5 @@ payload:
 
   - '+.npmjs.com'
   - 'nodejs.org'
+  
+  - 'steamcommunity.com'
