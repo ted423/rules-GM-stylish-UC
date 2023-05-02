@@ -6,6 +6,8 @@ payload:
   - '+.highcharts.com'
   - 'dl.dell.com'
   - '+.reddit.com'
+  - '+.twimg.com'
+  - 'twitter.com'
   - '+.readthedocs.io'
   
   - '+.winget.run'
