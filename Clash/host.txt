@@ -1,4 +1,5 @@
 payload:
+  - '+.nanoport.xyz'
   - '+.qbittorrent.org'
   - '+.8world.com'
   - '+.algolia.com'
