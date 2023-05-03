@@ -52,4 +52,3 @@ payload:
 #Games
   - 'steamcommunity.com'
   - '+.starrails.com'
-  - '+.hoyoverse.com'
