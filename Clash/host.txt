@@ -54,3 +54,4 @@ payload:
   - '+.starrails.com'
   - 'hkrpg-sdk-os.hoyoverse.com'
   - 'abtest-api-data-sg.hoyoverse.com'
+  - 'hkrpg-sdk-os-static.hoyoverse.com'
