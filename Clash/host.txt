@@ -10,6 +10,7 @@ payload:
   - 'twitter.com'
   - '+.readthedocs.io'
   - '+.gamer.com.tw'
+  - '+.bahamut.com.tw'
   
   - '+.winget.run'
   - '+.office.net'
