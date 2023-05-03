@@ -48,6 +48,7 @@ payload:
   - '+.npmjs.com'
   - 'nodejs.org'
   - '+.pnpm.io'
+  - '+.npmjs.org'
 #Games
   - 'steamcommunity.com'
   - '+.starrails.com'
