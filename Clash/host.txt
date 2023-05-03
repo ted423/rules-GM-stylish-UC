@@ -37,5 +37,7 @@ payload:
 
   - '+.npmjs.com'
   - 'nodejs.org'
-  
+#Games
   - 'steamcommunity.com'
+  - '+.starrails.com'
+  - '+.hoyoverse.com'
