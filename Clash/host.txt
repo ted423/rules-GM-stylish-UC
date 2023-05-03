@@ -57,3 +57,4 @@ payload:
   - 'abtest-api-data-sg.hoyoverse.com'
   - 'hkrpg-sdk-os-static.hoyoverse.com'
   - 'log-upload-os.hoyoverse.com'
+  - 'sg-beta-api.hoyoverse.com'
