@@ -44,9 +44,10 @@ payload:
   - '+.stackexchange.com'
 
   - '+.imgur.com'
-
+#Code
   - '+.npmjs.com'
   - 'nodejs.org'
+  - '+.pnpm.io'
 #Games
   - 'steamcommunity.com'
   - '+.starrails.com'
