@@ -53,3 +53,4 @@ payload:
   - 'steamcommunity.com'
   - '+.starrails.com'
   - 'hkrpg-sdk-os.hoyoverse.com'
+  - 'abtest-api-data-sg.hoyoverse.com'
