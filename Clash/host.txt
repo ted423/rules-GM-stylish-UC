@@ -6,6 +6,8 @@ payload:
   - '+.scootersoftware.com'
   - '+.highcharts.com'
   - '+.dell.com'
+  - '+.bootstrapcdn.com'
+  
   - '+.reddit.com'
   - '+.twimg.com'
   - 'twitter.com'
@@ -25,6 +27,7 @@ payload:
   - '+.githubusercontent.com'
 #Google
   - '+.googleusercontent.com'
+  - '+.googletagmanager.com'
   - '+.gstatic.com'
   - '+.google.com'
   - '+.googleapis.com'
