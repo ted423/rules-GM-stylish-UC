@@ -58,3 +58,5 @@ payload:
   - 'hkrpg-sdk-os-static.hoyoverse.com'
   - 'log-upload-os.hoyoverse.com'
   - 'sg-beta-api.hoyoverse.com'
+  - 'webstatic.hoyoverse.com'
+  - '+.hoyolab.com'
