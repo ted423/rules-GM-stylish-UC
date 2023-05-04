@@ -13,6 +13,7 @@ payload:
   - '+.gamer.com.tw'
   - '+.bahamut.com.tw'
   - '+.facebook.com'
+  - '+.facebook.net'
   
   - '+.winget.run'
   - '+.office.net'
@@ -20,6 +21,8 @@ payload:
   - '+.microsoftonline.com'
   - '+.microsoft.com'
   - '+.github.com'
+  - '+.githubassets.com'
+  - '+.githubusercontent.com'
 #Google
   - '+.googleusercontent.com'
   - '+.gstatic.com'
