@@ -58,12 +58,12 @@ payload:
   - '+.npmjs.org'
 #Games
   - 'steamcommunity.com'
- 
+##崩坏 starrail.com是CF的IP，感觉只会前面用下，故取消，下面的都是用亚马逊云IP的域名 
   - 'hkrpg-sdk-os.hoyoverse.com'
   - 'abtest-api-data-sg.hoyoverse.com'
   - 'hkrpg-sdk-os-static.hoyoverse.com'
   - 'log-upload-os.hoyoverse.com'
-  - 'ad-log-upload-os.hoyoverse‘
+  - 'ad-log-upload-os.hoyoverse'
   - 'sg-beta-api.hoyoverse.com'
   - 'webstatic.hoyoverse.com'
   - '+.hoyolab.com'
