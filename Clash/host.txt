@@ -60,6 +60,8 @@ payload:
   - 'steamcommunity.com'
 ##崩坏
   - '+.starrails.com'
+###临时，因为发现香港云那个IP可能也会连不上
+  - '+.hoyoverse.com'
 ###starrail.com是CF的IP，感觉只会前面用下，下面的都是用亚马逊云IP的域名，失败的时候会导致提示分发失败
   - 'sdk.hoyoverse.com'
   - 'hkrpg-sdk-os.hoyoverse.com'
