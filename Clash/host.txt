@@ -70,3 +70,4 @@ payload:
   - '+.cloudfront.net'
   - 'sg-hkrpg-api-static.hoyoverse.com'
   - 'sg-hkrpg-api.hoyoverse.com'
+  
