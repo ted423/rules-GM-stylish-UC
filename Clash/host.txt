@@ -73,4 +73,5 @@ payload:
   - '+.cloudfront.net'
   - 'sg-hkrpg-api-static.hoyoverse.com'
   - 'sg-hkrpg-api.hoyoverse.com'
-  
+###新加坡阿里云
+  - 'sdk-os-static.hoyoverse.com'
