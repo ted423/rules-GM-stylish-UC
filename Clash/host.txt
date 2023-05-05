@@ -61,7 +61,7 @@ payload:
 ##崩坏
   - '+.starrails.com'
 ###starrail.com是CF的IP，感觉只会前面用下，下面的都是用亚马逊云IP的域名，失败的时候会导致提示分发失败
-
+  - 'sdk.hoyoverse.com'
   - 'hkrpg-sdk-os.hoyoverse.com'
   - 'abtest-api-data-sg.hoyoverse.com'
   - 'hkrpg-sdk-os-static.hoyoverse.com'
