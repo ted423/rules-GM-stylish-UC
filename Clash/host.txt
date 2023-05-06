@@ -7,7 +7,8 @@ payload:
   - '+.highcharts.com'
   - '+.dell.com'
   - '+.bootstrapcdn.com'
-  
+  - '+.rfi.fr'
+
   - '+.reddit.com'
   - '+.twimg.com'
   - 'twitter.com'
