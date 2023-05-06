@@ -8,6 +8,7 @@ payload:
   - '+.dell.com'
   - '+.bootstrapcdn.com'
   - '+.rfi.fr'
+  - '+.duyaoss.com'
 
   - '+.reddit.com'
   - '+.twimg.com'
