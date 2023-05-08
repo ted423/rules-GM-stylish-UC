@@ -9,6 +9,7 @@ payload:
   - '+.bootstrapcdn.com'
   - '+.rfi.fr'
   - '+.duyaoss.com'
+  - '+.notion.so'
 
   - '+.reddit.com'
   - '+.twimg.com'
