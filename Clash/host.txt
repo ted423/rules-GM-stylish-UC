@@ -10,7 +10,9 @@ payload:
   - '+.rfi.fr'
   - '+.duyaoss.com'
   - '+.notion.so'
-
+  - '+.kuromis.com'
+  - '+.hcaptcha.com'
+  
   - '+.reddit.com'
   - '+.twimg.com'
   - 'twitter.com'
