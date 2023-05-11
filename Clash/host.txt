@@ -12,6 +12,7 @@ payload:
   - '+.notion.so'
   - '+.kuromis.com'
   - '+.hcaptcha.com'
+  - 'download.xnview.com'
   
   - '+.reddit.com'
   - '+.twimg.com'
