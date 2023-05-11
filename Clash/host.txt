@@ -12,8 +12,10 @@ payload:
   - '+.notion.so'
   - '+.kuromis.com'
   - '+.hcaptcha.com'
+#Software
   - 'download.xnview.com'
-  
+  - '+.msecnd.net'
+#Social
   - '+.reddit.com'
   - '+.twimg.com'
   - 'twitter.com'
@@ -22,7 +24,7 @@ payload:
   - '+.bahamut.com.tw'
   - '+.facebook.com'
   - '+.facebook.net'
-  
+#MS
   - '+.winget.run'
   - '+.office.net'
   - '+.akamaihd.net'
@@ -31,7 +33,7 @@ payload:
   - '+.github.com'
   - '+.githubassets.com'
   - '+.githubusercontent.com'
-
+#Gitlab
   - '+.gitlab.com'
   - '+.launchdarkly.com'
   - '+.cookielaw.org'
