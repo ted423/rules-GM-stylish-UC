@@ -32,6 +32,8 @@ payload:
   - '+.githubusercontent.com'
 
   - '+.gitlab.com'
+  - '+.launchdarkly.com'
+  - '+.cookielaw.org'
 #Google
   - '+.googleusercontent.com'
   - '+.googletagmanager.com'
