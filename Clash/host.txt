@@ -18,7 +18,7 @@ payload:
 #Social
   - '+.reddit.com'
   - '+.twimg.com'
-  - 'twitter.com'
+  - '+.twitter.com'
   - '+.twitch.tv'
   - '+.readthedocs.io'
   - '+.gamer.com.tw'
