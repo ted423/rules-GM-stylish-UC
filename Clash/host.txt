@@ -20,11 +20,18 @@ payload:
   - '+.msecnd.net'
 #Social
   - '+.reddit.com'
+
   - '+.twimg.com'
   - '+.twitter.com'
+  - '+.t.co'
   - '+.twitch.tv'
   - '+.twitchcdn.net'
-  - '+.t.co'
+  - '+.jtvnw.net'
+  - '+.ttvnw.net'
+  - '+.streamlabs.com'
+  - '+.gstatic.com'
+  - '+.ext-twitch.tv'
+
   - '+.readthedocs.io'
   - '+.gamer.com.tw'
   - '+.bahamut.com.tw'
