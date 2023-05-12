@@ -12,6 +12,8 @@ payload:
   - '+.notion.so'
   - '+.kuromis.com'
   - '+.hcaptcha.com'
+  - 'exhentai.org'
+  - 'e-hentai.org'
 #Software
   - 'download.xnview.com'
   - '+.msecnd.net'
