@@ -75,6 +75,7 @@ payload:
   - 'askubuntu.com'
   - '+.stackexchange.com'
   - '+.stackoverflow.com'
+  - '+.sstatic.net'
 
   - '+.imgur.com'
 #Code
