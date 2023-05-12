@@ -22,6 +22,7 @@ payload:
   - '+.twimg.com'
   - '+.twitter.com'
   - '+.twitch.tv'
+  - '+.twitchcdn.net'
   - '+.t.co'
   - '+.readthedocs.io'
   - '+.gamer.com.tw'
