@@ -14,6 +14,7 @@ payload:
   - '+.hcaptcha.com'
   - 'exhentai.org'
   - 'e-hentai.org'
+  - 'oneprovider.com'
 #Software
   - 'download.xnview.com'
   - '+.msecnd.net'
