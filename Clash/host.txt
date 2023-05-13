@@ -18,6 +18,7 @@ payload:
 #Software
   - 'download.xnview.com'
   - '+.msecnd.net'
+
 #Social
   - '+.reddit.com'
 
@@ -37,6 +38,9 @@ payload:
   - '+.bahamut.com.tw'
   - '+.facebook.com'
   - '+.facebook.net'
+
+  - '+.discord.com'
+  - '+.discordapp.net'
 #MS
   - '+.winget.run'
   - '+.office.net'
