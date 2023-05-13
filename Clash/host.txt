@@ -88,6 +88,9 @@ payload:
   - 'nodejs.org'
   - '+.pnpm.io'
   - '+.npmjs.org'
+
+#DOC
+  - '+.kubernetes.io'
 #Games
   - 'steamcommunity.com'
 ##崩坏
