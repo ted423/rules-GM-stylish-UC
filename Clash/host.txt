@@ -41,6 +41,7 @@ payload:
 
   - '+.discord.com'
   - '+.discordapp.net'
+  - '+.discord.gg'
 #MS
   - '+.winget.run'
   - '+.office.net'
