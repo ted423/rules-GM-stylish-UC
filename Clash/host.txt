@@ -15,6 +15,7 @@ payload:
   - 'exhentai.org'
   - 'e-hentai.org'
   - '+.oneprovider.com'
+  - '+.wikipedia.org'
 #Software
   - 'download.xnview.com'
   - '+.msecnd.net'
