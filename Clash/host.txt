@@ -115,3 +115,6 @@ payload:
   - 'sg-hkrpg-api.hoyoverse.com'
 ###新加坡阿里云
   - 'sdk-os-static.hoyoverse.com'
+
+#CDN
+  - '+.jsdelivr.net'
