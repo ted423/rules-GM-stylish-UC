@@ -90,7 +90,8 @@ payload:
   - 'nodejs.org'
   - '+.pnpm.io'
   - '+.npmjs.org'
-
+  - '+.python.org'
+  
 #DOC
   - '+.kubernetes.io'
   - '+.jenkins.io'
