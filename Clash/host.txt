@@ -20,7 +20,7 @@ payload:
 #Software
   - 'download.xnview.com'
   - '+.msecnd.net'
-
+  - '+.aimp.ru'
 #Social
   - '+.reddit.com'
 
