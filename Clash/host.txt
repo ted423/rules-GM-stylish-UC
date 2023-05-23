@@ -17,6 +17,7 @@ payload:
   - '+.oneprovider.com'
   - '+.wikipedia.org'
   - '+.themoviedb.org'
+  - '+.docker.com'
 #Software
   - 'download.xnview.com'
   - '+.msecnd.net'
