@@ -59,6 +59,8 @@ payload:
   - '+.gitlab.com'
   - '+.launchdarkly.com'
   - '+.cookielaw.org'
+#sourceforge
+  - '+.fsdn.com'
 #Google
   - '+.googleusercontent.com'
   - '+.googletagmanager.com'
