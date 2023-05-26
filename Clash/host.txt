@@ -18,6 +18,7 @@ payload:
   - '+.wikipedia.org'
   - '+.themoviedb.org'
   - '+.docker.com'
+  - '+.v2ex.com'
 #Software
   - 'download.xnview.com'
   - '+.msecnd.net'
