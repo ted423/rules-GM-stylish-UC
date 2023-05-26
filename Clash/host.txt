@@ -75,7 +75,8 @@ payload:
   - '+.ggpht.com'
   - '+.ytimg.com'
   - '+.googlevideo.com'
-
+  - '+.googlesource.com'
+#
   - '+.dropbox.com'
   - '+.dropboxapi.com'
   
