@@ -19,6 +19,8 @@ payload:
   - '+.themoviedb.org'
   - '+.docker.com'
   - '+.v2ex.com'
+  - '+.workers.dev'
+
 #Software
   - 'download.xnview.com'
   - '+.msecnd.net'
