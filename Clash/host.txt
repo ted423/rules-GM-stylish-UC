@@ -20,6 +20,7 @@ payload:
   - '+.docker.com'
   - '+.v2ex.com'
   - '+.workers.dev'
+  - '+.subscene.com'
 
 #Software
   - 'download.xnview.com'
