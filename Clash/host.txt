@@ -21,6 +21,7 @@ payload:
   - '+.v2ex.com'
   - '+.workers.dev'
   - '+.subscene.com'
+  - '+.sonatype.com'
 
 #Software
   - 'download.xnview.com'
