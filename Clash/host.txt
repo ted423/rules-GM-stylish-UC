@@ -22,6 +22,7 @@ payload:
   - '+.workers.dev'
   - '+.subscene.com'
   - '+.sonatype.com'
+  - '+.hk01.com'
 
 #Software
   - 'download.xnview.com'
