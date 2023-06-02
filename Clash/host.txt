@@ -29,6 +29,7 @@ payload:
   - '+.msecnd.net'
   - '+.aimp.ru'
   - '+.kde.org'
+  - '+.faigner.de'
 #Social
   - '+.reddit.com'
 
