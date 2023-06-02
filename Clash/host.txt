@@ -47,9 +47,12 @@ payload:
   - '+.readthedocs.io'
   - '+.gamer.com.tw'
   - '+.bahamut.com.tw'
+  
   - '+.facebook.com'
   - '+.facebook.net'
   - '+.instagram.com'
+  - '+.cdninstagram.com'
+  - '+.fbcdn.net'
   
   - '+.discord.com'
   - '+.discordapp.net'
