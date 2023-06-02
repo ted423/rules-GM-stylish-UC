@@ -28,6 +28,7 @@ payload:
   - 'download.xnview.com'
   - '+.msecnd.net'
   - '+.aimp.ru'
+  - '+.kde.org'
 #Social
   - '+.reddit.com'
 
