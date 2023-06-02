@@ -49,7 +49,8 @@ payload:
   - '+.bahamut.com.tw'
   - '+.facebook.com'
   - '+.facebook.net'
-
+  - '+.instagram.com'
+  
   - '+.discord.com'
   - '+.discordapp.net'
   - '+.discordapp.com'
