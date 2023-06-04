@@ -23,6 +23,7 @@ payload:
   - '+.subscene.com'
   - '+.sonatype.com'
   - '+.hk01.com'
+  - '+.javdb.com'
 
 #Software
   - 'download.xnview.com'
