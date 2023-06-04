@@ -73,18 +73,7 @@ payload:
   - '+.cookielaw.org'
 #sourceforge
   - '+.fsdn.com'
-#Google
-  - '+.googleusercontent.com'
-  - '+.googletagmanager.com'
-  - '+.gstatic.com'
-  - '+.google.com'
-  - '+.googleapis.com'
-  - '+.google.com.hk'
-  - '+.youtube.com'
-  - '+.ggpht.com'
-  - '+.ytimg.com'
-  - '+.googlevideo.com'
-  - '+.googlesource.com'
+
 #
   - '+.dropbox.com'
   - '+.dropboxapi.com'
