@@ -24,7 +24,7 @@ payload:
   - '+.sonatype.com'
   - '+.hk01.com'
   - '+.javdb.com'
-
+  - '+.kernel.org'
 #Software
   - 'download.xnview.com'
   - '+.msecnd.net'
