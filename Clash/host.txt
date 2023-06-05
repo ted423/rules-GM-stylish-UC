@@ -25,6 +25,7 @@ payload:
   - '+.hk01.com'
   - '+.javdb.com'
   - '+.kernel.org'
+  - '+.amazon.co.jp'
 #Software
   - 'download.xnview.com'
   - '+.msecnd.net'
