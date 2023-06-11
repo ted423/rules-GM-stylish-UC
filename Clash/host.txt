@@ -32,6 +32,7 @@ payload:
   - '+.aimp.ru'
   - '+.kde.org'
   - '+.faigner.de'
+  - '+.launchpadcontent.net'
 #image
   - 'catbox.moe'
 #Social
