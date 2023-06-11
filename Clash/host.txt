@@ -32,6 +32,8 @@ payload:
   - '+.aimp.ru'
   - '+.kde.org'
   - '+.faigner.de'
+#image
+  - 'catbox.moe'
 #Social
   - '+.reddit.com'
 
