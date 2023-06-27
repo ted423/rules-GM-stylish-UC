@@ -3,9 +3,7 @@ payload:
   - '+.qbittorrent.org'
   - '+.8world.com'
   - '+.algolia.com'
-  - '+.scootersoftware.com'
   - '+.highcharts.com'
-  - '+.dell.com'
   - '+.bootstrapcdn.com'
   - '+.rfi.fr'
   - '+.duyaoss.com'
@@ -27,6 +25,7 @@ payload:
   - '+.kernel.org'
   - '+.amazon.co.jp'
   - 'xn--4gq62f52gdss.com'
+  - 'altium.com'
 #Software
   - 'download.xnview.com'
   - '+.msecnd.net'
@@ -34,6 +33,9 @@ payload:
   - '+.kde.org'
   - '+.faigner.de'
   - '+.launchpadcontent.net'
+  - '+.scootersoftware.com'
+  - '+.dell.com'
+  - '+.dellcdn.com'
 #image
   - 'catbox.moe'
 #Social
