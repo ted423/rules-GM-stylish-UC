@@ -26,6 +26,7 @@ payload:
   - '+.amazon.co.jp'
   - 'xn--4gq62f52gdss.com'
   - 'altium.com'
+  - '+.fortinet.com'
 #Software
   - 'download.xnview.com'
   - '+.msecnd.net'
