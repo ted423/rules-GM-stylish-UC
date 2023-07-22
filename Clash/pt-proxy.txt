@@ -43,6 +43,7 @@ payload:
   - '+.totheglory.im'
   - '+.btschool.club'
   - '+.chdbits.co'
+  - '+.ptchdbits.co'
   - '+.ptsbao.club'
   - '+.pterclub.com'
   - '+.hdchina.org'
