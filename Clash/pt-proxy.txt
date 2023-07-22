@@ -55,4 +55,4 @@ payload:
   - 'fsm.name'
   - 'hd-torrents.org'
   - 'jpopsuki.eu'
-  - 'img.hdbits.org'
+  - '+.hdbits.org'
