@@ -37,6 +37,8 @@ payload:
   - '+.scootersoftware.com'
   - '+.dell.com'
   - '+.dellcdn.com'
+#
+  - '+.yadi.sk'
 #image
   - 'catbox.moe'
 #Social
