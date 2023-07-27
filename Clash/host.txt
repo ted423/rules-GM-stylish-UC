@@ -126,6 +126,7 @@ payload:
 #
   - '+.artstation.com'
   - '+.pixiv.net'
+  - '+.tumblr.com'
 #Games
   - 'steamcommunity.com'
 ##崩坏
