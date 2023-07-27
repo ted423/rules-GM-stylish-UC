@@ -123,6 +123,9 @@ payload:
 #DOC
   - '+.kubernetes.io'
   - '+.jenkins.io'
+#
+  - '+.artstation.com'
+  - '+.pixiv.net'
 #Games
   - 'steamcommunity.com'
 ##崩坏
