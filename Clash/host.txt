@@ -127,6 +127,7 @@ payload:
   - '+.artstation.com'
   - '+.pixiv.net'
   - '+.tumblr.com'
+  - '+.yande.re'
 #Games
   - 'steamcommunity.com'
 ##崩坏
