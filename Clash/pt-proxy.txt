@@ -56,3 +56,4 @@ payload:
   - 'hd-torrents.org'
   - 'jpopsuki.eu'
   - '+.hdbits.org'
+  - '+.empornium.sx'
