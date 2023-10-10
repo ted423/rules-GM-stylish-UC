@@ -57,3 +57,4 @@ payload:
   - 'jpopsuki.eu'
   - '+.hdbits.org'
   - '+.empornium.sx'
+  - '+.torrentleech.org'
