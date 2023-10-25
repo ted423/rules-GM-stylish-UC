@@ -1,4 +1,5 @@
 payload:
+  - '+.aither.cc'
   - '+.keepfrds.com'
   - '+.keepfrds.workers.dev'
   - '+.bootytape.com'
