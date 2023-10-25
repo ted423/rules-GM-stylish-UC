@@ -1,5 +1,6 @@
 payload:
   - '+.aither.cc'
+  - '+.blutopia.cc'
   - '+.keepfrds.com'
   - '+.keepfrds.workers.dev'
   - '+.bootytape.com'
