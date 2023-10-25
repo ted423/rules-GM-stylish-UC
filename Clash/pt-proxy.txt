@@ -60,3 +60,4 @@ payload:
   - '+.hdbits.org'
   - '+.empornium.sx'
   - '+.torrentleech.org'
+  - '+.speedapp.io'
