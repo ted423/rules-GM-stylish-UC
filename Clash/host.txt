@@ -125,6 +125,7 @@ payload:
 #DOC
   - '+.kubernetes.io'
   - '+.jenkins.io'
+  - '+.archive.org'
 #
   - '+.artstation.com'
   - '+.pixiv.net'
