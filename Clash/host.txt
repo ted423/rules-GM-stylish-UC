@@ -41,13 +41,15 @@ payload:
   - '+.scootersoftware.com'
   - '+.dell.com'
   - '+.dellcdn.com'
+
+  - '+.f-droid.org'
 #
   - '+.yadi.sk'
 #image
   - 'catbox.moe'
 #Social
   - '+.reddit.com'
-
+  - '+.nytimes.com'
   - '+.twimg.com'
   - '+.twitter.com'
   - '+.t.co'
@@ -58,7 +60,7 @@ payload:
   - '+.streamlabs.com'
   - '+.gstatic.com'
   - '+.ext-twitch.tv'
-
+  - '+.ptt.cc'
   - '+.readthedocs.io'
   - '+.gamer.com.tw'
   - '+.bahamut.com.tw'
@@ -123,6 +125,7 @@ payload:
   - '+.pnpm.io'
   - '+.npmjs.org'
   - '+.python.org'
+  + '+.mantisbt.org'
   
 #DOC
   - '+.kubernetes.io'
