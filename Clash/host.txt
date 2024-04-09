@@ -43,6 +43,9 @@ payload:
   - '+.dellcdn.com'
 
   - '+.f-droid.org'
+
+# 
+   - '+.avg.com'
 #
   - '+.yadi.sk'
 #image
