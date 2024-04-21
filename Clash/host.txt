@@ -1,7 +1,7 @@
 payload:
   - '+.nanoport.xyz'
   - '+.milkcat.io'
-  - '+.air.a-soul.pro'
+  - '+.krita.moe'
   - '+.smallstrawberry.com'
   - '+.qbittorrent.org'
   - '+.8world.com'
