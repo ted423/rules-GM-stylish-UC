@@ -45,7 +45,7 @@ payload:
   - '+.f-droid.org'
 
 # 
-   - '+.avg.com'
+  - '+.avg.com'
 #
   - '+.yadi.sk'
 #image
@@ -144,10 +144,9 @@ payload:
 ##崩坏
   - '+.starrails.com'
   - 'hoyo.link'
-###
   - '+.hoyoverse.com'
-###starrail.com - CF IP
   - '+.hoyolab.com'
+###starrail.com - CF IP
   - '+.cloudfront.net'
 
 #CDN
