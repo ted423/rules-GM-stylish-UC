@@ -128,7 +128,7 @@ payload:
   - '+.pnpm.io'
   - '+.npmjs.org'
   - '+.python.org'
-  + '+.mantisbt.org'
+  - '+.mantisbt.org'
   
 #DOC
   - '+.kubernetes.io'
@@ -141,7 +141,7 @@ payload:
   - '+.yande.re'
 #Games
   - 'steamcommunity.com'
-##崩坏
+##starrails
   - '+.starrails.com'
   - 'hoyo.link'
   - '+.hoyoverse.com'
