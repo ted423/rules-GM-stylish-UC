@@ -31,6 +31,7 @@ payload:
   - 'altium.com'
   - '+.fortinet.com'
   - '+.amazonaws.com'
+  - '+.shanaproject.com'
 #Software
   - 'download.xnview.com'
   - '+.msecnd.net'
