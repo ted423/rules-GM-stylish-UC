@@ -28,7 +28,6 @@ payload:
   - '+.hdhome.org'
   - '+.hdsky.me'
   - 'pt.hdupt.com'
-  - '+.hdzone.me'
   - 'kp.m-team.cc'
   - '+.ourbits.club'
   - '+.skyeysnow.com'
