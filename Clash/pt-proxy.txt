@@ -1,6 +1,7 @@
 payload:
   - '+.aither.cc'
   - '+.blutopia.cc'
+  - '+.empornium.is'
   - '+.keepfrds.com'
   - '+.keepfrds.workers.dev'
   - '+.bootytape.com'
@@ -28,10 +29,8 @@ payload:
   - '+.hdsky.me'
   - 'pt.hdupt.com'
   - '+.hdzone.me'
-  - '+.lemonhd.org'
   - 'kp.m-team.cc'
   - '+.ourbits.club'
-  - 'pt.msg.vg'
   - '+.skyeysnow.com'
   - 'pt.eastgame.org'
   - '+.wintersakura.net'
