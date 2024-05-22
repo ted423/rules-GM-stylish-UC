@@ -38,6 +38,7 @@ payload:
   - '+.aimp.ru'
   - '+.kde.org'
   - '+.faigner.de'
+  - '+.faststone.org'
   - '+.launchpadcontent.net'
   - '+.scootersoftware.com'
   - '+.dell.com'
