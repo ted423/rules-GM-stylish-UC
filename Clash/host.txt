@@ -60,6 +60,7 @@ payload:
   - '+.t.co'
   - '+.twitch.tv'
   - '+.twitchcdn.net'
+  - 'x.com'
   - '+.jtvnw.net'
   - '+.ttvnw.net'
   - '+.streamlabs.com'
