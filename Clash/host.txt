@@ -32,6 +32,10 @@ payload:
   - '+.fortinet.com'
   - '+.amazonaws.com'
   - '+.shanaproject.com'
+  - '+.ltn.com.tw' 
+#A
+  - '+.91rb.com'
+  - '+.jable.tv'
 #Software
   - 'download.xnview.com'
   - '+.msecnd.net'
