@@ -17,6 +17,7 @@ payload:
   - 'e-hentai.org'
   - '+.oneprovider.com'
   - '+.wikipedia.org'
+  - '+.wiktionary.org'
   - '+.themoviedb.org'
   - '+.docker.com'
   - '+.v2ex.com'
