@@ -37,6 +37,7 @@ payload:
 #A
   - '+.91rb.com'
   - '+.jable.tv'
+  - '+.hentaicomic.ru'
 #Software
   - 'download.xnview.com'
   - '+.msecnd.net'
