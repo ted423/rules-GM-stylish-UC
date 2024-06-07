@@ -34,7 +34,7 @@ payload:
   - '+.amazonaws.com'
   - '+.shanaproject.com'
   - '+.ltn.com.tw'
-  - '+.thetvdb.com'
+  - 'thetvdb.com'
 #A
   - '+.91rb.com'
   - '+.jable.tv'
