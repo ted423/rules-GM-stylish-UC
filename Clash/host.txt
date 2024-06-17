@@ -39,6 +39,7 @@ payload:
   - '+.91rb.com'
   - '+.jable.tv'
   - '+.hentaicomic.ru'
+  - '+.clips4sale.com'
 #Software
   - 'download.xnview.com'
   - '+.msecnd.net'
@@ -144,6 +145,8 @@ payload:
   - '+.kubernetes.io'
   - '+.jenkins.io'
   - '+.archive.org'
+#
+  - '+.doom9.org'
 #
   - '+.artstation.com'
   - '+.pixiv.net'
