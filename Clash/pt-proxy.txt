@@ -12,8 +12,6 @@ payload:
   - '+.audiences.me'
   - '+.azusa.wiki'
   - '+.ccfbits.org'
-  - '+.dicmusic.club'
-  - '+.nextpt.net'
   - '+.hddolby.com'
   - '+.hdarea.co'
   - '+.hdcity.city'
