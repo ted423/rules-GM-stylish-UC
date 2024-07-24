@@ -51,7 +51,7 @@ payload:
   - '+.scootersoftware.com'
   - '+.dell.com'
   - '+.dellcdn.com'
-
+  - 'obsproject.com'
   - '+.f-droid.org'
 
 # 
@@ -62,6 +62,7 @@ payload:
   - 'catbox.moe'
 #Social
   - '+.reddit.com'
+  - '+.redd.it'
   - '+.nytimes.com'
   - '+.twimg.com'
   - '+.twitter.com'
