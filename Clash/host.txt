@@ -60,6 +60,7 @@ payload:
   - '+.yadi.sk'
 #image
   - 'catbox.moe'
+  - '+.donmai.us'
 #Social
   - '+.reddit.com'
   - '+.redd.it'
