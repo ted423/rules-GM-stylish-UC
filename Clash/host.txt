@@ -40,6 +40,8 @@ payload:
   - '+.jable.tv'
   - '+.hentaicomic.ru'
   - '+.clips4sale.com'
+  - '+.jcomic.net'
+  - '+.rokuhentai.com'
 #Software
   - 'download.xnview.com'
   - '+.msecnd.net'
