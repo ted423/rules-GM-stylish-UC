@@ -1,8 +1,11 @@
 payload:
   - '+.nanoport.xyz'
   - '+.milkcat.io'
+  - 'xn--4gq62f52gdss.com'
   - '+.krita.moe'
   - '+.smallstrawberry.com'
+  - 'xn--cp3a08l.com'
+
   - '+.qbittorrent.org'
   - '+.8world.com'
   - '+.algolia.com'
@@ -25,7 +28,6 @@ payload:
   - '+.javdb.com'
   - '+.kernel.org'
   - '+.amazon.co.jp'
-  - 'xn--4gq62f52gdss.com'
   - 'altium.com'
   - '+.fortinet.com'
   - '+.amazonaws.com'
