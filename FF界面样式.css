@@ -27,7 +27,7 @@ menu.bookmark-item, menuitem.bookmark-item { max-width: 20em !important; }
     .newtab-cell:hover {opacity: 1 !important;}
     #newtab-vertical-margin{
         background-size:cover !important;
-        background-image: url("file:///E:/OneDrive/Pictures/二次元/无双系列/他/吕玲绮/smusou7-tw-bg-ryoreiki.jpg") !important;
+        background-image: url("file:///.jpg") !important;
     }
     #newtab-margin-bottom{opacity:0;}
     #newtab-search-container,#newtab-margin-undo-container{display: none !important;}
