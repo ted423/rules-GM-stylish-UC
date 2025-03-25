@@ -1,3 +1,5 @@
 #!/bin/bash
-file=$(basename $1)
-tar -cvf - $1 | xz -T 0 -c > $file.tar.xz
+target_dir=$(dirname "$1")
+target=$(basename "$1")
+
+tar -C "$target_dir" -cvf - "$target" | xz -T 0 -c > "${target}.tar.xz"
