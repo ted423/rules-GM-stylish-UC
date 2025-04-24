@@ -3,7 +3,6 @@ setlocal enabledelayedexpansion
 chcp 65001 >nul
 REM bat default is ANSI(gbk) set to utf-8
 where pwsh >nul 2>nul
-echo Win 10/Server 不装 PowerShell 7 无法获取显示器 SN
 
 REM 版本号 10.0.XXXXX.YY
 for /f "tokens=2 delims=[]" %%a in ('ver') do (
@@ -33,6 +32,7 @@ if %errorlevel% equ 0 (
       REM Win11
       !pw! -NoProfile -ExecutionPolicy Bypass -Command "$monitorInfo = Get-CimInstance -Namespace root\wmi -ClassName WmiMonitorID; if ($monitorInfo) { foreach ($monitor in $monitorInfo) { $serialNumber = [System.Text.Encoding]::ASCII.GetString($monitor.SerialNumberID); if ($serialNumber -ne 0 -and $serialNumber -ne 1) { Write-Host 'Monitor Serial Number:' $serialNumber; } } } else { Write-Host 'No monitor information found.'; };"
     ) else (
+      echo Win 10/Server 不装 PowerShell 7 无法获取显示器 SN
       REM Win10 or Server 2019/2022
       !pw! -NoProfile -ExecutionPolicy Bypass -Command "$PCInfo = Get-CimInstance -ClassName Win32_BIOS | Select-Object -ExpandProperty SerialNumber;Write-Host 'PC Serial Number:' $PCInfo;"
     )
