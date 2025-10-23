@@ -56,6 +56,7 @@ payload:
   - '+.dellcdn.com'
   - 'obsproject.com'
   - '+.f-droid.org'
+  - '+.vivaldi.com'
 
 # 
   - '+.avg.com'
@@ -160,7 +161,8 @@ payload:
   - '+.tumblr.com'
   - '+.yande.re'
 #Games
-  - 'steamcommunity.com'
+  - '+.steamcommunity.com'
+  - '+.doaxvv.com'
 ##starrails
   - '+.starrails.com'
   - 'hoyo.link'
