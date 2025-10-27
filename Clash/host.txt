@@ -17,8 +17,7 @@ payload:
   - '+.kuromis.com'
   - '+.hcaptcha.com'
   - '+.oneprovider.com'
-  - '+.wikipedia.org'
-  - '+.wiktionary.org'
+
   - '+.themoviedb.org'
   - '+.docker.com'
   - '+.workers.dev'
@@ -153,6 +152,9 @@ payload:
   - '+.kubernetes.io'
   - '+.jenkins.io'
   - '+.archive.org'
+  - '+.wikipedia.org'
+  - '+.wiktionary.org'
+  - '+.wikibooks.org'
 #
   - '+.doom9.org'
 #
