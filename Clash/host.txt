@@ -19,7 +19,7 @@ payload:
   - '+.oneprovider.com'
 
   - '+.themoviedb.org'
-  - '+.docker.com'
+
   - '+.workers.dev'
   - '+.subscene.com'
   - '+.sonatype.com'
@@ -56,6 +56,11 @@ payload:
   - 'obsproject.com'
   - '+.f-droid.org'
   - '+.vivaldi.com'
+
+##LANService
+  - '+.kubernetes.io'
+  - '+.jenkins.io'
+  - '+.docker.com'
 
 # 
   - '+.avg.com'
@@ -149,8 +154,6 @@ payload:
   - '+.mantisbt.org'
   
 #DOC
-  - '+.kubernetes.io'
-  - '+.jenkins.io'
   - '+.archive.org'
   - '+.wikipedia.org'
   - '+.wiktionary.org'
