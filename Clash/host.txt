@@ -178,3 +178,6 @@ payload:
 
 #CDN
   - '+.jsdelivr.net'
+
+#
+  - 'chatgpt.com'
