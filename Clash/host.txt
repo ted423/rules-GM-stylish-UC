@@ -42,6 +42,7 @@ payload:
   - '+.clips4sale.com'
   - '+.jcomic.net'
   - '+.rokuhentai.com'
+  - '+.eyny.com'
 #Software
   - 'download.xnview.com'
   - '+.msecnd.net'
