@@ -153,6 +153,7 @@ payload:
   - '+.npmjs.org'
   - '+.python.org'
   - '+.mantisbt.org'
+  - 'greasyfork.org'
   
 #DOC
   - '+.archive.org'
