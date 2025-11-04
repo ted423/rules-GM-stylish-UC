@@ -57,6 +57,7 @@ payload:
   - 'obsproject.com'
   - '+.f-droid.org'
   - '+.vivaldi.com'
+  - 'mediaarea.net'
 
 ##LANService
   - '+.kubernetes.io'
