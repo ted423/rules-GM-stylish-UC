@@ -185,3 +185,4 @@ payload:
 #AI
   - 'chatgpt.com'
   - 'grok.com'
+  - '+.grokipedia.com'
