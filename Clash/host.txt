@@ -171,6 +171,7 @@ payload:
 #Games
   - '+.steamcommunity.com'
   - '+.doaxvv.com'
+  - '+.steampowered.com'
 ##starrails
   - '+.starrails.com'
   - 'hoyo.link'
