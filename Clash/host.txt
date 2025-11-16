@@ -58,6 +58,7 @@ payload:
   - '+.f-droid.org'
   - '+.vivaldi.com'
   - 'mediaarea.net'
+  - '+.geforce.com'
 
 ##LANService
   - '+.kubernetes.io'
