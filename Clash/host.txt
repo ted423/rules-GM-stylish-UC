@@ -59,6 +59,7 @@ payload:
   - '+.vivaldi.com'
   - 'mediaarea.net'
   - '+.geforce.com'
+  - '+.dokuwiki.org'
 
 ##LANService
   - '+.kubernetes.io'
