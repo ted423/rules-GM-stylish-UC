@@ -6,11 +6,9 @@ payload:
   - '+.smallstrawberry.com'
   - 'xn--cp3a08l.com'
 
-  - '+.qbittorrent.org'
   - '+.8world.com'
   - '+.algolia.com'
   - '+.highcharts.com'
-  - '+.bootstrapcdn.com'
   - '+.rfi.fr'
   - '+.duyaoss.com'
   - '+.notion.so'
@@ -60,7 +58,7 @@ payload:
   - 'mediaarea.net'
   - '+.geforce.com'
   - '+.dokuwiki.org'
-
+  - '+.qbittorrent.org'
 ##LANService
   - '+.kubernetes.io'
   - '+.jenkins.io'
@@ -184,7 +182,8 @@ payload:
 
 #CDN
   - '+.jsdelivr.net'
-
+  - '+.cloudflare.com'
+  - '+.bootstrapcdn.com'
 #AI
   - 'chatgpt.com'
   - 'grok.com'
