@@ -123,6 +123,7 @@ payload:
   - '+.googletagmanager.com'
   - '+.gstatic.com'
   - '+.google.com'
+  - '+.google.co.jp'
   - '+.googleapis.com'
   - '+.google.com.hk'
   - '+.youtube.com'
