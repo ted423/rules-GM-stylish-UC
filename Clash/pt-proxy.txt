@@ -13,7 +13,6 @@ payload:
   - '+.audiences.me'
   - '+.azusa.wiki'
   - '+.ccfbits.org'
-  - '+.hddolby.com'
   - '+.hdarea.co'
   - '+.hdcity.city'
   - '+.hddolby.com'
