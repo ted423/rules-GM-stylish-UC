@@ -41,6 +41,7 @@ payload:
   - '+.jcomic.net'
   - '+.rokuhentai.com'
   - '+.eyny.com'
+  - '+.tokyotosho.info'
 #Software
   - 'download.xnview.com'
   - '+.msecnd.net'
