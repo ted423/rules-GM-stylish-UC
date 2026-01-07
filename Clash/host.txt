@@ -60,6 +60,7 @@ payload:
   - '+.geforce.com'
   - '+.dokuwiki.org'
   - '+.qbittorrent.org'
+  - '+.virtualmin.com'
 ##LANService
   - '+.kubernetes.io'
   - '+.jenkins.io'
