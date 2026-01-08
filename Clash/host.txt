@@ -6,6 +6,7 @@ payload:
   - '+.smallstrawberry.com'
   - 'xn--cp3a08l.com'
   - 'xn--mes358aby2apfg.com'
+  - 'forest1.dev'
 
   - '+.8world.com'
   - '+.algolia.com'
