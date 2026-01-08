@@ -5,7 +5,7 @@ payload:
   - '+.krita.moe'
   - '+.smallstrawberry.com'
   - 'xn--cp3a08l.com'
-  - '赔钱机场.com'
+  - 'xn--mes358aby2apfg.com'
 
   - '+.8world.com'
   - '+.algolia.com'
