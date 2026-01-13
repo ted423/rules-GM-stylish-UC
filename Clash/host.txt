@@ -2,7 +2,6 @@ payload:
   - '+.nanoport.xyz'
   - '+.milkcat.io'
   - 'xn--4gq62f52gdss.com'
-  - '+.krita.moe'
   - '+.smallstrawberry.com'
   - 'xn--cp3a08l.com'
   - 'xn--mes358aby2apfg.com'
@@ -11,28 +10,29 @@ payload:
   - '+.8world.com'
   - '+.algolia.com'
   - '+.highcharts.com'
-  - '+.rfi.fr'
+
   - '+.duyaoss.com'
   - '+.notion.so'
   - '+.kuromis.com'
   - '+.hcaptcha.com'
   - '+.oneprovider.com'
-
-  - '+.themoviedb.org'
-
+  - '+.ccp.ovh'
+  
   - '+.workers.dev'
   - '+.subscene.com'
-  - '+.sonatype.com'
-  - '+.hk01.com'
-  - '+.javdb.com'
+
   - '+.kernel.org'
   - '+.amazon.co.jp'
-  - 'altium.com'
+
   - '+.fortinet.com'
   - '+.amazonaws.com'
   - '+.shanaproject.com'
   - '+.ltn.com.tw'
+
+#DOC
   - 'thetvdb.com'
+  - '+.themoviedb.org'
+  - 'annas-archive.li'
 #A
   - 'exhentai.org'
   - 'e-hentai.org'
@@ -44,6 +44,7 @@ payload:
   - '+.rokuhentai.com'
   - '+.eyny.com'
   - '+.tokyotosho.info'
+  - '+.javdb.com'
 #Software
   - 'download.xnview.com'
   - '+.msecnd.net'
@@ -63,11 +64,12 @@ payload:
   - '+.dokuwiki.org'
   - '+.qbittorrent.org'
   - '+.virtualmin.com'
-##LANService
+  - 'altium.com'
+##Service
   - '+.kubernetes.io'
   - '+.jenkins.io'
   - '+.docker.com'
-
+  - '+.sonatype.com'
 # 
   - '+.avg.com'
 #
@@ -116,6 +118,9 @@ payload:
   - '+.github.com'
   - '+.githubassets.com'
   - '+.githubusercontent.com'
+#News
+  - '+.hk01.com'
+  - '+.rfi.fr'
 #Gitlab
   - '+.gitlab.com'
   - '+.launchdarkly.com'
@@ -193,3 +198,5 @@ payload:
   - 'chatgpt.com'
   - 'grok.com'
   - '+.grokipedia.com'
+  - 'deepwiki.com'
+  - '+.devin.ai'
