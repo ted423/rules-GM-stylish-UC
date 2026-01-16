@@ -45,6 +45,7 @@ payload:
   - '+.eyny.com'
   - '+.tokyotosho.info'
   - '+.javdb.com'
+  - '072project.com'
 #Software
   - 'download.xnview.com'
   - '+.msecnd.net'
