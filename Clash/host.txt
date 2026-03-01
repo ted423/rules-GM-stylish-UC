@@ -6,6 +6,7 @@ payload:
   - 'xn--cp3a08l.com'
   - 'xn--mes358aby2apfg.com'
   - 'forest1.dev'
+  - '+.ctc.run'
 
   - '+.8world.com'
   - '+.algolia.com'
@@ -28,7 +29,9 @@ payload:
   - '+.amazonaws.com'
   - '+.shanaproject.com'
   - '+.ltn.com.tw'
-
+#P2P
+  - '+.torrentkitty.tv'
+  - '+.idope.se'
 #DOC
   - 'thetvdb.com'
   - '+.themoviedb.org'
@@ -46,6 +49,9 @@ payload:
   - '+.tokyotosho.info'
   - '+.javdb.com'
   - '072project.com'
+  - '+.javmost.com'
+  - '+.javcdn.info'
+  - '+.jav.guru'
 #Software
   - 'download.xnview.com'
   - '+.msecnd.net'
@@ -62,15 +68,16 @@ payload:
   - '+.vivaldi.com'
   - 'mediaarea.net'
   - '+.geforce.com'
-  - '+.dokuwiki.org'
   - '+.qbittorrent.org'
   - '+.virtualmin.com'
   - 'altium.com'
+  - '+.telegram.org'
 ##Service
   - '+.kubernetes.io'
   - '+.jenkins.io'
   - '+.docker.com'
   - '+.sonatype.com'
+  - '+.dokuwiki.org'
 # 
   - '+.avg.com'
 #
@@ -122,6 +129,7 @@ payload:
 #News
   - '+.hk01.com'
   - '+.rfi.fr'
+  - '+.rfa.org'
 #Gitlab
   - '+.gitlab.com'
   - '+.launchdarkly.com'
@@ -144,7 +152,9 @@ payload:
 #
   - '+.dropbox.com'
   - '+.dropboxapi.com'
-  
+
+  - '+.gofile.io'
+
   - '+.walkerservers.com'
   - '+.digitalocean.co'
   - '+.ovhcloud.com'
