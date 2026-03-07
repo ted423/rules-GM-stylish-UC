@@ -4,6 +4,7 @@ payload:
   - 'xn--4gq62f52gdss.com'
   - '+.smallstrawberry.com'
   - 'xn--cp3a08l.com'
+  - '*.pqjc.site'
   - 'xn--mes358aby2apfg.com'
   - 'forest1.dev'
   - '+.ctc.run'
