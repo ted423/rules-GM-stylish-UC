@@ -201,7 +201,9 @@ payload:
   - '+.hoyolab.com'
 ###starrail.com - CF IP
   - '+.cloudfront.net'
-
+##kingshot
+  - '170.106.34.73/32'
+  - '54.159.202.67/32'
 #CDN
   - '+.jsdelivr.net'
   - '+.cloudflare.com'
