@@ -143,6 +143,7 @@ payload:
   - '+.gstatic.com'
   - '+.google.com'
   - '+.google.co.jp'
+  - ''+.google.co.kr'
   - '+.googleapis.com'
   - '+.google.com.hk'
   - '+.youtube.com'
