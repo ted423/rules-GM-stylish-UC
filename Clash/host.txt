@@ -73,6 +73,7 @@ payload:
   - '+.virtualmin.com'
   - 'altium.com'
   - '+.telegram.org'
+  - '+.webmin.com'
 ##Service
   - '+.kubernetes.io'
   - '+.jenkins.io'
@@ -213,3 +214,4 @@ payload:
   - '+.grokipedia.com'
   - 'deepwiki.com'
   - '+.devin.ai'
+  - '+.mistral.ai'
