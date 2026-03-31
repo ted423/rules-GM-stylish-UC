@@ -90,6 +90,9 @@ payload:
 #Social
   - '+.reddit.com'
   - '+.redd.it'
+  - '+.redditmedia.com'
+  - '+.redditstatic.com'
+
   - '+.nytimes.com'
   - '+.twimg.com'
   - '+.twitter.com'
