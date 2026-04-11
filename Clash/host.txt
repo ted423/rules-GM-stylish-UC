@@ -30,6 +30,7 @@ payload:
   - '+.amazonaws.com'
   - '+.shanaproject.com'
   - '+.ltn.com.tw'
+  - '+.hcaptcha.com'
 #P2P
   - '+.torrentkitty.tv'
   - '+.idope.se'
