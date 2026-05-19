@@ -161,6 +161,7 @@ payload:
   - '+.dropboxapi.com'
 
   - '+.gofile.io'
+  - 'mega.nz'
 
   - '+.walkerservers.com'
   - '+.digitalocean.co'
