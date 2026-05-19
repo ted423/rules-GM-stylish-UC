@@ -162,7 +162,10 @@ payload:
 
   - '+.gofile.io'
   - 'mega.nz'
-
+  - '+.mega.co.nz'
+  
+  
+  
   - '+.walkerservers.com'
   - '+.digitalocean.co'
   - '+.ovhcloud.com'
