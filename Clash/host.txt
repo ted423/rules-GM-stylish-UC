@@ -8,6 +8,7 @@ payload:
   - 'xn--mes358aby2apfg.com'
   - 'forest1.dev'
   - '+.ctc.run'
+  - '87.83.109.174/24'
 
   - '+.8world.com'
   - '+.algolia.com'
