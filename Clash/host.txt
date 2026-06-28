@@ -224,3 +224,6 @@ payload:
   - 'deepwiki.com'
   - '+.devin.ai'
   - '+.mistral.ai'
+#
+  - '+.whatsapp.net'
+  - '+.whatsapp.com'
