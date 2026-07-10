@@ -39,6 +39,8 @@ payload:
   - 'thetvdb.com'
   - '+.themoviedb.org'
   - 'annas-archive.li'
+  - '+.wikimedia.org'
+  - '+..wikipedia.org'
 #A
   - 'exhentai.org'
   - 'e-hentai.org'
