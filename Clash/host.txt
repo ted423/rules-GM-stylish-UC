@@ -10,11 +10,12 @@ payload:
   - '+.ctc.run'
   - '87.83.109.174/24'
 
+  - '+.duyaoss.com'
+
   - '+.8world.com'
   - '+.algolia.com'
   - '+.highcharts.com'
 
-  - '+.duyaoss.com'
   - '+.notion.so'
   - '+.kuromis.com'
   - '+.hcaptcha.com'
@@ -23,6 +24,9 @@ payload:
   
   - '+.workers.dev'
   - '+.subscene.com'
+  - '+.wild233.cf'
+  - '+.snowfrs.com'
+
 
   - '+.kernel.org'
   - '+.amazon.co.jp'
@@ -40,10 +44,12 @@ payload:
   - '+.themoviedb.org'
   - 'annas-archive.li'
   - '+.wikimedia.org'
-  - '+..wikipedia.org'
+  - '+.wikipedia.org'
 #A
   - 'exhentai.org'
   - 'e-hentai.org'
+  - '+.hath.network'
+
   - '+.91rb.com'
   - '+.jable.tv'
   - '+.hentaicomic.ru'
@@ -76,8 +82,15 @@ payload:
   - '+.qbittorrent.org'
   - '+.virtualmin.com'
   - 'altium.com'
-  - '+.telegram.org'
   - '+.webmin.com'
+
+## Telegram
+  - '+.t.me'
+  - '+.tdesktop.com'
+ - '+.telegra.ph'
+  - '+.telegram.me'
+  - '+.telegram.org'
+  - '+.telesco.pe'
 ##Service
   - '+.kubernetes.io'
   - '+.jenkins.io'
@@ -97,7 +110,7 @@ payload:
   - '+.redditmedia.com'
   - '+.redditstatic.com'
 
-  - '+.nytimes.com'
+
   - '+.twimg.com'
   - '+.twitter.com'
   - '+.t.co'
@@ -139,6 +152,7 @@ payload:
   - '+.hk01.com'
   - '+.rfi.fr'
   - '+.rfa.org'
+  - '+.nytimes.com'
 #Gitlab
   - '+.gitlab.com'
   - '+.launchdarkly.com'
@@ -154,11 +168,12 @@ payload:
   - '+.google.co.kr'
   - '+.googleapis.com'
   - '+.google.com.hk'
-  - '+.youtube.com'
-  - '+.ggpht.com'
-  - '+.ytimg.com'
-  - '+.googlevideo.com'
   - '+.googlesource.com'
+## YTB
+  - '+.ggpht.com'
+  - '+.googlevideo.com'
+  - '+.youtube.com'
+  - '+.ytimg.com'
 #
   - '+.dropbox.com'
   - '+.dropboxapi.com'
@@ -205,8 +220,10 @@ payload:
   - '+.yande.re'
 #Games
   - '+.steamcommunity.com'
-  - '+.doaxvv.com'
   - '+.steampowered.com'
+  - '+.steamstatic.com'
+  - '+.doaxvv.com'
+
 ##starrails
   - '+.starrails.com'
   - 'hoyo.link'
