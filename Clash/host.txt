@@ -5,18 +5,20 @@ payload:
 
   - '+.xn--cp3a08l.com'
   - '+.xn--mes358aby2apfg.com'
-  
+    - '87.83.109.174/24'
+
   - '+.ctc.run'
   - '+.duyaoss.com'
   - '+.forest1.dev'
   - '+.milkcat.io'
   - '+.nanoport.xyz'
   - '+.pqjc.site'
-
-
-
   - '+.kuromis.com'
-  - '87.83.109.174/24'
+  - '+.snowfrs.com'
+  - '+.starmap.stream'
+  - '+.wild233.cf'
+
+  - '51.158.148.85/32'
 
 # AI
   - '+.chatgpt.com'
@@ -36,16 +38,24 @@ payload:
   - '+.wikipedia.org'
   - '+.wiktionary.org'
   - '+.readthedocs.io'
+  - '+.imdb.com'
+  - '+.notion.so'
 
 # Code
-  - '+.greasyfork.org'
-  - '+.mantisbt.org'
+  - '+.python.org'
+  - '+.pypi.org'
+  - '+.pythonhosted.org'
+
   - '+.nodejs.org'
   - '+.npmjs.com'
   - '+.pnpm.io'
-  - '+.python.org'
+  - '+.yarnpkg.com'
+
   - '+.gitlab.com'
+  - '+.greasyfork.org'
+  - '+.mantisbt.org'
   - '+.highcharts.com'
+
 ## sourceforge
   - '+.fsdn.com'
   - '+.sourceforge.net'
@@ -61,29 +71,48 @@ payload:
   - '+.faigner.de'
   - '+.faststone.org'
   - '+.geforce.com'
-  - '+.kde.org'
   - '+.launchpadcontent.net'
   - '+.mediaarea.net'
   - '+.msecnd.net'
   - '+.obsproject.com'
   - '+.qbittorrent.org'
   - '+.scootersoftware.com'
-  - '+.virtualmin.com'
   - '+.vivaldi.com'
-  - '+.webmin.com'
   - '+.www.qbittorrent.org'
   - '+.winget.run'
+  - '+.codecguide.com'
+  - '+.filezilla-project.org'
+  - '+.filezillapro.com'
+  - '+.firecore.com'
+  - '+.gpsoft.com.au'
+  - '+.oracle.com'
+  - '+.qnapclub.eu'
+  - '+.rationalqm.us'
+  - '+.tabby.sh'
+  - '+.truenas.com'
+  - '+.typora.io'
+  - '+.vmware.com'
+  - '+.chocolatey.org'
 ## Linux
   - '+.kernel.org'
   - '+.kde.org'
+  - '+.fwupd.org'
+  - '+.postfix.org'
+  - '+.samba.org'
+  - '+.webmin.com'
+  - '+.virtualmin.com'
 
 # CloudDrive
   - '+.dropbox.com'
   - '+.dropboxapi.com'
-  - '+.gofile.io'
+  - '+.dropboxstatic.com'
+  - '+.mega.io'
   - '+.mega.co.nz'
   - '+.mega.nz'
+
   - '+.yadi.sk'
+  - '+.gofile.io'
+
 
 # Cloudserver
   - '+.digitalocean.co'
@@ -98,6 +127,8 @@ payload:
   - '+.jenkins.io'
   - '+.kubernetes.io'
   - '+.sonatype.com'
+  - '+.avangate.net'
+  - '+.fontplus.jp'
 
 # Telegram
   - '+.t.me'
@@ -115,6 +146,8 @@ payload:
   - '+.microsoft.com'
   - '+.microsoftonline.com'
   - '+.office.net'
+  - '+.azureedge.net'
+  - '+.msauth.net'
 
 # News
   - '+.8world.com'
@@ -123,6 +156,9 @@ payload:
   - '+.rfa.org'
   - '+.rfi.fr'
   - '+.ltn.com.tw'
+  - '+.chinadigitaltimes.net'
+  - '+.houxu.app'
+  - '+.read01.com'
 
 # Google
   - '+.google.co.jp'
@@ -134,6 +170,7 @@ payload:
   - '+.googletagmanager.com'
   - '+.gstatic.com'
   - '+.googleusercontent.com'
+  - '+.blogspot.com'
 ## YTB
   - '+.ggpht.com'
   - '+.googlevideo.com'
@@ -143,10 +180,16 @@ payload:
 # image
   - '+.catbox.moe'
   - '+.donmai.us'
+  - '+.fanbox.cc'
+  - '+.imgbox.com'
+  - '+.iqdb.org'
+  - '+.ptpimg.me'
+  - '+.pximg.net'
+  - '+.saucenao.com'
+  - '+.shoot.photo'
+  - '+.yandex.ru'
 
 # Social
-
-
   - '+.discord.com'
   - '+.discord.gg'
   - '+.discordapp.com'
@@ -186,13 +229,23 @@ payload:
   - '+.twitter.com'
   - '+.v2ex.com'
   - '+.x.com'
+  
+  - '+.nmm-hd.org'
+  - '+.pincong.rocks'
+  - '+.pixnet.net'
+  - '+.superuser.com'
+  - '+.xuite.net'
 
 # CDN
   - '+.bootstrapcdn.com'
   - '+.cloudflare.com'
   - '+.cloudfront.net'
   - '+.jsdelivr.net'
-  - '+.cloudfront.net'
+  - '+.bnbstatic.com'
+  - '+.discourse-cdn.com'
+  - '+.kxcdn.com'
+  - '+.paypalobjects.com'
+  - '+.yastatic.net'
 
 # Games
   - '+.doaxvv.com'
@@ -209,6 +262,10 @@ payload:
   - '+.idope.se'
   - '+.torrentkitty.tv'
   - '+.shanaproject.com'
+  - '+.btdig.com'
+  - '+.nyaa.si'
+  - '+.suprnova.cc'
+  - '+.torrentfunk2.com'
 
 # A
   - '+.e-hentai.org'
@@ -228,6 +285,13 @@ payload:
   - '+.jcomic.net'
   - '+.rokuhentai.com'
   - '+.tokyotosho.info'
+  
+  - '+.jerking.empornium.ph'
+  - '+.melonbooks.co.jp'
+  - '+.netflav.com'
+  - '+.pornhub.com'
+  - '+.south-plus.net'
+  - '+.wnacg.org'
 
 # Other
   - '+.algolia.com'
@@ -237,3 +301,7 @@ payload:
   - '+.subscene.com'
   - '+.cookielaw.org'
   - '+.launchdarkly.com'
+  - '+.c3pool.com'
+  - '+.coinmarketcap.com'
+  - '+.manhuagui.com'
+  - '+.cnlang.org'
