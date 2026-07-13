@@ -106,6 +106,7 @@ payload:
   - '+.dropbox.com'
   - '+.dropboxapi.com'
   - '+.dropboxstatic.com'
+  
   - '+.mega.io'
   - '+.mega.co.nz'
   - '+.mega.nz'
@@ -196,7 +197,13 @@ payload:
   - '+.discordapp.net'
 
   - '+.ext-twitch.tv'
-
+  - '+.t.co'
+  - '+.ttvnw.net'
+  - '+.twimg.com'
+  - '+.twitch.tv'
+  - '+.twitchcdn.net'
+  - '+.twitter.com'
+  
   - '+.facebook.com'
   - '+.facebook.net'
   - '+.fbcdn.net'
@@ -215,18 +222,11 @@ payload:
   - '+.linuxhint.com'
   - '+.nodeseek.com'
   - '+.ptt.cc'
-
   - '+.serverfault.com'
   - '+.sstatic.net'
   - '+.stackexchange.com'
   - '+.stackoverflow.com'
   - '+.streamlabs.com'
-  - '+.t.co'
-  - '+.ttvnw.net'
-  - '+.twimg.com'
-  - '+.twitch.tv'
-  - '+.twitchcdn.net'
-  - '+.twitter.com'
   - '+.v2ex.com'
   - '+.x.com'
   
@@ -285,8 +285,6 @@ payload:
   - '+.jcomic.net'
   - '+.rokuhentai.com'
   - '+.tokyotosho.info'
-  
-  - '+.jerking.empornium.ph'
   - '+.melonbooks.co.jp'
   - '+.netflav.com'
   - '+.pornhub.com'
