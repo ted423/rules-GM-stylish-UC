@@ -1,5 +1,11 @@
 payload:
 # F
+  - '+.smallstrawberry.com'
+  - '+.xn--4gq62f52gdss.com'
+
+  - '+.xn--cp3a08l.com'
+  - '+.xn--mes358aby2apfg.com'
+  
   - '+.ctc.run'
   - '+.duyaoss.com'
   - '+.forest1.dev'
@@ -7,10 +13,8 @@ payload:
   - '+.nanoport.xyz'
   - '+.pqjc.site'
 
-  - '+.smallstrawberry.com'
-  - '+.xn--4gq62f52gdss.com'
-  - '+.xn--cp3a08l.com'
-  - '+.xn--mes358aby2apfg.com'
+
+
   - '+.kuromis.com'
   - '87.83.109.174/24'
 
