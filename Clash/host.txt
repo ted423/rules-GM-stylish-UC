@@ -1,248 +1,235 @@
 payload:
-  - '+.nanoport.xyz'
-  - '+.milkcat.io'
-  - 'xn--4gq62f52gdss.com'
-  - '+.smallstrawberry.com'
-  - 'xn--cp3a08l.com'
-  - '*.pqjc.site'
-  - 'xn--mes358aby2apfg.com'
-  - 'forest1.dev'
+# F
   - '+.ctc.run'
+  - '+.duyaoss.com'
+  - '+.forest1.dev'
+  - '+.milkcat.io'
+  - '+.nanoport.xyz'
+  - '+.pqjc.site'
+
+  - '+.smallstrawberry.com'
+  - '+.xn--4gq62f52gdss.com'
+  - '+.xn--cp3a08l.com'
+  - '+.xn--mes358aby2apfg.com'
+  - '+.kuromis.com'
   - '87.83.109.174/24'
 
-  - '+.duyaoss.com'
+# AI
+  - '+.chatgpt.com'
+  - '+.deepwiki.com'
+  - '+.devin.ai'
+  - '+.grok.com'
+  - '+.grokipedia.com'
+  - '+.mistral.ai'
 
-  - '+.8world.com'
-  - '+.algolia.com'
-  - '+.highcharts.com'
-
-  - '+.notion.so'
-  - '+.kuromis.com'
-  - '+.hcaptcha.com'
-  - '+.oneprovider.com'
-  - '+.ccp.ovh'
-  
-  - '+.workers.dev'
-  - '+.subscene.com'
-  - '+.wild233.cf'
-  - '+.snowfrs.com'
-
-
-  - '+.kernel.org'
-  - '+.amazon.co.jp'
-
-  - '+.fortinet.com'
-  - '+.amazonaws.com'
-  - '+.shanaproject.com'
-  - '+.ltn.com.tw'
-  - '+.hcaptcha.com'
-#P2P
-  - '+.torrentkitty.tv'
-  - '+.idope.se'
-#DOC
-  - 'thetvdb.com'
+# DOC
+  - '+.annas-archive.li'
+  - '+.archive.org'
   - '+.themoviedb.org'
-  - 'annas-archive.li'
+  - '+.thetvdb.com'
+  - '+.wikibooks.org'
   - '+.wikimedia.org'
   - '+.wikipedia.org'
-#A
-  - 'exhentai.org'
-  - 'e-hentai.org'
-  - '+.hath.network'
+  - '+.wiktionary.org'
+  - '+.readthedocs.io'
 
-  - '+.91rb.com'
-  - '+.jable.tv'
-  - '+.hentaicomic.ru'
-  - '+.clips4sale.com'
-  - '+.jcomic.net'
-  - '+.rokuhentai.com'
-  - '+.eyny.com'
-  - '+.tokyotosho.info'
-  - '+.javdb.com'
-  - '072project.com'
-  - '+.javmost.com'
-  - '+.javcdn.info'
-  - '+.jav.guru'
-#Software
-  - 'download.xnview.com'
-  - '+.msecnd.net'
+# Code
+  - '+.greasyfork.org'
+  - '+.mantisbt.org'
+  - '+.nodejs.org'
+  - '+.npmjs.com'
+  - '+.pnpm.io'
+  - '+.python.org'
+  - '+.gitlab.com'
+  - '+.highcharts.com'
+## sourceforge
+  - '+.fsdn.com'
+  - '+.sourceforge.net'
+
+# Software
   - '+.aimp.ru'
-  - '+.kde.org'
-  - '+.faigner.de'
-  - '+.faststone.org'
-  - '+.launchpadcontent.net'
-  - '+.scootersoftware.com'
+  - '+.altium.com'
+  - '+.avg.com'
   - '+.dell.com'
   - '+.dellcdn.com'
-  - 'obsproject.com'
+  - '+.download.xnview.com'
   - '+.f-droid.org'
-  - '+.vivaldi.com'
-  - 'mediaarea.net'
+  - '+.faigner.de'
+  - '+.faststone.org'
   - '+.geforce.com'
+  - '+.kde.org'
+  - '+.launchpadcontent.net'
+  - '+.mediaarea.net'
+  - '+.msecnd.net'
+  - '+.obsproject.com'
   - '+.qbittorrent.org'
+  - '+.scootersoftware.com'
   - '+.virtualmin.com'
-  - 'altium.com'
+  - '+.vivaldi.com'
   - '+.webmin.com'
+  - '+.www.qbittorrent.org'
+  - '+.winget.run'
+## Linux
+  - '+.kernel.org'
+  - '+.kde.org'
 
-## Telegram
+# CloudDrive
+  - '+.dropbox.com'
+  - '+.dropboxapi.com'
+  - '+.gofile.io'
+  - '+.mega.co.nz'
+  - '+.mega.nz'
+  - '+.yadi.sk'
+
+# Cloudserver
+  - '+.digitalocean.co'
+  - '+.ovhcloud.com'
+  - '+.walkerservers.com'
+  - '+.workers.dev'
+  - '+.oneprovider.com'
+
+# Service
+  - '+.docker.com'
+  - '+.dokuwiki.org'
+  - '+.jenkins.io'
+  - '+.kubernetes.io'
+  - '+.sonatype.com'
+
+# Telegram
   - '+.t.me'
   - '+.tdesktop.com'
- - '+.telegra.ph'
+  - '+.telegra.ph'
   - '+.telegram.me'
   - '+.telegram.org'
   - '+.telesco.pe'
-##Service
-  - '+.kubernetes.io'
-  - '+.jenkins.io'
-  - '+.docker.com'
-  - '+.sonatype.com'
-  - '+.dokuwiki.org'
-# 
-  - '+.avg.com'
-#
-  - '+.yadi.sk'
-#image
-  - 'catbox.moe'
-  - '+.donmai.us'
-#Social
-  - '+.reddit.com'
-  - '+.redd.it'
-  - '+.redditmedia.com'
-  - '+.redditstatic.com'
 
-
-  - '+.twimg.com'
-  - '+.twitter.com'
-  - '+.t.co'
-  - '+.twitch.tv'
-  - '+.twitchcdn.net'
-  - 'x.com'
-  - '+.jtvnw.net'
-  - '+.ttvnw.net'
-  - '+.streamlabs.com'
-  - '+.gstatic.com'
-  - '+.ext-twitch.tv'
-  - '+.ptt.cc'
-  - '+.readthedocs.io'
-  - '+.gamer.com.tw'
-  - '+.bahamut.com.tw'
-  - '+.v2ex.com'
-  - '+.nodeseek.com'
-  
-  - '+.facebook.com'
-  - '+.facebook.net'
-  - '+.instagram.com'
-  - '+.cdninstagram.com'
-  - '+.fbcdn.net'
-  
-  - '+.discord.com'
-  - '+.discordapp.net'
-  - '+.discordapp.com'
-  - '+.discord.gg'
-#MS
-  - '+.winget.run'
-  - '+.office.net'
+# MS
   - '+.akamaihd.net'
-  - '+.microsoftonline.com'
-  - '+.microsoft.com'
   - '+.github.com'
   - '+.githubassets.com'
   - '+.githubusercontent.com'
-#News
+  - '+.microsoft.com'
+  - '+.microsoftonline.com'
+  - '+.office.net'
+
+# News
+  - '+.8world.com'
   - '+.hk01.com'
-  - '+.rfi.fr'
-  - '+.rfa.org'
   - '+.nytimes.com'
-#Gitlab
-  - '+.gitlab.com'
-  - '+.launchdarkly.com'
-  - '+.cookielaw.org'
-#sourceforge
-  - '+.fsdn.com'
-#Google
-  - '+.googleusercontent.com'
-  - '+.googletagmanager.com'
-  - '+.gstatic.com'
-  - '+.google.com'
+  - '+.rfa.org'
+  - '+.rfi.fr'
+  - '+.ltn.com.tw'
+
+# Google
   - '+.google.co.jp'
   - '+.google.co.kr'
-  - '+.googleapis.com'
+  - '+.google.com'
   - '+.google.com.hk'
+  - '+.googleapis.com'
   - '+.googlesource.com'
+  - '+.googletagmanager.com'
+  - '+.gstatic.com'
+  - '+.googleusercontent.com'
 ## YTB
   - '+.ggpht.com'
   - '+.googlevideo.com'
   - '+.youtube.com'
   - '+.ytimg.com'
-#
-  - '+.dropbox.com'
-  - '+.dropboxapi.com'
 
-  - '+.gofile.io'
-  - 'mega.nz'
-  - '+.mega.co.nz'
-  
-  
-  
-  - '+.walkerservers.com'
-  - '+.digitalocean.co'
-  - '+.ovhcloud.com'
+# image
+  - '+.catbox.moe'
+  - '+.donmai.us'
 
-  - 'serverfault.com'
+# Social
+
+
+  - '+.discord.com'
+  - '+.discord.gg'
+  - '+.discordapp.com'
+  - '+.discordapp.net'
+
+  - '+.ext-twitch.tv'
+
+  - '+.facebook.com'
+  - '+.facebook.net'
+  - '+.fbcdn.net'
+  - '+.cdninstagram.com'
+  - '+.instagram.com'
+
+  - '+.redd.it'
+  - '+.reddit.com'
+  - '+.redditmedia.com'
+  - '+.redditstatic.com'
+
+  - '+.askubuntu.com'
+  - '+.bahamut.com.tw'
+  - '+.gamer.com.tw'
+  - '+.jtvnw.net'
   - '+.linuxhint.com'
-  - '+.launchpad.net'
-  - 'askubuntu.com'
+  - '+.nodeseek.com'
+  - '+.ptt.cc'
+
+  - '+.serverfault.com'
+  - '+.sstatic.net'
   - '+.stackexchange.com'
   - '+.stackoverflow.com'
-  - '+.sstatic.net'
+  - '+.streamlabs.com'
+  - '+.t.co'
+  - '+.ttvnw.net'
+  - '+.twimg.com'
+  - '+.twitch.tv'
+  - '+.twitchcdn.net'
+  - '+.twitter.com'
+  - '+.v2ex.com'
+  - '+.x.com'
 
-  - '+.imgur.com'
-#Code
-  - '+.npmjs.com'
-  - 'nodejs.org'
-  - '+.pnpm.io'
-  - '+.npmjs.org'
-  - '+.python.org'
-  - '+.mantisbt.org'
-  - 'greasyfork.org'
-  
-#DOC
-  - '+.archive.org'
-  - '+.wikipedia.org'
-  - '+.wiktionary.org'
-  - '+.wikibooks.org'
-#
-  - '+.doom9.org'
-#
-  - '+.artstation.com'
-  - '+.pixiv.net'
-  - '+.tumblr.com'
-  - '+.yande.re'
-#Games
+# CDN
+  - '+.bootstrapcdn.com'
+  - '+.cloudflare.com'
+  - '+.cloudfront.net'
+  - '+.jsdelivr.net'
+  - '+.cloudfront.net'
+
+# Games
+  - '+.doaxvv.com'
   - '+.steamcommunity.com'
   - '+.steampowered.com'
   - '+.steamstatic.com'
-  - '+.doaxvv.com'
-
-##starrails
-  - '+.starrails.com'
-  - 'hoyo.link'
-  - '+.hoyoverse.com'
+## starrails
+  - '+.hoyo.link'
   - '+.hoyolab.com'
-###starrail.com - CF IP
-  - '+.cloudfront.net'
+  - '+.hoyoverse.com'
+  - '+.starrails.com'
 
-#CDN
-  - '+.jsdelivr.net'
-  - '+.cloudflare.com'
-  - '+.bootstrapcdn.com'
-#AI
-  - 'chatgpt.com'
-  - 'grok.com'
-  - '+.grokipedia.com'
-  - 'deepwiki.com'
-  - '+.devin.ai'
-  - '+.mistral.ai'
-#
-  - '+.whatsapp.net'
-  - '+.whatsapp.com'
+# P2P
+  - '+.idope.se'
+  - '+.torrentkitty.tv'
+  - '+.shanaproject.com'
+
+# A
+  - '+.e-hentai.org'
+  - '+.exhentai.org'
+  - '+.hath.network'
+
+  - '+.072project.com'
+  - '+.91rb.com'
+  - '+.clips4sale.com'
+  - '+.eyny.com'
+  - '+.hentaicomic.ru'
+  - '+.jable.tv'
+  - '+.jav.guru'
+  - '+.javcdn.info'
+  - '+.javdb.com'
+  - '+.javmost.com'
+  - '+.jcomic.net'
+  - '+.rokuhentai.com'
+  - '+.tokyotosho.info'
+
+# Other
+  - '+.algolia.com'
+  - '+.amazon.co.jp'
+  - '+.amazonaws.com'
+  - '+.ccp.ovh'
+  - '+.subscene.com'
+  - '+.cookielaw.org'
+  - '+.launchdarkly.com'
