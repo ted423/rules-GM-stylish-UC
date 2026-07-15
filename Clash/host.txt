@@ -294,6 +294,8 @@ payload:
 # Crypto
   - '+.coinmarketcap.com'
   - '+.getmonero.org'
+  - '+.cakewallet.com'
+
 
 # Other
   - '+.algolia.com'
