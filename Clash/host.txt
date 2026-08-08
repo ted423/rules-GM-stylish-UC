@@ -139,6 +139,10 @@ payload:
   - '+.telegram.org'
   - '+.telesco.pe'
 
+##
+  - '+.combot.org'
+
+
 # MS
   - '+.akamaihd.net'
   - '+.github.com'
