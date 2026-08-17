@@ -17,6 +17,7 @@ payload:
   - '+.snowfrs.com'
   - '+.starmap.stream'
   - '+.wild233.cf'
+    - '+.rcaa.cc
 
   - '51.158.148.85/32'
 
