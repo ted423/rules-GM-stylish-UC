@@ -300,6 +300,7 @@ payload:
   - '+.coinmarketcap.com'
   - '+.getmonero.org'
   - '+.cakewallet.com'
+  - 'bitpay.com'
 
 
 # Other
@@ -314,4 +315,3 @@ payload:
   - '+.coinmarketcap.com'
   - '+.manhuagui.com'
   - '+.cnlang.org'
-  - 'bitpay.com'
