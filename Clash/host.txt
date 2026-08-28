@@ -314,3 +314,4 @@ payload:
   - '+.coinmarketcap.com'
   - '+.manhuagui.com'
   - '+.cnlang.org'
+  - 'bitpay.com'
