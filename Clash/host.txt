@@ -300,7 +300,7 @@ payload:
   - '+.coinmarketcap.com'
   - '+.getmonero.org'
   - '+.cakewallet.com'
-  - 'bitpay.com'
+  - '+.bitpay.com'
 
 
 # Other
