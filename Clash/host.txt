@@ -71,6 +71,7 @@ payload:
   - '+.f-droid.org'
   - '+.faigner.de'
   - '+.faststone.org'
+  - 'fastcopy.jp'
   - '+.geforce.com'
   - '+.launchpadcontent.net'
   - '+.mediaarea.net'
