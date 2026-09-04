@@ -301,8 +301,7 @@ payload:
   - '+.coinmarketcap.com'
   - '+.getmonero.org'
   - '+.cakewallet.com'
-  - '+.bitpay.com'
-
+  - '+.cryptomus.com'
 
 # Other
   - '+.algolia.com'
