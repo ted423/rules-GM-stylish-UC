@@ -316,4 +316,5 @@ payload:
   - '+.coinmarketcap.com'
   - '+.manhuagui.com'
   - '+.cnlang.org'
-  - '+.bunny.net'
+  - 'search.fontawesome.com'
+#  - '+.bunny.net'
