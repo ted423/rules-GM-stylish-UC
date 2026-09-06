@@ -302,6 +302,7 @@ payload:
   - '+.getmonero.org'
   - '+.cakewallet.com'
   - '+.cryptomus.com'
+  - '+.binance.com'
 
 # Other
   - '+.algolia.com'
