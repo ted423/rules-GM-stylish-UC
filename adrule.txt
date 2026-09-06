@@ -344,6 +344,4 @@ www.xiaohx.org##[id^="bdSharePopup"]
 ! 2020/4/17 http://www.seabreezecomputers.com
 www.seabreezecomputers.com##[href*="//chrome.google.com/webstore/detail/speech-recognition-anywhe/kdnnmhpmcakdilnofmllgcigkibjonof"]
 
-
-
-
+fontawesome.com##.with-close.card.wrap-carbon-ad.wrap-ad
