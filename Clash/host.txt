@@ -317,4 +317,4 @@ payload:
   - '+.manhuagui.com'
   - '+.cnlang.org'
   - 'search.fontawesome.com'
-#  - '+.bunny.net'
+  - '+.patreon.com'
