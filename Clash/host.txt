@@ -304,6 +304,7 @@ payload:
   - '+.cryptomus.com'
   - '+.binance.com'
   - '+.htx.com'
+  - '+.huobi.com'
 
 # Other
   - '+.algolia.com'
