@@ -303,6 +303,7 @@ payload:
   - '+.cakewallet.com'
   - '+.cryptomus.com'
   - '+.binance.com'
+  - '+.htx.com'
 
 # Other
   - '+.algolia.com'
