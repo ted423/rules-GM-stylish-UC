@@ -191,6 +191,7 @@ payload:
   - '+.imgbox.com'
   - '+.iqdb.org'
   - '+.ptpimg.me'
+  - '+.pixiv.net'
   - '+.pximg.net'
   - '+.saucenao.com'
   - '+.shoot.photo'
