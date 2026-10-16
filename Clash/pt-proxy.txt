@@ -17,7 +17,10 @@ payload:
   - '+.hdhome.org'
   - '+.hdsky.me'
   - 'pt.hdupt.com'
+
   - 'kp.m-team.cc'
+  - '+.halomt.com'
+
   - '+.ourbits.club'
   - 'pt.eastgame.org'
   - '+.wintersakura.net'
