@@ -288,6 +288,7 @@ payload:
   - '+.jav.guru'
   - '+.javcdn.info'
   - '+.javdb.com'
+  - '+.jdbstatic.com'
   - '+.javmost.com'
   - '+.jcomic.net'
   - '+.rokuhentai.com'
