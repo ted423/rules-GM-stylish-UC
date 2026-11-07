@@ -29,6 +29,7 @@ payload:
   - '+.devin.ai'
   - '+.grok.com'
   - '+.grokipedia.com'
+  - '+.x.ai'
   - '+.mistral.ai'
 
 # DOC
