@@ -188,6 +188,8 @@ payload:
   - '+.youtube.com'
   - '+.ytimg.com'
 
+  - '+.findyoutube.net'
+
 # image
   - '+.catbox.moe'
   - '+.donmai.us'
