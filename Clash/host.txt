@@ -25,8 +25,11 @@ payload:
 
 # AI
   - '+.chatgpt.com'
+  
   - '+.deepwiki.com'
   - '+.devin.ai'
+  - '+.windsurf.com'
+  
   - '+.grok.com'
   - '+.grokipedia.com'
   - '+.x.ai'
