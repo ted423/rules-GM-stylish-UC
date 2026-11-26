@@ -30,6 +30,8 @@ payload:
   - '+.grok.com'
   - '+.grokipedia.com'
   - '+.x.ai'
+  - '+.cursor.sh'
+  - '+.cursor.com'
   - '+.mistral.ai'
 
 # DOC
